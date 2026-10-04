@@ -23,6 +23,7 @@ Use GitHub's web editor on the file and open a pull request from there.
 - Every number in the text traces to `data/results_manifest.csv` or a script in `analysis/`.
 - Every figure is generated from code in `figures/` and has a `source_data.csv`.
 - Do not add references you have not checked against the source.
+- Call the two execution conditions "Galaxy" and "custom code" (see the Terminology section of `manuscript/outline.md`).
 
 ## Giving feedback
 

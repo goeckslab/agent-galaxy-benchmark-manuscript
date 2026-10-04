@@ -44,10 +44,10 @@ This avoided dependence on subsequent changes to the upstream dataset or externa
 For CompBioBench, task input files were obtained from the benchmark release used for this study \[release, commit or archive identifier\].
 The same task inputs were used under both execution conditions
 
-For Galaxy-API-code experiments in both benchmark suites, task inputs were preloaded into Galaxy seed histories.
+For Galaxy experiments in both benchmark suites, task inputs were preloaded into Galaxy seed histories.
 Each run copied the corresponding seed history into a new analysis history before execution.
 This avoided repeated data transfer while ensuring that independent runs began with identical input datasets.
-Open-ended-code runs received the corresponding task inputs in their local execution workspace.
+Custom-code runs received the corresponding task inputs in their local execution workspace.
 Seed histories were prepared for both BixBench-Verified-50 and CompBioBench.
 
 ## Models and agent harness
@@ -65,20 +65,20 @@ Reference answers, reference analyses and subsequent error-analysis annotations 
 
 ## Execution conditions
 
-Each model was evaluated under two execution conditions: open-ended code and Galaxy-API code.
+Each model was evaluated under two execution conditions: custom code and Galaxy.
 Within each benchmark, the question and input datasets were held fixed between conditions; only the execution substrate differed.
 
-Under open-ended code, the agent could determine its own computational strategy and solve the task through direct programmatic execution.
+In the custom-code condition, the agent could determine its own computational strategy and solve the task through direct programmatic execution.
 The agent could write and execute code, use command-line programs, install or access required software and retrieve external resources when permitted by the task.
-This condition provided the direct code-execution baseline.
+This condition provided the custom-code baseline.
 
-Under Galaxy-API code, the agent was instructed to perform analytical computation through Galaxy and to interact with the platform programmatically.
+In the Galaxy condition, the agent was instructed to perform analytical computation through Galaxy and to interact with the platform programmatically.
 Experiments used Galaxy version 26.1.2.dev0 (commit \[hash\]).
 The agent could use code to interact with the Galaxy API, including creating or copying histories, identifying tools, configuring parameters, submitting jobs, monitoring execution and inspecting outputs.
 The analytical route was not predefined.
 Agents independently selected the Galaxy tools, parameters and sequence of operations required to answer each question.
 
-Network and external-resource access was equivalent in the two conditions: \[state the access policy applied, and confirm that agents under Galaxy-API code could retrieve external data and reference resources on the same terms as under open-ended code\].
+Network and external-resource access was equivalent in the two conditions: \[state the access policy applied, and confirm that agents in the Galaxy condition could retrieve external data and reference resources on the same terms as in the custom-code condition\].
 This is relevant because several CompBioBench tasks require comparison against external databases.
 
 Galaxy tool versions available on the server were not modified to reproduce software environments associated with the original benchmark reference analyses.
@@ -101,7 +101,7 @@ Across the two benchmark suites, the experimental design comprised 3,600 agent r
 
 Replicates represented independent agent trajectories.
 Replicate numbers were used only to identify repeated runs and did not define matched observations between execution conditions.
-For example, replicate 1 under Galaxy-API code was not initialized, seeded or otherwise experimentally matched to replicate 1 under open-ended code.
+For example, replicate 1 in the Galaxy condition was not initialized, seeded or otherwise experimentally matched to replicate 1 in the custom-code condition.
 Replicate indices were therefore not treated as paired observations.
 
 Each run began from a fresh agent trajectory and an independent local workspace or Galaxy history.
@@ -131,7 +131,7 @@ Complete task-level scoring criteria and benchmark-specific changes are reported
 CompBioBench evaluation followed the task-specific answer requirements defined by the benchmark.
 The benchmark uses binary evaluation against predefined answers and specifies the required output representation within each question.
 Numerical tasks include the rounding or tolerance required for evaluation where applicable.
-The same acceptance criterion was applied to Galaxy-API-code and open-ended-code runs.
+The same acceptance criterion was applied to Galaxy and custom-code runs.
 
 For each benchmark, accuracy was calculated as the number of correct runs divided by the number of evaluated runs.
 Aggregate BixBench-Verified-50 accuracy was calculated over 600 runs per execution condition, and model-specific accuracy over 150 runs per model and condition.
@@ -144,7 +144,7 @@ Agent execution traces were retained for both execution conditions to examine ho
 For BixBench-Verified-50, we performed a run-level audit of recurrent failures and questions showing differences between execution conditions.
 All 22 questions with at least one incorrect run were included in the task-level failure analysis.
 For each audited run, we examined the final answer, execution trace and generated analysis.
-Galaxy histories were additionally inspected for Galaxy-API-code runs when available.
+Galaxy histories were additionally inspected for Galaxy runs when available.
 
 Root causes were assigned only when supported by execution evidence.
 Failure mechanisms were grouped into analytical reasoning, analysis scope or task interpretation, output interpretation or post-processing, software-version dependency, benchmark data or reference provenance, and resource or execution failure.
@@ -154,7 +154,7 @@ Failure counts and classifications are reported in Supplementary Table 2.
 
 For CompBioBench, item-level success counts were compared between execution conditions and representative tasks with condition-specific outcomes were examined in detail.
 We inspected the sequence of analytical operations, intermediate checks, external-resource use and final-answer derivation.
-For Galaxy-API-code runs, the corresponding Galaxy history was used to reconstruct tool execution and intermediate datasets where available.
+For Galaxy runs, the corresponding Galaxy history was used to reconstruct tool execution and intermediate datasets where available.
 These analyses were descriptive and were used to characterize how changes in execution substrate altered the analytical trajectory rather than to redefine task correctness.
 Statements in the Results describing analytical trajectories are therefore qualitative summaries of audited runs and were not subjected to statistical testing.
 
@@ -169,7 +169,7 @@ Total tokens were defined as input plus output tokens.
 Reasoning tokens reported as part of model output were not added a second time.
 Cached input tokens were included at full weight within total input tokens; because trajectory length differs between execution conditions, totals excluding cached input tokens are reported alongside the primary totals in Supplementary Table 4.
 
-Provider usage records were available for 2,398 of 2,400 CompBioBench runs; one GPT-5.5 Galaxy-API run and one DeepSeek V4 Pro open-ended run lacked a usage record.
+Provider usage records were available for 2,398 of 2,400 CompBioBench runs; one GPT-5.5 Galaxy run and one DeepSeek V4 Pro custom-code run lacked a usage record.
 Missing token values were not imputed.
 
 Token totals include every run with a usage record, irrespective of whether the run produced a correct or scoreable answer.
@@ -177,14 +177,14 @@ Runs terminating at the execution limit therefore contribute their full token co
 The number and token share of such runs in each execution condition are reported in Supplementary Table 4 so that their contribution to the reported fold change can be assessed.
 
 Total model interaction was calculated by summing reported tokens within each model and execution condition.
-The fold change associated with Galaxy-API code was calculated as the Galaxy-API total divided by the corresponding open-ended-code total.
+The fold change associated with Galaxy was calculated as the Galaxy total divided by the corresponding custom-code total.
 The same calculation was applied to the aggregate totals across all four models.
 
 ## Storage measurement
 
 Token counts quantify interaction with the model and were analyzed separately from the computational resources used to execute scientific jobs.
 
-Storage consumed by intermediate CompBioBench datasets was measured in both execution conditions: from the Galaxy history for Galaxy-API-code runs and from the local execution workspace for open-ended-code runs.
+Storage consumed by intermediate CompBioBench datasets was measured in both execution conditions: from the Galaxy history for Galaxy runs and from the local execution workspace for custom-code runs.
 Measurements report \[peak / cumulative\] storage per run and \[include / exclude\] datasets deleted or purged during execution.
 Input datasets copied from the seed history \[were / were not\] included in the reported totals, so that the two conditions are compared on the same basis.
 The measurement procedure is described in \[procedure\], and per-task values are reported in Supplementary Table 5.
@@ -192,7 +192,7 @@ The measurement procedure is described in \[procedure\], and per-task values are
 ## Statistical analysis
 
 BixBench-Verified-50 and CompBioBench were analyzed independently.
-For each benchmark, the primary comparison was the difference in final-answer accuracy between Galaxy-API code and open-ended code.
+For each benchmark, the primary comparison was the difference in final-answer accuracy between Galaxy and custom code.
 Because each benchmark question contributed repeated observations across models and replicates, individual runs were not assumed to be statistically independent.
 
 The association between execution condition and correctness was assessed using a generalized linear mixed-effects model with a binomial error distribution and logit link.
@@ -200,13 +200,13 @@ Run correctness was the binary dependent variable, execution condition was the p
 Benchmark question was included as a random intercept to account for repeated observations within questions.
 A condition-by-model interaction term was included to assess whether the execution-condition effect differed between model configurations; per-model accuracy differences quoted in the Results are otherwise descriptive.
 
-Open-ended code was used as the reference execution condition.
+Custom code was used as the reference execution condition.
 The execution-condition effect is reported as an odds ratio with a two-sided 95% confidence interval and P value.
 Model configuration was treated as a fixed effect because the four models represented prespecified experimental configurations rather than a random sample from a population of models.
 
 Uncertainty in the absolute accuracy difference was estimated independently using a question-clustered nonparametric bootstrap.
 Benchmark questions were sampled with replacement while retaining all model, execution-condition and replicate observations belonging to each selected question.
-Aggregate Galaxy-API-code and open-ended-code accuracy was recalculated for each bootstrap sample, and their difference was recorded.
+Aggregate Galaxy and custom-code accuracy was recalculated for each bootstrap sample, and their difference was recorded.
 The 2.5th and 97.5th percentiles of \[N\] bootstrap replicates defined the 95% confidence interval.
 
 The mixed-effects model and bootstrap address the primary accuracy comparison.

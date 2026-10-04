@@ -17,7 +17,7 @@ Add concrete numbers to the abstract:
 
 AI agents are emerging as interfaces for biomedical data analysis, but their reliability in structured scientific workbenches remains poorly characterized.
 Here we introduce Galaxy-Bench, a benchmark for evaluating agent execution in Galaxy, a widely used biomedical computational workbench that records histories, tool parameters, workflows and provenance.
-Galaxy-Bench compares direct code generation with Galaxy-mediated analysis across BixBench-Verified-50, CompBio Bench and Intergalactic Workflow Commission-derived tasks, using execution settings that vary tool availability and restrictions.
+Galaxy-Bench compares custom code with Galaxy across BixBench-Verified-50, CompBio Bench and Intergalactic Workflow Commission-derived tasks, using execution settings that vary tool availability and restrictions.
 The benchmark measures task accuracy, reproducibility across repeated runs, runtime and token use, and classifies failures as platform limitations or agent errors.
 Early experiments show that agents can complete many biomedical analysis tasks through Galaxy, but performance depends on tool coverage, prompt guidance, state tracking and recovery from failures.
 Galaxy-Bench provides a reproducible framework for assessing when scientific agents are ready for assisted or semi-autonomous biomedical analysis.
