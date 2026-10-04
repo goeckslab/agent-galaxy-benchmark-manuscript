@@ -1,2 +1,101 @@
-<!-- TODO: results. Use subheadings per topic (a Brief Communication has no subheadings in the main text).
-Reference figures by their folder name in figures/. -->
+<!-- Working outline for this section: see outline.md. -->
+
+<!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-02):
+Fold in Junhao's observations to the results and/or discussion. My very short notes:
+- UDTs are a big win
+- agents using Galaxy infrastructure is important
+- UI already exists in Galaxy for agents to use
+- Can use Galaxy even when agent quotas are met
+Junhao's longer version: see outline.md.
+-->
+
+## A paired benchmark of biomedical agents in Galaxy and open-ended code
+
+We assembled an archive of 4,240 agent runs on three benchmarks: BixBench-Verified-50, CompBioBench and workflows from the Intergalactic Workflow Commission (IWC) (Fig. 1).
+Four Codex model configurations – GPT-5.5, GPT-5.6 Sol, GPT-5.6 Luna, and DeepSeek V4 Pro – attempted every task three times in each environment, yielding 3,840 assigned runs.
+In the open-ended code environment, agents installed software and wrote their own custom analysis code.
+In the Galaxy environment, agents used only the Galaxy workbench to accomplish the task.
+This includes the option to use custom code via the Galaxy user-defined tool (UDT).
+All 160 tasks were analyzed individually for each of the three replicates.
+
+Each benchmark keeps its own endpoint.
+BixBench uses an established ground truth set by the original creators and made publicly available.
+CompBioBench uses an agreement with a reconstructed answer key, in which 54 references were inferred from recorded scores and 46 from predicted answers.
+This is because the authors of the benchmark evaluated the answer but obscured the ground truth.
+IWC uses continuous agreement, a scale from 0 to 1, with curated workflow outputs.
+The correct answer is that the entire workflow executes as expected.
+IWC workflows are designed to be Galaxy-specific, allowing a refined evaluation of the agents in the Galaxy workbench.
+For all benchmarks, we recorded model input tokens, including cached context the model rereads, custom code written, and every call agents made to Galaxy.
+
+The two environments dedicated to running the tasks differ in design.
+Galaxy prompts specify an execution policy, including history use, permitted tools, UDT rules, and interface timeouts, whereas open-ended code has no detailed restrictions on how it can be executed.
+Therefore, Galaxy prompts were longer than code prompts on BixBench (707 versus 366 median words) and CompBioBench (938 versus 227) but not on IWC (333 versus 344).
+Time budgets, runtime environments, and campaign histories also differ (Methods).
+Our comparisons are driven by the environment, deployment, benchmark task, agent model, execution trajectory, answer, and replicates, rather than by an isolated effect of the Galaxy workbench's answer.
+
+## Agents perform similarly in Galaxy and open-ended code
+
+We first asked whether working in Galaxy changes how often agents reach the correct answer.
+Overall performance was similar in the two envrionments (Fig. 2).
+On BixBench, acceptance was 85.2% with open-ended code and 86.5% with Galaxy, a difference of +1.3 (-3.5 to 6.4) percentage points (estimate and 95% cluster-bootstrap interval; Fig. 2a).
+On CompBioBench, agreement with the reconstructed key was 86.7% and 87.1%, a difference of +0.4 (-1.6 to 2.4) points (Fig. 2b).
+Both differences stayed within about one point of zero when we removed 15 BixBench tasks with audited benchmark-side problems or 66 CompBioBench taks-configuration cells containing wrong answers or target scores (Fig. 2d,e).
+On IWC, output agreement was 0.94 with open-coded and 0.98 with Galaxy (+0.04 (0.009 to 0.078); Fig. 2c), and three tasks containing a zero-scored run accounted for most of this difference (Fig. 2f).
+
+<!-- Draft image image1.emf from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
+
+**Fig. 1 \| Study design: the same model configurations perform each task in the open-ended code condition and in the Galaxy condition.** **a**, Open-ended code condition (open-ended code execution), the reference condition.
+The agent uses an unrestricted shell that can install and run any software.
+Its execution trace records commands, scripts, command output and final files, but no individual analysis jobs.
+b, Galaxy condition (Galaxy-mediated execution).
+The same model configuration, run by the Codex agent harness, reaches the Galaxy server (usegalaxy.org) through the Galaxy interface, a Model Context Protocol server.
+The interface offers tool search, tool parameter descriptions, analysis-history inspection, job submission and monitoring, and user-defined tools.
+The execution trace and analysis history record tool identities and versions, requested and resolved parameters, datasets, job states and error messages.
+The condition label records assignment; it does not certify that every operation ran inside Galaxy.
+c, Run populations.
+Each cell gives the number of runs (tasks × 3 replicate runs) per model configuration and execution condition.
+BixBench-Verified-50 and CompBioBench are platform-neutral benchmarks; IWC is a workflow-derived benchmark.
+Endpoints differ: accuracy for BixBench-Verified-50, reported benchmark scores for CompBioBench and output agreement for IWC.
+The benchmarks are therefore analysed separately and never pooled (Supplementary Table 1).
+DeepSeek V4 Pro (Claude Code, superseded) is reported separately.
+GPT-6 Astra is unpaired and excluded from condition differences.
+Archive totals: 4,240 runs, 4,228 execution traces, 23,080 Galaxy analysis jobs and 69,812 Galaxy interface calls (Extended Data Fig. 1a).
+
+<!-- Draft image image3.emf from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
+
+**Fig. 2 \| Performance is similar in the two execution conditions, and most scored-incorrect runs were not caused by Galaxy. a–c**, Condition difference (Galaxy − open-ended code) for each benchmark, with 95% confidence intervals.
+Each estimate is printed beside its interval; positive values mean the Galaxy condition scored higher.
+Model configurations occupy the same rows in every panel, followed by the four Codex model configurations pooled.
+The line under each title gives the pooled condition-level summary for each execution condition.
+a, BixBench-Verified-50: condition difference in accuracy, in percentage points (run population per condition: 50 tasks × 3 replicate runs per model configuration; Supplementary Table 2).
+b, CompBioBench: condition difference in the mean reported benchmark score (answers credited, of 100) over three replicate runs per condition.
+Open points have no interval, because the archive keeps only reported benchmark scores, some labelled predicted.
+GPT-6 Astra (open-ended code condition only, not paired) scored 93 (Supplementary Tables 5 and 6).
+c, IWC: condition difference in mean output agreement over the nine tasks scored in both conditions (Supplementary Table 7).
+d, IWC output agreement of every run on all ten tasks.
+Ticks mark the mean of 12 replicate runs, and the axis is broken between 0.45 and 0.80.
+Numbered notes give the cause of every run below 0.5, established from its execution trace.
+Note 4 is a score conflict (Supplementary Table 18; Extended Data Fig. 2d).
+e, Primary and secondary cause of every scored-incorrect BixBench-Verified-50 run (135 open-ended code condition, 111 Galaxy condition), adjudicated from execution traces (Supplementary Table 14; Supplementary Note 6).
+
+<!-- Draft image image5.png from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
+
+<!-- The Results text for Figures 3 and 4 was deleted in the Word draft (tracked changes); these legends remain and may need updating or removal. -->
+
+**Figure 3 \| Galaxy-API code preserves final-answer accuracy on BixBench-Verified-50.** **a**, Overall accuracy across 600 runs per execution condition.
+Galaxy-API code achieved 87.7% accuracy (526/600), compared with 87.2% (523/600) for open-ended code, a difference of 0.5 percentage points.
+**b**, Accuracy by model and execution condition across three independent replicates per question.
+**c**, Number of incorrect runs for each question with at least one failure, partitioned by execution condition.
+Each question comprised 12 runs per condition, for a total of 24 runs.
+Five questions accounted for 97 of the 151 incorrect runs (64.2%).
+**d**, Representative tasks with the largest condition-specific differences.
+For bix-30-q3, Galaxy-API code returned the accepted result in 12 of 12 runs compared with 4 of 12 open-ended-code runs; failed open-ended runs introduced analytical steps not specified by the task.
+For bix-45-q1, the open-ended code returned the accepted result in 8 of 12 runs, whereas the Galaxy-API code did so in 0 of 12 runs; the discrepancy resulted from a PhyKIT version mismatch between the Galaxy tool and the version associated with the accepted answer.
+
+<!-- Draft image image6.png from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
+
+**Figure 4 \| Galaxy-API code preserves CompBioBench accuracy with greater model interaction. a**, Overall accuracy across 2,400 runs.
+Galaxy-API code returned 1,043/1,200 correct answers (86.9%) versus 1,040/1,200 (86.7%) for open-ended code.
+**b**, Accuracy by model and execution condition across three replicates of 100 tasks.
+**c**, Total model tokens by model and condition; Galaxy-API code used 14.15 billion tokens versus 5.19 billion for open-ended code overall (2.7-fold increase).
+**d**, Representative condition-specific analytical trajectories for variant-status-q1 and reverse-search-gwas-q2, with contaminated-rna-q3 illustrating that trajectory-dependent accuracy differences were not uniformly directional.

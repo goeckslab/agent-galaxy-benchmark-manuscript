@@ -1,2 +1,29 @@
-<!-- TODO: introduction. One sentence per line, so review comments attach to single sentences.
-Every number or claim about results must trace to data/results_manifest.csv or a script in analysis/. -->
+<!-- Citation numbers (^n^) are carried over from the Word draft, which had no reference list. Replace them with checked entries in references.bib. -->
+
+Artificial intelligence (AI) agents use large language models together with automated loops, external tools and resources, guardrails, and validation to automatically complete multi-step tasks.
+In biomedicine, AI agents have been used for literature synthesis, hypothesis generation, data analysis, model interpretation, and experimental planning^1–4^.
+Recent agent systems integrate several of these activities within semi-autonomous scientific workflows that review literature, develop hypotheses, and perform data analyses to answer stated hypotheses^5^.
+Computational biology is a demanding setting for such agents because analyses draw on heterogeneous datasets, specialized software, and substantial computing resources, and because methodological choices can materially alter biological conclusions ^6,7^.
+Recent benchmarks have therefore begun to evaluate whether agents can carry out complete bioinformatics analyses^8,9^.
+
+<!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-07):
+Suggest rewriting with the following structure:
+- the gap: to date benchmarks in comp bio have asked agents to write their own code. Scientific workbenches such as Galaxy have proven useful in comp bio because they provide a graphical user interface that does not require writing code and makes it simple to perform entire large-scale analyses. Thus, the gap is that agent accuracy on comp bio tasks using scientific workbenches has not been studied.
+-->
+
+<!-- REVIEW COMMENT from the Word draft (Paulo Lyra, 2026-09-07):
+I think I need to understand better:
+a) agents are using code to execute the task, a Galaxy-API specific code. b) Therefore, the GUI here represents the end-point for humans to understand the code written by the agent?
+-->
+
+To date, however, these benchmarks have largely evaluated agents as programmers, asking them to write and execute their own code to solve each task^10^.
+Scientific workbenches provide a different and widely used model for computational biology.
+They allow researchers to construct complex analyses through graphical interfaces without requiring code and to execute large-scale workflows using established bioinformatics tools and managed computing infrastructure^11^.
+Galaxy^12^ is one such workbench: analyses are composed from versioned tools, and their parameters, inputs and outputs are recorded in histories that can be inspected, shared, converted into reusable workflows and re-executed^13^.
+Although this model has proven useful for human researchers, it remains to be seen whether AI agents can perform computational biology tasks using a scientific workbench with accuracy comparable to that of unrestricted code execution.
+
+Here, we developed an integration that enables AI agents to perform computational biology analyses through Galaxy using its application programming interface (API), and used this system to isolate the effect of the execution environment on agent performance.
+Holding benchmark tasks and agent–model configurations fixed, we compared open-ended code execution, in which agents determined their own computational route to the answer, with Galaxy-mediated execution, in which analytical operations were performed within Galaxy using established or user-defined tools.
+We evaluated four language models in a common agent harness across 160 tasks from BixBench-Verified-50, CompBioBench and IWC-WorkflowBench, a benchmark derived from curated Intergalactic Workflow Commission workflows, and repeated each model–task–environment combination three times, yielding 3,840 runs.
+We assessed task accuracy, run-to-run consistency, tool use, execution failures, and computational cost.
+Across the evaluated settings, accuracy with Galaxy was comparable to, and in some configurations higher than, that obtained with open-ended code, while Galaxy produced structured analysis histories and provided access to managed computational infrastructure.

@@ -1,9 +1,53 @@
 ---
-title: "Working title: benchmarking AI coding agents on Galaxy and custom-code bioinformatics tasks"
+title: "Workbench-mediated execution for reproducible AI agent analyses in bioinformatics"
 author:
-  - name: "Author list to be added"
+  - name: Junhao Qiu
+    affiliations:
+      - ref: moffitt
+  - name: Paulo Lyra, Jr.
+    affiliations:
+      - ref: moffitt
+  - name: Alyssa Pybus
+    affiliations:
+      - ref: moffitt
+  - name: Isis Narvaez-Bandera
+    affiliations:
+      - ref: moffitt
+  - name: Jeremy Goecks
+    affiliations:
+      - ref: moffitt
+    corresponding: true
+    email: jeremy.goecks@moffitt.org
+affiliations:
+  - id: moffitt
+    name: H. Lee Moffitt Cancer Center and Research Institute
+    department: Department of Machine Learning
+    address: 12902 Magnolia Drive
+    city: Tampa
+    region: FL
+    postal-code: "33612"
+    country: USA
+keywords:
+  - AI agents
+  - Galaxy
+  - biomedical analysis
+  - computational workbench
+  - benchmark
+  - reproducibility
+  - reliability
+  - workflow execution
+  - BixBench
+  - CompBio Bench
+  - IWC workflows
 date: today
 ---
+
+<!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-07), on the title:
+I don't love this title:
+- We're not really creating a benchmark (only a bit with the workflows) but instead and exercising an agent on multiple benchmarks
+- our goal isn't to compare code vs. Galaxy
+My suggestion would be something like "Agentic systems can use a computational workbench to accurately perform bioinformatics"
+-->
 
 # Abstract
 
@@ -24,6 +68,10 @@ date: today
 # Online Methods
 
 {{< include methods.qmd >}}
+
+# Competing interests {.unnumbered}
+
+J.G. has a significant financial interest in GalaxyWorks, a company that may have a commercial interest in the results of this research and technology.
 
 # References {.unnumbered}
 
