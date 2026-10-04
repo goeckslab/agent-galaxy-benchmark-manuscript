@@ -8,6 +8,7 @@ Humans and agents contribute the same way, and every change gets a human review.
 2. Create a branch for that issue. One section file or one figure per branch keeps diffs small.
 3. Open a pull request linked to the issue. CI builds a preview of the paper; check it.
 4. At least one other author reviews with inline comments before the PR is merged to `main`.
+   A maintainer who asks an agent to merge a pull request is giving that sign-off; the agent merges only once CI passes (see [AGENTS.md](AGENTS.md)).
 
 Assign each issue to one person or agent at a time to avoid conflicting edits to the same section.
 

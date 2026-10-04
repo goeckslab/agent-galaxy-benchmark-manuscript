@@ -8,10 +8,13 @@ Read this file and [CONTRIBUTING.md](CONTRIBUTING.md) before you start.
 - Work on issues labeled `agent-ready`. Do not start on other issues unless a maintainer asks you to.
 - Edit files in `manuscript/`, `figures/`, `analysis/`, `supplement/`, and `data/` as the issue requires.
 - Open pull requests as drafts.
+- Merge a pull request, including your own, when a maintainer explicitly asks you to and all of these hold: CI passes on the latest commit, the branch has no merge conflicts, and no review thread is unresolved.
+  Mark a draft ready for review before merging, and use a merge commit.
 
 ## What you must not do
 
-- Do not push to `main` and do not merge pull requests, including your own.
+- Do not push to `main`.
+- Do not merge a pull request unless a maintainer has explicitly asked you to merge that pull request.
 - Do not commit tokens, credentials, or trace files. Read the Hugging Face token from the `HF_TOKEN` environment variable.
 - Do not edit `.github/`, license files, or this file unless the issue says so.
 - Do not add references you have not checked against the source. Never invent citations.
