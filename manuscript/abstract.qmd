@@ -1,2 +1,23 @@
-<!-- TODO: abstract. One sentence per line.
-Word limits depend on the article type: Nature Methods Analysis or Resource up to 150 words, Brief Communication up to 70 words. -->
+<!-- Word limits depend on the article type: Nature Methods Analysis or Resource up to 150 words, Brief Communication up to 70 words. -->
+
+<!-- REVIEW COMMENT from the Word draft (Paulo Lyra, 2026-09-10):
+Not reviewed
+-->
+
+<!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-07):
+I don't think we're creating a new benchmark. Instead, we're evaluating how well agents can use Galaxy on existing benchmarks plus a small prototype benchmark of our own.
+-->
+
+<!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-07):
+Add concrete numbers to the abstract:
+- number of tasks evaluated
+- number of agents evaluated
+- task accuracy for agents
+-->
+
+AI agents are emerging as interfaces for biomedical data analysis, but their reliability in structured scientific workbenches remains poorly characterized.
+Here we introduce Galaxy-Bench, a benchmark for evaluating agent execution in Galaxy, a widely used biomedical computational workbench that records histories, tool parameters, workflows and provenance.
+Galaxy-Bench compares direct code generation with Galaxy-mediated analysis across BixBench-Verified-50, CompBio Bench and Intergalactic Workflow Commission-derived tasks, using execution settings that vary tool availability and restrictions.
+The benchmark measures task accuracy, reproducibility across repeated runs, runtime and token use, and classifies failures as platform limitations or agent errors.
+Early experiments show that agents can complete many biomedical analysis tasks through Galaxy, but performance depends on tool coverage, prompt guidance, state tracking and recovery from failures.
+Galaxy-Bench provides a reproducible framework for assessing when scientific agents are ready for assisted or semi-autonomous biomedical analysis.

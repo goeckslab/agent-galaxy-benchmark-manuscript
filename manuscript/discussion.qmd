@@ -1,1 +1,38 @@
-<!-- TODO: discussion. No subheadings. -->
+<!-- No subheadings. -->
+
+<!-- REVIEW COMMENT from the Word draft (Paulo Lyra, 2026-09-10):
+Not reviewed.
+-->
+
+Biomedical agents increasingly pair frontier models with domain-specific tools, data resources, and structured execution.
+Systems such as Biomni^6^ and Agentomics^14^ achieve strong performance using different combinations of these components, while controlled studies show that the surrounding agent scaffold can itself affect performance^15,16^.
+Yet the effect of the workbench itself remains unclear.
+Galaxy was designed for biomedical analysis around a large collection of versioned tools and community-curated workflows, including open, peer-reviewed workflows maintained by the Intergalactic Workflow Commission^12,17^.
+This structure could guide agents toward well-established analytical procedures while making specialized methods easier to access and the resulting analyses easier to reproduce, inspect, share, and review.
+At the same time, operating within the workbench constrains the software, parameters, and ad hoc operations available to the agent.
+Whether these constraints help agents by structuring their analyses or instead reduce performance by limiting analytical freedom remains unresolved.
+
+Galaxy-Bench reframes biomedical agent evaluation as a problem of reproducible scientific execution.
+The central finding is not merely that agents can answer computational biology questions, but that their behavior changes when analysis is mediated through a structured workbench.
+Galaxy makes execution more auditable by recording histories, datasets, parameters and workflows, yet it also exposes weaknesses that are less visible in code-only benchmarks, including tool-search inefficiency, state-tracking errors and difficulty substituting available tools for unavailable operations.
+
+The benchmark is designed to define practical reliability boundaries.
+Some tasks may be suitable for assisted or semi-autonomous use when agents operate within well-supported Galaxy tool domains and when procedural guidance encourages verification, decomposition and recovery.
+Other tasks remain risky for fully autonomous execution, especially when success requires unsupported tools, subtle parameter choices, complex preprocessing or interpretation of ambiguous outputs.
+By classifying failures as platform limitations or agent errors, Galaxy-Bench identifies which problems require better Galaxy tooling and which require better agent reasoning.
+
+The results also emphasize the role of skills and prompts as components of scientific-agent systems.
+General Galaxy guidance can improve behavior by encouraging agents to inspect histories, verify outputs, avoid premature stopping and decompose unavailable operations into simpler workbench steps.
+However, guidance does not eliminate deeper challenges such as scientific judgment, robust troubleshooting and consistent interpretation of results.
+Future benchmarks should therefore report both unguided and guided performance so that improvements can be attributed transparently.
+
+This study has several limitations.
+The current matrix focuses on a finite set of benchmarks, agents and Galaxy configurations.
+Agent behavior is evolving rapidly, and results may change as models, tool wrappers and Galaxy deployments improve.
+Some scoring decisions require human-informed adjudication, particularly when multiple workflows are scientifically acceptable.
+Runtime and token-use comparisons may also depend on deployment details, tool availability and remote scheduling.
+These limitations motivate longitudinal evaluation and public release of prompts, histories, workflows and scoring rubrics.
+
+Galaxy-Bench provides a foundation for standardized evaluation of biomedical agents in reproducible workbench environments.
+Future extensions should add more agents, broader benchmark suites, additional Galaxy instances, stronger prompt-variant testing, prospective registered-report designs and richer measures of scientific validity.
+More broadly, this work supports the view that biomedical AI agents should be evaluated not only by whether they produce answers, but by whether they can generate reproducible, inspectable and scientifically defensible analyses.
