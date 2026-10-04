@@ -14,7 +14,7 @@ Whether these constraints help agents by structuring their analyses or instead r
 
 Galaxy-Bench reframes biomedical agent evaluation as a problem of reproducible scientific execution.
 The central finding is not merely that agents can answer computational biology questions, but that their behavior changes when analysis is mediated through a structured workbench.
-Galaxy makes execution more auditable by recording histories, datasets, parameters and workflows, yet it also exposes weaknesses that are less visible in custom-code benchmarks, including tool-search inefficiency, state-tracking errors and difficulty substituting available tools for unavailable operations.
+Galaxy makes execution more auditable by recording histories, datasets, parameters and workflows, yet it also exposes weaknesses that are less visible in benchmarks that use only custom code, including tool-search inefficiency, state-tracking errors and difficulty substituting available tools for unavailable operations.
 
 The benchmark is designed to define practical reliability boundaries.
 Some tasks may be suitable for assisted or semi-autonomous use when agents operate within well-supported Galaxy tool domains and when procedural guidance encourages verification, decomposition and recovery.
