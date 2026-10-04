@@ -1,0 +1,2 @@
+<!-- TODO: results. Use subheadings per topic (a Brief Communication has no subheadings in the main text).
+Reference figures by their folder name in figures/. -->

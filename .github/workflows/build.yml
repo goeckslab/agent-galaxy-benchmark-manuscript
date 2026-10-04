@@ -1,0 +1,40 @@
+name: build-manuscript
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - name: Render HTML and Word
+        run: |
+          quarto render manuscript --to html
+          quarto render manuscript --to docx
+
+      - name: Render PDF
+        # PDF has not yet been verified on GitHub. Remove continue-on-error once it passes on a PR.
+        continue-on-error: true
+        run: quarto render manuscript --to pdf
+
+      - name: Upload preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: manuscript-preview
+          path: manuscript/_output

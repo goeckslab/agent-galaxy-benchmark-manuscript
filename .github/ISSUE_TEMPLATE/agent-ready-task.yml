@@ -1,0 +1,43 @@
+name: Agent-ready task
+description: A self-contained task an AI agent can pick up without extra context.
+labels: ["agent-ready"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Agents do not carry context between sessions. Make this issue self-contained.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What to change and why, in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files to change
+      description: Exact paths. Say which files must not be touched.
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs
+      description: Where the data comes from (manifest rows, trace paths and dataset revision, scripts to run).
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist that a reviewer can verify.
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify numbers
+      description: Which script or manifest rows each number must trace to, and any ground truth to check against.
+  - type: textarea
+    id: out
+    attributes:
+      label: Out of scope

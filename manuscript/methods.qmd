@@ -1,0 +1,27 @@
+## Benchmark tasks
+
+<!-- TODO: task set, task definitions, ground-truth answers, and how the benchmark is versioned. -->
+
+## Agent configurations
+
+<!-- TODO: exact model strings, agent harness versions, Galaxy and tool versions, and run dates. Pin versions here; they change quickly. -->
+
+## Scoring
+
+<!-- TODO: how answers are scored and how replicates are handled. -->
+
+## Statistical analysis
+
+<!-- TODO: statistical analysis plan, agreed before looking at final results. -->
+
+## Data availability
+
+<!-- TODO: name the repositories. Run traces: Hugging Face dataset goeckslab/galaxy-agent-benchmark-run-traces, plus a DOI-issuing snapshot (for example Zenodo) of the traces analyzed. -->
+
+## Code availability
+
+<!-- TODO: repository URL and Zenodo DOI of the tagged release. The released code must match the code that produced the results. License: MIT. -->
+
+## Use of AI tools
+
+<!-- TODO: disclose which AI tools were used for analysis, drafting, and editing, and how outputs were verified. AI tools are not listed as authors. -->

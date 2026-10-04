@@ -1,0 +1,2 @@
+<!-- TODO: abstract. One sentence per line.
+Word limits depend on the article type: Nature Methods Analysis or Resource up to 150 words, Brief Communication up to 70 words. -->

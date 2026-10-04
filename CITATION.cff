@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+title: "Agent benchmark manuscript (working title)"
+authors:
+  - name: "Author list to be added"
+license: MIT
+repository-code: "https://github.com/OWNER/agent-benchmark-manuscript"

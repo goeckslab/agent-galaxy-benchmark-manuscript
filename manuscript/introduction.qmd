@@ -1,0 +1,2 @@
+<!-- TODO: introduction. One sentence per line, so review comments attach to single sentences.
+Every number or claim about results must trace to data/results_manifest.csv or a script in analysis/. -->

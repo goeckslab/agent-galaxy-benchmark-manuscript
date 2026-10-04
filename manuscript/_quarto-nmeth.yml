@@ -1,0 +1,4 @@
+# Nature Methods profile: QUARTO_PROFILE=nmeth quarto render manuscript
+# Article type (Analysis, Resource or Brief Communication) is still undecided.
+# Limits to check against the journal's content types page before submission.
+csl: nature.csl

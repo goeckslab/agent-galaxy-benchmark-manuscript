@@ -1,0 +1,31 @@
+---
+title: "Working title: benchmarking AI coding agents on Galaxy and custom-code bioinformatics tasks"
+author:
+  - name: "Author list to be added"
+date: today
+---
+
+# Abstract
+
+{{< include abstract.qmd >}}
+
+# Introduction
+
+{{< include introduction.qmd >}}
+
+# Results
+
+{{< include results.qmd >}}
+
+# Discussion
+
+{{< include discussion.qmd >}}
+
+# Online Methods
+
+{{< include methods.qmd >}}
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

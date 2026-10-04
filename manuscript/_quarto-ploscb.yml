@@ -1,0 +1,2 @@
+# PLOS Computational Biology profile: QUARTO_PROFILE=ploscb quarto render manuscript
+csl: plos.csl

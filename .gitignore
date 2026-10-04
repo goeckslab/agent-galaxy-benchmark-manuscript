@@ -1,0 +1,16 @@
+# Build output and caches
+manuscript/_output/
+.quarto/
+_freeze/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Traces and secrets never go in the repo
+traces/
+*.jsonl
+*.jsonl.gz
+.env
+.env.*
+*.token
