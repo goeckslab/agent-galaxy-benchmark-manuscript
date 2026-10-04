@@ -11,7 +11,7 @@ The two execution conditions are called **Galaxy** and **custom code** throughou
 - **Galaxy:** all analysis ran as Galaxy jobs, using installed Galaxy tools or user-defined tools (UDTs). Agents may write code to drive Galaxy through its API or to build a UDT; the condition is still Galaxy.
 - **Custom code:** agents installed software and wrote and ran their own analysis code in a local workspace.
 - Use "the Galaxy condition" and "the custom-code condition" when a noun phrase is needed, and hyphenate "custom-code" before a noun ("custom-code runs").
-- Retired terms: "open-ended code", "open-ended code execution", "unrestricted code execution", "direct code generation", "Galaxy-API code" and "Galaxy-mediated execution".
+- Retired terms: "open-ended code", "open-ended code execution", "unrestricted code execution", "direct code generation", "Galaxy-API code", "Galaxy-mediated execution" and "code-only".
 - Define both terms once in the paper, where the conditions are first introduced.
 
 ## Results
