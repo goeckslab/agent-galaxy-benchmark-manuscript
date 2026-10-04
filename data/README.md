@@ -7,7 +7,7 @@ Small derived tables only. Raw traces stay on Hugging Face and are fetched by `a
 | Column | Meaning |
 | --- | --- |
 | task_id | Benchmark task identifier |
-| track | Galaxy or custom code |
+| track | Execution condition: `Galaxy` or `custom code` |
 | model | Display name used in figures |
 | model_string | Exact model identifier as run |
 | replicate | Replicate number |
