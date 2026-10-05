@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
-"""Figure 4: Galaxy trades input tokens for analysis provenance.
+"""Figure 5: Galaxy increases analysis inspectability at higher token cost.
 
-a, accuracy against median input tokens per run, one point per replicate of each model and condition, with how many
-   times more input tokens Galaxy used on the same task;
-b, input tokens of correct and incorrect runs: incorrect runs use no more tokens than correct runs of the same task;
-c, input tokens against actions for correct runs: the cost follows interaction;
-d, what fills the Galaxy context: requests to Galaxy and the text it sends back, by what the request was for.
+The panels answer the questions of Results section 4 of the outline:
+a, how many more input tokens does Galaxy use, and is token use related to model capability (accuracy against median
+   input tokens per run, one point per replicate, model and condition; key: times more input tokens on the same task,
+   and counting only uncached input);
+b, does Galaxy use more tokens because of failed attempts (incorrect runs against correct runs of the same task);
+c, or because of something else (input tokens against actions per correct run);
+d, what fills the Galaxy context (requests to Galaxy and the text it sends back, by what the request was for).
+What the extra tokens buy (the record of every analysis step) is described in the text; its counts are written to the
+source data as panel 'text'.
 
-Input tokens include cached context. Actions are tool calls by the agent (shell commands, Galaxy interface calls, web
-searches or fetches, file reads, writes and edits). A run is correct when accepted or, for IWC, at >= 0.99 output
-agreement, as in Figures 2b and 3. Ratios are geometric means over paired cells, with 95% percentile cluster-bootstrap
+Input tokens include cached context. Actions are tool calls by the agent. A run is correct when accepted or, for IWC,
+at >= 0.99 output agreement. Ratios are geometric means over paired cells, with 95% percentile cluster-bootstrap
 intervals (clusters are BixBench source capsules, otherwise tasks) and paired cluster sign-flip randomization tests
 (200,000 draws), Holm-adjusted per panel.
 
-Reads data/run_scores.csv, data/run_tokens_actions.csv, data/galaxy_interface_calls.csv and
-data/galaxy_tool_lookup.csv (written by analysis/export_galaxy_benchmark_tables.py). Writes, next to this script,
-fig4_token_cost.pdf (vector, embedded TrueType fonts), fig4_token_cost.png (600 dpi, RGB), fig4_token_cost.svg
-(editable text) and source_data.csv. Width 180 mm; Nature Portfolio artwork rules.
+Reads data/run_scores.csv, run_tokens_actions.csv, galaxy_interface_calls.csv, galaxy_tool_lookup.csv and
+inspectability_counts.csv (written by analysis/export_galaxy_benchmark_tables.py). Writes, next to this script, the
+figure as PDF, PNG (600 dpi) and SVG, and source_data.csv. Width 180 mm; Nature Portfolio artwork rules.
 """
 import io
 from pathlib import Path
@@ -101,6 +103,7 @@ def read_runs_table(name):
         t = t.assign(env=t.track.map(TRACK_KEY)).drop(columns='track')
     return t
 
+BENCH = ['BixBench50', 'CompBio', 'IWC']
 
 B, SEED, B_PERM, B_MEDIAN = 20000, 20261002, 200000, 2000
 W, MM = 180.0, 1 / 25.4
@@ -124,6 +127,11 @@ OPS = [('Finding tools (search, read tool descriptions)', ('search_galaxy_tools'
                                                  'inspect_archive_inventory')),
        ('Waiting for jobs, uploading files', ('wait_for_galaxy_jobs', 'stage_workspace_file'))]
 OP_COLOR = [GALAXY, NEUTRAL_DARK, '#8a8a8a', '#bdbdbd', '#e3e3e3']
+# Text (no panel): what each analysis step leaves for inspection. Galaxy steps are Galaxy jobs; custom-code steps are the
+# agent's shell commands that the run-level evidence labels as analysis.
+INSPECT = [('command', 'Command recorded'), ('tool_version', 'Tool and version identified'),
+           ('params', 'Parameters stored as fields'), ('outputs', 'Outputs kept and linked to the step'),
+           ('history', 'Browsable history to rerun without an agent')]
 rng = np.random.default_rng(SEED)
 
 
@@ -135,6 +143,7 @@ def load_runs():
     t = read_runs_table('run_tokens_actions.csv').rename(columns={'cached_input_tokens': 'cached'})
     r = r.merge(t[KEY + ['input_tokens', 'cached', 'actions']], on=KEY, how='left')
     r['tokens_per_action'] = r.input_tokens / r.actions.where(r.actions > 0)
+    r['uncached'] = r.input_tokens - r.cached
     return r
 
 
@@ -278,6 +287,22 @@ def context(calls, r):
     return pd.DataFrame(rows), never, cached
 
 
+def inspectability():
+    """Share of analysis steps (and of runs, for the history) carrying each element of an inspectable record
+    (data/inspectability_counts.csv)."""
+    t = pd.read_csv(DATA / 'inspectability_counts.csv')
+    t = t.assign(env=t.track.map(TRACK_KEY), element=t.element.replace({'parameters': 'params'}))
+    steps = t[t.unit == 'analysis steps']
+    tab = (steps.pivot_table(index='env', columns='element', values='with_record', aggfunc='sum') /
+           steps.pivot_table(index='env', columns='element', values='total', aggfunc='sum') * 100)
+    tab = tab[['command', 'tool_version', 'params', 'outputs']]
+    runs = t[t.unit == 'runs'].set_index('env')
+    tab['history'] = runs.with_record / runs.total * 100
+    counts = dict(steps=steps.groupby('env').total.first().to_dict(), runs=runs.total.to_dict(),
+                  histories=int(runs.loc[GAL, 'with_record']))
+    return tab.reindex(ENVS), counts
+
+
 # ---------------------------------------------------------------- drawing helpers
 def axes_mm(fig, x, y, w, h, H):
     return fig.add_axes([x / W, 1 - (y + h) / H, w / W, h / H])
@@ -347,7 +372,7 @@ def point_style(c, env):
     return dict(marker=ENV_MARKER[env], mfc=MODEL_COLOR[c], mec=INK, mew=0.35)
 
 
-def draw_a(fig, H, reps, ratios):
+def draw_a(fig, H, reps, ratios, uncached=None):
     label(fig, 0, 0, 'a', 'The trade: same accuracy, more input tokens', H,
           'BixBench-Verified-50 and CompBioBench; each point is one replicate (one run per task)\n'
           'Numbers: times more input tokens in Galaxy on the same task')
@@ -384,6 +409,10 @@ def draw_a(fig, H, reps, ratios):
         key.text(2.6, y, 'All four models' if c == 'all four' else c, va='center', ha='left', fontsize=5.5,
                  fontweight=bold)
         key.text(25.0, y, f'{rr.loc[c, "ratio"]:.1f}\u00d7', va='center', ha='right', fontsize=5.5, fontweight=bold)
+    if uncached is not None:
+        y = 9.6 + 5 * 3.0 + 1.6
+        key.text(2.6, y, 'Uncached input only', va='center', ha='left', fontsize=5.5, color=INK2)
+        key.text(25.0, y, f'{uncached:.1f}\u00d7', va='center', ha='right', fontsize=5.5, color=INK2)
 
 
 def draw_b(fig, H, r, per, pooled):
@@ -484,7 +513,7 @@ def draw_d(fig, H, y0, ops, never, cached):
 
 
 # ---------------------------------------------------------------- source data and assembly
-def source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached):
+def source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached, uncached, insp, counts):
     rows = []
     for x in reps.itertuples():                       # the plotted points of panel a
         rows.append(dict(panel='a', model=x.cfg, condition=x.env, replicate=x.replicate, measure='accuracy_pct',
@@ -522,8 +551,18 @@ def source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, n
                          f'{x.benchmark}', value=x.percent, n=x.denominator))
     for env, v in cached.items():
         rows.append(dict(panel='d', model='all four', condition=env, measure='cached_share_of_input_pct_median', value=v))
+    for x in uncached.itertuples():
+        rows.append(dict(panel='a', model=x.cfg, condition='galaxy / custom_code', measure='uncached_input_tokens_ratio',
+                         value=x.ratio, ci95_low=x.lo, ci95_high=x.hi, n=x.cells, p=x.p, p_holm=x.p_holm))
+    for env, t in insp.iterrows():
+        for code, lab in INSPECT:
+            unit = 'runs' if code == 'history' else 'steps'
+            rows.append(dict(panel='text', model='all four', condition=env, measure=f'pct_{unit}: {lab}', value=t[code],
+                             n=counts[unit][env]))
     cols = ['panel', 'model', 'condition', 'replicate', 'measure', 'value', 'ci95_low', 'ci95_high', 'n', 'p', 'p_holm']
-    pd.DataFrame(rows).reindex(columns=cols).round(4).to_csv(HERE / 'source_data.csv', index=False)
+    out = pd.DataFrame(rows).reindex(columns=cols)
+    out['condition'] = out.condition.str.replace('custom_code', 'custom_code')
+    out.round(4).to_csv(HERE / 'source_data.csv', index=False)
 
 
 def main():
@@ -534,6 +573,13 @@ def main():
     per, pooled = outcome_ratios(r)
     ok, fits, rho, act, tpa = interaction(r)
     ops, never, cached = context(calls, r)
+    global rng                              # separate random stream, so the draws of panels b-d are unchanged
+    main_rng, rng = rng, np.random.default_rng(SEED + 2)
+    uncached = condition_ratios(r[r.benchmark.isin(BIN)].dropna(subset=['uncached']), 'uncached')
+    rng = main_rng
+    insp, counts = inspectability()
+    print('uncached ratio'); print(uncached.round(3).to_string(index=False))
+    print('inspectability'); print(insp.round(1).to_string(), counts)
     for name, t in (('a: trade', trade_tab), ('a: replicates', reps), ('a: token ratio', trade_ratio), ('b: pooled', pooled),
                     ('c: actions', act), ('c: tokens per action', tpa), ('d: operations', ops), ('d: never run', never)):
         print(name)
@@ -542,19 +588,19 @@ def main():
 
     H = 128.0
     fig = plt.figure(figsize=(W * MM, H * MM))
-    draw_a(fig, H, reps, trade_ratio)
+    draw_a(fig, H, reps, trade_ratio, uncached.set_index('cfg').loc['all four', 'ratio'])
     draw_b(fig, H, r, per, pooled)
     y2 = 66.0
     draw_c(fig, H, y2, ok, fits, rho, act, tpa)
     draw_d(fig, H, y2, ops, never, cached)
     enforce_min_font(fig)
-    title = 'Fig. 4 | Galaxy trades input tokens for analysis provenance'
+    title = 'Fig. 5 | Galaxy increases analysis inspectability at higher token cost'
     fig.savefig(HERE / f'{FIG_NAME}.svg', metadata={'Title': title}, dpi=600)
     fig.savefig(HERE / f'{FIG_NAME}.pdf', metadata={'Title': title}, dpi=600)
     buf = io.BytesIO()
     fig.savefig(buf, format='png', dpi=600, facecolor='white')
     Image.open(buf).convert('RGB').save(HERE / f'{FIG_NAME}.png', dpi=(600, 600))
-    source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached)
+    source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached, uncached, insp, counts)
 
 
 if __name__ == '__main__':

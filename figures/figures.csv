@@ -1,4 +1,4 @@
 figure_id,kind,title,script,source_data,status
-fig2_performance,main,Galaxy matches agent performance with custom code,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft
-fig3_failure_sources,main,Galaxy records trace most failures beyond the workbench,figures/fig3_failure_sources/make_figure.py,figures/fig3_failure_sources/source_data.csv,draft
-fig4_token_cost,main,Galaxy trades input tokens for analysis provenance,figures/fig4_token_cost/make_figure.py,figures/fig4_token_cost/source_data.csv,draft
+fig2_performance,main,Agents maintain bioinformatics accuracy when operating through Galaxy,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft
+fig3_structured_environment,main,Galaxy provides a structured environment for agent analyses,figures/fig3_structured_environment/make_figure.py,figures/fig3_structured_environment/source_data.csv,draft
+fig5_token_cost,main,Galaxy increases analysis inspectability at higher token cost,figures/fig5_token_cost/make_figure.py,figures/fig5_token_cost/source_data.csv,draft

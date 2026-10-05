@@ -1,15 +1,14 @@
-**Fig. 2 \| Galaxy matches agent performance with custom code.**
-**a**, Accuracy of each model configuration in the custom-code (vermillion) and Galaxy (blue) conditions, pooling all BixBench-Verified-50 and CompBioBench runs (450 runs per bar: 150 tasks × 3 replicate runs).
-n.s., Holm-adjusted *P* ≥ 0.05 for the Galaxy − custom-code difference (all four adjusted *P* = 1.0; differences 0 to +1.3 percentage points).
-IWC (continuous endpoint) is not pooled.
-**b**, Share of replicate sets (one task × one model, three runs) in which all three runs were correct, summed over the four models; numbers above bars are set counts (200, 400 and 36 sets per condition).
-An IWC run counts as correct at ≥ 0.99 agreement with the curated workflow output (172 of 216 IWC runs); at 0.95 and 1.0, counts are 24 versus 30 and 13 versus 17 sets.
-*P* values are Holm-adjusted across benchmarks.
-**c**, Accuracy by benchmark and model in the Galaxy condition (150, 300 and 27 runs per bar).
-IWC bars show mean output agreement (× 100).
-Dots, accuracy of each replicate (50, 100 and 9 runs; their mean is the bar height), showing rerun variation on the same tasks; error bars show uncertainty over tasks.
-No model pair differs after Holm adjustment across 18 comparisons (six pairs in each benchmark; adjusted *P* ≥ 0.20), and model rankings do not differ detectably between benchmarks (*P* = 0.07; BixBench-Verified-50 versus CompBioBench, *P* = 0.61; permutation test of within-task model ranks).
-**d**, The 15 installed Galaxy tools used in the most Galaxy-condition runs, ranked by overall share, with each model's share of its own Galaxy runs (470–480 traced runs per model; one count per run, successful or not).
-Labels above each model give the share of its runs that called a user-defined tool (UDT), agent-written code run as a Galaxy job.
+**Fig. 2 \| Agents maintain bioinformatics accuracy when operating through Galaxy.**
+**a**, Accuracy of each model in the custom-code (vermillion) and Galaxy (blue) conditions on each benchmark (150, 300 and 27 runs per bar for BixBench-Verified-50, CompBioBench and IWC); IWC bars show mean agreement with curated workflow outputs (× 100).
+Dots, accuracy of each replicate (one run per task).
+n.s., Holm-adjusted *P* ≥ 0.05 across the 12 comparisons (smallest adjusted *P* = 0.38).
+**b**, Galaxy minus custom code by benchmark, models pooled, for the share of runs correct (circles) and of replicate sets (one task × model × condition, three runs) with all three runs correct (diamonds).
+IWC tasks derive from Galaxy workflows; BixBench-Verified-50 and CompBioBench are platform-neutral.
+*P* values are Holm-adjusted across the six comparisons.
+**c**, For each task and model (636 pairs), the number of correct runs of three in custom code (columns) and in Galaxy (rows); shading is logarithmic in the count, and outlined cells have equal counts.
+**d**, Primary cause of each incorrect BixBench-Verified-50 run (170 runs), by how many runs of its set were incorrect.
+Causes come from the run-level failure audit: no answer validation (an error that checking the result would have exposed); lacking biological knowledge (a wrong biological or statistical concept); not able to use Galaxy (a Galaxy tool, wrapper or job gave the wrong result); no answer submitted; and benchmark specification or scoring (an under-specified task or reference, or a scorer rejecting a valid answer).
+CompBioBench and IWC have task-level audits only.
+A run is correct when accepted or, for IWC, at ≥ 0.99 output agreement (172 of 216 IWC runs).
 Error bars, 95% percentile cluster-bootstrap intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks).
-*P* values come from two-sided paired randomization tests that flip the sign of cluster-level differences (200,000 draws; exact for IWC); the ranking test permutes clusters between benchmarks (100,000 permutations).
+*P* values come from two-sided paired randomization tests that flip the sign of cluster-level differences (200,000 draws; exact for IWC).
