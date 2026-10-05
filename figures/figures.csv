@@ -1,1 +1,2 @@
 figure_id,kind,title,script,source_data,status
+fig2_performance,main,Galaxy matches agent performance with custom code,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft

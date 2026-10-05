@@ -1,0 +1,1909 @@
+benchmark,task_id,model,replicate
+BixBench-Verified-50,bix-11-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-11-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-11-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-11-q1,GPT-5.5,1
+BixBench-Verified-50,bix-11-q1,GPT-5.5,2
+BixBench-Verified-50,bix-11-q1,GPT-5.5,3
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-11-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-11-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-11-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-11-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-11-q2,GPT-5.5,1
+BixBench-Verified-50,bix-11-q2,GPT-5.5,2
+BixBench-Verified-50,bix-11-q2,GPT-5.5,3
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-11-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-12-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-12-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-12-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-12-q2,GPT-5.5,1
+BixBench-Verified-50,bix-12-q2,GPT-5.5,2
+BixBench-Verified-50,bix-12-q2,GPT-5.5,3
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-12-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-12-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-12-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-12-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-12-q4,GPT-5.5,1
+BixBench-Verified-50,bix-12-q4,GPT-5.5,2
+BixBench-Verified-50,bix-12-q4,GPT-5.5,3
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-12-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-12-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-12-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-12-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-12-q5,GPT-5.5,1
+BixBench-Verified-50,bix-12-q5,GPT-5.5,2
+BixBench-Verified-50,bix-12-q5,GPT-5.5,3
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-12-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-12-q6,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-12-q6,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-12-q6,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-12-q6,GPT-5.5,1
+BixBench-Verified-50,bix-12-q6,GPT-5.5,2
+BixBench-Verified-50,bix-12-q6,GPT-5.5,3
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-12-q6,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-14-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-14-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-14-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-14-q1,GPT-5.5,1
+BixBench-Verified-50,bix-14-q1,GPT-5.5,2
+BixBench-Verified-50,bix-14-q1,GPT-5.5,3
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-14-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-16-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-16-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-16-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-16-q1,GPT-5.5,1
+BixBench-Verified-50,bix-16-q1,GPT-5.5,2
+BixBench-Verified-50,bix-16-q1,GPT-5.5,3
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-16-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-16-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-16-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-16-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-16-q3,GPT-5.5,1
+BixBench-Verified-50,bix-16-q3,GPT-5.5,2
+BixBench-Verified-50,bix-16-q3,GPT-5.5,3
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-16-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-16-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-16-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-16-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-16-q4,GPT-5.5,1
+BixBench-Verified-50,bix-16-q4,GPT-5.5,2
+BixBench-Verified-50,bix-16-q4,GPT-5.5,3
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-16-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-17-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-17-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-17-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-17-q2,GPT-5.5,1
+BixBench-Verified-50,bix-17-q2,GPT-5.5,2
+BixBench-Verified-50,bix-17-q2,GPT-5.5,3
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-17-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-18-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-18-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-18-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-18-q1,GPT-5.5,1
+BixBench-Verified-50,bix-18-q1,GPT-5.5,2
+BixBench-Verified-50,bix-18-q1,GPT-5.5,3
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-18-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-18-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-18-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-18-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-18-q3,GPT-5.5,1
+BixBench-Verified-50,bix-18-q3,GPT-5.5,2
+BixBench-Verified-50,bix-18-q3,GPT-5.5,3
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-18-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-20-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-20-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-20-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-20-q3,GPT-5.5,1
+BixBench-Verified-50,bix-20-q3,GPT-5.5,2
+BixBench-Verified-50,bix-20-q3,GPT-5.5,3
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-20-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-22-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-22-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-22-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-22-q1,GPT-5.5,1
+BixBench-Verified-50,bix-22-q1,GPT-5.5,2
+BixBench-Verified-50,bix-22-q1,GPT-5.5,3
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-22-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-22-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-22-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-22-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-22-q4,GPT-5.5,1
+BixBench-Verified-50,bix-22-q4,GPT-5.5,2
+BixBench-Verified-50,bix-22-q4,GPT-5.5,3
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-22-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-24-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-24-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-24-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-24-q2,GPT-5.5,1
+BixBench-Verified-50,bix-24-q2,GPT-5.5,2
+BixBench-Verified-50,bix-24-q2,GPT-5.5,3
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-24-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-26-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-26-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-26-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-26-q3,GPT-5.5,1
+BixBench-Verified-50,bix-26-q3,GPT-5.5,2
+BixBench-Verified-50,bix-26-q3,GPT-5.5,3
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-26-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-26-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-26-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-26-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-26-q5,GPT-5.5,1
+BixBench-Verified-50,bix-26-q5,GPT-5.5,2
+BixBench-Verified-50,bix-26-q5,GPT-5.5,3
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-26-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-27-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-27-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-27-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-27-q5,GPT-5.5,1
+BixBench-Verified-50,bix-27-q5,GPT-5.5,2
+BixBench-Verified-50,bix-27-q5,GPT-5.5,3
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-27-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-28-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-28-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-28-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-28-q3,GPT-5.5,1
+BixBench-Verified-50,bix-28-q3,GPT-5.5,2
+BixBench-Verified-50,bix-28-q3,GPT-5.5,3
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-28-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-30-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-30-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-30-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-30-q3,GPT-5.5,1
+BixBench-Verified-50,bix-30-q3,GPT-5.5,2
+BixBench-Verified-50,bix-30-q3,GPT-5.5,3
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-30-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-31-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-31-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-31-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-31-q2,GPT-5.5,1
+BixBench-Verified-50,bix-31-q2,GPT-5.5,2
+BixBench-Verified-50,bix-31-q2,GPT-5.5,3
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-31-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-32-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-32-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-32-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-32-q2,GPT-5.5,1
+BixBench-Verified-50,bix-32-q2,GPT-5.5,2
+BixBench-Verified-50,bix-32-q2,GPT-5.5,3
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-32-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-34-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-34-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-34-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-34-q2,GPT-5.5,1
+BixBench-Verified-50,bix-34-q2,GPT-5.5,2
+BixBench-Verified-50,bix-34-q2,GPT-5.5,3
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-34-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-34-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-34-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-34-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-34-q5,GPT-5.5,1
+BixBench-Verified-50,bix-34-q5,GPT-5.5,2
+BixBench-Verified-50,bix-34-q5,GPT-5.5,3
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-34-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-35-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-35-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-35-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-35-q1,GPT-5.5,1
+BixBench-Verified-50,bix-35-q1,GPT-5.5,2
+BixBench-Verified-50,bix-35-q1,GPT-5.5,3
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-35-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-35-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-35-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-35-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-35-q2,GPT-5.5,1
+BixBench-Verified-50,bix-35-q2,GPT-5.5,2
+BixBench-Verified-50,bix-35-q2,GPT-5.5,3
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-35-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-37-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-37-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-37-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-37-q1,GPT-5.5,1
+BixBench-Verified-50,bix-37-q1,GPT-5.5,2
+BixBench-Verified-50,bix-37-q1,GPT-5.5,3
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-37-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-37-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-37-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-37-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-37-q4,GPT-5.5,1
+BixBench-Verified-50,bix-37-q4,GPT-5.5,2
+BixBench-Verified-50,bix-37-q4,GPT-5.5,3
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-37-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-38-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-38-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-38-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-38-q1,GPT-5.5,1
+BixBench-Verified-50,bix-38-q1,GPT-5.5,2
+BixBench-Verified-50,bix-38-q1,GPT-5.5,3
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-38-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-41-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-41-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-41-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-41-q5,GPT-5.5,1
+BixBench-Verified-50,bix-41-q5,GPT-5.5,2
+BixBench-Verified-50,bix-41-q5,GPT-5.5,3
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-41-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-43-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-43-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-43-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-43-q2,GPT-5.5,1
+BixBench-Verified-50,bix-43-q2,GPT-5.5,2
+BixBench-Verified-50,bix-43-q2,GPT-5.5,3
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-43-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-43-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-43-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-43-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-43-q4,GPT-5.5,1
+BixBench-Verified-50,bix-43-q4,GPT-5.5,2
+BixBench-Verified-50,bix-43-q4,GPT-5.5,3
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-43-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-45-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-45-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-45-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-45-q1,GPT-5.5,1
+BixBench-Verified-50,bix-45-q1,GPT-5.5,2
+BixBench-Verified-50,bix-45-q1,GPT-5.5,3
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-45-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-46-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-46-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-46-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-46-q4,GPT-5.5,1
+BixBench-Verified-50,bix-46-q4,GPT-5.5,2
+BixBench-Verified-50,bix-46-q4,GPT-5.5,3
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-46-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-47-q3,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-47-q3,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-47-q3,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-47-q3,GPT-5.5,1
+BixBench-Verified-50,bix-47-q3,GPT-5.5,2
+BixBench-Verified-50,bix-47-q3,GPT-5.5,3
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-47-q3,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-49-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-49-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-49-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-49-q4,GPT-5.5,1
+BixBench-Verified-50,bix-49-q4,GPT-5.5,2
+BixBench-Verified-50,bix-49-q4,GPT-5.5,3
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-49-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-51-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-51-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-51-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-51-q2,GPT-5.5,1
+BixBench-Verified-50,bix-51-q2,GPT-5.5,2
+BixBench-Verified-50,bix-51-q2,GPT-5.5,3
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-51-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-51-q8,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-51-q8,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-51-q8,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-51-q8,GPT-5.5,1
+BixBench-Verified-50,bix-51-q8,GPT-5.5,2
+BixBench-Verified-50,bix-51-q8,GPT-5.5,3
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-51-q8,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-52-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-52-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-52-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-52-q2,GPT-5.5,1
+BixBench-Verified-50,bix-52-q2,GPT-5.5,2
+BixBench-Verified-50,bix-52-q2,GPT-5.5,3
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-52-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-52-q6,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-52-q6,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-52-q6,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-52-q6,GPT-5.5,1
+BixBench-Verified-50,bix-52-q6,GPT-5.5,2
+BixBench-Verified-50,bix-52-q6,GPT-5.5,3
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-52-q6,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-52-q7,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-52-q7,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-52-q7,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-52-q7,GPT-5.5,1
+BixBench-Verified-50,bix-52-q7,GPT-5.5,2
+BixBench-Verified-50,bix-52-q7,GPT-5.5,3
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-52-q7,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-53-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-53-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-53-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-53-q2,GPT-5.5,1
+BixBench-Verified-50,bix-53-q2,GPT-5.5,2
+BixBench-Verified-50,bix-53-q2,GPT-5.5,3
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-53-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-53-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-53-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-53-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-53-q5,GPT-5.5,1
+BixBench-Verified-50,bix-53-q5,GPT-5.5,2
+BixBench-Verified-50,bix-53-q5,GPT-5.5,3
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-53-q5,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-54-q7,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-54-q7,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-54-q7,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-54-q7,GPT-5.5,1
+BixBench-Verified-50,bix-54-q7,GPT-5.5,2
+BixBench-Verified-50,bix-54-q7,GPT-5.5,3
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-54-q7,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-55-q1,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-55-q1,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-55-q1,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-55-q1,GPT-5.5,1
+BixBench-Verified-50,bix-55-q1,GPT-5.5,2
+BixBench-Verified-50,bix-55-q1,GPT-5.5,3
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-55-q1,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-6-q4,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-6-q4,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-6-q4,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-6-q4,GPT-5.5,1
+BixBench-Verified-50,bix-6-q4,GPT-5.5,2
+BixBench-Verified-50,bix-6-q4,GPT-5.5,3
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-6-q4,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-61-q2,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-61-q2,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-61-q2,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-61-q2,GPT-5.5,1
+BixBench-Verified-50,bix-61-q2,GPT-5.5,2
+BixBench-Verified-50,bix-61-q2,GPT-5.5,3
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-61-q2,GPT-5.6 Sol,3
+BixBench-Verified-50,bix-61-q5,DeepSeek V4 Pro,1
+BixBench-Verified-50,bix-61-q5,DeepSeek V4 Pro,2
+BixBench-Verified-50,bix-61-q5,DeepSeek V4 Pro,3
+BixBench-Verified-50,bix-61-q5,GPT-5.5,1
+BixBench-Verified-50,bix-61-q5,GPT-5.5,2
+BixBench-Verified-50,bix-61-q5,GPT-5.5,3
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Luna,1
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Luna,2
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Luna,3
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Sol,1
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Sol,2
+BixBench-Verified-50,bix-61-q5,GPT-5.6 Sol,3
+CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,1
+CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,2
+CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,3
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,1
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,2
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,3
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,1
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,2
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,3
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Sol,1
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Sol,2
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Sol,3
+CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,1
+CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,2
+CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,3
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,1
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,2
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,3
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,2
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,3
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Sol,1
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Sol,2
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Sol,3
+CompBioBench,afgr-1000g-intersect-atac-q1,DeepSeek V4 Pro,1
+CompBioBench,afgr-1000g-intersect-atac-q1,DeepSeek V4 Pro,2
+CompBioBench,afgr-1000g-intersect-atac-q1,DeepSeek V4 Pro,3
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,1
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,2
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,3
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Luna,1
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Luna,2
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Luna,3
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Sol,1
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Sol,2
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Sol,3
+CompBioBench,align-one-sequence-to-reference-q1,DeepSeek V4 Pro,1
+CompBioBench,align-one-sequence-to-reference-q1,DeepSeek V4 Pro,2
+CompBioBench,align-one-sequence-to-reference-q1,DeepSeek V4 Pro,3
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.5,1
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.5,2
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.5,3
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Luna,1
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Luna,2
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Luna,3
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Sol,1
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Sol,2
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Sol,3
+CompBioBench,annotate-variant-gene-impact-q1,DeepSeek V4 Pro,1
+CompBioBench,annotate-variant-gene-impact-q1,DeepSeek V4 Pro,2
+CompBioBench,annotate-variant-gene-impact-q1,DeepSeek V4 Pro,3
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.5,1
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.5,2
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.5,3
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Luna,1
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Luna,2
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Luna,3
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Sol,1
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Sol,2
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Sol,3
+CompBioBench,annotate-variant-gene-impact-q2,DeepSeek V4 Pro,1
+CompBioBench,annotate-variant-gene-impact-q2,DeepSeek V4 Pro,2
+CompBioBench,annotate-variant-gene-impact-q2,DeepSeek V4 Pro,3
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.5,1
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.5,2
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.5,3
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Luna,1
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Luna,2
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Luna,3
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Sol,1
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Sol,2
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Sol,3
+CompBioBench,annotate-variant-regulatory-overlap-q1,DeepSeek V4 Pro,1
+CompBioBench,annotate-variant-regulatory-overlap-q1,DeepSeek V4 Pro,2
+CompBioBench,annotate-variant-regulatory-overlap-q1,DeepSeek V4 Pro,3
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.5,1
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.5,2
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.5,3
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Luna,1
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Luna,2
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Luna,3
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Sol,1
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Sol,2
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Sol,3
+CompBioBench,atac-doublet-q1,DeepSeek V4 Pro,1
+CompBioBench,atac-doublet-q1,DeepSeek V4 Pro,2
+CompBioBench,atac-doublet-q1,DeepSeek V4 Pro,3
+CompBioBench,atac-doublet-q1,GPT-5.5,1
+CompBioBench,atac-doublet-q1,GPT-5.5,2
+CompBioBench,atac-doublet-q1,GPT-5.5,3
+CompBioBench,atac-doublet-q1,GPT-5.6 Luna,1
+CompBioBench,atac-doublet-q1,GPT-5.6 Luna,2
+CompBioBench,atac-doublet-q1,GPT-5.6 Luna,3
+CompBioBench,atac-doublet-q1,GPT-5.6 Sol,1
+CompBioBench,atac-doublet-q1,GPT-5.6 Sol,2
+CompBioBench,atac-doublet-q1,GPT-5.6 Sol,3
+CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,1
+CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,2
+CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,3
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,1
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,2
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,3
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,1
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,2
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,3
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Sol,1
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Sol,2
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Sol,3
+CompBioBench,bam-infer-read-length-q1,DeepSeek V4 Pro,1
+CompBioBench,bam-infer-read-length-q1,DeepSeek V4 Pro,2
+CompBioBench,bam-infer-read-length-q1,DeepSeek V4 Pro,3
+CompBioBench,bam-infer-read-length-q1,GPT-5.5,1
+CompBioBench,bam-infer-read-length-q1,GPT-5.5,2
+CompBioBench,bam-infer-read-length-q1,GPT-5.5,3
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Luna,1
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Luna,2
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Luna,3
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Sol,1
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Sol,2
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Sol,3
+CompBioBench,bam-ops-q1,DeepSeek V4 Pro,1
+CompBioBench,bam-ops-q1,DeepSeek V4 Pro,2
+CompBioBench,bam-ops-q1,DeepSeek V4 Pro,3
+CompBioBench,bam-ops-q1,GPT-5.5,1
+CompBioBench,bam-ops-q1,GPT-5.5,2
+CompBioBench,bam-ops-q1,GPT-5.5,3
+CompBioBench,bam-ops-q1,GPT-5.6 Luna,1
+CompBioBench,bam-ops-q1,GPT-5.6 Luna,2
+CompBioBench,bam-ops-q1,GPT-5.6 Luna,3
+CompBioBench,bam-ops-q1,GPT-5.6 Sol,1
+CompBioBench,bam-ops-q1,GPT-5.6 Sol,2
+CompBioBench,bam-ops-q1,GPT-5.6 Sol,3
+CompBioBench,bedtools-chromhmm-q1,DeepSeek V4 Pro,1
+CompBioBench,bedtools-chromhmm-q1,DeepSeek V4 Pro,2
+CompBioBench,bedtools-chromhmm-q1,DeepSeek V4 Pro,3
+CompBioBench,bedtools-chromhmm-q1,GPT-5.5,1
+CompBioBench,bedtools-chromhmm-q1,GPT-5.5,2
+CompBioBench,bedtools-chromhmm-q1,GPT-5.5,3
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Luna,1
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Luna,2
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Luna,3
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Sol,1
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Sol,2
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Sol,3
+CompBioBench,bedtools-ops-q1,DeepSeek V4 Pro,1
+CompBioBench,bedtools-ops-q1,DeepSeek V4 Pro,2
+CompBioBench,bedtools-ops-q1,DeepSeek V4 Pro,3
+CompBioBench,bedtools-ops-q1,GPT-5.5,1
+CompBioBench,bedtools-ops-q1,GPT-5.5,2
+CompBioBench,bedtools-ops-q1,GPT-5.5,3
+CompBioBench,bedtools-ops-q1,GPT-5.6 Luna,1
+CompBioBench,bedtools-ops-q1,GPT-5.6 Luna,2
+CompBioBench,bedtools-ops-q1,GPT-5.6 Luna,3
+CompBioBench,bedtools-ops-q1,GPT-5.6 Sol,1
+CompBioBench,bedtools-ops-q1,GPT-5.6 Sol,2
+CompBioBench,bedtools-ops-q1,GPT-5.6 Sol,3
+CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,1
+CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,2
+CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,3
+CompBioBench,bigwig-density-q1,GPT-5.5,1
+CompBioBench,bigwig-density-q1,GPT-5.5,2
+CompBioBench,bigwig-density-q1,GPT-5.5,3
+CompBioBench,bigwig-density-q1,GPT-5.6 Luna,1
+CompBioBench,bigwig-density-q1,GPT-5.6 Luna,2
+CompBioBench,bigwig-density-q1,GPT-5.6 Luna,3
+CompBioBench,bigwig-density-q1,GPT-5.6 Sol,1
+CompBioBench,bigwig-density-q1,GPT-5.6 Sol,2
+CompBioBench,bigwig-density-q1,GPT-5.6 Sol,3
+CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,1
+CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,2
+CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,3
+CompBioBench,borzoi-basic-q1,GPT-5.5,1
+CompBioBench,borzoi-basic-q1,GPT-5.5,2
+CompBioBench,borzoi-basic-q1,GPT-5.5,3
+CompBioBench,borzoi-basic-q1,GPT-5.6 Luna,1
+CompBioBench,borzoi-basic-q1,GPT-5.6 Luna,2
+CompBioBench,borzoi-basic-q1,GPT-5.6 Luna,3
+CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,1
+CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,2
+CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,3
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,2
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,3
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,1
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,2
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,3
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,1
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,2
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,3
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Sol,1
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Sol,2
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Sol,3
+CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,1
+CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,2
+CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,3
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,1
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,2
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,3
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Luna,1
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Luna,2
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Luna,3
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Sol,1
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Sol,2
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Sol,3
+CompBioBench,cell-proportions-q1,DeepSeek V4 Pro,1
+CompBioBench,cell-proportions-q1,DeepSeek V4 Pro,2
+CompBioBench,cell-proportions-q1,DeepSeek V4 Pro,3
+CompBioBench,cell-proportions-q1,GPT-5.5,1
+CompBioBench,cell-proportions-q1,GPT-5.5,2
+CompBioBench,cell-proportions-q1,GPT-5.5,3
+CompBioBench,cell-proportions-q1,GPT-5.6 Luna,1
+CompBioBench,cell-proportions-q1,GPT-5.6 Luna,2
+CompBioBench,cell-proportions-q1,GPT-5.6 Luna,3
+CompBioBench,cell-proportions-q1,GPT-5.6 Sol,1
+CompBioBench,cell-proportions-q1,GPT-5.6 Sol,2
+CompBioBench,cell-proportions-q1,GPT-5.6 Sol,3
+CompBioBench,characterize-response-q1,DeepSeek V4 Pro,1
+CompBioBench,characterize-response-q1,DeepSeek V4 Pro,2
+CompBioBench,characterize-response-q1,DeepSeek V4 Pro,3
+CompBioBench,characterize-response-q1,GPT-5.5,1
+CompBioBench,characterize-response-q1,GPT-5.5,2
+CompBioBench,characterize-response-q1,GPT-5.5,3
+CompBioBench,characterize-response-q1,GPT-5.6 Luna,1
+CompBioBench,characterize-response-q1,GPT-5.6 Luna,3
+CompBioBench,characterize-response-q1,GPT-5.6 Sol,1
+CompBioBench,characterize-response-q1,GPT-5.6 Sol,2
+CompBioBench,characterize-response-q1,GPT-5.6 Sol,3
+CompBioBench,chip-pioneer-q1,DeepSeek V4 Pro,1
+CompBioBench,chip-pioneer-q1,DeepSeek V4 Pro,2
+CompBioBench,chip-pioneer-q1,DeepSeek V4 Pro,3
+CompBioBench,chip-pioneer-q1,GPT-5.5,1
+CompBioBench,chip-pioneer-q1,GPT-5.5,2
+CompBioBench,chip-pioneer-q1,GPT-5.6 Luna,1
+CompBioBench,chip-pioneer-q1,GPT-5.6 Luna,2
+CompBioBench,chip-pioneer-q1,GPT-5.6 Luna,3
+CompBioBench,chip-pioneer-q1,GPT-5.6 Sol,1
+CompBioBench,chip-pioneer-q1,GPT-5.6 Sol,2
+CompBioBench,chip-pioneer-q1,GPT-5.6 Sol,3
+CompBioBench,compute-gc-content-interval-q1,DeepSeek V4 Pro,1
+CompBioBench,compute-gc-content-interval-q1,DeepSeek V4 Pro,2
+CompBioBench,compute-gc-content-interval-q1,DeepSeek V4 Pro,3
+CompBioBench,compute-gc-content-interval-q1,GPT-5.5,1
+CompBioBench,compute-gc-content-interval-q1,GPT-5.5,2
+CompBioBench,compute-gc-content-interval-q1,GPT-5.5,3
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Luna,1
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Luna,2
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Luna,3
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Sol,1
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Sol,2
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Sol,3
+CompBioBench,compute-gccontent-promoter-q1,DeepSeek V4 Pro,1
+CompBioBench,compute-gccontent-promoter-q1,DeepSeek V4 Pro,2
+CompBioBench,compute-gccontent-promoter-q1,DeepSeek V4 Pro,3
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.5,1
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.5,2
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.5,3
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Luna,1
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Luna,2
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Luna,3
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Sol,1
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Sol,2
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Sol,3
+CompBioBench,compute-hvg-jaccard-q1,DeepSeek V4 Pro,1
+CompBioBench,compute-hvg-jaccard-q1,DeepSeek V4 Pro,2
+CompBioBench,compute-hvg-jaccard-q1,DeepSeek V4 Pro,3
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,1
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,2
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,3
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,1
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,2
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,3
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Sol,1
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Sol,2
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Sol,3
+CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,1
+CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,2
+CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,3
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.5,1
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.5,2
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.5,3
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,1
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,2
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,3
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Sol,1
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Sol,2
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Sol,3
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,1
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,2
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,3
+CompBioBench,conservation-lookup-q1,GPT-5.5,1
+CompBioBench,conservation-lookup-q1,GPT-5.5,2
+CompBioBench,conservation-lookup-q1,GPT-5.5,3
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,1
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,3
+CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,1
+CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,2
+CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,3
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,1
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,2
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,3
+CompBioBench,contaminated-rna-q1,GPT-5.5,1
+CompBioBench,contaminated-rna-q1,GPT-5.5,2
+CompBioBench,contaminated-rna-q1,GPT-5.5,3
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,2
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,3
+CompBioBench,contaminated-rna-q1,GPT-5.6 Sol,1
+CompBioBench,contaminated-rna-q1,GPT-5.6 Sol,2
+CompBioBench,contaminated-rna-q1,GPT-5.6 Sol,3
+CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,1
+CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,2
+CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,3
+CompBioBench,contaminated-rna-q2,GPT-5.5,1
+CompBioBench,contaminated-rna-q2,GPT-5.5,2
+CompBioBench,contaminated-rna-q2,GPT-5.5,3
+CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,1
+CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,2
+CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,3
+CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,1
+CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,2
+CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,3
+CompBioBench,contaminated-rna-q3,DeepSeek V4 Pro,1
+CompBioBench,contaminated-rna-q3,DeepSeek V4 Pro,2
+CompBioBench,contaminated-rna-q3,DeepSeek V4 Pro,3
+CompBioBench,contaminated-rna-q3,GPT-5.5,1
+CompBioBench,contaminated-rna-q3,GPT-5.5,2
+CompBioBench,contaminated-rna-q3,GPT-5.5,3
+CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,1
+CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,2
+CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,3
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,1
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,2
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3
+CompBioBench,covid-patient-q1,DeepSeek V4 Pro,1
+CompBioBench,covid-patient-q1,DeepSeek V4 Pro,2
+CompBioBench,covid-patient-q1,DeepSeek V4 Pro,3
+CompBioBench,covid-patient-q1,GPT-5.5,1
+CompBioBench,covid-patient-q1,GPT-5.5,2
+CompBioBench,covid-patient-q1,GPT-5.5,3
+CompBioBench,covid-patient-q1,GPT-5.6 Luna,1
+CompBioBench,covid-patient-q1,GPT-5.6 Luna,2
+CompBioBench,covid-patient-q1,GPT-5.6 Luna,3
+CompBioBench,covid-patient-q1,GPT-5.6 Sol,1
+CompBioBench,covid-patient-q1,GPT-5.6 Sol,2
+CompBioBench,covid-patient-q1,GPT-5.6 Sol,3
+CompBioBench,cryptic-exon-q1,DeepSeek V4 Pro,1
+CompBioBench,cryptic-exon-q1,DeepSeek V4 Pro,2
+CompBioBench,cryptic-exon-q1,DeepSeek V4 Pro,3
+CompBioBench,cryptic-exon-q1,GPT-5.5,1
+CompBioBench,cryptic-exon-q1,GPT-5.5,2
+CompBioBench,cryptic-exon-q1,GPT-5.5,3
+CompBioBench,cryptic-exon-q1,GPT-5.6 Luna,1
+CompBioBench,cryptic-exon-q1,GPT-5.6 Luna,2
+CompBioBench,cryptic-exon-q1,GPT-5.6 Luna,3
+CompBioBench,cryptic-exon-q1,GPT-5.6 Sol,1
+CompBioBench,cryptic-exon-q1,GPT-5.6 Sol,2
+CompBioBench,cryptic-exon-q1,GPT-5.6 Sol,3
+CompBioBench,deg-simple-q1,DeepSeek V4 Pro,1
+CompBioBench,deg-simple-q1,DeepSeek V4 Pro,2
+CompBioBench,deg-simple-q1,DeepSeek V4 Pro,3
+CompBioBench,deg-simple-q1,GPT-5.5,1
+CompBioBench,deg-simple-q1,GPT-5.5,2
+CompBioBench,deg-simple-q1,GPT-5.5,3
+CompBioBench,deg-simple-q1,GPT-5.6 Luna,1
+CompBioBench,deg-simple-q1,GPT-5.6 Luna,2
+CompBioBench,deg-simple-q1,GPT-5.6 Luna,3
+CompBioBench,deg-simple-q1,GPT-5.6 Sol,1
+CompBioBench,deg-simple-q1,GPT-5.6 Sol,2
+CompBioBench,deg-simple-q1,GPT-5.6 Sol,3
+CompBioBench,deg-simple-q2,DeepSeek V4 Pro,1
+CompBioBench,deg-simple-q2,DeepSeek V4 Pro,2
+CompBioBench,deg-simple-q2,DeepSeek V4 Pro,3
+CompBioBench,deg-simple-q2,GPT-5.5,1
+CompBioBench,deg-simple-q2,GPT-5.5,2
+CompBioBench,deg-simple-q2,GPT-5.5,3
+CompBioBench,deg-simple-q2,GPT-5.6 Luna,1
+CompBioBench,deg-simple-q2,GPT-5.6 Luna,2
+CompBioBench,deg-simple-q2,GPT-5.6 Sol,1
+CompBioBench,deg-simple-q2,GPT-5.6 Sol,2
+CompBioBench,deg-simple-q2,GPT-5.6 Sol,3
+CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,1
+CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,2
+CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,3
+CompBioBench,deleterious-mutation-q1,GPT-5.5,1
+CompBioBench,deleterious-mutation-q1,GPT-5.5,2
+CompBioBench,deleterious-mutation-q1,GPT-5.5,3
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Luna,1
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Luna,2
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Luna,3
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Sol,1
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Sol,2
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Sol,3
+CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,1
+CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,2
+CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,3
+CompBioBench,deleterious-mutation-q2,GPT-5.5,1
+CompBioBench,deleterious-mutation-q2,GPT-5.5,2
+CompBioBench,deleterious-mutation-q2,GPT-5.5,3
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Luna,1
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Luna,2
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Luna,3
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,1
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,2
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,3
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,2
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,3
+CompBioBench,differential-composition-q1,GPT-5.5,1
+CompBioBench,differential-composition-q1,GPT-5.5,2
+CompBioBench,differential-composition-q1,GPT-5.5,3
+CompBioBench,differential-composition-q1,GPT-5.6 Luna,1
+CompBioBench,differential-composition-q1,GPT-5.6 Luna,2
+CompBioBench,differential-composition-q1,GPT-5.6 Luna,3
+CompBioBench,differential-composition-q1,GPT-5.6 Sol,1
+CompBioBench,differential-composition-q1,GPT-5.6 Sol,2
+CompBioBench,differential-composition-q1,GPT-5.6 Sol,3
+CompBioBench,disease-samples-q1,DeepSeek V4 Pro,1
+CompBioBench,disease-samples-q1,DeepSeek V4 Pro,2
+CompBioBench,disease-samples-q1,DeepSeek V4 Pro,3
+CompBioBench,disease-samples-q1,GPT-5.5,1
+CompBioBench,disease-samples-q1,GPT-5.5,2
+CompBioBench,disease-samples-q1,GPT-5.5,3
+CompBioBench,disease-samples-q1,GPT-5.6 Luna,1
+CompBioBench,disease-samples-q1,GPT-5.6 Luna,2
+CompBioBench,disease-samples-q1,GPT-5.6 Luna,3
+CompBioBench,disease-samples-q1,GPT-5.6 Sol,1
+CompBioBench,disease-samples-q1,GPT-5.6 Sol,2
+CompBioBench,disease-samples-q1,GPT-5.6 Sol,3
+CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,1
+CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,2
+CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,3
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,3
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,3
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Sol,1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Sol,2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Sol,3
+CompBioBench,enformer-basic-q1,DeepSeek V4 Pro,1
+CompBioBench,enformer-basic-q1,DeepSeek V4 Pro,2
+CompBioBench,enformer-basic-q1,DeepSeek V4 Pro,3
+CompBioBench,enformer-basic-q1,GPT-5.5,1
+CompBioBench,enformer-basic-q1,GPT-5.5,2
+CompBioBench,enformer-basic-q1,GPT-5.5,3
+CompBioBench,enformer-basic-q1,GPT-5.6 Luna,1
+CompBioBench,enformer-basic-q1,GPT-5.6 Luna,2
+CompBioBench,enformer-basic-q1,GPT-5.6 Luna,3
+CompBioBench,enformer-basic-q1,GPT-5.6 Sol,1
+CompBioBench,enformer-basic-q1,GPT-5.6 Sol,2
+CompBioBench,enformer-basic-q1,GPT-5.6 Sol,3
+CompBioBench,enriched-motif-identification-q1,DeepSeek V4 Pro,1
+CompBioBench,enriched-motif-identification-q1,DeepSeek V4 Pro,2
+CompBioBench,enriched-motif-identification-q1,DeepSeek V4 Pro,3
+CompBioBench,enriched-motif-identification-q1,GPT-5.5,1
+CompBioBench,enriched-motif-identification-q1,GPT-5.5,2
+CompBioBench,enriched-motif-identification-q1,GPT-5.5,3
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Luna,1
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Luna,2
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Luna,3
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Sol,1
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Sol,2
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Sol,3
+CompBioBench,ensembl-grab-q1,DeepSeek V4 Pro,1
+CompBioBench,ensembl-grab-q1,DeepSeek V4 Pro,2
+CompBioBench,ensembl-grab-q1,DeepSeek V4 Pro,3
+CompBioBench,ensembl-grab-q1,GPT-5.5,1
+CompBioBench,ensembl-grab-q1,GPT-5.5,2
+CompBioBench,ensembl-grab-q1,GPT-5.5,3
+CompBioBench,ensembl-grab-q1,GPT-5.6 Luna,1
+CompBioBench,ensembl-grab-q1,GPT-5.6 Luna,2
+CompBioBench,ensembl-grab-q1,GPT-5.6 Luna,3
+CompBioBench,ensembl-grab-q1,GPT-5.6 Sol,1
+CompBioBench,ensembl-grab-q1,GPT-5.6 Sol,2
+CompBioBench,ensembl-grab-q1,GPT-5.6 Sol,3
+CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,1
+CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,2
+CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,3
+CompBioBench,ep-interactions-q1,GPT-5.5,1
+CompBioBench,ep-interactions-q1,GPT-5.5,2
+CompBioBench,ep-interactions-q1,GPT-5.5,3
+CompBioBench,ep-interactions-q1,GPT-5.6 Luna,1
+CompBioBench,ep-interactions-q1,GPT-5.6 Luna,2
+CompBioBench,ep-interactions-q1,GPT-5.6 Luna,3
+CompBioBench,ep-interactions-q1,GPT-5.6 Sol,1
+CompBioBench,ep-interactions-q1,GPT-5.6 Sol,2
+CompBioBench,ep-interactions-q1,GPT-5.6 Sol,3
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,1
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,2
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3
+CompBioBench,exogenous-mix-reads-q1,GPT-5.5,1
+CompBioBench,exogenous-mix-reads-q1,GPT-5.5,2
+CompBioBench,exogenous-mix-reads-q1,GPT-5.5,3
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Luna,1
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Luna,2
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Luna,3
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Sol,1
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Sol,2
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Sol,3
+CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,1
+CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,2
+CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,3
+CompBioBench,exogenous-mix-reads-q2,GPT-5.5,1
+CompBioBench,exogenous-mix-reads-q2,GPT-5.5,2
+CompBioBench,exogenous-mix-reads-q2,GPT-5.5,3
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Luna,1
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Luna,3
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Sol,1
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Sol,2
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Sol,3
+CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,1
+CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,2
+CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,3
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,1
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,2
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,3
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,1
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,2
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,3
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Sol,1
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Sol,2
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Sol,3
+CompBioBench,find-amplification-q1,DeepSeek V4 Pro,1
+CompBioBench,find-amplification-q1,DeepSeek V4 Pro,2
+CompBioBench,find-amplification-q1,DeepSeek V4 Pro,3
+CompBioBench,find-amplification-q1,GPT-5.5,1
+CompBioBench,find-amplification-q1,GPT-5.5,2
+CompBioBench,find-amplification-q1,GPT-5.5,3
+CompBioBench,find-amplification-q1,GPT-5.6 Luna,1
+CompBioBench,find-amplification-q1,GPT-5.6 Luna,2
+CompBioBench,find-amplification-q1,GPT-5.6 Luna,3
+CompBioBench,find-amplification-q1,GPT-5.6 Sol,1
+CompBioBench,find-amplification-q1,GPT-5.6 Sol,2
+CompBioBench,find-amplification-q1,GPT-5.6 Sol,3
+CompBioBench,find-deletion-q1,DeepSeek V4 Pro,1
+CompBioBench,find-deletion-q1,DeepSeek V4 Pro,2
+CompBioBench,find-deletion-q1,DeepSeek V4 Pro,3
+CompBioBench,find-deletion-q1,GPT-5.5,1
+CompBioBench,find-deletion-q1,GPT-5.5,2
+CompBioBench,find-deletion-q1,GPT-5.5,3
+CompBioBench,find-deletion-q1,GPT-5.6 Luna,1
+CompBioBench,find-deletion-q1,GPT-5.6 Luna,2
+CompBioBench,find-deletion-q1,GPT-5.6 Luna,3
+CompBioBench,find-deletion-q1,GPT-5.6 Sol,1
+CompBioBench,find-deletion-q1,GPT-5.6 Sol,2
+CompBioBench,find-deletion-q1,GPT-5.6 Sol,3
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,1
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,2
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,3
+CompBioBench,finding-geo-q1,GPT-5.5,1
+CompBioBench,finding-geo-q1,GPT-5.5,2
+CompBioBench,finding-geo-q1,GPT-5.5,3
+CompBioBench,finding-geo-q1,GPT-5.6 Luna,1
+CompBioBench,finding-geo-q1,GPT-5.6 Luna,2
+CompBioBench,finding-geo-q1,GPT-5.6 Luna,3
+CompBioBench,finding-geo-q1,GPT-5.6 Sol,1
+CompBioBench,finding-geo-q1,GPT-5.6 Sol,2
+CompBioBench,finding-geo-q1,GPT-5.6 Sol,3
+CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,1
+CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,2
+CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,3
+CompBioBench,gene-expression-query-q1,GPT-5.5,1
+CompBioBench,gene-expression-query-q1,GPT-5.5,2
+CompBioBench,gene-expression-query-q1,GPT-5.5,3
+CompBioBench,gene-expression-query-q1,GPT-5.6 Luna,1
+CompBioBench,gene-expression-query-q1,GPT-5.6 Luna,2
+CompBioBench,gene-expression-query-q1,GPT-5.6 Luna,3
+CompBioBench,gene-expression-query-q1,GPT-5.6 Sol,1
+CompBioBench,gene-expression-query-q1,GPT-5.6 Sol,2
+CompBioBench,gene-expression-query-q1,GPT-5.6 Sol,3
+CompBioBench,gene-fusion-q1,DeepSeek V4 Pro,1
+CompBioBench,gene-fusion-q1,DeepSeek V4 Pro,2
+CompBioBench,gene-fusion-q1,DeepSeek V4 Pro,3
+CompBioBench,gene-fusion-q1,GPT-5.5,1
+CompBioBench,gene-fusion-q1,GPT-5.5,2
+CompBioBench,gene-fusion-q1,GPT-5.5,3
+CompBioBench,gene-fusion-q1,GPT-5.6 Luna,1
+CompBioBench,gene-fusion-q1,GPT-5.6 Luna,2
+CompBioBench,gene-fusion-q1,GPT-5.6 Luna,3
+CompBioBench,gene-fusion-q1,GPT-5.6 Sol,1
+CompBioBench,gene-fusion-q1,GPT-5.6 Sol,2
+CompBioBench,gene-fusion-q1,GPT-5.6 Sol,3
+CompBioBench,gene-fusion-q2,DeepSeek V4 Pro,1
+CompBioBench,gene-fusion-q2,DeepSeek V4 Pro,2
+CompBioBench,gene-fusion-q2,DeepSeek V4 Pro,3
+CompBioBench,gene-fusion-q2,GPT-5.5,1
+CompBioBench,gene-fusion-q2,GPT-5.5,2
+CompBioBench,gene-fusion-q2,GPT-5.5,3
+CompBioBench,gene-fusion-q2,GPT-5.6 Luna,1
+CompBioBench,gene-fusion-q2,GPT-5.6 Luna,2
+CompBioBench,gene-fusion-q2,GPT-5.6 Luna,3
+CompBioBench,gene-fusion-q2,GPT-5.6 Sol,1
+CompBioBench,gene-fusion-q2,GPT-5.6 Sol,2
+CompBioBench,gene-fusion-q2,GPT-5.6 Sol,3
+CompBioBench,gene-info-grab-q1,DeepSeek V4 Pro,1
+CompBioBench,gene-info-grab-q1,DeepSeek V4 Pro,2
+CompBioBench,gene-info-grab-q1,DeepSeek V4 Pro,3
+CompBioBench,gene-info-grab-q1,GPT-5.5,1
+CompBioBench,gene-info-grab-q1,GPT-5.5,2
+CompBioBench,gene-info-grab-q1,GPT-5.5,3
+CompBioBench,gene-info-grab-q1,GPT-5.6 Luna,1
+CompBioBench,gene-info-grab-q1,GPT-5.6 Luna,2
+CompBioBench,gene-info-grab-q1,GPT-5.6 Luna,3
+CompBioBench,gene-info-grab-q1,GPT-5.6 Sol,1
+CompBioBench,gene-info-grab-q1,GPT-5.6 Sol,2
+CompBioBench,gene-info-grab-q1,GPT-5.6 Sol,3
+CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,1
+CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,2
+CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,3
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,1
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,2
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,3
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,1
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,2
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,3
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Sol,1
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Sol,2
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Sol,3
+CompBioBench,genome-assembly-contiguity-q1,DeepSeek V4 Pro,1
+CompBioBench,genome-assembly-contiguity-q1,DeepSeek V4 Pro,2
+CompBioBench,genome-assembly-contiguity-q1,DeepSeek V4 Pro,3
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,1
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,2
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,3
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Luna,1
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Luna,2
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Luna,3
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Sol,1
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Sol,2
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Sol,3
+CompBioBench,genome-coords-q1,DeepSeek V4 Pro,1
+CompBioBench,genome-coords-q1,DeepSeek V4 Pro,2
+CompBioBench,genome-coords-q1,DeepSeek V4 Pro,3
+CompBioBench,genome-coords-q1,GPT-5.5,1
+CompBioBench,genome-coords-q1,GPT-5.5,2
+CompBioBench,genome-coords-q1,GPT-5.5,3
+CompBioBench,genome-coords-q1,GPT-5.6 Luna,1
+CompBioBench,genome-coords-q1,GPT-5.6 Luna,2
+CompBioBench,genome-coords-q1,GPT-5.6 Luna,3
+CompBioBench,genome-coords-q1,GPT-5.6 Sol,1
+CompBioBench,genome-coords-q1,GPT-5.6 Sol,2
+CompBioBench,genome-coords-q1,GPT-5.6 Sol,3
+CompBioBench,genomic-state-q1,DeepSeek V4 Pro,1
+CompBioBench,genomic-state-q1,DeepSeek V4 Pro,2
+CompBioBench,genomic-state-q1,DeepSeek V4 Pro,3
+CompBioBench,genomic-state-q1,GPT-5.5,1
+CompBioBench,genomic-state-q1,GPT-5.5,2
+CompBioBench,genomic-state-q1,GPT-5.5,3
+CompBioBench,genomic-state-q1,GPT-5.6 Luna,1
+CompBioBench,genomic-state-q1,GPT-5.6 Luna,2
+CompBioBench,genomic-state-q1,GPT-5.6 Luna,3
+CompBioBench,genomic-state-q1,GPT-5.6 Sol,1
+CompBioBench,genomic-state-q1,GPT-5.6 Sol,2
+CompBioBench,genomic-state-q1,GPT-5.6 Sol,3
+CompBioBench,geo-lookup-read-matrix-market-q1,DeepSeek V4 Pro,1
+CompBioBench,geo-lookup-read-matrix-market-q1,DeepSeek V4 Pro,2
+CompBioBench,geo-lookup-read-matrix-market-q1,DeepSeek V4 Pro,3
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,1
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,2
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,3
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Luna,1
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Luna,2
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Luna,3
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Sol,1
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Sol,2
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Sol,3
+CompBioBench,gtf-5-utr-median-len-q1,DeepSeek V4 Pro,1
+CompBioBench,gtf-5-utr-median-len-q1,DeepSeek V4 Pro,2
+CompBioBench,gtf-5-utr-median-len-q1,DeepSeek V4 Pro,3
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,1
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,2
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,3
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,1
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,2
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,3
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Sol,1
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Sol,2
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Sol,3
+CompBioBench,gwas-ancestry-q1,DeepSeek V4 Pro,1
+CompBioBench,gwas-ancestry-q1,DeepSeek V4 Pro,2
+CompBioBench,gwas-ancestry-q1,DeepSeek V4 Pro,3
+CompBioBench,gwas-ancestry-q1,GPT-5.5,1
+CompBioBench,gwas-ancestry-q1,GPT-5.5,2
+CompBioBench,gwas-ancestry-q1,GPT-5.5,3
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Luna,1
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Luna,2
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Luna,3
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Sol,1
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Sol,2
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Sol,3
+CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,1
+CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,2
+CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,3
+CompBioBench,hic-differential-loop-q1,GPT-5.5,1
+CompBioBench,hic-differential-loop-q1,GPT-5.5,2
+CompBioBench,hic-differential-loop-q1,GPT-5.5,3
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Luna,1
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Luna,2
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Luna,3
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Sol,1
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Sol,2
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Sol,3
+CompBioBench,histone-chip-q1,DeepSeek V4 Pro,1
+CompBioBench,histone-chip-q1,DeepSeek V4 Pro,2
+CompBioBench,histone-chip-q1,DeepSeek V4 Pro,3
+CompBioBench,histone-chip-q1,GPT-5.5,1
+CompBioBench,histone-chip-q1,GPT-5.5,2
+CompBioBench,histone-chip-q1,GPT-5.5,3
+CompBioBench,histone-chip-q1,GPT-5.6 Luna,1
+CompBioBench,histone-chip-q1,GPT-5.6 Luna,3
+CompBioBench,histone-chip-q1,GPT-5.6 Sol,1
+CompBioBench,histone-chip-q1,GPT-5.6 Sol,2
+CompBioBench,histone-chip-q1,GPT-5.6 Sol,3
+CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,1
+CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,2
+CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,3
+CompBioBench,huggingface-entropy-q1,GPT-5.5,1
+CompBioBench,huggingface-entropy-q1,GPT-5.5,2
+CompBioBench,huggingface-entropy-q1,GPT-5.5,3
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,1
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,2
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,3
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Sol,1
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Sol,2
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Sol,3
+CompBioBench,identify-donor-q1,DeepSeek V4 Pro,1
+CompBioBench,identify-donor-q1,DeepSeek V4 Pro,2
+CompBioBench,identify-donor-q1,DeepSeek V4 Pro,3
+CompBioBench,identify-donor-q1,GPT-5.5,1
+CompBioBench,identify-donor-q1,GPT-5.5,2
+CompBioBench,identify-donor-q1,GPT-5.5,3
+CompBioBench,identify-donor-q1,GPT-5.6 Luna,1
+CompBioBench,identify-donor-q1,GPT-5.6 Luna,2
+CompBioBench,identify-donor-q1,GPT-5.6 Luna,3
+CompBioBench,identify-donor-q1,GPT-5.6 Sol,1
+CompBioBench,identify-donor-q1,GPT-5.6 Sol,2
+CompBioBench,identify-donor-q1,GPT-5.6 Sol,3
+CompBioBench,identify-related-q1,DeepSeek V4 Pro,1
+CompBioBench,identify-related-q1,DeepSeek V4 Pro,2
+CompBioBench,identify-related-q1,DeepSeek V4 Pro,3
+CompBioBench,identify-related-q1,GPT-5.5,1
+CompBioBench,identify-related-q1,GPT-5.5,2
+CompBioBench,identify-related-q1,GPT-5.5,3
+CompBioBench,identify-related-q1,GPT-5.6 Luna,2
+CompBioBench,identify-related-q1,GPT-5.6 Luna,3
+CompBioBench,identify-related-q1,GPT-5.6 Sol,1
+CompBioBench,identify-related-q1,GPT-5.6 Sol,2
+CompBioBench,identify-related-q1,GPT-5.6 Sol,3
+CompBioBench,lung-cancer-sc-q1,DeepSeek V4 Pro,1
+CompBioBench,lung-cancer-sc-q1,DeepSeek V4 Pro,2
+CompBioBench,lung-cancer-sc-q1,DeepSeek V4 Pro,3
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,1
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,2
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,3
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,1
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,2
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,3
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Sol,1
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Sol,2
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Sol,3
+CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,1
+CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,2
+CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,3
+CompBioBench,match-genotypes-q1,GPT-5.5,1
+CompBioBench,match-genotypes-q1,GPT-5.5,2
+CompBioBench,match-genotypes-q1,GPT-5.5,3
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,2
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,3
+CompBioBench,match-genotypes-q1,GPT-5.6 Sol,1
+CompBioBench,match-genotypes-q1,GPT-5.6 Sol,2
+CompBioBench,match-genotypes-q1,GPT-5.6 Sol,3
+CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,1
+CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,2
+CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,3
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,1
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,2
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,3
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,1
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,2
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,3
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Sol,1
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Sol,2
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Sol,3
+CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,1
+CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,2
+CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,3
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,1
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,2
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,3
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Luna,1
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Luna,2
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Luna,3
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Sol,1
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Sol,2
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Sol,3
+CompBioBench,mystery-peak-set-q1,DeepSeek V4 Pro,1
+CompBioBench,mystery-peak-set-q1,DeepSeek V4 Pro,2
+CompBioBench,mystery-peak-set-q1,DeepSeek V4 Pro,3
+CompBioBench,mystery-peak-set-q1,GPT-5.5,1
+CompBioBench,mystery-peak-set-q1,GPT-5.5,2
+CompBioBench,mystery-peak-set-q1,GPT-5.5,3
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Luna,1
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Luna,2
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Sol,1
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Sol,2
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Sol,3
+CompBioBench,odd-one-out-q1,DeepSeek V4 Pro,1
+CompBioBench,odd-one-out-q1,DeepSeek V4 Pro,2
+CompBioBench,odd-one-out-q1,DeepSeek V4 Pro,3
+CompBioBench,odd-one-out-q1,GPT-5.5,1
+CompBioBench,odd-one-out-q1,GPT-5.5,2
+CompBioBench,odd-one-out-q1,GPT-5.5,3
+CompBioBench,odd-one-out-q1,GPT-5.6 Luna,1
+CompBioBench,odd-one-out-q1,GPT-5.6 Luna,2
+CompBioBench,odd-one-out-q1,GPT-5.6 Luna,3
+CompBioBench,odd-one-out-q1,GPT-5.6 Sol,1
+CompBioBench,odd-one-out-q1,GPT-5.6 Sol,2
+CompBioBench,odd-one-out-q1,GPT-5.6 Sol,3
+CompBioBench,orf-annot-q1,DeepSeek V4 Pro,1
+CompBioBench,orf-annot-q1,DeepSeek V4 Pro,2
+CompBioBench,orf-annot-q1,DeepSeek V4 Pro,3
+CompBioBench,orf-annot-q1,GPT-5.5,1
+CompBioBench,orf-annot-q1,GPT-5.5,2
+CompBioBench,orf-annot-q1,GPT-5.5,3
+CompBioBench,orf-annot-q1,GPT-5.6 Luna,1
+CompBioBench,orf-annot-q1,GPT-5.6 Luna,2
+CompBioBench,orf-annot-q1,GPT-5.6 Luna,3
+CompBioBench,orf-annot-q1,GPT-5.6 Sol,1
+CompBioBench,orf-annot-q1,GPT-5.6 Sol,2
+CompBioBench,orf-annot-q1,GPT-5.6 Sol,3
+CompBioBench,overexpress-tf-q1,DeepSeek V4 Pro,1
+CompBioBench,overexpress-tf-q1,DeepSeek V4 Pro,2
+CompBioBench,overexpress-tf-q1,DeepSeek V4 Pro,3
+CompBioBench,overexpress-tf-q1,GPT-5.5,1
+CompBioBench,overexpress-tf-q1,GPT-5.5,2
+CompBioBench,overexpress-tf-q1,GPT-5.5,3
+CompBioBench,overexpress-tf-q1,GPT-5.6 Luna,1
+CompBioBench,overexpress-tf-q1,GPT-5.6 Luna,2
+CompBioBench,overexpress-tf-q1,GPT-5.6 Luna,3
+CompBioBench,overexpress-tf-q1,GPT-5.6 Sol,1
+CompBioBench,overexpress-tf-q1,GPT-5.6 Sol,2
+CompBioBench,overexpress-tf-q1,GPT-5.6 Sol,3
+CompBioBench,pathogenic-variant-lookup-q1,DeepSeek V4 Pro,1
+CompBioBench,pathogenic-variant-lookup-q1,DeepSeek V4 Pro,2
+CompBioBench,pathogenic-variant-lookup-q1,DeepSeek V4 Pro,3
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,1
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,2
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,3
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Luna,1
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Luna,2
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Luna,3
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Sol,1
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Sol,2
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Sol,3
+CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,1
+CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,2
+CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,3
+CompBioBench,perturb-seq-align-q1,GPT-5.5,1
+CompBioBench,perturb-seq-align-q1,GPT-5.5,2
+CompBioBench,perturb-seq-align-q1,GPT-5.5,3
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,1
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,2
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Sol,1
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Sol,2
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Sol,3
+CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,1
+CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,2
+CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,3
+CompBioBench,perturb-seq-effect-q1,GPT-5.5,1
+CompBioBench,perturb-seq-effect-q1,GPT-5.5,2
+CompBioBench,perturb-seq-effect-q1,GPT-5.5,3
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Luna,1
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Luna,2
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Luna,3
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,1
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,2
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,3
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,1
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,3
+CompBioBench,phase-chain-q1,GPT-5.5,1
+CompBioBench,phase-chain-q1,GPT-5.5,2
+CompBioBench,phase-chain-q1,GPT-5.5,3
+CompBioBench,phase-chain-q1,GPT-5.6 Luna,1
+CompBioBench,phase-chain-q1,GPT-5.6 Luna,3
+CompBioBench,phase-chain-q1,GPT-5.6 Sol,1
+CompBioBench,phase-chain-q1,GPT-5.6 Sol,2
+CompBioBench,phase-chain-q1,GPT-5.6 Sol,3
+CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,1
+CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,2
+CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,3
+CompBioBench,pooled-infer-donors-q1,GPT-5.5,1
+CompBioBench,pooled-infer-donors-q1,GPT-5.5,2
+CompBioBench,pooled-infer-donors-q1,GPT-5.5,3
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Luna,1
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Luna,2
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Luna,3
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Sol,1
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Sol,2
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Sol,3
+CompBioBench,promoter-sequence-retrieval-q1,DeepSeek V4 Pro,1
+CompBioBench,promoter-sequence-retrieval-q1,DeepSeek V4 Pro,2
+CompBioBench,promoter-sequence-retrieval-q1,DeepSeek V4 Pro,3
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.5,1
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.5,2
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.5,3
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,1
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,2
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,3
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Sol,1
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Sol,2
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Sol,3
+CompBioBench,protein-shape-q1,DeepSeek V4 Pro,1
+CompBioBench,protein-shape-q1,DeepSeek V4 Pro,2
+CompBioBench,protein-shape-q1,DeepSeek V4 Pro,3
+CompBioBench,protein-shape-q1,GPT-5.5,1
+CompBioBench,protein-shape-q1,GPT-5.5,2
+CompBioBench,protein-shape-q1,GPT-5.5,3
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,1
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,2
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,3
+CompBioBench,protein-shape-q1,GPT-5.6 Sol,1
+CompBioBench,protein-shape-q1,GPT-5.6 Sol,2
+CompBioBench,protein-shape-q1,GPT-5.6 Sol,3
+CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,1
+CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,2
+CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,3
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,1
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,2
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,3
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,1
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,2
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,3
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Sol,1
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Sol,2
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Sol,3
+CompBioBench,read-proportions-q1,DeepSeek V4 Pro,1
+CompBioBench,read-proportions-q1,DeepSeek V4 Pro,2
+CompBioBench,read-proportions-q1,DeepSeek V4 Pro,3
+CompBioBench,read-proportions-q1,GPT-5.5,1
+CompBioBench,read-proportions-q1,GPT-5.5,2
+CompBioBench,read-proportions-q1,GPT-5.5,3
+CompBioBench,read-proportions-q1,GPT-5.6 Luna,1
+CompBioBench,read-proportions-q1,GPT-5.6 Luna,2
+CompBioBench,read-proportions-q1,GPT-5.6 Luna,3
+CompBioBench,read-proportions-q1,GPT-5.6 Sol,1
+CompBioBench,read-proportions-q1,GPT-5.6 Sol,2
+CompBioBench,read-proportions-q1,GPT-5.6 Sol,3
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,1
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,2
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,3
+CompBioBench,retina-score-snps-q1,GPT-5.5,1
+CompBioBench,retina-score-snps-q1,GPT-5.5,2
+CompBioBench,retina-score-snps-q1,GPT-5.5,3
+CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,1
+CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,2
+CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,3
+CompBioBench,retina-score-snps-q1,GPT-5.6 Sol,1
+CompBioBench,retina-score-snps-q1,GPT-5.6 Sol,2
+CompBioBench,retina-score-snps-q1,GPT-5.6 Sol,3
+CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,1
+CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,2
+CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,3
+CompBioBench,reverse-encode-q1,GPT-5.5,1
+CompBioBench,reverse-encode-q1,GPT-5.5,2
+CompBioBench,reverse-encode-q1,GPT-5.5,3
+CompBioBench,reverse-encode-q1,GPT-5.6 Luna,1
+CompBioBench,reverse-encode-q1,GPT-5.6 Luna,2
+CompBioBench,reverse-encode-q1,GPT-5.6 Luna,3
+CompBioBench,reverse-encode-q1,GPT-5.6 Sol,1
+CompBioBench,reverse-encode-q1,GPT-5.6 Sol,2
+CompBioBench,reverse-encode-q1,GPT-5.6 Sol,3
+CompBioBench,reverse-search-gwas-q1,DeepSeek V4 Pro,1
+CompBioBench,reverse-search-gwas-q1,DeepSeek V4 Pro,2
+CompBioBench,reverse-search-gwas-q1,DeepSeek V4 Pro,3
+CompBioBench,reverse-search-gwas-q1,GPT-5.5,1
+CompBioBench,reverse-search-gwas-q1,GPT-5.5,2
+CompBioBench,reverse-search-gwas-q1,GPT-5.5,3
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Luna,1
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Luna,2
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Luna,3
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Sol,1
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Sol,2
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Sol,3
+CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,1
+CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,2
+CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,3
+CompBioBench,reverse-search-gwas-q2,GPT-5.5,1
+CompBioBench,reverse-search-gwas-q2,GPT-5.5,2
+CompBioBench,reverse-search-gwas-q2,GPT-5.5,3
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Luna,1
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Luna,2
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Luna,3
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,1
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,2
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,3
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,1
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,2
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,3
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,1
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,2
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,3
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,1
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,2
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,3
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Sol,1
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Sol,2
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Sol,3
+CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,1
+CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,2
+CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,3
+CompBioBench,sample-swap-atac-q1,GPT-5.5,1
+CompBioBench,sample-swap-atac-q1,GPT-5.5,2
+CompBioBench,sample-swap-atac-q1,GPT-5.5,3
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Luna,1
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Luna,2
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Luna,3
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Sol,1
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Sol,2
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Sol,3
+CompBioBench,sample-swap-atac-q2,DeepSeek V4 Pro,1
+CompBioBench,sample-swap-atac-q2,DeepSeek V4 Pro,2
+CompBioBench,sample-swap-atac-q2,DeepSeek V4 Pro,3
+CompBioBench,sample-swap-atac-q2,GPT-5.5,1
+CompBioBench,sample-swap-atac-q2,GPT-5.5,2
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Luna,1
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Luna,2
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Luna,3
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Sol,1
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Sol,2
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Sol,3
+CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,1
+CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,2
+CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,3
+CompBioBench,sample-swap-rna-q1,GPT-5.5,1
+CompBioBench,sample-swap-rna-q1,GPT-5.5,2
+CompBioBench,sample-swap-rna-q1,GPT-5.5,3
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,1
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,2
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,3
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Sol,1
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Sol,2
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Sol,3
+CompBioBench,sample-swap-rna-q2,DeepSeek V4 Pro,1
+CompBioBench,sample-swap-rna-q2,DeepSeek V4 Pro,2
+CompBioBench,sample-swap-rna-q2,DeepSeek V4 Pro,3
+CompBioBench,sample-swap-rna-q2,GPT-5.5,1
+CompBioBench,sample-swap-rna-q2,GPT-5.5,2
+CompBioBench,sample-swap-rna-q2,GPT-5.5,3
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Luna,1
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Luna,2
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Luna,3
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Sol,1
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Sol,2
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Sol,3
+CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,1
+CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,2
+CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,3
+CompBioBench,spatial-sim-q1,GPT-5.5,1
+CompBioBench,spatial-sim-q1,GPT-5.5,2
+CompBioBench,spatial-sim-q1,GPT-5.5,3
+CompBioBench,spatial-sim-q1,GPT-5.6 Luna,1
+CompBioBench,spatial-sim-q1,GPT-5.6 Luna,2
+CompBioBench,spatial-sim-q1,GPT-5.6 Luna,3
+CompBioBench,spatial-sim-q1,GPT-5.6 Sol,1
+CompBioBench,spatial-sim-q1,GPT-5.6 Sol,2
+CompBioBench,spatial-sim-q1,GPT-5.6 Sol,3
+CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,1
+CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,2
+CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,3
+CompBioBench,spatial-sim-q2,GPT-5.5,1
+CompBioBench,spatial-sim-q2,GPT-5.5,2
+CompBioBench,spatial-sim-q2,GPT-5.5,3
+CompBioBench,spatial-sim-q2,GPT-5.6 Luna,1
+CompBioBench,spatial-sim-q2,GPT-5.6 Luna,2
+CompBioBench,spatial-sim-q2,GPT-5.6 Luna,3
+CompBioBench,spatial-sim-q2,GPT-5.6 Sol,1
+CompBioBench,spatial-sim-q2,GPT-5.6 Sol,2
+CompBioBench,spatial-sim-q2,GPT-5.6 Sol,3
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,1
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,2
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,3
+CompBioBench,splice-pred-q1,GPT-5.5,1
+CompBioBench,splice-pred-q1,GPT-5.5,2
+CompBioBench,splice-pred-q1,GPT-5.5,3
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,1
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,2
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,3
+CompBioBench,splice-pred-q1,GPT-5.6 Sol,1
+CompBioBench,splice-pred-q1,GPT-5.6 Sol,2
+CompBioBench,splice-pred-q1,GPT-5.6 Sol,3
+CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,1
+CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,2
+CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,3
+CompBioBench,subtype-inflammation-q1,GPT-5.5,1
+CompBioBench,subtype-inflammation-q1,GPT-5.5,2
+CompBioBench,subtype-inflammation-q1,GPT-5.5,3
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,1
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,2
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,3
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Sol,1
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Sol,2
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Sol,3
+CompBioBench,three-way-barnyard-q1,DeepSeek V4 Pro,1
+CompBioBench,three-way-barnyard-q1,DeepSeek V4 Pro,2
+CompBioBench,three-way-barnyard-q1,DeepSeek V4 Pro,3
+CompBioBench,three-way-barnyard-q1,GPT-5.5,1
+CompBioBench,three-way-barnyard-q1,GPT-5.5,2
+CompBioBench,three-way-barnyard-q1,GPT-5.5,3
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,1
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,2
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,3
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Sol,1
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Sol,2
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Sol,3
+CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,1
+CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,2
+CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,3
+CompBioBench,three-way-barnyard-q2,GPT-5.5,1
+CompBioBench,three-way-barnyard-q2,GPT-5.5,2
+CompBioBench,three-way-barnyard-q2,GPT-5.5,3
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,1
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,2
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,3
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Sol,1
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Sol,2
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Sol,3
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,1
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,2
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3
+CompBioBench,tissue-fibroblast-q1,GPT-5.5,1
+CompBioBench,tissue-fibroblast-q1,GPT-5.5,2
+CompBioBench,tissue-fibroblast-q1,GPT-5.5,3
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,1
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,3
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Sol,1
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Sol,2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Sol,3
+CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,1
+CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,2
+CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,3
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.5,1
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.5,2
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.5,3
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Luna,1
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Luna,2
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Sol,1
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Sol,2
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Sol,3
+CompBioBench,variant-status-q1,DeepSeek V4 Pro,1
+CompBioBench,variant-status-q1,DeepSeek V4 Pro,2
+CompBioBench,variant-status-q1,DeepSeek V4 Pro,3
+CompBioBench,variant-status-q1,GPT-5.5,1
+CompBioBench,variant-status-q1,GPT-5.5,2
+CompBioBench,variant-status-q1,GPT-5.5,3
+CompBioBench,variant-status-q1,GPT-5.6 Luna,1
+CompBioBench,variant-status-q1,GPT-5.6 Luna,2
+CompBioBench,variant-status-q1,GPT-5.6 Luna,3
+CompBioBench,variant-status-q1,GPT-5.6 Sol,1
+CompBioBench,variant-status-q1,GPT-5.6 Sol,2
+CompBioBench,variant-status-q1,GPT-5.6 Sol,3
+CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,1
+CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,2
+CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,3
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,1
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,2
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,3
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,1
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,2
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,3
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Sol,1
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Sol,2
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Sol,3
+CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,1
+CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,2
+CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,3
+CompBioBench,vcf-infer-build-q1,GPT-5.5,1
+CompBioBench,vcf-infer-build-q1,GPT-5.5,2
+CompBioBench,vcf-infer-build-q1,GPT-5.5,3
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Luna,1
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Luna,2
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Luna,3
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Sol,1
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Sol,2
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Sol,3
+IWC,wf_001_short_read_qc_trim,DeepSeek V4 Pro,1
+IWC,wf_001_short_read_qc_trim,DeepSeek V4 Pro,2
+IWC,wf_001_short_read_qc_trim,DeepSeek V4 Pro,3
+IWC,wf_001_short_read_qc_trim,GPT-5.5,1
+IWC,wf_001_short_read_qc_trim,GPT-5.5,2
+IWC,wf_001_short_read_qc_trim,GPT-5.5,3
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Luna,1
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Luna,2
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Luna,3
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Sol,1
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Sol,2
+IWC,wf_001_short_read_qc_trim,GPT-5.6 Sol,3
+IWC,wf_002_rnaseq_de_visualization,DeepSeek V4 Pro,1
+IWC,wf_002_rnaseq_de_visualization,DeepSeek V4 Pro,2
+IWC,wf_002_rnaseq_de_visualization,DeepSeek V4 Pro,3
+IWC,wf_002_rnaseq_de_visualization,GPT-5.5,1
+IWC,wf_002_rnaseq_de_visualization,GPT-5.5,2
+IWC,wf_002_rnaseq_de_visualization,GPT-5.5,3
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Luna,1
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Luna,2
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Luna,3
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Sol,1
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Sol,2
+IWC,wf_002_rnaseq_de_visualization,GPT-5.6 Sol,3
+IWC,wf_003_host_contamination_removal,DeepSeek V4 Pro,1
+IWC,wf_003_host_contamination_removal,DeepSeek V4 Pro,2
+IWC,wf_003_host_contamination_removal,DeepSeek V4 Pro,3
+IWC,wf_003_host_contamination_removal,GPT-5.5,1
+IWC,wf_003_host_contamination_removal,GPT-5.5,2
+IWC,wf_003_host_contamination_removal,GPT-5.5,3
+IWC,wf_003_host_contamination_removal,GPT-5.6 Luna,1
+IWC,wf_003_host_contamination_removal,GPT-5.6 Luna,2
+IWC,wf_003_host_contamination_removal,GPT-5.6 Luna,3
+IWC,wf_003_host_contamination_removal,GPT-5.6 Sol,1
+IWC,wf_003_host_contamination_removal,GPT-5.6 Sol,2
+IWC,wf_003_host_contamination_removal,GPT-5.6 Sol,3
+IWC,wf_005_amplicon_dada2_pe_denoising,DeepSeek V4 Pro,1
+IWC,wf_005_amplicon_dada2_pe_denoising,DeepSeek V4 Pro,2
+IWC,wf_005_amplicon_dada2_pe_denoising,DeepSeek V4 Pro,3
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.5,1
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.5,2
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.5,3
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Luna,1
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Luna,2
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Luna,3
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Sol,1
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Sol,2
+IWC,wf_005_amplicon_dada2_pe_denoising,GPT-5.6 Sol,3
+IWC,wf_006_atacseq_chromatin_accessibility,DeepSeek V4 Pro,1
+IWC,wf_006_atacseq_chromatin_accessibility,DeepSeek V4 Pro,2
+IWC,wf_006_atacseq_chromatin_accessibility,DeepSeek V4 Pro,3
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.5,1
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.5,2
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.5,3
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Luna,1
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Luna,2
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Luna,3
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,1
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,2
+IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3
+IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,1
+IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2
+IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3
+IWC,wf_008_amr_gene_detection,GPT-5.5,1
+IWC,wf_008_amr_gene_detection,GPT-5.5,2
+IWC,wf_008_amr_gene_detection,GPT-5.5,3
+IWC,wf_008_amr_gene_detection,GPT-5.6 Luna,1
+IWC,wf_008_amr_gene_detection,GPT-5.6 Luna,2
+IWC,wf_008_amr_gene_detection,GPT-5.6 Luna,3
+IWC,wf_008_amr_gene_detection,GPT-5.6 Sol,1
+IWC,wf_008_amr_gene_detection,GPT-5.6 Sol,2
+IWC,wf_008_amr_gene_detection,GPT-5.6 Sol,3
+IWC,wf_009_clinicalmp_peptide_verification,DeepSeek V4 Pro,1
+IWC,wf_009_clinicalmp_peptide_verification,DeepSeek V4 Pro,2
+IWC,wf_009_clinicalmp_peptide_verification,DeepSeek V4 Pro,3
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.5,1
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.5,2
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.5,3
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Luna,1
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Luna,2
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Luna,3
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Sol,1
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Sol,2
+IWC,wf_009_clinicalmp_peptide_verification,GPT-5.6 Sol,3
+IWC,wf_010_pseudobulk_scrna_de,DeepSeek V4 Pro,1
+IWC,wf_010_pseudobulk_scrna_de,DeepSeek V4 Pro,2
+IWC,wf_010_pseudobulk_scrna_de,DeepSeek V4 Pro,3
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.5,1
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.5,2
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.5,3
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Luna,1
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Luna,2
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Luna,3
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Sol,1
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Sol,2
+IWC,wf_010_pseudobulk_scrna_de,GPT-5.6 Sol,3
+IWC,wf_011_bioproject_metadata_sequence_retrieval,DeepSeek V4 Pro,1
+IWC,wf_011_bioproject_metadata_sequence_retrieval,DeepSeek V4 Pro,2
+IWC,wf_011_bioproject_metadata_sequence_retrieval,DeepSeek V4 Pro,3
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.5,1
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.5,2
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.5,3
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Luna,1
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Luna,2
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Luna,3
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Sol,1
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Sol,2
+IWC,wf_011_bioproject_metadata_sequence_retrieval,GPT-5.6 Sol,3
