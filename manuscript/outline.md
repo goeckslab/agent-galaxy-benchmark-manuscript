@@ -36,6 +36,16 @@ Current draft text: "A paired benchmark of biomedical agents in Galaxy and custo
 
 Current draft text: none yet.
 
+Agents as virtual users of Galaxy (Jeremy Goecks, 2026-10-05): agent use of Galaxy can identify where Galaxy can be improved, through better documentation, API design, and clarity of tools and parameters.
+This subsection should carry the evidence; the Discussion carries the framing (see below).
+
+- Evidence still to produce: a breakdown of Galaxy-condition failures by what would fix them (documentation, API design, tool or parameter descriptions, tool versions), building on the planned split of failures into platform limitations and agent errors.
+  No such analysis exists yet in `analysis/`, and every number must trace to `data/results_manifest.csv` or a script there.
+- Candidate examples from the Word draft:
+  - BixBench bix-45-q1: Galaxy used PhyKIT v.2.1.93, whose handling of gaps and ambiguous residues differed from PhyKIT v.2.0.3, the version associated with the accepted answer; this points to clearer tool versioning and documentation of version differences (from Results text deleted in the draft's tracked changes).
+  - Prompt length: Galaxy prompts needed an execution policy (history use, permitted tools, UDT rules, interface timeouts) and were longer than custom-code prompts on BixBench (707 versus 366 median words) and CompBioBench (938 versus 227), though not on IWC (333 versus 344).
+    Each rule in that policy marks something an agent could not work out from Galaxy alone, so it is a candidate documentation or API gap.
+
 ### 3. Task solution variability is model-dependent
 
 - Which tools and analytical routes did each model use?
@@ -106,6 +116,20 @@ Agents and Galaxy would benefit from approaches that improve rigor, such as cons
   - Add consensus and automated validation to the future-extensions paragraph.
   - The study did not test these approaches, so present them as hypotheses in the limitations paragraph or wherever they appear.
   - Once Results support it, one sentence in the Abstract or Introduction, for example that accuracy is limited more by analytical rigor than by the ability to execute analyses.
+
+### Agents as virtual users of Galaxy
+
+From Jeremy Goecks (2026-10-05).
+Agents using Galaxy act as virtual users, and their use can identify where Galaxy can be improved: documentation, API design, and clarity of tools and parameters.
+
+- Placement: expand the `discussion.qmd` paragraph beginning "Galaxy-Bench reframes biomedical agent evaluation", or add a paragraph right after it.
+  - That paragraph already says Galaxy "exposes weaknesses" such as "tool-search inefficiency, state-tracking errors and difficulty substituting available tools for unavailable operations".
+  - The next paragraph already says that classifying failures as platform limitations or agent errors "identifies which problems require better Galaxy tooling and which require better agent reasoning".
+- Framing: agent runs work as large-scale, repeatable usability testing.
+  Every failed tool search, misread parameter or retry is recorded in the Galaxy history, which points to specific fixes in documentation, API design, and tool and parameter descriptions.
+- Smaller mentions:
+  - Future-extensions paragraph: feed agent traces back to Galaxy developers and tool authors as a continuous improvement loop.
+  - Junhao's point about the existing Galaxy interface (see "Observations to fold into Results and Discussion"): the same interface that helps people review an agent's work also shows where agents struggle.
 
 ## Open notes from the Word draft
 
