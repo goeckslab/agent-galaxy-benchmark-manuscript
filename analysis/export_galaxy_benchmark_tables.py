@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Export the small derived tables that Figure 2 reads from the Galaxy_benchmark run archive.
+"""Export the small derived tables that the figures read from the Galaxy_benchmark run archive.
 
 Usage:
     python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark
 
-Reads three tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, into data/:
+Reads tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, into data/:
 
 - run_scores.csv: one row per scored run of the four primary model configurations (3,816 runs).
 - galaxy_traced_runs.csv: Galaxy-condition runs of those configurations with a parsed trace (1,908 runs).
 - galaxy_tool_use.csv: one row per traced Galaxy run and installed tool it called, plus one row per run that called
   a user-defined tool (UDT).
+- run_execution_errors.csv (Figure 3): failed shell commands and Galaxy jobs in the error state, per run.
+- bixbench_failure_causes.csv (Figure 3): primary and secondary cause codes of every incorrect BixBench-Verified-50 run
+  from the run-level failure audit (codes only; the audit's answer and note fields are not exported).
 
 The tables hold identifiers, scores and tool identifiers only: no trace text, prompts or answers.
 The script prints the archive commit; record it in data/README.md.
 """
 import argparse
+import json
 import subprocess
 from pathlib import Path
 
@@ -25,6 +29,10 @@ DATA = HERE.parent / "data"
 SCORES = "manuscript_narrative/original_layout/analysis/accuracy_primary_runs.csv"
 CALLS = "manuscript_narrative/derived/galaxy_calls/calls.csv.gz"
 COVERAGE = "manuscript_narrative/derived/galaxy_calls/run_coverage.csv"
+ERRORS = "manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx"          # sheet abc_runs, from fig_on_demand.py
+LEDGER = "analysis_reports/galaxy_improvement_20260924/v2_trace_friction/ledger.json"
+CONDITION = {"Open-ended code condition": "custom code", "Galaxy condition": "Galaxy"}
+LEDGER_MODEL = {"GPT-5.5": "GPT-5.5", "Sol": "GPT-5.6 Sol", "Luna": "GPT-5.6 Luna", "DS-Codex": "DeepSeek V4 Pro"}
 BENCHMARK = {"BixBench50": "BixBench-Verified-50", "CompBio": "CompBioBench", "IWC": "IWC"}
 TRACK = {"open_ended_code": "custom code", "galaxy": "Galaxy"}  # values defined in data/README.md
 # Trace model labels of the four primary configurations; the superseded Claude Code harness is left out.
@@ -41,11 +49,56 @@ RUN_KEY = ["benchmark", "task_id", "model", "replicate"]
 
 def archive_commit(source: Path) -> str:
     sha = subprocess.run(["git", "-C", str(source), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)
-    dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE],
+    dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE, ERRORS,
+                            LEDGER],
                            capture_output=True, text=True)
     if dirty.stdout.strip():
         raise SystemExit(f"Source files have uncommitted changes:\n{dirty.stdout}")
     return sha.stdout.strip()
+
+
+def export_execution_errors(source: Path) -> pd.DataFrame:
+    """Failed shell commands (a silent exit code 1 is not counted) and Galaxy jobs in the error state, per run."""
+    import openpyxl
+
+    ws = openpyxl.load_workbook(source / ERRORS, read_only=True)["abc_runs"]
+    rows = list(ws.iter_rows(values_only=True))
+    e = pd.DataFrame(rows[1:], columns=rows[0])
+    e = e[e.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
+    out = pd.DataFrame({
+        "benchmark": e.benchmark,
+        "task_id": e.task,
+        "model": e.model_configuration.replace({"DeepSeek V4 Pro (Codex)": "DeepSeek V4 Pro"}),
+        "track": e.execution_condition.map(CONDITION),
+        "replicate": e.replicate,
+        "failed_shell_commands": e.failed_shell_commands.fillna(0).astype(int),
+        "galaxy_jobs_in_error_state": e.galaxy_jobs_in_error_state.fillna(0).astype(int),
+    }).sort_values(RUN_KEY + ["track"])
+    assert out.notna().all().all() and set(out.model) <= set(TRACE_MODEL.values()), "unexpected execution-error rows"
+    out.to_csv(DATA / "run_execution_errors.csv", index=False)
+    return out
+
+
+def export_failure_causes(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
+    """Primary and secondary cause codes of every incorrect BixBench-Verified-50 run of the primary configurations."""
+    led = pd.DataFrame(json.loads((source / LEDGER).read_text()))
+    led = led[(led.b == "BixBench") & ~led.run.str.contains("ClaudeCode")]
+    out = pd.DataFrame({
+        "benchmark": "BixBench-Verified-50",
+        "task_id": led.task,
+        "model": led.run.str.extract(r"^[CG] (.+) r\d$")[0].map(LEDGER_MODEL),
+        "track": led.cond.map(TRACK),
+        "replicate": led.run.str.extract(r"r(\d)$")[0].astype(int),
+        "primary_cause": led.p,
+        "secondary_cause": led.s.replace("-", ""),
+        "confidence": led.c,
+    }).sort_values(RUN_KEY + ["track"])
+    wrong = scores[(scores.benchmark == "BixBench-Verified-50") & (scores.score < 1)]
+    key = ["task_id", "model", "track", "replicate"]
+    both = wrong.merge(out, on=key, how="outer", indicator=True)
+    assert (both._merge == "both").all() and not out.duplicated(key).any(), "every incorrect run needs one cause"
+    out.to_csv(DATA / "bixbench_failure_causes.csv", index=False)
+    return out
 
 
 def main() -> None:
@@ -86,6 +139,9 @@ def main() -> None:
     assert use.merge(runs, on=RUN_KEY, how="left", indicator=True)._merge.eq("both").all(), "tool use outside traced runs"
     use.to_csv(DATA / "galaxy_tool_use.csv", index=False)
 
+    errors = export_execution_errors(args.source)
+    causes = export_failure_causes(args.source, scores)
+    print(f"run_execution_errors.csv: {len(errors)} runs; bixbench_failure_causes.csv: {len(causes)} runs")
     print(f"run_scores.csv: {len(scores)} runs; galaxy_traced_runs.csv: {len(runs)} runs; "
           f"galaxy_tool_use.csv: {len(use)} rows")
 
