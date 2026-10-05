@@ -15,5 +15,3 @@ a,Failure-cause glyph: Agent analysis,0.55,share,illustrative,glyph only; not a 
 a,"Failure-cause glyph: Benchmark, reference or provenance",0.3,share,illustrative,glyph only; not a result
 a,Failure-cause glyph: Galaxy platform or wrapper,0.1,share,illustrative,glyph only; not a result
 a,Failure-cause glyph: Other,0.05,share,illustrative,glyph only; not a result
-b,"Evaluate step: correct (1) or incorrect (0) runs, one row per task and one column per replicate run",111 / 101 / 000,runs,illustrative,glyph only; not a result
-b,Evaluate step: accuracy bar and 95% interval,n/a,accuracy,illustrative,glyph only; the intervals come from resampling tasks

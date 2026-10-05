@@ -47,7 +47,6 @@ SOURCES = {
 # Glyph values that only illustrate a measure; they are not results.
 GAUGE = 0.72                                                       # accuracy gauge fill (0-1 score)
 BAR_CALLS, BAR_FAILED = (1.0, 0.72, 0.5, 0.3), (0.12, 0.22, 0.08, 0.1)  # interface-calls glyph
-EVAL_GRID = ((1, 1, 1), (1, 0, 1), (0, 0, 0))                      # evaluate step: runs correct (1) or not
 CAUSE_GLYPH = [('Agent analysis', 0.55), ('Benchmark, reference or provenance', 0.3),
                ('Galaxy platform or wrapper', 0.1), ('Other', 0.05)]
 
@@ -115,10 +114,6 @@ def write_source_data(n_tasks, n_runs):
     ]
     rows += [('a', f'Failure-cause glyph: {g}', s, 'share', 'illustrative', 'glyph only; not a result')
              for g, s in CAUSE_GLYPH]
-    rows += [('b', 'Evaluate step: correct (1) or incorrect (0) runs, one row per task and one column per replicate run',
-              ' / '.join(''.join(map(str, r)) for r in EVAL_GRID), 'runs', 'illustrative', 'glyph only; not a result'),
-             ('b', 'Evaluate step: accuracy bar and 95% interval', 'n/a', 'accuracy', 'illustrative',
-              'glyph only; the intervals come from resampling tasks')]
     pd.DataFrame(rows, columns=['panel', 'element', 'value', 'unit', 'kind', 'source']).to_csv(
         HERE / 'source_data.csv', index=False)
 
@@ -418,6 +413,13 @@ def trace(cv, cx, cy, w=4.4, h=5.6, ec=IC):
                 color=IC if ind == 0 else NEUTRAL_MID, lw=0.5)
 
 
+def ci_glyph(cv, x, y, w=8.0):
+    cv.line([(x, y), (x + w, y)], color=INK, lw=0.7)
+    for xx in (x, x + w):
+        cv.line([(xx, y - 0.7), (xx, y + 0.7)], color=INK, lw=0.7)
+    cv.circ(x + w * 0.55, y, 0.75, fc=INK, ec=INK, z=5)
+
+
 def tag(cv, cx, cy, s, color=G, size=LAB):
     w = cv.width(s, size, 'bold') + 1.4
     cv.rrect(cx - w / 2, cy - 1.15, w, 2.3, r=0.5, fc='white', ec=color, lw=0.7, z=6)
@@ -659,26 +661,19 @@ def step_evaluate(cv, x, y, w, h):
     cv.arrow((mx, cy + 2.2), (mx, cy + 4.8), color=IC, lw=0.6, ms=4)
     verdict(cv, mx - 1.5, cy + 6.4, True)
     verdict(cv, mx + 1.5, cy + 6.4, False)
-    # aggregation: each task is run three times; accuracy pools the scored runs, and its 95% CI resamples tasks
-    cv.line([(x + 2.4, y + 21.4), (x + w - 2.4, y + 21.4)], color=EDGE, lw=0.5, z=2)
-    gx = [x + 6.4 + 2.4 * j for j in range(3)]           # columns: replicate runs 1-3
-    gy = [y + 24.2 + 2.3 * i for i in range(3)]          # rows: tasks
-    for yy, row in zip(gy, EVAL_GRID):
-        for xx, ok in zip(gx, row):
-            verdict(cv, xx, yy, bool(ok), 0.82)
-    cv.ctext(gx[1], y + 31.9, '3 runs per task', LAB, color=INK2)
-    mid = gy[1]
-    cv.arrow((gx[-1] + 1.8, mid), (x + 17.2, mid), color=IC, lw=0.6, ms=3.5)
-    bx, bw, base, top = x + 19.4, 4.4, gy[-1] + 0.9, gy[0] + 0.6
-    cv.rect(bx, top, bw, base - top, fc=NEUTRAL_MID, z=4)
-    cv.line([(bx - 0.9, base), (bx + bw + 0.9, base)], color=IC, lw=0.5, z=5)
-    cx = bx + bw / 2
-    cv.line([(cx, top - 1.6), (cx, top + 1.6)], color=INK, lw=0.7, z=6)
-    for yy in (top - 1.6, top + 1.6):
-        cv.line([(cx - 0.6, yy), (cx + 0.6, yy)], color=INK, lw=0.7, z=6)
-    cv.ctext(cx, y + 31.9, 'accuracy', LAB, color=INK2)
-    cv.text(bx + bw + 1.4, top - 2.2, '95% CI from', LAB, color=INK2)
-    cv.text(bx + bw + 1.4, top, 'resampled tasks', LAB, color=INK2)
+    # aggregation: run -> replicate set -> task, with cluster-bootstrap interval
+    gy = y + 27.2
+    x1, x2, x3 = x + 4.0, x + 11.4, x + 20.6
+    cv.circ(x1, gy, 0.9, fc=INK, ec=INK, z=5)
+    cv.arrow((x1 + 1.5, gy), (x2 - 2.9, gy), color=IC, lw=0.6, ms=3.5)
+    for j in (-1, 0, 1):
+        cv.circ(x2 + 2.0 * j, gy, 0.8, fc=INK, ec=INK, z=5)
+    cv.arrow((x2 + 3.3, gy), (x3 - 2.2, gy), color=IC, lw=0.6, ms=3.5)
+    for j in range(3):
+        cv.rect(x3 - 1.6, gy - 1.4 + j * 1.0, 3.2, 0.7, fc=NEUTRAL_MID, z=5)
+    ci_glyph(cv, x + w - 12.2, gy, 9.0)
+    for xx, lab in ((x1, 'run'), (x2, 'set'), (x3, 'task'), (x + w - 7.7, '95% CI')):
+        cv.ctext(xx, gy + 3.3, lab, LAB, color=INK2)
 
 
 # ---------------------------------------------------------------- assemble
