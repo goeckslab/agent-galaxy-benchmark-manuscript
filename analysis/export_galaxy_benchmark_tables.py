@@ -13,6 +13,11 @@ Reads tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, i
 - run_execution_errors.csv (Figure 3): failed shell commands and Galaxy jobs in the error state, per run.
 - bixbench_failure_causes.csv (Figure 3): primary and secondary cause codes of every incorrect BixBench-Verified-50 run
   from the run-level failure audit (codes only; the audit's answer and note fields are not exported).
+- run_tokens_actions.csv (Figure 4): input tokens, cached input tokens and agent actions, per scored run.
+- galaxy_interface_calls.csv (Figure 4): requests to the Galaxy interface and characters returned, per traced Galaxy run
+  and interface function.
+- galaxy_tool_lookup.csv (Figure 4): tools inspected and never run in the same run, per benchmark, from the archive's
+  interface-friction table.
 
 The tables hold identifiers, scores and tool identifiers only: no trace text, prompts or answers.
 The script prints the archive commit; record it in data/README.md.
@@ -31,6 +36,9 @@ CALLS = "manuscript_narrative/derived/galaxy_calls/calls.csv.gz"
 COVERAGE = "manuscript_narrative/derived/galaxy_calls/run_coverage.csv"
 ERRORS = "manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx"          # sheet abc_runs, from fig_on_demand.py
 LEDGER = "analysis_reports/galaxy_improvement_20260924/v2_trace_friction/ledger.json"
+TOKENS = "manuscript_narrative/original_layout/analysis/token_run_observations.csv"
+ACTIONS = "manuscript_material/on_demand/Source_Data_OD_Fig6.xlsx"         # sheet abf_runs, from fig_on_demand.py
+FRICTION = "manuscript_narrative/original_layout/analysis/token_interface_friction.csv"
 CONDITION = {"Open-ended code condition": "custom code", "Galaxy condition": "Galaxy"}
 LEDGER_MODEL = {"GPT-5.5": "GPT-5.5", "Sol": "GPT-5.6 Sol", "Luna": "GPT-5.6 Luna", "DS-Codex": "DeepSeek V4 Pro"}
 BENCHMARK = {"BixBench50": "BixBench-Verified-50", "CompBio": "CompBioBench", "IWC": "IWC"}
@@ -50,7 +58,7 @@ RUN_KEY = ["benchmark", "task_id", "model", "replicate"]
 def archive_commit(source: Path) -> str:
     sha = subprocess.run(["git", "-C", str(source), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)
     dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE, ERRORS,
-                            LEDGER],
+                            LEDGER, TOKENS, ACTIONS, FRICTION],
                            capture_output=True, text=True)
     if dirty.stdout.strip():
         raise SystemExit(f"Source files have uncommitted changes:\n{dirty.stdout}")
@@ -101,6 +109,61 @@ def export_failure_causes(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def export_tokens_actions(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
+    """Input tokens (cached context included), cached input tokens and agent actions per scored run.
+
+    Actions are the agent's tool calls: shell commands, Galaxy interface calls, web searches or fetches, file reads,
+    writes and edits. Runs without a parsed trace have no token or action counts and are left empty."""
+    import openpyxl
+
+    t = pd.read_csv(source / TOKENS)
+    t = t[t.model_primary]
+    t = pd.DataFrame({"benchmark": t.benchmark.map(BENCHMARK), "task_id": t.task, "model": t.cfg,
+                      "track": t.env.map(TRACK), "replicate": t.replicate, "input_tokens": t.input_tokens,
+                      "cached_input_tokens": t.cached})
+    ws = openpyxl.load_workbook(source / ACTIONS, read_only=True)["abf_runs"]
+    rows = list(ws.iter_rows(values_only=True))
+    a = pd.DataFrame(rows[1:], columns=rows[0])
+    a = a[a.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
+    a = pd.DataFrame({"benchmark": a.benchmark, "task_id": a.task,
+                      "model": a.model_configuration.replace({"DeepSeek V4 Pro (Codex)": "DeepSeek V4 Pro"}),
+                      "track": a.execution_condition.map(CONDITION), "replicate": a.replicate, "actions": a.actions})
+    key = RUN_KEY + ["track"]
+    assert not t.duplicated(key).any() and not a.duplicated(key).any(), "duplicate token or action rows"
+    out = scores[key].merge(t, on=key, how="left").merge(a, on=key, how="left")
+    out = out[["benchmark", "task_id", "model", "track", "replicate", "input_tokens", "cached_input_tokens", "actions"]]
+    for col in ("input_tokens", "cached_input_tokens", "actions"):
+        out[col] = out[col].astype("Int64")
+    assert len(out) == len(scores), "token and action rows must match the scored runs"
+    out.to_csv(DATA / "run_tokens_actions.csv", index=False)
+    return out
+
+
+def export_interface_calls(source: Path, runs: pd.DataFrame) -> pd.DataFrame:
+    """Requests to the Galaxy interface and characters it returned to the agent, per traced Galaxy run and function."""
+    c = pd.read_csv(source / CALLS, low_memory=False,
+                    usecols=["benchmark", "task", "model", "replicate", "tool", "galaxy_server", "chars_returned"])
+    c = c[c.model.isin(TRACE_MODEL) & c.galaxy_server]
+    c = c.assign(benchmark=c.benchmark.map(BENCHMARK), task_id=c.task, model=c.model.map(TRACE_MODEL),
+                 interface_function=c.tool)
+    out = (c.groupby(RUN_KEY + ["interface_function"]).agg(requests=("tool", "size"), chars_returned=("chars_returned", "sum"))
+           .reset_index().sort_values(RUN_KEY + ["interface_function"]))
+    assert out.merge(runs, on=RUN_KEY, how="left", indicator=True)._merge.eq("both").all(), "calls outside traced runs"
+    out.to_csv(DATA / "galaxy_interface_calls.csv", index=False)
+    return out
+
+
+def export_tool_lookup(source: Path) -> pd.DataFrame:
+    """Distinct tools an agent inspected in a traced Galaxy run, and how many of them that run never ran, per benchmark."""
+    fr = pd.read_csv(source / FRICTION)
+    fr = fr[fr.measure == "Inspected tools never run in the same run"]
+    out = pd.DataFrame({"benchmark": fr.benchmark.map(BENCHMARK), "tools_inspected": fr.denominator.astype(int),
+                        "never_run": fr["count"].astype(int), "percent": fr.percent})
+    assert out.notna().all().all() and len(out) == 3, "expected one row per benchmark"
+    out.to_csv(DATA / "galaxy_tool_lookup.csv", index=False)
+    return out
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--source", required=True, type=Path, help="Path to a Galaxy_benchmark checkout")
@@ -142,6 +205,11 @@ def main() -> None:
     errors = export_execution_errors(args.source)
     causes = export_failure_causes(args.source, scores)
     print(f"run_execution_errors.csv: {len(errors)} runs; bixbench_failure_causes.csv: {len(causes)} runs")
+    tokens = export_tokens_actions(args.source, scores)
+    interface = export_interface_calls(args.source, runs)
+    lookup = export_tool_lookup(args.source)
+    print(f"run_tokens_actions.csv: {len(tokens)} runs ({tokens.input_tokens.notna().sum()} with tokens); "
+          f"galaxy_interface_calls.csv: {len(interface)} rows; galaxy_tool_lookup.csv: {len(lookup)} rows")
     print(f"run_scores.csv: {len(scores)} runs; galaxy_traced_runs.csv: {len(runs)} runs; "
           f"galaxy_tool_use.csv: {len(use)} rows")
 

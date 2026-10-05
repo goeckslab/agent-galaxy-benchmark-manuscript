@@ -1,3 +1,4 @@
 figure_id,kind,title,script,source_data,status
 fig2_performance,main,Galaxy matches agent performance with custom code,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft
 fig3_failure_sources,main,Galaxy records trace most failures beyond the workbench,figures/fig3_failure_sources/make_figure.py,figures/fig3_failure_sources/source_data.csv,draft
+fig4_token_cost,main,Galaxy trades input tokens for analysis provenance,figures/fig4_token_cost/make_figure.py,figures/fig4_token_cost/source_data.csv,draft
