@@ -42,8 +42,20 @@ Current draft text: none yet.
 - Does variability differ by model, and by benchmark?
 - Is solution consistency related to task difficulty?
 - Is path diversity good, bad, or neutral, and what should be expected?
+- Do agents show less analytical rigor than they could, especially on harder tasks?
 
 Current draft text: none yet.
+
+Analytical rigor (Jeremy Goecks, 2026-10-05): benchmarking results suggest agents are not as rigorous as they could be, especially on more difficult problems.
+This subsection should carry the evidence; the Discussion carries the recommendation (see below).
+
+- Evidence still to produce: whether verification steps, or agreement of answers across replicates, track accuracy, and whether the gap widens with task difficulty (for example, difficulty measured as the replicate failure rate per task).
+  No such analysis exists yet in `analysis/`, and every number must trace to `data/results_manifest.csv` or a script there.
+- Candidate examples from the Word draft (mostly in Results text deleted in its tracked changes):
+  - CompBioBench variant-status-q1 (GPT-5.6 Sol): two of three Galaxy replicates reached the correct homozygous call after adding a read-position allele audit or position-aware diagnostic; all three custom-code replicates returned an incorrect heterozygous call.
+  - BixBench failures were analytical decisions rather than execution failures: bix-26-q5 combined directional enrichment results incorrectly, bix-54-q7 depended on which observations were included, and failed custom-code runs of bix-30-q3 added unrequested exclusions, normalization and a statistical test.
+  - IWC: every required step ran in all runs, yet parameter choices (for example, amplicon filtering and truncation) still lowered output scores.
+  - IWC ATAC-seq: agents switched between MACS2, MACS3 and Genrich across replicates, a natural experiment for whether a consensus across methods would help.
 
 ### 4. Galaxy increases analysis inspectability at higher token cost
 
@@ -73,6 +85,27 @@ Junhao Qiu's longer version:
   AI can now generate content and perform tasks so quickly that it can be difficult for users to keep track of everything.
   People are starting to ask agents to create dashboards to track their work, but Galaxy already provides a system that has been developed and used for more than 20 years for reviewing analysis steps, outputs, and provenance.
 - Users can easily continue from the agent's work in Galaxy or rerun the analysis themselves, at any time, in a no-code environment that uses no tokens.
+
+## Discussion
+
+### Improving analytical rigor
+
+From Jeremy Goecks (2026-10-05).
+Agents and Galaxy would benefit from approaches that improve rigor, such as consensus across different methods and automated follow-up validation.
+
+- Placement: a new paragraph after the one beginning "The benchmark is designed to define practical reliability boundaries" and before the paragraph on skills and prompts in `discussion.qmd`.
+  - It follows from the reliability-boundaries paragraph, which already names "subtle parameter choices" as a risk.
+  - It extends the skills-and-prompts paragraph, which already mentions prompting agents to "verify outputs" and notes that guidance does not fix "scientific judgment": the point is to build verification into the system rather than leave it to the agent.
+- Proposals:
+  - Consensus: run several methods for the same analytical step and compare or combine their answers.
+  - Automated follow-up validation: run checks on results before the agent reports an answer.
+- The Galaxy angle: these approaches are cheap in Galaxy and costly with custom code.
+  Galaxy offers several tools for the same step, workflows can run them side by side, and histories make the comparison auditable.
+  Reruns and extra workflows cost no model tokens, which ties to Results part 4 (token cost) and Junhao's point about rerunning at no token cost.
+- Smaller mentions:
+  - Add consensus and automated validation to the future-extensions paragraph.
+  - The study did not test these approaches, so present them as hypotheses in the limitations paragraph or wherever they appear.
+  - Once Results support it, one sentence in the Abstract or Introduction, for example that accuracy is limited more by analytical rigor than by the ability to execute analyses.
 
 ## Open notes from the Word draft
 
