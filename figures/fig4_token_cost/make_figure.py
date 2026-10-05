@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Figure 4: Galaxy trades input tokens for analysis provenance.
 
-a, accuracy and median input tokens per run, by model and condition, with how many times more input tokens Galaxy
-   used on the same task;
+a, accuracy against median input tokens per run, one point per replicate of each model and condition, with how many
+   times more input tokens Galaxy used on the same task;
 b, input tokens of correct and incorrect runs: incorrect runs use no more tokens than correct runs of the same task;
 c, input tokens against actions for correct runs: the cost follows interaction;
 d, what fills the Galaxy context: requests to Galaxy and the text it sends back, by what the request was for.
@@ -110,7 +110,10 @@ CODE, GAL = ENVS
 BIN = ['BixBench50', 'CompBio']                      # binary endpoints, as in Fig. 2a
 TICK = {'GPT-5.5': 'GPT-5.5', 'GPT-5.6 Sol': 'GPT-5.6\nSol', 'GPT-5.6 Luna': 'GPT-5.6\nLuna',
         'DeepSeek V4 Pro': 'DeepSeek\nV4 Pro'}
-MODEL_COLOR = dict(zip(CFG, ['#117733', '#AA4499', '#999933', '#882255']))   # as in Figs 2 and 3
+# Model identity (Paul Tol muted green, purple, sand and indigo). Every pair differs by >= 25 (OKLab x 100) in normal
+# vision and >= 13 under simulated deuteranopia, protanopia and tritanopia (Machado et al. 2009); the earlier olive and
+# wine fell to 13.4 (purple-wine) and 9.0 (green-wine, deuteranopia). Figs 2 and 3 still use olive and wine.
+MODEL_COLOR = dict(zip(CFG, ['#117733', '#AA4499', '#DDCC77', '#332288']))
 CORRECT_AT = {'BixBench50': 1.0, 'CompBio': 1.0, 'IWC': 0.99}
 KEY = ['benchmark', 'task', 'cfg', 'env', 'replicate']
 # Galaxy interface operations, grouped; discovery is highlighted because it is the largest avoidable cost.
@@ -239,6 +242,16 @@ def trade(r):
     return pd.DataFrame(rows), condition_ratios(d, 'input_tokens')
 
 
+def replicate_points(r):
+    """Accuracy and median input tokens of each replicate (one run per task) per model and condition: the points of
+    panel a. Same runs as trade(): BixBench-Verified-50 and CompBioBench runs with a token count."""
+    d = r[r.benchmark.isin(BIN)].dropna(subset=['input_tokens'])
+    rep = d.groupby(['cfg', 'env', 'replicate']).agg(accuracy=('score', 'mean'), tokens=('input_tokens', 'median'),
+                                                     runs=('score', 'size')).reset_index()
+    rep['accuracy'] *= 100
+    return rep
+
+
 def interaction(r):
     ok = r[r.ok].dropna(subset=['input_tokens', 'actions'])
     ok = ok[ok.actions > 0]
@@ -328,45 +341,49 @@ def env_handles(ms=3.4):
 
 
 # ---------------------------------------------------------------- panels
-def draw_a(fig, H, tab, ratios):
+def point_style(c, env):
+    """Colour gives the model and shape the condition (square, custom code; circle, Galaxy). Markers are filled,
+    with a thin dark outline that keeps the pale sand visible on white."""
+    return dict(marker=ENV_MARKER[env], mfc=MODEL_COLOR[c], mec=INK, mew=0.35)
+
+
+def draw_a(fig, H, reps, ratios):
     label(fig, 0, 0, 'a', 'The trade: same accuracy, more input tokens', H,
-          'BixBench-Verified-50 and CompBioBench runs; bars, 95% confidence intervals\n'
+          'BixBench-Verified-50 and CompBioBench; each point is one replicate (one run per task)\n'
           'Numbers: times more input tokens in Galaxy on the same task')
-    rows = CFG + ['all four']
-    names = [c for c in CFG] + ['All four models']
-    acc = axes_mm(fig, 24.0, 17.0, 19.0, 33.0, H)
-    tok = axes_mm(fig, 46.5, 17.0, 23.0, 33.0, H)
-    for ax in (acc, tok):
-        ax.set_ylim(len(rows) - 0.45, -0.55)
-        ax.set_yticks(range(len(rows)), names if ax is acc else [''] * len(rows))
-        ax.tick_params(axis='y', length=0)
-        for i in range(len(rows) - 1):                      # light separators; a stronger one before the pooled row
-            ax.axhline(i + 0.5, color=GRID if i < len(rows) - 2 else NEUTRAL_MID, lw=0.5, zorder=1)
-    acc.get_yticklabels()[-1].set_fontweight('bold')
-    for i, c in enumerate(rows):
-        t = tab[tab.cfg == c].set_index('env')
-        for k, env in enumerate(ENVS):
-            y, x = i + (k - 0.5) * 0.36, t.loc[env]
-            kw = dict(fmt=ENV_MARKER[env], ms=3.6, mfc=ENV_COLOR[env], mec='white', mew=0.4,
-                      ecolor=ENV_COLOR[env], elinewidth=0.7, capsize=0, zorder=3)
-            acc.errorbar(x.accuracy, y, xerr=[[x.accuracy - x.acc_lo], [x.acc_hi - x.accuracy]], **kw)
-            tok.errorbar(x.tokens / 1e6, y, xerr=[[(x.tokens - x.tok_lo) / 1e6], [(x.tok_hi - x.tokens) / 1e6]], **kw)
-        rr = ratios.set_index('cfg').loc[c]
-        tok.text(t.loc[GAL].tok_hi / 1e6 * 1.2, i + 0.18, f'{rr.ratio:.1f}\u00d7', ha='left', va='center',
-                 fontsize=5.5, fontweight='bold' if c == 'all four' else 'normal')
-    acc.set_xlim(74, 96)
-    acc.set_xticks([75, 85, 95])
-    acc.set_xlabel('Accuracy (%)')
-    tok.set_xscale('log')
-    tok.set_xlim(0.2, 40)
-    tok.set_xticks([0.3, 1, 3, 10], ['0.3', '1', '3', '10'])
-    tok.minorticks_off()
-    tok.set_xlabel('Median input tokens\nper run (millions)')
-    for ax in (acc, tok):
-        grid_x(ax)
-        ax.spines['left'].set_visible(ax is acc)
-    acc.legend(handles=env_handles(), ncol=2, loc='lower left', bbox_to_anchor=(-0.95, 1.03), fontsize=5.5,
-               handletextpad=0.3, columnspacing=1.0, borderaxespad=0)
+    ax = axes_mm(fig, 11.0, 15.0, 36.0, 37.0, H)
+    for c in CFG:
+        for env in ENVS:
+            t = reps[(reps.cfg == c) & (reps.env == env)]
+            ax.plot(t.accuracy, t.tokens / 1e6, ls='', ms=3.6, zorder=3, **point_style(c, env))
+    ax.set_yscale('log')
+    ax.set_ylim(0.25, 15)
+    ax.set_yticks([0.3, 1, 3, 10], ['0.3', '1', '3', '10'])
+    ax.minorticks_off()
+    ax.set_xlim(78, 94)
+    ax.set_xticks([80, 85, 90])
+    grid_x(ax)
+    grid_y(ax)
+    ax.set_xlabel('Accuracy of the replicate (%)')
+    ax.set_ylabel('Median input tokens per run (millions)')
+    # key, in mm: conditions by marker, then models by colour with the Galaxy token ratio on the same task
+    key = axes_mm(fig, 50.0, 15.0, 25.0, 37.0, H)
+    key.set_axis_off()
+    key.set_xlim(0, 25.0)
+    key.set_ylim(37.0, 0)
+    for k, env in enumerate(ENVS):
+        y = 1.0 + k * 3.0
+        key.plot(0.9, y, ls='', ms=3.6, **dict(point_style(CFG[0], env), mfc=NEUTRAL_MID))
+        key.text(2.6, y, ENV_LABEL[env], va='center', ha='left', fontsize=5.5)
+    rr = ratios.set_index('cfg')
+    for k, c in enumerate(CFG + ['all four']):
+        y = 9.6 + k * 3.0 + (0.8 if c == 'all four' else 0.0)
+        if c != 'all four':
+            key.add_patch(plt.Rectangle((0.2, y - 0.75), 1.4, 1.5, fc=MODEL_COLOR[c], ec='none'))
+        bold = 'bold' if c == 'all four' else 'normal'
+        key.text(2.6, y, 'All four models' if c == 'all four' else c, va='center', ha='left', fontsize=5.5,
+                 fontweight=bold)
+        key.text(25.0, y, f'{rr.loc[c, "ratio"]:.1f}\u00d7', va='center', ha='right', fontsize=5.5, fontweight=bold)
 
 
 def draw_b(fig, H, r, per, pooled):
@@ -467,8 +484,14 @@ def draw_d(fig, H, y0, ops, never, cached):
 
 
 # ---------------------------------------------------------------- source data and assembly
-def source_data(trade_tab, trade_ratio, per, pooled, act, tpa, rho, ops, never, cached):
+def source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached):
     rows = []
+    for x in reps.itertuples():                       # the plotted points of panel a
+        rows.append(dict(panel='a', model=x.cfg, condition=x.env, replicate=x.replicate, measure='accuracy_pct',
+                         value=x.accuracy, n=x.runs))
+        rows.append(dict(panel='a', model=x.cfg, condition=x.env, replicate=x.replicate,
+                         measure='median_input_tokens', value=x.tokens, n=x.runs))
+    # all replicates pooled, with 95% cluster-bootstrap intervals (not plotted; for the text)
     for x in trade_tab.itertuples():
         rows.append(dict(panel='a', model=x.cfg, condition=x.env, measure='accuracy_pct', value=x.accuracy,
                          ci95_low=x.acc_lo, ci95_high=x.acc_hi, n=x.runs))
@@ -499,7 +522,7 @@ def source_data(trade_tab, trade_ratio, per, pooled, act, tpa, rho, ops, never, 
                          f'{x.benchmark}', value=x.percent, n=x.denominator))
     for env, v in cached.items():
         rows.append(dict(panel='d', model='all four', condition=env, measure='cached_share_of_input_pct_median', value=v))
-    cols = ['panel', 'model', 'condition', 'measure', 'value', 'ci95_low', 'ci95_high', 'n', 'p', 'p_holm']
+    cols = ['panel', 'model', 'condition', 'replicate', 'measure', 'value', 'ci95_low', 'ci95_high', 'n', 'p', 'p_holm']
     pd.DataFrame(rows).reindex(columns=cols).round(4).to_csv(HERE / 'source_data.csv', index=False)
 
 
@@ -507,10 +530,11 @@ def main():
     r = load_runs()
     calls = load_calls()
     trade_tab, trade_ratio = trade(r)
+    reps = replicate_points(r)
     per, pooled = outcome_ratios(r)
     ok, fits, rho, act, tpa = interaction(r)
     ops, never, cached = context(calls, r)
-    for name, t in (('a: trade', trade_tab), ('a: token ratio', trade_ratio), ('b: pooled', pooled),
+    for name, t in (('a: trade', trade_tab), ('a: replicates', reps), ('a: token ratio', trade_ratio), ('b: pooled', pooled),
                     ('c: actions', act), ('c: tokens per action', tpa), ('d: operations', ops), ('d: never run', never)):
         print(name)
         print(t.round(3).to_string(index=False))
@@ -518,7 +542,7 @@ def main():
 
     H = 128.0
     fig = plt.figure(figsize=(W * MM, H * MM))
-    draw_a(fig, H, trade_tab, trade_ratio)
+    draw_a(fig, H, reps, trade_ratio)
     draw_b(fig, H, r, per, pooled)
     y2 = 66.0
     draw_c(fig, H, y2, ok, fits, rho, act, tpa)
@@ -530,7 +554,7 @@ def main():
     buf = io.BytesIO()
     fig.savefig(buf, format='png', dpi=600, facecolor='white')
     Image.open(buf).convert('RGB').save(HERE / f'{FIG_NAME}.png', dpi=(600, 600))
-    source_data(trade_tab, trade_ratio, per, pooled, act, tpa, rho, ops, never, cached)
+    source_data(trade_tab, trade_ratio, reps, per, pooled, act, tpa, rho, ops, never, cached)
 
 
 if __name__ == '__main__':

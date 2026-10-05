@@ -3,7 +3,7 @@
 Four panels that follow the argument of Results section 3: what Galaxy costs, what does not explain the cost, and what does.
 The legend draft is in [legend.md](legend.md).
 
-- **a**: at the same accuracy, Galaxy runs used 3.4–6.6 times more input tokens than custom-code runs of the same task.
+- **a**: at the same accuracy, Galaxy runs used 3.4–6.6 times more input tokens than custom-code runs of the same task; each point is one replicate of one model and condition.
 - **b**: incorrect runs used no more input tokens than correct runs of the same task and model, in either condition.
 - **c**: input tokens follow the number of actions; Galaxy runs took more actions, and each action carried more input tokens.
 - **d**: finding tools (searching and reading tool descriptions) makes up about half of the requests to Galaxy and of the text Galaxy sends back.
@@ -41,12 +41,18 @@ The statistics take about six seconds and are reproducible: the random seed is f
 - *P* values come from two-sided paired randomization tests that flip the sign of cluster-level log ratios (200,000 draws).
   Holm adjustment runs across the four models in panels a and c, whose pooled rows are single tests, and in panel b across the eight model × condition ratios and, separately, the two pooled ratios.
 - Panel a pools only BixBench-Verified-50 and CompBioBench, as Figure 2a does, so accuracy and tokens describe the same runs.
+  Each point is one replicate (one run per task, 146–150 runs with a token count): its accuracy and its median input tokens per run.
+  The points carry no intervals, because the three replicates themselves show the rerun spread; `source_data.csv` also gives the per-model values over all replicates, with 95% intervals.
 - Panel c joins medians within bins of actions (bins with at least ten runs) instead of fitting lines, because the relation curves on log axes.
 
 ## Style
 
 The figure is 180 × 128 mm, with Arial at 5–7 pt and 8 pt bold panel letters.
 Vermillion squares are custom code and blue circles are Galaxy, as in every figure; custom code is always shown first.
+Panel a colours the models instead and keeps the condition in the marker shape (square, custom code; circle, Galaxy).
+Its model colours are Paul Tol muted green, purple, sand and indigo: every pair differs by at least 25 (OKLab × 100) in normal vision and at least 13 under simulated deuteranopia, protanopia and tritanopia.
+Markers are filled with a thin dark outline, which keeps the pale sand visible on white.
+Figures 2 and 3 still use olive (GPT-5.6 Luna) and wine (DeepSeek V4 Pro).
 In panel b, light boxes are correct runs and solid boxes incorrect runs.
 In panel d, finding tools is the only coloured segment, because it is the part of the cost an interface change could reduce.
 Where Arial is not installed, the script uses Liberation Sans, which has the same metrics.

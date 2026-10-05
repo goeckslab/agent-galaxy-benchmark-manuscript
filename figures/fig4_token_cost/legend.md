@@ -1,5 +1,5 @@
 **Fig. 4 \| Galaxy trades input tokens for analysis provenance.**
-**a**, Accuracy (left) and median input tokens per run, including cached context (right), for each model and the four pooled (BixBench-Verified-50 and CompBioBench runs; 440–450 runs per model and condition; bars, 95% cluster-bootstrap intervals).
+**a**, Accuracy against median input tokens per run, including cached context, for each replicate of each model and condition (one run per BixBench-Verified-50 and CompBioBench task; 146–150 runs with token counts per point); colour, model; squares, custom code; circles, Galaxy.
 Numbers give how many times more input tokens Galaxy used on the same task (150 task cells per model; all *P* < 0.001); accuracy differences are not significant (Fig. 2a).
 **b**, Input tokens of correct (light) and incorrect (solid) runs.
 Numbers compare incorrect with correct runs of the same task and model, in replicate sets with both outcomes (93 custom-code and 70 Galaxy sets); headers pool the four models.
