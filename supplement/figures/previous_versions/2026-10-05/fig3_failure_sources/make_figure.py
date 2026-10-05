@@ -34,7 +34,7 @@ from PIL import Image  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 FIG_NAME = HERE.name
-DATA = HERE.parents[1] / "data"
+DATA = HERE.parents[4] / "data"   # archived under supplement/figures/previous_versions/<date>/
 
 # ---------------------------------------------------------------- style shared with the paper's other figures
 # Okabe-Ito colours (Wong, B. Points of view: Color blindness. Nat. Methods 8, 441; 2011) for the two conditions:
