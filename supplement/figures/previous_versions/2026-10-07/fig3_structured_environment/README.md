@@ -1,3 +1,5 @@
+> Version of this figure in pull request #6 before every run was scored as the public results site shows it (2026-10-07), kept for comparison. The current figure is in `figures/fig3_structured_environment/`. This version was ported from the run archive at commit b3cbb94 and replays panel data recorded there; after the re-export, `data/figure_panels/` holds the panel data of commit 0dbf3f4, so rerunning it no longer reproduces the image stored here.
+
 # Figure 3: Galaxy provides a structured environment for agent analyses
 
 Supports Results section 2 of `manuscript/outline.md` (Galaxy as a structured environment).
@@ -19,7 +21,7 @@ python figures/fig3_structured_environment/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_fig3.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
+Every estimate, interval and *P* value was computed by `figures/make_fig3.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig3.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
@@ -50,8 +52,6 @@ error breakdown by channel; c, final correctness by error bin for each benchmark
 A run is correct when accepted (BixBench-Verified-50, CompBioBench) or at >= 0.99 IWC output agreement. Intervals are
 95% percentile cluster-bootstrap intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks).
 P values come from paired cluster randomization tests (200,000 draws), Holm-adjusted within each panel.
-Scores come from figures/scored_runs.csv (make_scored_runs.py): every run as the public results site shows it
-(https://goeckslab.github.io/galaxy-agent-benchmark/), the IWC host-read removal task included.
 Writes figures/fig3.{svg,pdf,png}, fig3_source_data.csv, fig3_failure_class_codebook.csv, ed_fig3.{svg,pdf,png} and
 ed_fig3_source_data.csv, and prints the statistics.
 ```
