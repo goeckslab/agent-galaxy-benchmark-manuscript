@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Figure 1: Study design and isolated execution pipeline.
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@b3cbb944648a57104a6837d1640b255854dd7e3e:figures/make_fig1_a.py; the panel data are the
+Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0dbf3f443b83a91322098c9918d86a5846129215:figures/make_fig1_a.py; the panel data are the
 values that script computed and passed to its drawing functions (data/figure_panels/fig1_a.json, written by the
 archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
 every number traces to the archive script at that commit. Writes, next to this script, fig1_benchmark_overview.pdf, .png (600 dpi)
@@ -405,7 +405,7 @@ def step_head(cv, x, y, i, name):
 
 BENCHMARKS = [('BixBench-Verified-50', 'bix', '50 questions', 'Answer', 'Evaluator acceptance, 0 or 1'),
               ('CompBioBench', 'cb', '100 questions', 'Answer', 'Reconstructed-key agreement, 0 or 1'),
-              ('IWC', 'iwc', '10 workflows (9 scored)', 'Output files', 'Workflow-output agreement, 0–1')]
+              ('IWC', 'iwc', '10 workflows', 'Output files', 'Workflow-output agreement, 0–1')]
 
 
 def benchmarks(cv, x, y, w, f, bottom):
@@ -606,7 +606,7 @@ def main():
     f = json.load(open(DATA / 'figure_panels' / 'fig1_a.json'))['facts']   # counts from data/figure_panels/fig1_a.json
     n_tasks = f['bix'] + f['cb'] + f['iwc']
     n_runs = n_tasks * len(CONFIGS) * N_COND * N_REP
-    n_scored_tasks = n_tasks - 1                          # IWC host-read removal has no comparable score
+    n_scored_tasks = n_tasks                              # host-read removal is scored (all ten IWC tasks)
     n_scored = n_scored_tasks * len(CONFIGS) * N_COND * N_REP
     n_archived = f['archived']
     cv = Canvas()
@@ -660,7 +660,7 @@ def main():
         w = _csv.writer(fh)
         w.writerow(['quantity', 'value', 'source'])
         for k, v in f.items():
-            w.writerow([k, v, 'archive figures/make_fig1_a.py facts() at b3cbb944648a57104a6837d1640b255854dd7e3e'])
+            w.writerow([k, v, 'archive figures/make_fig1_a.py facts() at 0dbf3f443b83a91322098c9918d86a5846129215'])
 
 
 if __name__ == '__main__':
