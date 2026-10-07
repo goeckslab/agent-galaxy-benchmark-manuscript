@@ -1,0 +1,19 @@
+panel,element,value,unit,kind,source
+a,BixBench-Verified-50: tasks (waffle squares),50,tasks,data,paulocilasjr/Galaxy_benchmark@b66d91a:experiments/BixBench/task_*.json (50 files)
+a,CompBioBench: tasks (waffle squares),100,tasks,data,paulocilasjr/Galaxy_benchmark@b66d91a:experiments/CompBioBench/source_compbiobench.v1.tsv (100 rows)
+a,IWC: tasks (waffle squares),10,tasks,data,paulocilasjr/Galaxy_benchmark@b66d91a:IWC/analysis/wf_* (10 tasks); comparisons.common_nine_tasks in IWC/iwc_scientific_audit.json
+a,IWC: tasks without comparable scores (open squares),1,tasks,data,paulocilasjr/Galaxy_benchmark@b66d91a:IWC/analysis/wf_* (10 tasks); comparisons.common_nine_tasks in IWC/iwc_scientific_audit.json
+a,Tasks in total,160,tasks,data,sum of the benchmark rows
+a,Model configurations: GPT-5.5; GPT-5.6 Sol; GPT-5.6 Luna; DeepSeek V4 Pro,4,configurations,design,"paulocilasjr/Galaxy_benchmark@b66d91a:manuscript_narrative/derived/design/design_metadata.md (Q2, runtime model records)"
+a,Execution conditions: custom code; Galaxy,2,conditions,design,"paulocilasjr/Galaxy_benchmark@b66d91a:manuscript_narrative/derived/design/design_metadata.md (Q2, runtime model records)"
+a,"Replicate runs per task, configuration and condition",3,runs,design,"paulocilasjr/Galaxy_benchmark@b66d91a:manuscript_narrative/derived/design/design_metadata.md (Q2, runtime model records)"
+"a, b",Runs in the paired design,3840,runs,derived,tasks x configurations x conditions x replicates
+a,Accuracy gauge fill,0.72,fraction,illustrative,glyph only; not a result
+a,Interface-calls glyph: bar lengths,1.0;0.72;0.5;0.3,relative,illustrative,glyph only; not a result
+a,Interface-calls glyph: failed segments,0.12;0.22;0.08;0.1,relative,illustrative,glyph only; not a result
+a,Failure-cause glyph: Agent analysis,0.55,share,illustrative,glyph only; not a result
+a,"Failure-cause glyph: Benchmark, reference or provenance",0.3,share,illustrative,glyph only; not a result
+a,Failure-cause glyph: Galaxy platform or wrapper,0.1,share,illustrative,glyph only; not a result
+a,Failure-cause glyph: Other,0.05,share,illustrative,glyph only; not a result
+b,"Evaluate step: correct (1) or incorrect (0) runs, one row per task and one column per replicate run",111 / 101 / 000,runs,illustrative,glyph only; not a result
+b,Evaluate step: accuracy bar and 95% interval,n/a,accuracy,illustrative,glyph only; the intervals come from resampling tasks

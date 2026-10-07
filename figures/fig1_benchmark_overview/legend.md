@@ -1,20 +1,6 @@
-**Fig. 1 \| Study design and isolated execution pipeline.**
-**a**, Benchmarks, experimental design and evaluation.
-Squares are tasks.
-BixBench-Verified-50 comprises 50 questions drawn from 33 analysis capsules, and CompBioBench comprises 100 questions spanning single-cell, genomics, epigenomics, transcriptomics, population genetics, machine learning and other domains; both are scored on a final answer.
-IWC comprises ten tasks derived from Intergalactic Workflow Commission workflows and is scored on output files; the open square marks the host-read removal task, which lacks comparable scores between conditions and is excluded from endpoint analyses.
-Four model configurations run through the Codex agent harness (reasoning effort high for GPT-5.5, GPT-5.6 Sol and DeepSeek V4 Pro and max for GPT-5.6 Luna; GPT models on the fast service tier) attempted every task three times (markers) in each condition.
-In the custom-code condition, the agent installs software and writes and runs its own analysis code in a local workspace.
-In the Galaxy condition, the agent reaches usegalaxy.org through a Model Context Protocol (MCP) interface and runs installed tools and agent-written user-defined tools (UDTs; not offered on IWC) as Galaxy jobs.
-Galaxy prompts add execution policy, and time limits, container images and runtimes also differ, so conditions are compared as deployed.
-Accuracy is benchmark-specific and not pooled: acceptance by the original evaluator (BixBench-Verified-50; 0/1), agreement with a reconstructed answer key (CompBioBench; 0/1) and agreement with curated workflow outputs (IWC; 0–1).
-Repeatability separates replicate sets with three correct runs from discordant sets.
-Input tokens include cached context.
-Failure causes come from an AI-assisted audit of every task with a rejected run; glyph proportions are illustrative.
-**b**, Steps applied to each run.
-The reference answer is withheld from the agent and opened only after the answer is fixed.
-Time limits were 6 or 12 h on IWC and 120 min for CompBioBench custom-code runs; none was stated otherwise.
-CompBioBench custom-code runs used a host conda environment instead of a container.
-Galaxy runs also retain history provenance: datasets, tools, versions, parameters and job states.
-Intervals are 95% cluster-bootstrap intervals (20,000 resamples) over BixBench source capsules or tasks.
-Blue marks elements of the Galaxy condition only.
+**Fig. 1 | Study design and isolated execution pipeline.** **a**, Benchmarks, experimental design and evaluation.
+- BixBench-Verified-50 comprises 50 questions drawn from 33 analysis capsules, scored by the original evaluator's acceptance.
+- CompBioBench comprises 100 questions across eight domains, scored by agreement with a reconstructed answer key.
+- IWC comprises ten tasks derived from Intergalactic Workflow Commission workflows, scored by the agreement of output files with curated workflow outputs (0–1). Its host-read removal task lacks comparable scores and is not scored.
+
+Each of four model configurations runs the Codex agent harness. Reasoning effort is high for GPT-5.5, GPT-5.6 Sol and DeepSeek V4 Pro and max for GPT-5.6 Luna, and the GPT models use the fast service tier. Each configuration ran every task three times in each condition; these runs are independent repeats that measure repeatability, not successive attempts. In the custom-code condition, the agent installs software and writes and runs its own code in an isolated workspace: a container, or a host conda environment for CompBioBench. In the Galaxy condition, the agent runs installed tools and agent-written user-defined tools (UDTs; not offered on IWC) as jobs on usegalaxy.org through a Model Context Protocol (MCP) interface, under an execution policy added to the prompt. Prompts, containers and time limits differ between conditions (Supplementary Table), so the conditions are compared as deployed. The design gives 3,840 primary runs, of which 3,816 runs on 159 tasks are scored. The archive's 4,240 runs also include a superseded agent harness (300 runs) and a model run only with custom code (100 runs). Scores are benchmark-specific and are not pooled. Failure causes come from an AI-assisted audit. **b**, Steps applied to each run. The reference answer is withheld from the agent and opened only after the answer is fixed. Galaxy runs also retain history provenance: datasets, tools, versions, parameters and job states. Blue marks elements of the Galaxy condition only.

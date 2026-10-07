@@ -23,18 +23,12 @@ Each derived table needs a note on which script produced it.
 
 ## Tables exported from the run archive
 
-`analysis/export_galaxy_benchmark_tables.py` writes the tables below from the run archive (`paulocilasjr/Galaxy_benchmark`, commit `b66d91a`).
+`analysis/export_galaxy_benchmark_tables.py` writes the tables below from the run archive (`paulocilasjr/Galaxy_benchmark`, commit `b3cbb94`, branch `archive/reruns-token-figures-2026-10-07`).
+That commit includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05, which replaced the runs they superseded (archive `CompBio/reruns_20261005/`); every other run is unchanged.
 They cover the four primary model configurations and hold identifiers, scores, counts, cause codes and tool identifiers only: no trace text, prompts or answers.
-Which figure reads which table:
 
-| Figure | Tables |
-| --- | --- |
-| 2 | `run_scores.csv`, `bixbench_failure_causes.csv` |
-| 3 | `run_scores.csv`, `run_execution_errors.csv`, `execution_error_types.csv`, `compbiobench_task_domains.csv`, `galaxy_run_steps.csv`, `galaxy_traced_runs.csv`, `galaxy_parameter_checks.csv`, `galaxy_failure_classes.csv` |
-| 4 | `run_scores.csv`, `galaxy_tool_use.csv`, `galaxy_run_steps.csv`, `galaxy_traced_runs.csv`, `replicate_answer_agreement.csv` |
-| 5 | `run_scores.csv`, `run_tokens_actions.csv`, `galaxy_interface_calls.csv`, `galaxy_tool_lookup.csv`, `inspectability_counts.csv` |
-
-The earlier figure versions kept in `supplement/figures/previous_versions/` read the same tables.
+The figures (1-5, and Extended Data Figures 2-7) read `figure_panels/`: the values the archive's figure scripts computed and drew, which `figures/*/make_figure.py` replays with the same drawing code (see [figure_panels/README.md](figure_panels/README.md)).
+The tables below support the text and the earlier figure versions kept in `supplement/figures/previous_versions/`, which read them; versions before 2026-10-07 no longer reproduce their stored images, because the tables now include the reruns.
 
 `run_scores.csv` has one row per scored run (3,816 runs):
 
@@ -85,8 +79,8 @@ Some counts are empty, mostly for runs without a parsed trace: 14 runs have no t
 | cached_input_tokens | The part of `input_tokens` read from the prompt cache |
 | actions | Tool calls by the agent: shell commands, Galaxy interface calls, web searches or fetches, file reads, writes and edits |
 
-`galaxy_interface_calls.csv` has one row per traced Galaxy run and Galaxy interface function the run called (9,147 rows), summed from the archive's call records.
-It covers 1,808 of the 1,908 runs in `galaxy_traced_runs.csv`; the other 100 (99 DeepSeek V4 Pro, 1 GPT-5.6 Luna) made no Galaxy interface call.
+`galaxy_interface_calls.csv` has one row per traced Galaxy run and Galaxy interface function the run called (9,045 rows), summed from the archive's call records.
+It covers 1,812 of the 1,908 runs in `galaxy_traced_runs.csv`; the other 96 (95 DeepSeek V4 Pro, 1 GPT-5.6 Luna) made no Galaxy interface call.
 
 | Column | Meaning |
 | --- | --- |
@@ -106,11 +100,11 @@ It covers 1,808 of the 1,908 runs in `galaxy_traced_runs.csv`; the other 100 (99
 
 `compbiobench_task_domains.csv` gives the domain of each of the 100 CompBioBench tasks, as labelled by the benchmark (`CompBio/compBio_overview_audit.json` in the archive); its columns are `task_id` and `domain`.
 
-`galaxy_run_steps.csv` lists the analysis steps that ran as Galaxy jobs in each traced Galaxy run (5,565 rows), from the archive's call records: one row per installed tool the run executed and one row named `UDT` when the run executed any user-defined tool.
+`galaxy_run_steps.csv` lists the analysis steps that ran as Galaxy jobs in each traced Galaxy run (5,489 rows), from the archive's call records: one row per installed tool the run executed and one row named `UDT` when the run executed any user-defined tool.
 Its columns are the four run columns of `galaxy_traced_runs.csv` and `step` (a Tool Shed identifier without version, a built-in identifier such as `Cut1`, or `UDT`).
 Only requests whose job was created count, unlike `galaxy_tool_use.csv`, which counts every request.
 
-`execution_error_types.csv` counts execution errors by type and by where they occurred, per run (6,257 rows, 12,139 errors), from sheet `abc_every_error` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx`.
+`execution_error_types.csv` counts execution errors by type and by where they occurred, per run (6,193 rows, 11,807 errors), from sheet `abc_every_error` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx`.
 
 | Column | Meaning |
 | --- | --- |
@@ -119,10 +113,10 @@ Only requests whose job was created count, unlike `galaxy_tool_use.csv`, which c
 | error_type | The error class assigned from the error message, exit code and command (seven classes) |
 | errors | Number of errors |
 
-`galaxy_parameter_checks.csv` counts the parameter-check results of the 17,180 installed-tool requests, per benchmark and model.
+`galaxy_parameter_checks.csv` counts the parameter-check results of the 16,757 installed-tool requests, per benchmark and model.
 Its columns are `benchmark`, `model`, `prov_status` (`matched`, `mismatch`, `no_explicit_non_dataset_parameters`, `not_comparable` or `none` when no check was returned), `prov_stage` (`validation`, before the job ran, or `post_run`) and `requests`.
 
-`galaxy_failure_classes.csv` counts the 7,354 failed Galaxy requests of the four primary configurations by failure class and benchmark, from `manuscript_narrative/original_layout/analysis/token_failure_classes.csv`.
+`galaxy_failure_classes.csv` counts the 7,141 failed Galaxy requests of the four primary configurations by failure class and benchmark, from `manuscript_narrative/original_layout/analysis/token_failure_classes.csv`.
 Its columns are `benchmark`, `failure_stage` (request rejected before a job ran, job failed during execution, or other), `failure_class` (codes A1–A8, B1–B5, X and Z with a description), `subclass` and `requests`.
 
 `replicate_answer_agreement.csv` has one row per BixBench-Verified-50 and CompBioBench replicate set (1,200 sets: one task × model × condition).

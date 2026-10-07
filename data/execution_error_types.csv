@@ -1605,12 +1605,7 @@ CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,custom code,2,shell comm
 CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,1
 CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Missing software, package or container",1
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,1
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or input format",1
@@ -1645,11 +1640,9 @@ CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,custom code,2,shell comm
 CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,2
 CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,1
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",2
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,shell command,"File, path or input format",1
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,shell command,Time or memory limit,2
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Missing software, package or container",1
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,6
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,1,shell command,No or unclassified message,1
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,1,shell command,Time or memory limit,2
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
@@ -1838,9 +1831,6 @@ CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code
 CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,3
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,2,shell command,Time or memory limit,1
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,3,shell command,Time or memory limit,3
@@ -1987,11 +1977,12 @@ CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,2,shell command,No or uncla
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,3,shell command,No or unclassified message,2
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,10
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",2
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"File, path or input format",1
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Missing software, package or container",5
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,2
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","File, path or input format",1
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","Missing software, package or container",1
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Time or memory limit,2
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","File, path or input format",1
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Missing software, package or container",1
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,1
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,3
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT","Missing software, package or container",1
@@ -2011,11 +2002,8 @@ CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, paramete
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","File, path or input format",2
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",2
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",2
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",3
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,11
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",2
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",7
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,1,shell command,No or unclassified message,1
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,1
@@ -2268,8 +2256,9 @@ CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,custom code,1,shell command,Time or 
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,custom code,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",2
-CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,9
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,8
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,1
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool",No or unclassified message,1
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,custom code,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,custom code,2,shell command,"Missing software, package or container",1
@@ -2311,14 +2300,11 @@ CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",G
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",4
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Time or memory limit,2
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,11
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,2
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",5
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"File, path or input format",1
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Missing software, package or container",1
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,Network or download,2
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT","File, path or input format",1
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",5
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",3
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,No or unclassified message,1
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,shell command,Time or memory limit,3
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,1,shell command,"Code, parameter or syntax error",3
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,1,shell command,Time or memory limit,2
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,2,shell command,"File, path or input format",1
@@ -2347,12 +2333,9 @@ CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Gala
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, installed tool",Galaxy job never started,2
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or input format",2
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,shell command,Network or download,1
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,15
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool","File, path or input format",1
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,shell command,"Code, parameter or syntax error",1
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",2
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,shell command,"File, path or input format",2
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,shell command,Network or download,6
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,shell command,Network or download,5
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,9
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, installed tool",Time or memory limit,1
@@ -2385,10 +2368,6 @@ CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,custom code,3,shell command,"Cod
 CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,custom code,3,shell command,Network or download,8
 CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,custom code,3,shell command,No or unclassified message,1
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,1,shell command,No or unclassified message,1
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",2
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",8
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing software, package or container",1
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Time or memory limit,2
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,1,shell command,"Code, parameter or syntax error",3
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,1,shell command,"File, path or input format",1
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,1,shell command,"Missing software, package or container",3
@@ -2402,7 +2381,7 @@ CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,3,shell command,"Fi
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,1
 CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,1,shell command,"Code, parameter or syntax error",1
-CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,2
+CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,2
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,2,shell command,"File, path or input format",1
@@ -2413,8 +2392,6 @@ CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,3,shell command,"Missing so
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,3,shell command,Network or download,1
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,3,shell command,No or unclassified message,1
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,3,shell command,Time or memory limit,4
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, installed tool",Galaxy job never started,2
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",1
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,2,shell command,"File, path or input format",1
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,3,shell command,"File, path or input format",1
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,custom code,1,shell command,"Code, parameter or syntax error",3
@@ -2451,6 +2428,9 @@ CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,custom code,3,shell command,"Co
 CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,custom code,3,shell command,Network or download,1
 CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,1,shell command,"Code, parameter or syntax error",2
 CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",2
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,8
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,shell command,Time or memory limit,2
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,1,shell command,Time or memory limit,4
@@ -2504,8 +2484,7 @@ CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,1,shell command,"Code, parameter
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,2
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
+CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,1,shell command,"File, path or input format",2
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,2,shell command,"Code, parameter or syntax error",3
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
@@ -2526,6 +2505,7 @@ CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,"Galaxy job, installed too
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,"Galaxy job, installed tool",No or unclassified message,1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,shell command,Network or download,1
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,3,shell command,Network or download,1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,1,shell command,Time or memory limit,1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,2,shell command,"Code, parameter or syntax error",1
@@ -2805,9 +2785,9 @@ CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,1,shell command,No 
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,2,shell command,Time or memory limit,1
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,3,shell command,No or unclassified message,1
-CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",11
-CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"File, path or input format",1
-CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,1
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Time or memory limit,4
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",4
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing software, package or container",2
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",3
@@ -2896,14 +2876,18 @@ CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,custom code,3,shell command
 CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,1
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",No or unclassified message,3
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,7
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",3
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",2
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",2
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",5
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",3
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",3
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",No or unclassified message,1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,Network or download,4
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",No or unclassified message,2
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,4
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,shell command,Network or download,3
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,1,shell command,"File, path or input format",1
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",2
@@ -3089,7 +3073,6 @@ CompBioBench,ep-interactions-q1,GPT-5.6 Sol,custom code,3,shell command,"Missing
 CompBioBench,ep-interactions-q1,GPT-5.6 Sol,custom code,3,shell command,Time or memory limit,1
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",2
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,1,shell command,"Code, parameter or syntax error",2
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",2
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
@@ -3140,8 +3123,6 @@ CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,Galaxy,3,shell c
 CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,1
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,1,shell command,"Code, parameter or syntax error",1
-CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,11
@@ -3246,9 +3227,9 @@ CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,2,shell command,"File, pat
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,3,shell command,No or unclassified message,1
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",1
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",1
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,2
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Time or memory limit,1
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",3
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Missing software, package or container",1
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",9
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"File, path or input format",4
@@ -3256,9 +3237,9 @@ CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing soft
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Network or download,2
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,No or unclassified message,4
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Time or memory limit,4
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,12
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,11
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,3
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,4
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Time or memory limit,1
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",2
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"File, path or input format",3
@@ -3276,15 +3257,15 @@ CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Missing software
 CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,shell command,"File, path or input format",2
 CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,shell command,"Missing software, package or container",1
 CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,shell command,Network or download,1
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",2
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,14
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",6
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",1
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,3
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Missing software, package or container",2
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,shell command,Network or download,1
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,2
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",3
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,1
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",3
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,Network or download,4
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,2
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,1,shell command,Network or download,1
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,2
@@ -3454,8 +3435,6 @@ CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,custom code,3,shell 
 CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,3
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,2
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",2
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
@@ -3572,7 +3551,7 @@ CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, p
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",No or unclassified message,1
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,5
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool",No or unclassified message,1
-CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",1
@@ -3652,9 +3631,8 @@ CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,3,shell comman
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,3,shell command,Network or download,1
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,4
-CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,3
-CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,shell command,"File, path or input format",3
-CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,shell command,"Missing software, package or container",2
+CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,shell command,"Missing software, package or container",1
+CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,shell command,Time or memory limit,2
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,5
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",3
@@ -3765,17 +3743,11 @@ CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,custom code,3,shell command,
 CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
 CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Missing software, package or container",2
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,11
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","File, path or input format",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",2
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,2
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Missing software, package or container",5
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Time or memory limit,7
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,shell command,Network or download,3
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",1
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Missing software, package or container",1
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,1,shell command,Network or download,2
@@ -3839,11 +3811,8 @@ CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job nev
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","File, path or input format",1
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool",No or unclassified message,3
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool",No or unclassified message,6
+CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",No or unclassified message,1
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",2
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,3
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,2
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",1
@@ -3901,10 +3870,7 @@ CompBioBench,identify-related-q1,GPT-5.5,Galaxy,1,shell command,"Code, parameter
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,1,shell command,"File, path or input format",1
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,3
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool",No or unclassified message,3
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",2
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
+CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
 CompBioBench,identify-related-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,identify-related-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,2
 CompBioBench,identify-related-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
@@ -3951,10 +3917,7 @@ CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,1,"Galaxy job, installed tool","Co
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,6
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",2
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",2
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",5
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,3
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,1
@@ -4003,22 +3966,20 @@ CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,custom code,3,shell command,"Cod
 CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
 CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",2
 CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",No or unclassified message,1
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",1
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,6
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",2
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",No or unclassified message,1
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Time or memory limit,2
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",2
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,1,shell command,Network or download,1
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,3,shell command,Time or memory limit,1
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,13
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Code, parameter or syntax error",2
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or input format",3
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,shell command,Network or download,4
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",3
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Time or memory limit,14
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",2
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,shell command,Time or memory limit,2
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,11
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",3
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,6
@@ -4058,9 +4019,7 @@ CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,2,shell comma
 CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",3
 CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,1
-CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,shell command,Network or download,1
-CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,3
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Time or memory limit,1
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
@@ -4112,7 +4071,6 @@ CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, in
 CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,2
 CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",3
 CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,1
-CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,4
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,6
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,1
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",2
@@ -4347,13 +4305,8 @@ CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, para
 CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","File, path or input format",1
 CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",2
 CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,shell command,Network or download,1
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,2
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,1
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",3
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,1
@@ -4408,8 +4361,8 @@ CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,Galaxy,1,shell command,"File, pat
 CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,custom code,1,shell command,"Code, parameter or syntax error",3
 CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,custom code,2,shell command,"File, path or input format",2
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",3
-CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",1
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing software, package or container",1
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Time or memory limit,4
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",8
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,3,shell command,No or unclassified message,1
@@ -4538,9 +4491,7 @@ CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Code, paramet
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or input format",1
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",3
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,shell command,No or unclassified message,1
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,8
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,shell command,"File, path or input format",2
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,shell command,"Missing software, package or container",2
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",2
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,3,shell command,"File, path or input format",1
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,custom code,1,shell command,"Code, parameter or syntax error",3
@@ -4618,8 +4569,8 @@ CompBioBench,read-proportions-q1,DeepSeek V4 Pro,custom code,3,shell command,Tim
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",No or unclassified message,1
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","File, path or input format",1
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",1
-CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
+CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","File, path or input format",1
+CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,2,shell command,Time or memory limit,2
@@ -4638,13 +4589,12 @@ CompBioBench,read-proportions-q1,GPT-5.6 Luna,custom code,3,shell command,"Missi
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,2,shell command,No or unclassified message,2
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,3,shell command,No or unclassified message,1
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool",Galaxy job never started,3
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Time or memory limit,2
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","File, path or input format",5
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","Missing software, package or container",1
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",7
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",3
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"File, path or input format",1
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Missing software, package or container",4
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,No or unclassified message,1
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,1
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",2
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT","File, path or input format",1
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",No or unclassified message,1
@@ -4676,9 +4626,8 @@ CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,3,shell command,"M
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,4
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,2
 CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,1
-CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,6
-CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",3
-CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,3
+CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",1
+CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,1
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",2
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,1,shell command,No or unclassified message,2
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
@@ -4760,9 +4709,9 @@ CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,2,shell command,No or
 CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,1
 CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",2
 CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,3
-CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,5
-CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,shell command,"Code, parameter or syntax error",4
-CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,4
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",1
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,2
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,1
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,2
@@ -4985,11 +4934,10 @@ CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, inst
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",6
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"File, path or input format",1
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,shell command,Time or memory limit,1
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,9
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,4
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",2
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"File, path or input format",3
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing software, package or container",3
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",Time or memory limit,1
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",7
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,shell command,Time or memory limit,1
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,9
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","File, path or input format",1
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,2
@@ -5006,10 +4954,7 @@ CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,2,shell comman
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,3,shell command,"Code, parameter or syntax error",6
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,3,shell command,No or unclassified message,5
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,8
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,shell command,No or unclassified message,1
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,2
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",2
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,1,shell command,No or unclassified message,1
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,2,shell command,"Code, parameter or syntax error",2
@@ -5020,8 +4965,8 @@ CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,3,shell command,No or 
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,5
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",1
-CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,12
-CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,8
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,10
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool",Galaxy job never started,10
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,shell command,"Code, parameter or syntax error",11
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,shell command,"File, path or input format",2
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,2,shell command,"Missing software, package or container",2
@@ -5166,7 +5111,9 @@ CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,custom code,1,shell command,Time
 CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,custom code,2,shell command,"File, path or input format",1
 CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,2
 CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",2
-CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,2
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",2
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",2
@@ -5282,8 +5229,6 @@ CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","File, path or in
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",3
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,2,shell command,"File, path or input format",1
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,2,shell command,Time or memory limit,1
-CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",1
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",1
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,3,shell command,Time or memory limit,1
@@ -5342,10 +5287,11 @@ CompBioBench,spatial-sim-q2,GPT-5.6 Sol,Galaxy,2,shell command,Network or downlo
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,1,shell command,"File, path or input format",1
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,3,shell command,"File, path or input format",3
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",1
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool",Galaxy job never started,8
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",18
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"File, path or input format",2
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, UDT",Time or memory limit,1
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,"Galaxy job, installed tool","File, path or input format",1
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Code, parameter or syntax error",3
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,shell command,"Missing software, package or container",1
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,2
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, UDT",No or unclassified message,1
@@ -5363,8 +5309,8 @@ CompBioBench,splice-pred-q1,DeepSeek V4 Pro,custom code,3,shell command,No or un
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,custom code,3,shell command,Time or memory limit,1
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,2,shell command,"Missing software, package or container",1
-CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,8
-CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,"Galaxy job, installed tool","File, path or input format",1
+CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,13
+CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
 CompBioBench,splice-pred-q1,GPT-5.5,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,splice-pred-q1,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
@@ -5380,10 +5326,10 @@ CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or i
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, UDT","Missing software, package or container",1
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,2,shell command,Network or download,2
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,14
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, installed tool","File, path or input format",1
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, installed tool",Galaxy job never started,1
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,shell command,"File, path or input format",1
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,1
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT","Missing software, package or container",5
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT",Time or memory limit,2
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,shell command,Network or download,2
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,1,shell command,"Code, parameter or syntax error",2
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,1,shell command,"Missing software, package or container",1
@@ -5487,9 +5433,7 @@ CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,custom code,2,shell command,"
 CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,custom code,2,shell command,No or unclassified message,10
 CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,custom code,2,shell command,Time or memory limit,1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,2,"Galaxy job, UDT",Galaxy job never started,1
-CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,4
-CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,shell command,"Missing software, package or container",1
-CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,shell command,Time or memory limit,4
+CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,"Galaxy job, UDT","File, path or input format",1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,1,shell command,"Missing software, package or container",1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,2,shell command,"Missing software, package or container",1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,2,shell command,Time or memory limit,2
@@ -5534,16 +5478,9 @@ CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installe
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,"Galaxy job, installed tool",No or unclassified message,2
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Code, parameter or syntax error",1
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,shell command,"Missing software, package or container",1
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,9
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",14
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","File, path or input format",2
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Missing software, package or container",2
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool",Time or memory limit,5
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Code, parameter or syntax error",4
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"File, path or input format",2
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Missing software, package or container",5
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,No or unclassified message,1
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,Time or memory limit,1
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,"Galaxy job, installed tool","Code, parameter or syntax error",3
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"File, path or input format",1
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,shell command,"Missing software, package or container",1
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,1,shell command,"Code, parameter or syntax error",1
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,2,shell command,"Code, parameter or syntax error",2
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,2,shell command,No or unclassified message,1
@@ -5568,12 +5505,13 @@ CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,2,shell command,"Missing s
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,2,shell command,No or unclassified message,1
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,3,shell command,"Code, parameter or syntax error",2
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,3,shell command,"Missing software, package or container",1
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Galaxy job never started,7
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",6
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Code, parameter or syntax error",1
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,"File, path or input format",1
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",3
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,Network or download,2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT","File, path or input format",1
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, UDT",Time or memory limit,2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,"Galaxy job, installed tool","Code, parameter or syntax error",2
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Code, parameter or syntax error",4
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,"Missing software, package or container",1
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,shell command,Time or memory limit,2
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,2,"Galaxy job, installed tool","Code, parameter or syntax error",2
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,3,"Galaxy job, UDT","File, path or input format",1
@@ -5670,10 +5608,8 @@ CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,custom code,3,shell command,N
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT","Code, parameter or syntax error",1
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,1,"Galaxy job, UDT",Time or memory limit,3
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,2,"Galaxy job, UDT","Code, parameter or syntax error",1
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Galaxy job never started,7
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,shell command,"Code, parameter or syntax error",1
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,shell command,"File, path or input format",1
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,shell command,Time or memory limit,5
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT","Code, parameter or syntax error",2
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,"Galaxy job, UDT",Time or memory limit,1
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,1,shell command,No or unclassified message,1
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,1,shell command,Time or memory limit,1
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,2,shell command,"Code, parameter or syntax error",1

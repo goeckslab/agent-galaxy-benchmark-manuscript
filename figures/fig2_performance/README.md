@@ -1,41 +1,54 @@
-# Figure 2: Agents maintain bioinformatics accuracy when operating through Galaxy
+# Figure 2: Agents show similar observed benchmark performance in Galaxy and custom code
 
-Four panels that answer the questions of Results section 1 of `manuscript/outline.md`.
+Supports Results section 1 of `manuscript/outline.md` (accuracy in Galaxy and custom code).
 The legend draft is in [legend.md](legend.md).
-
-- **a**: accuracy in each benchmark, by model and condition, with each replicate as a dot; no model differs between Galaxy and custom code on any benchmark.
-- **b**: Galaxy minus custom code by benchmark, for runs correct and for replicate sets with all three runs correct; the largest gain is in consistency on the Galaxy-derived IWC tasks, but no difference is significant.
-- **c**: correct runs of three for each task and model, custom code against Galaxy; the same tasks succeed or fail in both conditions (509 of 636 pairs on the diagonal).
-- **d**: the primary cause of each incorrect BixBench-Verified-50 run, by how many runs of its set failed; single failures are mostly unchecked answers, failures in all three runs mostly benchmark specification or scoring.
 
 ## Files
 
-- `make_figure.py`: computes the statistics, draws the figure and writes every file below.
-- `fig2_performance.pdf`: vector, with Arial embedded as TrueType.
-- `fig2_performance.png`: 600 dpi, RGB.
-- `fig2_performance.svg`: editable text.
-- `source_data.csv`: every plotted value, interval and *P* value, one row each.
+- `make_figure.py`: the drawing code of the run archive's `figures/make_fig2.py`, copied unchanged; it replays the values that script computed and writes every file below.
+- `fig2_performance.pdf`, `.png` (600 dpi, RGB) and `.svg` (editable text).
+- `source_data.csv`: every plotted value, interval, *P* value and count, one row each (the archive's `fig2_source_data.csv`).
 - `legend.md`: figure legend draft.
 
 ## Regenerate
 
 ```bash
-python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the data/ tables change
+python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the archive changes
 python figures/fig2_performance/make_figure.py
 ```
 
-The figure reads `data/run_scores.csv` and `data/bixbench_failure_causes.csv`, which `data/README.md` describes.
-The statistics take about four seconds and are reproducible: the random seed is fixed (20261002).
+## Provenance
 
-## Statistics
+Every estimate, interval and *P* value was computed by `figures/make_fig2.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig2.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
+`make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
+Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
 
-- A run is correct when accepted (BixBench-Verified-50, CompBioBench) or, for IWC, at ≥ 0.99 output agreement; panel a shows IWC as mean agreement.
-- Error bars and intervals are 95% percentile cluster-bootstrap intervals (20,000 resamples), resampling BixBench source capsules or tasks within each benchmark.
-- *P* values come from two-sided paired randomization tests that flip the sign of cluster-level differences (200,000 draws; exact enumeration for IWC), Holm-adjusted within each panel (12 comparisons in a, 6 in b).
+## Panels and methods (from the archive script)
 
-## Style
+```text
+Fig. 2: Agents show similar observed benchmark performance in Galaxy and custom code.
 
-The figure is 180 × 166 mm, with Arial at 5–7 pt and 8 pt bold panel letters.
-Vermillion is custom code and blue is Galaxy, as in every figure; custom code is always shown first.
-Panel c shades counts on a logarithmic grey scale and outlines the cells where both conditions had the same count.
-Where Arial is not installed, the script uses Liberation Sans, which has the same metrics.
+Panels:
+a, score of each model in each condition, one facet per benchmark and its own scoring contract: evaluator acceptance
+   (BixBench-Verified-50), agreement with a reconstructed answer key (CompBioBench) and agreement with curated workflow
+   outputs on a 0-1 scale (IWC); paired points with 95% intervals, and each replicate as a small dot;
+b, the paired estimates: Galaxy minus custom code for each model and for the four models pooled, as two aligned groups
+   that are never mixed in one row: the mean score (the primary endpoint of each benchmark) and the share of replicate
+   sets with all three runs correct (reliability; IWC at >= 0.99 agreement);
+c, correct runs of three for each task and model, custom code against Galaxy, one matrix per benchmark;
+d, why the conditions disagree on BixBench-Verified-50: the AI-assisted audit's primary cause of each incorrect run,
+   split by whether the task-model pair was discordant (one condition had more correct runs) or had the same count, with
+   one traced discordant case (bix-45-q1, a tool-version difference).
+
+Extended Data Fig. 2 (written by the same script): a, the full census of causes by the number of incorrect runs in the
+set (the first version's panel d); b, sensitivity of the condition difference to the IWC correctness threshold and to
+the archive's population sensitivities.
+
+A run is correct when accepted or at >= 0.99 IWC output agreement. Intervals are 95% percentile cluster-bootstrap
+intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks). P values come from paired cluster
+sign-flip randomization tests (200,000 draws, or exact enumeration with at most 16 clusters), Holm-adjusted within each
+family. No test here is an equivalence test: the figure reports estimates and intervals.
+Writes figures/fig2.{svg,pdf,png}, figures/fig2_source_data.csv, figures/ed_fig2.{svg,pdf,png} and
+figures/ed_fig2_source_data.csv, and prints the statistics.
+```
