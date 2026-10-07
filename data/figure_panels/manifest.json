@@ -1,10 +1,10 @@
 {
  "archive": "paulocilasjr/Galaxy_benchmark",
- "commit": "b3cbb944648a57104a6837d1640b255854dd7e3e",
+ "commit": "0dbf3f443b83a91322098c9918d86a5846129215",
  "files": {
   "ed_validation.json": {
    "source": "figures/panel_data/ed_validation.json",
-   "sha256": "cd02d8d3e97cf3671d1e81930e6c4562f5135b75ccd4e0bd1407214f1edfddc3"
+   "sha256": "31e14e214b90a32842f5ad48f064bff871e7c18038ced55e7e7b251d23fd72ae"
   },
   "fig1_a.json": {
    "source": "figures/panel_data/fig1_a.json",
@@ -12,59 +12,59 @@
   },
   "fig2.json": {
    "source": "figures/panel_data/fig2.json",
-   "sha256": "72aae5c7a4454e8a135f587c59e9aa5b5b74c35eb377933dc3918aa702e1ddd1"
+   "sha256": "53f6d84b677a1da0499f54ee9f60ea0fb855d8eb9e69f9d8fa490ac17663ffee"
   },
   "fig3.json": {
    "source": "figures/panel_data/fig3.json",
-   "sha256": "3a11d09afc2280c6e8c1ea0882f35d2fc25202070abf6fde8a7e501949f058b1"
+   "sha256": "b464afd0dc7082155513b029b122ccc761f45aece076b3e9c0cf95a5bb3bbff9"
   },
   "fig4.json": {
    "source": "figures/panel_data/fig4.json",
-   "sha256": "83aada78ea9ca7180caf5108efd3f206bac63506c22bc999bbc3af69fdd0a27e"
+   "sha256": "f583b5f495ed3762412749595dd47fdb422e1097bc629c954ed0eb666b7148c3"
   },
   "fig5.json": {
    "source": "figures/panel_data/fig5.json",
-   "sha256": "fe141fb0248c3ec6043432619fa2b6cd8e1aa00097e864e42fa7e79c349a5d50"
+   "sha256": "7496af601bd9f71fb8bc68e2d9585c8868a4a98e9f868b9512f01445d0f85521"
   },
   "fig2_source_data.csv": {
    "source": "figures/fig2_source_data.csv",
-   "sha256": "d423898fabe0017d71569b1c9384284fad3cc7baf82187c731ff1a39e259f25e"
+   "sha256": "e2a62d9ca517e4e0bc6b450a39027fa2a65b0af2023e2f920609f56fa4172ce3"
   },
   "fig3_source_data.csv": {
    "source": "figures/fig3_source_data.csv",
-   "sha256": "938a7644959f00b9adbf77e69668794f75d7f57d74ac14f191fd90c790108ed8"
+   "sha256": "9ea9d38b3d53dc00cce2724a3e26b774cc384903b702f359498281ee08f2c0ee"
   },
   "fig4_source_data.csv": {
    "source": "figures/fig4_source_data.csv",
-   "sha256": "953e0d294ad39269cb1b800ce75bf7864deade06c31566141e72a70045e522ce"
+   "sha256": "8c79e699907e5135b91229e0ea7b82531f4f653653f779f1e930812199193444"
   },
   "fig5_source_data.csv": {
    "source": "figures/fig5_source_data.csv",
-   "sha256": "fb48ffd7228ca536218c31fbbd6abacf1c5a221c321bef601a06d599fb4c300b"
+   "sha256": "e111d8a2c53131f67ffcb09ffd55401839478d91f267c4b0f4044d25bfdb3b8d"
   },
   "ed_fig2_source_data.csv": {
    "source": "figures/ed_fig2_source_data.csv",
-   "sha256": "446ebc1d7cc3a711c2f91417c4cc0909d36bd9ca06db472c49a4ab6dd1d69b8f"
+   "sha256": "db1f6ea248b9ecf6189e1032344d49e0f5a1cd145a9f6c80f5043f906fac03eb"
   },
   "ed_fig3_source_data.csv": {
    "source": "figures/ed_fig3_source_data.csv",
-   "sha256": "c06e706e8b80bf5bcfcefdfaf01aa2a7cca0f9cb064c4b2f8e9277dc87a53a7e"
+   "sha256": "cd794c20467ee97c3442f6e517b9faf607ba6b0219a73406a8c24cc5b8e6b8a9"
   },
   "ed_fig4_source_data.csv": {
    "source": "figures/ed_fig4_source_data.csv",
-   "sha256": "e0db345bd3a7771427417e4b5da429ab8feb0f0bc6afb38f55f9a823630e8313"
+   "sha256": "2a378f57ab642df035139238f5fa278bcefb022b4b5425f2bc4cdf25ec3cb485"
   },
   "ed_fig5_source_data.csv": {
    "source": "figures/ed_fig5_source_data.csv",
-   "sha256": "dae13303d39c62904c569a2b6fcde661924662a140a97429f4c7bff541ff6306"
+   "sha256": "8e45fb8270c2bd65f4d4acb6b8641f6d090d41327147f77485ac1f68d21232ed"
   },
   "ed_fig6_source_data.csv": {
    "source": "figures/ed_fig6_source_data.csv",
-   "sha256": "a139e527431c04f3cc6b6dfb1296f17b9799f7ee9f75cb8a2390ff1d2ec95d95"
+   "sha256": "6c200636c42134b21935d7656dcb7c29515046dea6a226e45434841551ce1af4"
   },
   "ed_fig7_source_data.csv": {
    "source": "figures/ed_fig7_source_data.csv",
-   "sha256": "fe426d7ff6c5a3d7f2cdd291fde15ef3a54ae63f78cd41ab087dfafe16e276e7"
+   "sha256": "4bb9b48f54659673e2c01c632f8881dbaa95c38cba81a7ab3efbb2a709e1c8c0"
   }
  }
 }

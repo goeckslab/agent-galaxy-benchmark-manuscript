@@ -19,7 +19,7 @@ python figures/fig5_token_cost/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_fig5.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+Every estimate, interval and *P* value was computed by `figures/make_fig5.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig5.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
@@ -54,5 +54,7 @@ calls, web searches or fetches, file reads, writes and edits), as in On-demand F
 price, so ratios are not monetary costs. A run is correct when accepted or, for IWC, at >= 0.99 output agreement.
 Intervals are 95% percentile cluster-bootstrap intervals (clusters are BixBench source capsules, otherwise tasks); P values
 come from paired cluster sign-flip randomization tests (200,000 draws; exact with at most 16 clusters).
+Scores come from figures/scored_runs.csv (make_scored_runs.py): every run as the public results site shows it
+(https://goeckslab.github.io/galaxy-agent-benchmark/), the IWC host-read removal task included.
 Writes figures/fig5.{svg,pdf,png}, fig5_source_data.csv, ed_fig5.{svg,pdf,png} and ed_fig5_source_data.csv.
 ```
