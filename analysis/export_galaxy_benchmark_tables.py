@@ -6,12 +6,14 @@ Usage:
 
 Reads tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, into data/:
 
-- run_scores.csv: one row per scored run of the four primary model configurations (3,816 runs).
+- run_scores.csv: one row per scored run of the four primary model configurations (3,840 runs), scored as the public
+  results site shows them (the archive's figures/scored_runs.csv, written by figures/make_scored_runs.py).
 - galaxy_traced_runs.csv: Galaxy-condition runs of those configurations with a parsed trace (1,908 runs).
 - galaxy_tool_use.csv: one row per traced Galaxy run and installed tool it called, plus one row per run that called
   a user-defined tool (UDT).
 - bixbench_failure_causes.csv (Figure 2): primary and secondary cause codes of every incorrect BixBench-Verified-50 run
-  from the run-level failure audit (codes only; the audit's answer and note fields are not exported).
+  from the run-level failure audit (codes only; the audit's answer and note fields are not exported). Runs the results
+  site regraded incorrect after the audit take the task-level audit's cause (column cause_source).
 - run_execution_errors.csv (Figure 3): failed shell commands and Galaxy jobs in the error state, per run.
 - execution_error_types.csv (Figure 3): execution errors by type and by where they occurred, per run.
 - compbiobench_task_domains.csv (Figure 3): the domain of each CompBioBench task.
@@ -47,10 +49,14 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "data"
-SCORES = "manuscript_narrative/original_layout/analysis/accuracy_primary_runs.csv"
+SCORES = "figures/scored_runs.csv"                                         # every run as the results site shows it
 CALLS = "manuscript_narrative/derived/galaxy_calls/calls.csv.gz"
 COVERAGE = "manuscript_narrative/derived/galaxy_calls/run_coverage.csv"
 ERRORS = "manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx"          # sheet abc_runs, from fig_on_demand.py
+# The workbook omits the IWC host-read removal task; the archive extracts its 24 runs with the same rules
+WF003_RUNS = "figures/wf003_abc_runs.csv"                                  # make_wf003_errors.py, as sheet abc_runs
+WF003_ERRORS = "figures/wf003_abc_every_error.csv"                         # make_wf003_errors.py, as sheet abc_every_error
+REGRADED = {"bix-43-q2", "bix-53-q2"}                                      # BixBench items the results site regraded
 LEDGER = "analysis_reports/galaxy_improvement_20260924/v2_trace_friction/ledger.json"
 TOKENS = "manuscript_narrative/original_layout/analysis/token_run_observations.csv"
 ACTIONS = "manuscript_material/on_demand/Source_Data_OD_Fig6.xlsx"         # sheet abf_runs, from fig_on_demand.py
@@ -83,6 +89,7 @@ EVIDENCE_MODEL = {**TRACE_MODEL, "gpt_5_5": "GPT-5.5", "gpt_5_6_sol": "GPT-5.6 S
 def archive_commit(source: Path) -> str:
     sha = subprocess.run(["git", "-C", str(source), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)
     dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE, ERRORS,
+                            WF003_RUNS, WF003_ERRORS,
                             LEDGER, TOKENS, ACTIONS, FRICTION, FAILURE_CLASSES, COMPBIO_AUDIT, PANELS, *FIGURE_SOURCE_DATA,
                             *[f"{folder}/analysis" for folder in EVIDENCE]],
                            capture_output=True, text=True)
@@ -97,7 +104,7 @@ def export_execution_errors(source: Path) -> pd.DataFrame:
 
     ws = openpyxl.load_workbook(source / ERRORS, read_only=True)["abc_runs"]
     rows = list(ws.iter_rows(values_only=True))
-    e = pd.DataFrame(rows[1:], columns=rows[0])
+    e = pd.concat([pd.DataFrame(rows[1:], columns=rows[0]), pd.read_csv(source / WF003_RUNS)], ignore_index=True)
     e = e[e.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
     out = pd.DataFrame({
         "benchmark": e.benchmark,
@@ -129,8 +136,17 @@ def export_failure_causes(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
     }).sort_values(RUN_KEY + ["track"])
     wrong = scores[(scores.benchmark == "BixBench-Verified-50") & (scores.score < 1)]
     key = ["task_id", "model", "track", "replicate"]
-    both = wrong.merge(out, on=key, how="outer", indicator=True)
-    assert (both._merge == "both").all() and not out.duplicated(key).any(), "every incorrect run needs one cause"
+    assert not out.duplicated(key).any(), "the audit labels each run once"
+    # The results site regraded bix-53-q2 and bix-43-q2 after the run-level audit: audited runs it grades correct leave
+    # the table, and the bix-43-q2 runs it grades incorrect (accepted by the original evaluator, so never audited) take
+    # the task-level audit's cause, benchmark specification or scoring (archive individual_error_analysis.md).
+    j = wrong[key].merge(out, on=key, how="left", indicator=True)
+    new = j._merge == "left_only"
+    assert set(j.loc[new, "task_id"]) <= REGRADED, "every incorrect run needs one cause"
+    j.loc[new, ["benchmark", "primary_cause", "secondary_cause"]] = ["BixBench-Verified-50", "EVALUATOR", ""]
+    j["cause_source"] = np.where(new, "task-level audit", "run-level audit")
+    out = j.drop(columns="_merge")[["benchmark"] + key + ["primary_cause", "secondary_cause", "confidence", "cause_source"]]
+    out = out.sort_values(RUN_KEY + ["track"])
     out.to_csv(DATA / "bixbench_failure_causes.csv", index=False)
     return out
 
@@ -232,7 +248,7 @@ def export_error_types(source: Path) -> pd.DataFrame:
 
     ws = openpyxl.load_workbook(source / ERRORS, read_only=True)["abc_every_error"]
     rows = list(ws.iter_rows(values_only=True))
-    e = pd.DataFrame(rows[1:], columns=rows[0])
+    e = pd.concat([pd.DataFrame(rows[1:], columns=rows[0]), pd.read_csv(source / WF003_ERRORS)], ignore_index=True)
     e = e[e.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
     c = read_calls(source, ["tool_id_base", "tool_id_full"])
     udt = c[c.tool == "run_galaxy_udt_and_wait"]
@@ -382,7 +398,7 @@ def main() -> None:
         "replicate": scores.replicate,
         "score": scores.score,              # 0/1 acceptance; IWC: output agreement 0-1
     })
-    assert scores.notna().all().all() and len(scores) == 3816, "unexpected run_scores content"
+    assert scores.notna().all().all() and len(scores) == 3840, "unexpected run_scores content"
     scores.to_csv(DATA / "run_scores.csv", index=False)
 
     cov = pd.read_csv(args.source / COVERAGE)
