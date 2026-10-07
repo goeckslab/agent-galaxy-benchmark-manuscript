@@ -1,79 +1,129 @@
 #!/usr/bin/env python3
-"""Figure 1: Study design and isolated execution pipeline.
+"""Figure 1: study design overview (a) and isolated execution pipeline for one run (b).
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@b3cbb944648a57104a6837d1640b255854dd7e3e:figures/make_fig1_a.py; the panel data are the
-values that script computed and passed to its drawing functions (data/figure_panels/fig1_a.json, written by the
-archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
-every number traces to the archive script at that commit. Writes, next to this script, fig1_benchmark_overview.pdf, .png (600 dpi)
-and .svg, and source_data.csv (the archive's fig1_a_source_data.csv).
+A schematic built from pictograms: text is reduced to names, counts and short labels, and the definitions
+live in legend.md. The plotted numbers are study-design constants verified against the benchmark repository
+(SOURCES below). The script writes them to source_data.csv, together with the glyph values that are only
+illustrative, so that nobody reads those as data.
 
-Regenerate with: python figures/fig1_benchmark_overview/make_figure.py
+Writes, next to this script: fig1_benchmark_overview.pdf (vector, embedded TrueType fonts),
+fig1_benchmark_overview.png (600 dpi, RGB), fig1_benchmark_overview.svg (editable text, for Inkscape) and
+source_data.csv. Width 180 mm; Nature Portfolio artwork rules: sans-serif 5-7 pt text, 8 pt bold panel letters,
+Okabe-Ito colours with vermillion = custom code and blue = Galaxy.
 """
-import os
-import shutil
-import sys
+import io
 from pathlib import Path
 
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+import numpy as np  # noqa: E402
+import pandas as pd  # noqa: E402
+from matplotlib.font_manager import FontProperties, fontManager  # noqa: E402
+from matplotlib.patches import (Circle, Ellipse, FancyArrow, FancyArrowPatch, FancyBboxPatch, Polygon,  # noqa: E402
+                                Rectangle)
+from matplotlib.text import Text  # noqa: E402
+from PIL import Image  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
-DATA = HERE.parents[1] / 'data'
-sys.path.insert(0, str(HERE.parent))
-import figure_style as style  # noqa: E402  (the archive's style module; sets rcParams on import)
-import panel_io  # noqa: E402
-plt = style.plt
-OUT = str(HERE)
-from PIL import Image
-from matplotlib.font_manager import FontProperties
-from matplotlib.patches import Circle, Ellipse, FancyArrow, FancyArrowPatch, FancyBboxPatch, Polygon, Rectangle
-import io
-import json
-import numpy as np
-import os
+FIG_NAME = HERE.name
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+# ---------------------------------------------------------------- plotted values and their sources
+REPO = 'paulocilasjr/Galaxy_benchmark@b66d91a'
+BENCHMARKS = [  # (name, tasks, tasks with comparable scores in both conditions)
+    ('BixBench-Verified-50', 50, 50),
+    ('CompBioBench', 100, 100),
+    ('IWC', 10, 9),
+]
+CONFIGS = ['GPT-5.5', 'GPT-5.6 Sol', 'GPT-5.6 Luna', 'DeepSeek V4 Pro']
+N_COND, N_REP = 2, 3
+SOURCES = {
+    'BixBench-Verified-50': f'{REPO}:experiments/BixBench/task_*.json (50 files)',
+    'CompBioBench': f'{REPO}:experiments/CompBioBench/source_compbiobench.v1.tsv (100 rows)',
+    'IWC': f'{REPO}:IWC/analysis/wf_* (10 tasks); comparisons.common_nine_tasks in IWC/iwc_scientific_audit.json',
+    'design': f'{REPO}:manuscript_narrative/derived/design/design_metadata.md (Q2, runtime model records)',
+}
+# Glyph values that only illustrate a measure; they are not results.
+GAUGE = 0.72                                                       # accuracy gauge fill (0-1 score)
+BAR_CALLS, BAR_FAILED = (1.0, 0.72, 0.5, 0.3), (0.12, 0.22, 0.08, 0.1)  # interface-calls glyph
+EVAL_GRID = ((1, 1, 1), (1, 0, 1), (0, 0, 0))                      # evaluate step: runs correct (1) or not
+CAUSE_GLYPH = [('Agent analysis', 0.55), ('Benchmark, reference or provenance', 0.3),
+               ('Galaxy platform or wrapper', 0.1), ('Other', 0.05)]
 
+# ---------------------------------------------------------------- style shared with the paper's other figures
+# Okabe-Ito palette (Wong, B. Points of view: Color blindness. Nat. Methods 8, 441; 2011).
+# Colour has one meaning across the paper: vermillion = custom code, blue = Galaxy; markers repeat it
+# (square = custom code, circle = Galaxy) so that it survives greyscale. Failure-cause groups avoid the arm colours.
+OI_GREEN, OI_PURPLE, OI_BLUE, OI_VERMILLION = '#009E73', '#CC79A7', '#0072B2', '#D55E00'
+G, C = OI_BLUE, OI_VERMILLION
+ENVS = ['custom_code', 'galaxy']  # reference condition first
+ENV_COLOR = {'custom_code': C, 'galaxy': G}
+ENV_TINT = {'custom_code': '#F6DCCB', 'galaxy': '#CFE3F1'}
+ENV_MARKER = {'custom_code': 's', 'galaxy': 'o'}
+ENV_LABEL = {'custom_code': 'Custom code', 'galaxy': 'Galaxy'}
+INK, INK2 = '#1a1a1a', '#555555'
+GRID, FILL, EDGE = '#e4e3df', '#f2f1ee', '#c9c8c3'
+NEUTRAL_LIGHT, NEUTRAL_MID, NEUTRAL_DARK = '#DDDDDD', '#999999', '#555555'
+CAUSE_COLOR = {'Agent analysis': NEUTRAL_DARK, 'Benchmark, reference or provenance': OI_GREEN,
+               'Galaxy platform or wrapper': OI_PURPLE, 'Other': NEUTRAL_LIGHT}
+G_TINT, G_LIGHT = ENV_TINT['galaxy'], '#e6f0f8'
+IC, LW = '#4a4a4a', 0.6   # pictogram stroke colour and width (pt)
+CHEVRON = '#c4c4c4'
+LAB, NAME = 5.0, 6.0      # pictogram labels; names
+# Arial as in Nature artwork; Liberation Sans is metric-compatible with it where Arial is not installed.
+FONT = next((f for f in ('Arial', 'Liberation Sans') if f in {e.name for e in fontManager.ttflist}), 'DejaVu Sans')
 
-style.ENV_LABEL = {'open_ended_code': 'Custom code', 'galaxy': 'Galaxy'}   # the paper's name for the condition
-
-
+plt.rcParams.update({
+    'font.family': FONT, 'font.size': 6, 'text.color': INK, 'lines.linewidth': 0.75, 'patch.linewidth': 0.5,
+    'pdf.fonttype': 42, 'ps.fonttype': 42, 'svg.fonttype': 'none',  # editable text in vector output
+})
 W = 180.0                 # mm; Nature Methods double-column width
-
-
 PT = 25.4 / 72            # mm per point
 
 
-INK, INK2 = style.INK, style.INK2
+def facts():
+    return {name: (n, scored) for name, n, scored in BENCHMARKS}
 
 
-FILL, EDGE = style.LIGHT, '#c9c8c3'
+def enforce_min_font(fig, minimum=5.0):
+    """Nature requires 5-7 pt text at final size; raise any smaller text to the floor."""
+    for t in fig.findobj(Text):
+        if t.get_text() and t.get_fontsize() < minimum:
+            t.set_fontsize(minimum)
 
 
-G, C = style.GALAXY, style.CODE
+def write_source_data(n_tasks, n_runs):
+    rows = []
+    for name, n, scored in BENCHMARKS:
+        rows.append(('a', f'{name}: tasks (waffle squares)', n, 'tasks', 'data', SOURCES[name]))
+        if scored < n:
+            rows.append(('a', f'{name}: tasks without comparable scores (open squares)', n - scored, 'tasks', 'data',
+                         SOURCES[name]))
+    rows += [
+        ('a', 'Tasks in total', n_tasks, 'tasks', 'data', 'sum of the benchmark rows'),
+        ('a', 'Model configurations: ' + '; '.join(CONFIGS), len(CONFIGS), 'configurations', 'design',
+         SOURCES['design']),
+        ('a', 'Execution conditions: custom code; Galaxy', N_COND, 'conditions', 'design', SOURCES['design']),
+        ('a', 'Replicate runs per task, configuration and condition', N_REP, 'runs', 'design', SOURCES['design']),
+        ('a, b', 'Runs in the paired design', n_runs, 'runs', 'derived', 'tasks x configurations x conditions x replicates'),
+        ('a', 'Accuracy gauge fill', GAUGE, 'fraction', 'illustrative', 'glyph only; not a result'),
+        ('a', 'Interface-calls glyph: bar lengths', ';'.join(map(str, BAR_CALLS)), 'relative', 'illustrative',
+         'glyph only; not a result'),
+        ('a', 'Interface-calls glyph: failed segments', ';'.join(map(str, BAR_FAILED)), 'relative', 'illustrative',
+         'glyph only; not a result'),
+    ]
+    rows += [('a', f'Failure-cause glyph: {g}', s, 'share', 'illustrative', 'glyph only; not a result')
+             for g, s in CAUSE_GLYPH]
+    rows += [('b', 'Evaluate step: correct (1) or incorrect (0) runs, one row per task and one column per replicate run',
+              ' / '.join(''.join(map(str, r)) for r in EVAL_GRID), 'runs', 'illustrative', 'glyph only; not a result'),
+             ('b', 'Evaluate step: accuracy bar and 95% interval', 'n/a', 'accuracy', 'illustrative',
+              'glyph only; the intervals come from resampling tasks')]
+    pd.DataFrame(rows, columns=['panel', 'element', 'value', 'unit', 'kind', 'source']).to_csv(
+        HERE / 'source_data.csv', index=False)
 
 
-G_TINT = style.ENV_TINT['galaxy']
-
-
-G_LIGHT = '#e6f0f8'
-
-
-IC, LW = '#4a4a4a', 0.6   # pictogram stroke colour and width (pt)
-
-
-CHEVRON = '#c4c4c4'
-
-
-LAB = 5.0                 # pictogram labels
-
-
-NAME = 6.0
-
-
-CONFIGS = ['GPT-5.5', 'GPT-5.6 Sol', 'GPT-5.6 Luna', 'DeepSeek V4 Pro']
-
-
-N_COND, N_REP = 2, 3
-
-
+# ---------------------------------------------------------------- canvas and primitives (mm, y downwards)
 class Canvas:
     def __init__(self):
         # measure on a 1200-dpi canvas: at low dpi, hinted glyph advances round to whole pixels
@@ -85,7 +135,7 @@ class Canvas:
         self.r = self.fig.canvas.get_renderer()
 
     def width(self, s, size, weight='normal'):
-        prop = FontProperties(family='Arial', size=size, weight=weight)
+        prop = FontProperties(family=FONT, size=size, weight=weight)
         return self.r.get_text_width_height_descent(s, prop, ismath=False)[0] / self.fig.dpi * 25.4
 
     def text(self, x, y, s, size=LAB, weight='normal', color=INK, ha='left'):
@@ -136,21 +186,22 @@ class Canvas:
                                      length_includes_head=True, fc=CHEVRON, ec='none', zorder=2))
 
     def marker(self, x, y, env, ms=3.7):
-        self.ax.plot([x], [y], marker=style.ENV_MARKER[env], ms=ms, mfc=style.ENV_COLOR[env], mec='white',
+        self.ax.plot([x], [y], marker=ENV_MARKER[env], ms=ms, mfc=ENV_COLOR[env], mec='white',
                      mew=0.4, ls='', zorder=5)
 
     def save(self, h):
         self.fig.set_size_inches(W / 25.4, h / 25.4)
         self.ax.set_ylim(h, 0)
-        style.enforce_min_font(self.fig)
+        enforce_min_font(self.fig)
         title = 'Fig. 1 | Study design and isolated execution pipeline'
-        self.fig.savefig(os.path.join(OUT, 'fig1_a.svg'), metadata={'Title': title})
-        self.fig.savefig(os.path.join(OUT, 'fig1_a.pdf'), metadata={'Title': title})
+        self.fig.savefig(HERE / f'{FIG_NAME}.svg', metadata={'Title': title})
+        self.fig.savefig(HERE / f'{FIG_NAME}.pdf', metadata={'Title': title})
         buf = io.BytesIO()  # Nature artwork: RGB without alpha
         self.fig.savefig(buf, format='png', dpi=600, facecolor='white')
-        Image.open(buf).convert('RGB').save(os.path.join(OUT, 'fig1_a.png'), dpi=(600, 600))
+        Image.open(buf).convert('RGB').save(HERE / f'{FIG_NAME}.png', dpi=(600, 600))
 
 
+# ---------------------------------------------------------------- pictograms (centred on cx, cy)
 def doc(cv, cx, cy, w=4.0, h=5.2, ec=IC, fc='white', mark=None, lines=3, z=3):
     x0, y0, f = cx - w / 2, cy - h / 2, min(w, h) * 0.32
     cv.poly([(x0, y0), (x0 + w - f, y0), (x0 + w, y0 + f), (x0 + w, y0 + h), (x0, y0 + h)], fc=fc, ec=ec, z=z)
@@ -301,7 +352,7 @@ def coins(cv, cx, cy, w=4.6, n=3, ec=IC):
 
 
 def bars(cv, x, y, w=5.4, h=4.4, color=G, fail=INK):
-    vals, fails = (1.0, 0.72, 0.5, 0.3), (0.12, 0.22, 0.08, 0.1)
+    vals, fails = BAR_CALLS, BAR_FAILED
     bh = h / len(vals) * 0.7
     for i, (v, f) in enumerate(zip(vals, fails)):
         yy = y + i * h / len(vals)
@@ -316,7 +367,7 @@ def magnifier(cv, cx, cy, r=2.0, ec=IC):
 
 def stacked(cv, x, y, w=10.0, h=1.6):
     """Failure-cause glyph: one bar split into cause groups (proportions illustrative)."""
-    parts = ((0.55, style.NEUTRAL_DARK), (0.3, style.OI_GREEN), (0.1, style.OI_PURPLE), (0.05, style.NEUTRAL_LIGHT))
+    parts = [(s, CAUSE_COLOR[g]) for g, s in CAUSE_GLYPH]
     xx = x
     for f, col in parts:
         cv.rect(xx, y, w * f, h, fc=col, z=4)
@@ -364,7 +415,7 @@ def trace(cv, cx, cy, w=4.4, h=5.6, ec=IC):
     for i, (ind, frac) in enumerate(((0, 0.7), (0.15, 0.5), (0, 0.8), (0.15, 0.45), (0, 0.6))):
         yy = y0 + 0.95 + i * 0.95
         cv.line([(x0 + 0.6 + w * ind, yy), (x0 + 0.6 + w * ind + (w - 1.2) * frac, yy)],
-                color=IC if ind == 0 else style.NEUTRAL_MID, lw=0.5)
+                color=IC if ind == 0 else NEUTRAL_MID, lw=0.5)
 
 
 def tag(cv, cx, cy, s, color=G, size=LAB):
@@ -374,7 +425,7 @@ def tag(cv, cx, cy, s, color=G, size=LAB):
     return w
 
 
-def waffle(cv, x, y, n, cols, cell=1.0, gap=0.28, open_last=0, fc=style.NEUTRAL_MID):
+def waffle(cv, x, y, n, cols, cell=1.0, gap=0.28, open_last=0, fc=NEUTRAL_MID):
     for i in range(n):
         r, c = divmod(i, cols)
         xx, yy = x + c * (cell + gap), y + r * (cell + gap)
@@ -385,6 +436,7 @@ def waffle(cv, x, y, n, cols, cell=1.0, gap=0.28, open_last=0, fc=style.NEUTRAL_
     return x + cols * (cell + gap) - gap
 
 
+# ---------------------------------------------------------------- layout helpers
 def panel_head(cv, y, letter, title):
     cv.ax.text(0.6, y + 0.80 * 8 * PT, letter, fontsize=8, fontweight='bold', va='baseline', color=INK, zorder=6)
     cv.text(5.0, y + 0.55, title, 6.5, 'bold')
@@ -403,129 +455,158 @@ def step_head(cv, x, y, i, name):
     cv.text(x + 5.6, y + 1.55, name, 6.5, 'bold')
 
 
-BENCHMARKS = [('BixBench-Verified-50', 'bix', '50 questions', 'Answer', 'Evaluator acceptance, 0 or 1'),
-              ('CompBioBench', 'cb', '100 questions', 'Answer', 'Reconstructed-key agreement, 0 or 1'),
-              ('IWC', 'iwc', '10 workflows (9 scored)', 'Output files', 'Workflow-output agreement, 0–1')]
-
-
-def benchmarks(cv, x, y, w, f, bottom):
+# ---------------------------------------------------------------- panel a
+def benchmarks(cv, x, y, w, f):
+    # (name, tasks, waffle columns, unscored tasks drawn open, scored on an answer, row height)
+    rows = [(name, f[name][0], cols, f[name][0] - f[name][1], answer, 13.6)
+            for name, cols, answer in (('BixBench-Verified-50', 10, True), ('CompBioBench', 20, True),
+                                       ('IWC', 10, False))]
     gap = 1.6
-    h = (bottom - y - 2 * gap) / 3
-    for k, (name, key, count, endpoint, contract) in enumerate(BENCHMARKS):
-        yy = y + k * (h + gap)
+    yy = y
+    for k, (name, n, cols, open_last, answer, h) in enumerate(rows):
         cv.rrect(x, yy, w, h, r=0.9, fc=FILL, ec=EDGE, lw=0.5, z=1)
-        icx, icy = x + 4.6, yy + h / 2
+        icx, icy = x + 5.2, yy + h / 2
         if k == 0:
-            doc(cv, icx - 0.6, icy - 0.4, 3.8, 5.0, mark='?')
+            doc(cv, icx - 0.9, icy - 0.6, 4.4, 5.6, mark='?')
+            table(cv, icx + 1.6, icy + 2.2, 4.2, 3.2)
         elif k == 1:
-            dna(cv, icx, icy, 4.0, h - 4.2)
+            dna(cv, icx, icy, 4.6, h - 3.4)
         else:
-            workflow(cv, icx, icy, 7.0)
-        tx, ty = x + 9.6, yy + (h - 9.4) / 2
-        cv.text(tx, ty, name, NAME, 'bold')
-        cv.text(tx, ty + 3.6, f'{count} · {endpoint}', LAB, color=INK2)
-        cv.text(tx, ty + 6.6, contract, LAB, color=INK)
-    return y
+            workflow(cv, icx, icy, 8.0)
+        tx = x + 11.2
+        cv.text(tx, yy + 1.3, name, NAME, 'bold')
+        cv.text(x + w - 1.4, yy + 1.5, f'{n} tasks', 5.5, color=INK2, ha='right')
+        rows_n = -(-n // cols)
+        oy = yy + 8.4
+        wy = oy - (rows_n * 1.28 - 0.28) / 2
+        xe = waffle(cv, tx, wy, n, cols, open_last=open_last)
+        ox = x + w - 4.6
+        cv.arrow((xe + 0.8, oy), (ox - 3.3, oy), color=IC, lw=0.6, ms=4)
+        if answer:
+            bubble(cv, ox, oy - 0.5, 5.0, 3.6)
+            cv.ctext(ox, oy + 3.6, 'answer', LAB, color=INK2)
+        else:
+            files(cv, ox + 0.3, oy - 0.3, 3.2, 4.0)
+            cv.ctext(ox, oy + 3.6, 'files', LAB, color=INK2)
+        yy += h + gap
+    ky = yy + 0.2   # waffle key
+    cv.rect(x + 0.4, ky + 0.35, 1.0, 1.0, fc=NEUTRAL_MID, z=4)
+    cv.text(x + 2.0, ky, 'task', LAB, color=INK2)
+    kx = x + 2.0 + cv.width('task', LAB) + 2.4
+    cv.rect(kx + 0.08, ky + 0.43, 0.84, 0.84, fc='white', ec=NEUTRAL_MID, lw=0.5, z=4)
+    cv.text(kx + 1.6, ky, 'not scored', LAB, color=INK2)
+    return yy + 2.4
 
 
-def design(cv, x, y, w, bottom, n_tasks, n_runs, n_scored, n_scored_tasks, n_archived):
-    wl, gap = 15.0, 1.0
+def design(cv, x, y, w, n_tasks, bottom):
+    wl, gap = 18.0, 1.0
     wc = (w - wl - gap) / 2
-    xs = {'open_ended_code': x + wl, 'galaxy': x + wl + wc + gap}
-    hh = 21.5
-    for env in style.ENVS:
-        cv.rrect(xs[env], y, wc, hh, r=0.9, fc=style.ENV_TINT[env], ec=style.ENV_COLOR[env], lw=0.75, z=1)
-        cv.ctext(xs[env] + wc / 2, y + 2.3, style.ENV_LABEL[env], NAME, 'bold')
-    strip = [('Runs in', 'Isolated workspace', 'usegalaxy.org via MCP'),
-             ('Tools', 'Software the agent installs', 'Galaxy tools and UDTs*'),
-             ('Prompt', 'Task', 'Task + Galaxy policy'),
-             ('Time limit', '120 min†; 6 or 12 h‡', '6 or 12 h‡')]
-    for i, (lab, c_, g_) in enumerate(strip):
-        yy = y + 5.4 + i * 3.9
-        cv.text(x, yy, lab, LAB, 'bold')
-        cv.text(xs['open_ended_code'] + 1.4, yy, c_, LAB)
-        cv.text(xs['galaxy'] + 1.4, yy, g_, LAB)
-        if i:
-            cv.ax.plot([x, x + w], [yy - 0.75, yy - 0.75], color='white', lw=0.6, zorder=2)
-    cv.text(x, y + hh + 0.8, '*Not on IWC   †CompBioBench   ‡IWC; none stated otherwise', LAB, color=INK2)
-    # rows: four model configurations, each running the Codex agent, three independent runs per condition
-    f_h = 9.6
-    top = y + hh + 5.0
-    cv.text(x, top, 'Four model configurations (Codex agent)', 5.5, 'bold')
-    rows_top = top + 3.2
-    rh = (bottom - f_h - 1.6 - rows_top) / len(CONFIGS)
+    xs = {'custom_code': x + wl, 'galaxy': x + wl + wc + gap}
+    hh = 17.6
+    for env in ENVS:
+        cv.rrect(xs[env], y, wc, hh, r=0.9, fc=ENV_TINT[env], ec=ENV_COLOR[env], lw=0.75, z=1)
+        cv.ctext(xs[env] + wc / 2, y + 2.4, ENV_LABEL[env], NAME, 'bold')
+    cc = xs['custom_code'] + wc / 2
+    terminal(cv, cc, y + 10.3, 15.0, 9.0, prompt_color=C)
+    gc = xs['galaxy'] + wc / 2
+    gw = wc - 9.4
+    tag(cv, xs['galaxy'] + 4.1, y + 10.3, 'MCP')
+    galaxy_window(cv, gc + 3.4, y + 10.3, gw, 10.0)
+    cv.line([(xs['galaxy'] + 6.4, y + 10.3), (gc + 3.4 - gw / 2, y + 10.3)], color=G, lw=0.7, z=5)
+    # rows: model configurations, each running the Codex agent
+    cv.text(x, y + hh - 4.5, 'Model', 5.5, 'bold')
+    cv.text(x, y + hh - 2.3, '(Codex agent)', LAB, color=INK2)
+    f_h = 8.6
+    rows_top = y + hh + 0.4
+    rh = (bottom - f_h - 3.6 - rows_top) / len(CONFIGS)
     for i, name in enumerate(CONFIGS):
         ry = rows_top + i * rh
-        agent(cv, x + 1.8, ry + rh / 2 + 0.3, 2.8)
-        cv.text(x + 4.2, ry + rh / 2 - 1.0, name, LAB, 'bold')
-        for env in style.ENVS:
+        agent(cv, x + 2.0, ry + rh / 2 + 0.35, 3.2)
+        cv.text(x + 4.6, ry + rh / 2 - 1.0, name, 5.5, 'bold')
+        for env in ENVS:
             cx = xs[env] + wc / 2
             for k in (-1, 0, 1):
-                cv.marker(cx + 2.8 * k, ry + rh / 2, env, ms=3.2)
-        cv.ax.plot([x, x + w], [ry + rh, ry + rh], color=style.GRID, lw=0.5, zorder=2)
-    cv.text(x + w, rows_top - 3.2, '3 independent runs per condition', LAB, color=INK2, ha='right')
-    # design equation and run selection
+                cv.marker(cx + 3.0 * k, ry + rh / 2, env)
+        cv.ax.plot([x, x + w], [ry + rh, ry + rh], color=GRID, lw=0.5, zorder=2)
+    ly = rows_top + len(CONFIGS) * rh + 0.6
+    cv.marker(x + 1.0, ly + 1.15, 'custom_code', ms=3.2)
+    cv.marker(x + 3.3, ly + 1.15, 'galaxy', ms=3.2)
+    cv.text(x + 5.0, ly, 'replicate run (×3)', LAB, color=INK2)
+    # design equation: numbers large, factor names small
     fy = bottom - f_h
     cv.rrect(x, fy, w, f_h, r=0.9, fc=FILL, ec=EDGE, lw=0.5, z=1)
-    terms = [(str(n_tasks), 'tasks'), ('×', None), (str(len(CONFIGS)), 'model configs'), ('×', None),
-             (str(N_COND), 'conditions'), ('×', None), (str(N_REP), 'runs'), ('=', None),
-             (f'{n_runs:,}', 'primary runs')]
-    widths = [max(cv.width(t, 6.5, 'bold'), cv.width(s or '', LAB)) for t, s in terms]
-    sep = 1.4
+    n_runs = n_tasks * len(CONFIGS) * N_COND * N_REP
+    terms = [(str(n_tasks), 'tasks'), ('×', None), (str(len(CONFIGS)), 'models'), ('×', None),
+             (str(N_COND), 'conditions'), ('×', None), (str(N_REP), 'replicates'), ('=', None),
+             (f'{n_runs:,}', 'runs')]
+    widths = [max(cv.width(t, 7, 'bold'), cv.width(s or '', LAB)) for t, s in terms]
+    sep = 1.8
     xx = x + (w - sum(widths) - sep * (len(terms) - 1)) / 2
     for (t, s), ww in zip(terms, widths):
-        cv.ctext(xx + ww / 2, fy + 2.4, t, 6.5, 'bold', INK)
+        cv.ctext(xx + ww / 2, fy + 3.3, t, 7, 'bold', INK)  # Nature text maximum; 8 pt is for panel letters
         if s:
-            cv.ctext(xx + ww / 2, fy + 5.0, s, LAB, color=INK2)
+            cv.ctext(xx + ww / 2, fy + 6.6, s, LAB, color=INK2)
         xx += ww + sep
-    cv.ctext(x + w / 2, fy + 7.8, f'{n_scored:,} runs scored on {n_scored_tasks} tasks; {n_archived:,} archived runs '
-             f'include configurations outside this comparison', LAB, color=INK)
+    return n_runs
 
 
 def evaluation(cv, x, y, w, bottom):
-    rows = [('Accuracy', 'Benchmark-specific score; not pooled'),
-            ('Repeatability', 'Same outcome in all 3 runs?'),
-            ('Input tokens', 'Per run, including cached'),
-            ('Galaxy interface', 'Requests · failures · UDTs'),
-            ('Failure causes', 'AI-assisted audit of failures')]
+    rows = ['Accuracy', 'Repeatability', 'Input tokens', 'Galaxy interface', 'Failure causes']
     gap = 1.4
     h = (bottom - y - gap * (len(rows) - 1)) / len(rows)
-    for k, (name, sub) in enumerate(rows):
+    for k, name in enumerate(rows):
         yy = y + k * (h + gap)
         g = name.startswith('Galaxy')
         cv.rrect(x, yy, w, h, r=0.9, fc=G_TINT if g else FILL, ec=G if g else EDGE, lw=0.75 if g else 0.5, z=1)
-        icx, icy = x + 4.6, yy + h / 2
-        tx, ty = x + 9.6, yy + (h - 6.2) / 2
-        cv.text(tx, ty, name, NAME, 'bold')
-        cv.text(tx, ty + 3.4, sub, LAB, color=INK2)
+        icx, icy = x + 5.0, yy + h / 2
+        tx = x + 10.4
+        cv.text(tx, yy + 1.2, name, NAME, 'bold')
+        gy = yy + h - 3.0   # glyph row centre
         if k == 0:
-            target(cv, icx, icy, 2.8)
+            target(cv, icx, icy, 3.1)
+            verdict(cv, tx + 1.2, gy, True)
+            verdict(cv, tx + 4.0, gy, False)
+            cv.text(tx + 5.8, gy - 1.05, '0/1', LAB, color=INK2)
+            bx = tx + 12.0
+            cv.rect(bx, gy - 0.55, 9.0, 1.1, fc='#e3e2de', ec=IC, lw=0.4, z=4)
+            cv.rect(bx, gy - 0.55, 9.0 * GAUGE, 1.1, fc=NEUTRAL_MID, z=5)
+            cv.text(bx + 10.0, gy - 1.05, '0–1', LAB, color=INK2)
         elif k == 1:
-            cv.arc_arrow(icx, icy, 2.4, 110, 420, lw=0.8)
-            cv.ctext(icx, icy + 0.05, '×3', 5.0, 'bold', INK)
+            cv.arc_arrow(icx, icy, 2.6, 110, 420, lw=0.8)
+            cv.ctext(icx, icy + 0.05, '×3', 5.5, 'bold', INK)
+            for j in range(3):
+                verdict(cv, tx + 1.2 + j * 2.6, gy, True, r=1.0)
+            cv.text(tx + 1.2 + 2 * 2.6 + 1.6, gy - 1.05, 'or', LAB, color=INK2)
+            ox = tx + 1.2 + 2 * 2.6 + 1.6 + cv.width('or', LAB) + 1.8
+            for j, ok in enumerate((True, False, True)):
+                verdict(cv, ox + j * 2.6, gy, ok, r=1.0)
         elif k == 2:
-            coins(cv, icx, icy + 0.2, 4.2)
+            coins(cv, icx, icy + 0.2, 4.8)
+            cv.text(tx, gy - 1.05, 'per run, incl. cached', LAB, color=INK2)
         elif k == 3:
-            bars(cv, icx - 2.6, icy - 2.1, 5.2, 4.2)
+            bars(cv, icx - 2.9, icy - 2.4, 5.8, 4.8)
+            cv.text(tx, gy - 1.05, 'calls · failures · UDTs', LAB, color=INK2)
         else:
-            magnifier(cv, icx - 0.4, icy - 0.4, 1.8)
+            magnifier(cv, icx - 0.5, icy - 0.5, 2.0)
+            stacked(cv, tx, gy - 0.8, 14.0, 1.6)
+            cv.text(tx + 15.2, gy - 1.05, 'failing tasks', LAB, color=INK2)
 
 
+# ---------------------------------------------------------------- panel b
 def step_prepare(cv, x, y, w, h):
     step_head(cv, x, y, 1, 'Prepare')
-    cv.rrect(x + 2.0, y + 7.0, 24.0, 21.0, r=0.8, fc='#f7f7f5', ec=IC, lw=0.6, ls=(0, (2.0, 1.2)), z=2)
-    doc(cv, x + 8.4, y + 16.8, 5.0, 6.4)
-    cv.ctext(x + 8.4, y + 22.9, 'prompt', LAB, color=INK2)
-    files(cv, x + 17.0, y + 16.8, 3.8, 5.0)
-    cv.ctext(x + 16.7, y + 22.9, 'inputs', LAB, color=INK2)
-    cv.ctext(x + 14.0, y + 30.3, 'isolated workspace', LAB, color=INK2)
+    container(cv, x + 2.0, y + 7.6, 24.0, 21.0)
+    doc(cv, x + 8.4, y + 17.8, 5.0, 6.4)
+    cv.ctext(x + 8.4, y + 23.9, 'prompt', LAB, color=INK2)
+    files(cv, x + 17.0, y + 17.8, 3.8, 5.0)
+    cv.ctext(x + 16.7, y + 23.9, 'inputs', LAB, color=INK2)
+    cv.ctext(x + 12.7, y + 30.6, 'container', LAB, color=INK2)
     rx = x + w - 6.6
     doc(cv, rx, y + 13.6, 4.8, 6.0, lines=3)
     lock(cv, rx + 1.6, y + 15.2, 2.6)
     cv.ctext(rx, y + 19.8, 'reference', LAB, color=INK2)
-    cv.ctext(rx, y + 22.0, 'withheld', LAB, color=INK2)
-    history(cv, rx, y + 27.6, 4.6, 5.6)
-    cv.ctext(rx, y + 32.0, 'history', LAB, color=INK2)
+    history(cv, rx, y + 26.6, 5.2, 6.4)
+    cv.ctext(rx, y + 31.6, 'history', LAB, color=INK2)
 
 
 def step_execute(cv, x, y, w, h):
@@ -534,6 +615,8 @@ def step_execute(cv, x, y, w, h):
     agent(cv, ax_, ay, 6.4)
     cv.arc_arrow(ax_, ay - 0.3, 5.2, 200, 340, lw=0.7, ms=4)
     cv.arc_arrow(ax_, ay - 0.3, 5.2, 20, 160, lw=0.7, ms=4)
+    clock(cv, x + w - 5.4, y + 4.4, 2.1)
+    cv.ctext(x + w - 5.4, y + 8.3, 'time limit', LAB, color=INK2)
     tl, gl = (x + 8.4, y + 27.0), (x + w - 9.8, y + 27.0)
     cv.arrow((ax_ - 3.0, ay + 3.6), (tl[0] + 1.5, tl[1] - 4.6), color=IC, lw=0.7)
     cv.arrow((ax_ + 3.0, ay + 3.6), (gl[0] - 1.5, gl[1] - 4.8), color=G, lw=0.7)
@@ -560,17 +643,6 @@ def step_capture(cv, x, y, w, h):
     cv.ctext(x + w / 2, y + 29.8, 'history provenance', LAB, color=INK2)
 
 
-def gate(cv, x, y, h):
-    """Between capture and evaluation: the reference is opened only after the answer is fixed."""
-    cx = x
-    cv.ax.plot([cx, cx], [y + 1.0, y + h - 1.0], color=INK, lw=1.2, zorder=4, solid_capstyle='butt')
-    lock(cv, cx, y + h / 2 - 3.0, 2.6, opened=True)
-    for i, line in enumerate(('answer', 'fixed,', 'then', 'reference', 'opened')):
-        cv.ctext(cx, y + h / 2 + 1.6 + i * 2.0, line, LAB, color=INK)
-        cv.rect(cx - cv.width(line, LAB) / 2 - 0.3, y + h / 2 + 0.7 + i * 2.0, cv.width(line, LAB) + 0.6, 1.9,
-                fc='white', z=5)
-
-
 def step_evaluate(cv, x, y, w, h):
     step_head(cv, x, y, 4, 'Evaluate')
     cy = y + 12.6
@@ -587,32 +659,36 @@ def step_evaluate(cv, x, y, w, h):
     cv.arrow((mx, cy + 2.2), (mx, cy + 4.8), color=IC, lw=0.6, ms=4)
     verdict(cv, mx - 1.5, cy + 6.4, True)
     verdict(cv, mx + 1.5, cy + 6.4, False)
-    # aggregation: three independent runs per task; the score pools the scored runs of each benchmark
+    # aggregation: each task is run three times; accuracy pools the scored runs, and its 95% CI resamples tasks
     cv.line([(x + 2.4, y + 21.4), (x + w - 2.4, y + 21.4)], color=EDGE, lw=0.5, z=2)
     gx = [x + 6.4 + 2.4 * j for j in range(3)]           # columns: replicate runs 1-3
     gy = [y + 24.2 + 2.3 * i for i in range(3)]          # rows: tasks
-    for yy, row in zip(gy, ((1, 1, 1), (1, 0, 1), (0, 0, 0))):
+    for yy, row in zip(gy, EVAL_GRID):
         for xx, ok in zip(gx, row):
             verdict(cv, xx, yy, bool(ok), 0.82)
     cv.ctext(gx[1], y + 31.9, '3 runs per task', LAB, color=INK2)
     mid = gy[1]
-    cv.arrow((gx[-1] + 1.8, mid), (x + 19.2, mid), color=IC, lw=0.6, ms=3.5)
-    bx, bw, base, top = x + 21.4, 4.4, gy[-1] + 0.9, gy[0] + 0.6
-    cv.rect(bx, top, bw, base - top, fc=style.NEUTRAL_MID, z=4)
+    cv.arrow((gx[-1] + 1.8, mid), (x + 17.2, mid), color=IC, lw=0.6, ms=3.5)
+    bx, bw, base, top = x + 19.4, 4.4, gy[-1] + 0.9, gy[0] + 0.6
+    cv.rect(bx, top, bw, base - top, fc=NEUTRAL_MID, z=4)
     cv.line([(bx - 0.9, base), (bx + bw + 0.9, base)], color=IC, lw=0.5, z=5)
-    cv.ctext(bx + bw / 2, y + 31.9, 'benchmark score', LAB, color=INK2)
+    cx = bx + bw / 2
+    cv.line([(cx, top - 1.6), (cx, top + 1.6)], color=INK, lw=0.7, z=6)
+    for yy in (top - 1.6, top + 1.6):
+        cv.line([(cx - 0.6, yy), (cx + 0.6, yy)], color=INK, lw=0.7, z=6)
+    cv.ctext(cx, y + 31.9, 'accuracy', LAB, color=INK2)
+    cv.text(bx + bw + 1.4, top - 2.2, '95% CI from', LAB, color=INK2)
+    cv.text(bx + bw + 1.4, top, 'resampled tasks', LAB, color=INK2)
 
+
+# ---------------------------------------------------------------- assemble
 def main():
-    f = json.load(open(DATA / 'figure_panels' / 'fig1_a.json'))['facts']   # counts from data/figure_panels/fig1_a.json
-    n_tasks = f['bix'] + f['cb'] + f['iwc']
-    n_runs = n_tasks * len(CONFIGS) * N_COND * N_REP
-    n_scored_tasks = n_tasks - 1                          # IWC host-read removal has no comparable score
-    n_scored = n_scored_tasks * len(CONFIGS) * N_COND * N_REP
-    n_archived = f['archived']
+    f = facts()
+    n_tasks = sum(n for n, _ in f.values())
     cv = Canvas()
 
-    panel_head(cv, 0.0, 'a', 'Study design')
-    w1, w3, gap = 44.0, 41.0, 5.0
+    panel_head(cv, 0.0, 'a', 'GalaxyBench workflow overview')
+    w1, w3, gap = 46.0, 44.0, 6.0
     x1, x3 = 0.6, W - 0.6 - w3
     x2 = x1 + w1 + gap
     w2 = x3 - gap - x2
@@ -621,46 +697,34 @@ def main():
     column_head(cv, x2, w2, top, 'Experimental design')
     column_head(cv, x3, w3, top, 'Evaluation')
     y1 = top + 5.4
-    bottom = y1 + 58.0
-    benchmarks(cv, x1, y1, w1, f, bottom)
-    design(cv, x2, y1, w2, bottom, n_tasks, n_runs, n_scored, n_scored_tasks, n_archived)
+    bottom = benchmarks(cv, x1, y1, w1, f)
+    n_runs = design(cv, x2, y1, w2, n_tasks, bottom)
     evaluation(cv, x3, y1, w3, bottom)
     mid = (y1 + bottom) / 2
-    cv.chevron(x1 + w1 + 0.6, x2 - 0.6, mid)
-    cv.chevron(x2 + w2 + 0.6, x3 - 0.6, mid)
+    cv.chevron(x1 + w1 + 0.9, x2 - 0.9, mid)
+    cv.chevron(x2 + w2 + 0.9, x3 - 0.9, mid)
 
     yb = bottom + 5.0
     panel_head(cv, yb, 'b', 'Isolated execution pipeline')
     cv.text(5.0 + cv.width('Isolated execution pipeline', 6.5, 'bold') + 1.6, yb + 0.75,
-            f'applied to each of the {n_runs:,} primary runs', 5.5, color=INK2)
+            f'one of {n_runs:,} runs', 5.5, color=INK2)
     lab = 'Galaxy condition only'
     lx = W - 0.6 - cv.width(lab, LAB)
     cv.text(lx, yb + 0.85, lab, LAB, color=INK2)
     cv.rrect(lx - 4.0, yb + 0.85, 3.0, 2.0, r=0.4, fc=G, ec='none', z=2)
-    gaps = [4.6, 4.6, 11.0]
-    ws = (W - 1.2 - sum(gaps)) / 4
+    gap_b = 5.0
+    ws = (W - 1.2 - 3 * gap_b) / 4
     ys, hs = yb + 5.6, 34.6
-    x = 0.6
     for i, fn in enumerate((step_prepare, step_execute, step_capture, step_evaluate)):
+        x = 0.6 + i * (ws + gap_b)
         cv.rrect(x, ys, ws, hs, r=0.9, fc='white', ec=EDGE, lw=0.6, z=0)
         fn(cv, x, ys, ws, hs)
-        if i < 2:
-            cv.chevron(x + ws + 0.6, x + ws + gaps[i] - 0.6, ys + hs / 2)
-        elif i == 2:
-            gate(cv, x + ws + gaps[i] / 2, ys, hs)
         if i < 3:
-            x += ws + gaps[i]
+            cv.chevron(x + ws + 0.8, x + ws + gap_b - 0.8, ys + hs / 2)
     h = ys + hs + 0.6
     cv.save(h)
-    print(f'fig1_a: {W:.0f} x {h:.1f} mm; {n_tasks} tasks, {n_runs:,} primary runs, {n_scored:,} scored runs')
-    for ext in ('pdf', 'png', 'svg'):
-        os.replace(HERE / f'fig1_a.{ext}', HERE / f'fig1_benchmark_overview.{ext}')
-    import csv as _csv
-    with open(HERE / 'source_data.csv', 'w', newline='') as fh:
-        w = _csv.writer(fh)
-        w.writerow(['quantity', 'value', 'source'])
-        for k, v in f.items():
-            w.writerow([k, v, 'archive figures/make_fig1_a.py facts() at b3cbb944648a57104a6837d1640b255854dd7e3e'])
+    write_source_data(n_tasks, n_runs)
+    print(f'{FIG_NAME}: {W:.0f} x {h:.1f} mm; {n_tasks} tasks, {n_runs:,} runs')
 
 
 if __name__ == '__main__':
