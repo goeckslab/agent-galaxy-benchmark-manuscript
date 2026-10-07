@@ -1,39 +1,58 @@
-# Figure 5: Galaxy increases analysis inspectability at higher token cost
+# Figure 5: Galaxy records analyses as structured provenance and uses more input tokens on question-answering tasks
 
-Four panels that answer the questions of Results section 4 of `manuscript/outline.md`.
+Supports Results section 4 of `manuscript/outline.md` (inspectability and token cost).
 The legend draft is in [legend.md](legend.md).
-
-- **a**: accuracy against median input tokens per run, one point per replicate, model and condition; at the same accuracy, Galaxy used 3.4–6.6 times more input tokens on the same task, 3.0 times counting only uncached input.
-- **b**: incorrect runs used no more input tokens than correct runs of the same task and model, in either condition, so the cost is not spent on failed attempts.
-- **c**: input tokens follow the number of actions; Galaxy runs took 2.5 times more actions and used 1.9 times more input tokens per action.
-- **d**: finding tools makes up about half of the requests to Galaxy and of the text Galaxy sends back.
-
-What the extra tokens buy, a record of every analysis step, is described in the text; its counts are in `source_data.csv` as `text` rows.
 
 ## Files
 
-- `make_figure.py`: computes the statistics, draws the figure and writes every file below.
-- `fig5_token_cost.pdf` (run-level dots rasterized at 600 dpi), `.png` (600 dpi, RGB) and `.svg` (editable text).
-- `source_data.csv`: every plotted summary value, ratio, interval and *P* value, one row each.
+- `make_figure.py`: the drawing code of the run archive's `figures/make_fig5.py`, copied unchanged; it replays the values that script computed and writes every file below.
+- `fig5_token_cost.pdf`, `.png` (600 dpi, RGB) and `.svg` (editable text).
+- `source_data.csv`: every plotted value, interval, *P* value and count, one row each (the archive's `fig5_source_data.csv`).
 - `legend.md`: figure legend draft.
 
 ## Regenerate
 
 ```bash
-python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the data/ tables change
+python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the archive changes
 python figures/fig5_token_cost/make_figure.py
 ```
 
-The figure reads `data/run_scores.csv`, `run_tokens_actions.csv`, `galaxy_interface_calls.csv`, `galaxy_tool_lookup.csv` and `inspectability_counts.csv`, which `data/README.md` describes.
-The statistics take about seven seconds and are reproducible: the random seed is fixed (20261002).
+## Provenance
 
-## Statistics
+Every estimate, interval and *P* value was computed by `figures/make_fig5.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig5.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
+`make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
+Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
 
-- Input tokens include cached context; uncached input is input tokens minus cached tokens.
-- Ratios are geometric means over paired cells (task × model, medians over replicate runs) or over replicate sets (panel b), with 95% percentile cluster-bootstrap intervals and paired cluster sign-flip tests (200,000 draws), Holm-adjusted within each panel.
-- The uncached ratio uses its own random stream, so the draws of the other panels are unchanged.
+## Panels and methods (from the archive script)
 
-## Style
+```text
+Fig. 5: Galaxy records analyses as structured provenance and uses more input tokens on question-answering tasks.
 
-The figure is 180 × 128 mm, with Arial at 5–7 pt and 8 pt bold panel letters.
-Panel a colours the models (Paul Tol muted green, purple, sand and indigo) and keeps the condition in the marker shape; the other panels use vermillion for custom code and blue for Galaxy.
+Panels:
+a, Galaxy / custom-code token ratios for each benchmark (including IWC, where Galaxy did not use more input): total
+   input (including cached context), uncached input and output tokens. Primary estimate, the geometric mean of paired
+   task-model ratios (typical paired-task demand); secondary, the ratio of total tokens over the same cells (aggregate
+   consumption). Below, input tokens of incorrect relative to correct runs of the same task and model;
+b, where the extra input comes from: Galaxy / custom-code ratios of actions and of input tokens per action, by
+   benchmark; right, the characters Galaxy returned to the agent, by what the request was for;
+c, reducing Galaxy token use: Galaxy / custom-code tokens per complete 50-task BixBench-Verified-50 run before and after
+   each round of interface changes (July, GPT-5.5: archived July 6 batch, then the archived runs; October, GPT-5.6 Sol:
+   archived runs, the one-replicate intermediate round from the batch summary, then the token-optimization batch), from
+   token_improvment/ (run_inventory.csv, earlier_rounds/, site_snapshot/summary.json);
+d, what the retained record holds for each analysis step in each condition, separating structured records from free
+   text in the retained trace, records of the environment only, and evidence that was not retained or not recorded
+   (unknown, not absent);
+e, one analysis step recorded both ways: PhyKIT relative composition variability on bix-45-q1 (GPT-5.6 Sol, replicate
+   1), the tool-version case of Fig. 2d.
+
+Extended Data Fig. 5: a, accuracy against median input tokens per model and condition, by benchmark; b, input tokens of
+correct and incorrect runs (the first version's panel b); c, input tokens against actions (the first version's panel c).
+
+Input tokens include cached context unless stated. Actions are the agent's tool calls (shell commands, Galaxy interface
+calls, web searches or fetches, file reads, writes and edits), as in On-demand Fig. 6. Tokens differ between models in
+price, so ratios are not monetary costs. A run is correct when accepted or, for IWC, at >= 0.99 output agreement.
+Intervals are 95% percentile cluster-bootstrap intervals (clusters are BixBench source capsules, otherwise tasks); P values
+come from paired cluster sign-flip randomization tests (200,000 draws; exact with at most 16 clusters).
+Writes figures/fig5.{svg,pdf,png}, fig5_source_data.csv, ed_fig5.{svg,pdf,png} and ed_fig5_source_data.csv.
+```
