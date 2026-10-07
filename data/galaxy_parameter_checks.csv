@@ -1,0 +1,63 @@
+benchmark,model,prov_status,prov_stage,requests
+BixBench-Verified-50,DeepSeek V4 Pro,matched,post_run,516
+BixBench-Verified-50,DeepSeek V4 Pro,mismatch,post_run,83
+BixBench-Verified-50,DeepSeek V4 Pro,mismatch,validation,226
+BixBench-Verified-50,DeepSeek V4 Pro,no_explicit_non_dataset_parameters,post_run,22
+BixBench-Verified-50,DeepSeek V4 Pro,none,none,36
+BixBench-Verified-50,GPT-5.5,matched,post_run,122
+BixBench-Verified-50,GPT-5.5,mismatch,post_run,30
+BixBench-Verified-50,GPT-5.5,mismatch,validation,101
+BixBench-Verified-50,GPT-5.5,no_explicit_non_dataset_parameters,post_run,9
+BixBench-Verified-50,GPT-5.5,none,none,7
+BixBench-Verified-50,GPT-5.6 Luna,matched,post_run,1020
+BixBench-Verified-50,GPT-5.6 Luna,mismatch,post_run,198
+BixBench-Verified-50,GPT-5.6 Luna,mismatch,validation,669
+BixBench-Verified-50,GPT-5.6 Luna,no_explicit_non_dataset_parameters,post_run,219
+BixBench-Verified-50,GPT-5.6 Luna,none,none,277
+BixBench-Verified-50,GPT-5.6 Luna,not_comparable,post_run,1
+BixBench-Verified-50,GPT-5.6 Sol,matched,post_run,462
+BixBench-Verified-50,GPT-5.6 Sol,mismatch,post_run,71
+BixBench-Verified-50,GPT-5.6 Sol,mismatch,validation,235
+BixBench-Verified-50,GPT-5.6 Sol,no_explicit_non_dataset_parameters,post_run,74
+BixBench-Verified-50,GPT-5.6 Sol,none,none,36
+CompBioBench,DeepSeek V4 Pro,matched,post_run,2258
+CompBioBench,DeepSeek V4 Pro,mismatch,post_run,225
+CompBioBench,DeepSeek V4 Pro,mismatch,validation,606
+CompBioBench,DeepSeek V4 Pro,no_explicit_non_dataset_parameters,post_run,278
+CompBioBench,DeepSeek V4 Pro,none,none,297
+CompBioBench,GPT-5.5,matched,post_run,629
+CompBioBench,GPT-5.5,mismatch,post_run,73
+CompBioBench,GPT-5.5,mismatch,validation,168
+CompBioBench,GPT-5.5,no_explicit_non_dataset_parameters,post_run,76
+CompBioBench,GPT-5.5,none,none,73
+CompBioBench,GPT-5.6 Luna,matched,post_run,2706
+CompBioBench,GPT-5.6 Luna,mismatch,post_run,306
+CompBioBench,GPT-5.6 Luna,mismatch,validation,862
+CompBioBench,GPT-5.6 Luna,no_explicit_non_dataset_parameters,post_run,375
+CompBioBench,GPT-5.6 Luna,none,none,455
+CompBioBench,GPT-5.6 Luna,not_comparable,post_run,2
+CompBioBench,GPT-5.6 Sol,matched,post_run,1164
+CompBioBench,GPT-5.6 Sol,mismatch,post_run,73
+CompBioBench,GPT-5.6 Sol,mismatch,validation,303
+CompBioBench,GPT-5.6 Sol,no_explicit_non_dataset_parameters,post_run,108
+CompBioBench,GPT-5.6 Sol,none,none,138
+IWC,DeepSeek V4 Pro,matched,post_run,119
+IWC,DeepSeek V4 Pro,mismatch,post_run,20
+IWC,DeepSeek V4 Pro,mismatch,validation,52
+IWC,DeepSeek V4 Pro,no_explicit_non_dataset_parameters,post_run,12
+IWC,DeepSeek V4 Pro,none,none,20
+IWC,GPT-5.5,matched,post_run,29
+IWC,GPT-5.5,mismatch,post_run,30
+IWC,GPT-5.5,mismatch,validation,42
+IWC,GPT-5.5,no_explicit_non_dataset_parameters,post_run,5
+IWC,GPT-5.5,none,none,15
+IWC,GPT-5.6 Luna,matched,post_run,278
+IWC,GPT-5.6 Luna,mismatch,post_run,61
+IWC,GPT-5.6 Luna,mismatch,validation,87
+IWC,GPT-5.6 Luna,no_explicit_non_dataset_parameters,post_run,25
+IWC,GPT-5.6 Luna,none,none,49
+IWC,GPT-5.6 Sol,matched,post_run,180
+IWC,GPT-5.6 Sol,mismatch,post_run,53
+IWC,GPT-5.6 Sol,mismatch,validation,58
+IWC,GPT-5.6 Sol,no_explicit_non_dataset_parameters,post_run,15
+IWC,GPT-5.6 Sol,none,none,18
