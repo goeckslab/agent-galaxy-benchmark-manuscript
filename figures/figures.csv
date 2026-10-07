@@ -4,3 +4,9 @@ fig2_performance,main,Agents show similar observed benchmark performance in Gala
 fig3_structured_environment,main,Galaxy provides a structured environment for agent analyses,figures/fig3_structured_environment/make_figure.py,figures/fig3_structured_environment/source_data.csv,draft
 fig4_solution_variability,main,Answer agreement and tool use vary across model configurations,figures/fig4_solution_variability/make_figure.py,figures/fig4_solution_variability/source_data.csv,draft
 fig5_token_cost,main,Galaxy records analyses as structured provenance and uses more input tokens on question-answering tasks,figures/fig5_token_cost/make_figure.py,figures/fig5_token_cost/source_data.csv,draft
+ed_fig2_failure_causes,supplementary,Failure causes and sensitivity of the accuracy comparison,figures/ed_fig2_failure_causes/make_figure.py,figures/ed_fig2_failure_causes/source_data.csv,draft
+ed_fig3_execution_errors,supplementary,"Task status, execution errors and final correctness",figures/ed_fig3_execution_errors/make_figure.py,figures/ed_fig3_execution_errors/source_data.csv,draft
+ed_fig4_tools_and_answers,supplementary,"Tool inventory, route similarity, answer matching, difficulty and UDT methods",figures/ed_fig4_tools_and_answers/make_figure.py,figures/ed_fig4_tools_and_answers/source_data.csv,draft
+ed_fig5_token_use,supplementary,"Token use by model, outcome and action count",figures/ed_fig5_token_use/make_figure.py,figures/ed_fig5_token_use/source_data.csv,draft
+ed_fig6_audit_checks,supplementary,Independent checks of the audits and of benchmark integrity,figures/ed_fig6_audit_checks/make_figure.py,figures/ed_fig6_audit_checks/source_data.csv,draft
+ed_fig7_verification_recovery,supplementary,"Verification, recovery and selected cases",figures/ed_fig7_verification_recovery/make_figure.py,figures/ed_fig7_verification_recovery/source_data.csv,draft
