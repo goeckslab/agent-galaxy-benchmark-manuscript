@@ -1878,8 +1878,8 @@ CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,2,UDT,udt
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,3,UDT,udt
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops,installed
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1,UDT,udt
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1,borzoi_probe_v4,installed
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool,installed
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,3,UDT,udt
@@ -2231,8 +2231,6 @@ CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/rep
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene,installed
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome,installed
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,3,UDT,udt
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/mothur_pairwise_seqs/mothur_pairwise_seqs,installed
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene,installed
 CompBioBench,conservation-lookup-q1,GPT-5.5,1,UDT,udt
 CompBioBench,conservation-lookup-q1,GPT-5.5,2,UDT,udt
@@ -2248,25 +2246,8 @@ CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/mothur_align_seqs,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/mothur_pairwise_seqs/mothur_pairwise_seqs,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,90a10810-c340-4131-90e3-43c2684e49c2,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,Paste1,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,UDT,udt
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/artbio/concatenate_multiple_datasets/cat_multi_datasets,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: extractseq35,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: fuzznuc37,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: needle56,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: seqret84,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/galaxyp/filter_by_fasta_ids/filter_by_fasta_ids,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/mothur_pairwise_seqs/mothur_pairwise_seqs,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_subseq,installed
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,toolshed.g2.bx/repos/bgruening/find_subsequences/bg_find_subsequences,installed
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,2,upload1,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,3,CONVERTER_gz_to_uncompressed,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,3,Cut1,installed
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,3,UDT,udt
@@ -2305,6 +2286,9 @@ CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,3,upload1,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/krakentools_extract_kraken_reads/krakentools_extract_kraken_reads,installed
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,2,Grouping1,installed
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax,installed
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,3,Grouping1,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops,installed
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
@@ -2313,19 +2297,7 @@ CompBioBench,contaminated-rna-q1,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/krak
 CompBioBench,contaminated-rna-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
 CompBioBench,contaminated-rna-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,contaminated-rna-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/krakentools_extract_kraken_reads/krakentools_extract_kraken_reads,installed
-CompBioBench,contaminated-rna-q1,GPT-5.5,3,UDT,udt
-CompBioBench,contaminated-rna-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python,installed
-CompBioBench,contaminated-rna-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
-CompBioBench,contaminated-rna-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_sample,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,Grouping1,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_fasta/cshl_fastq_to_fasta,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops,installed
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/krakentools_extract_kraken_reads/krakentools_extract_kraken_reads,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx,installed
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_seq,installed
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax,installed
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops,installed
@@ -2360,8 +2332,7 @@ CompBioBench,contaminated-rna-q2,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/krak
 CompBioBench,contaminated-rna-q2,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
 CompBioBench,contaminated-rna-q2,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,contaminated-rna-q2,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/krakentools_extract_kraken_reads/krakentools_extract_kraken_reads,installed
-CompBioBench,contaminated-rna-q2,GPT-5.5,3,Count1,installed
-CompBioBench,contaminated-rna-q2,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
+CompBioBench,contaminated-rna-q2,GPT-5.5,3,UDT,udt
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2,installed
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python,installed
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped,installed
@@ -2411,14 +2382,10 @@ CompBioBench,contaminated-rna-q3,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/krak
 CompBioBench,contaminated-rna-q3,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_sample,installed
 CompBioBench,contaminated-rna-q3,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_seq,installed
 CompBioBench,contaminated-rna-q3,GPT-5.5,2,UDT,udt
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,CONVERTER_gz_to_uncompressed,installed
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,UDT,udt
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/fastq_info/fastq_info,installed
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python,installed
+CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/fastq_stats/fastq_stats,installed
 CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
 CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2,installed
-CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/peterjc/sample_seqs/sample_seqs,installed
+CompBioBench,contaminated-rna-q3,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/krakentools_extract_kraken_reads/krakentools_extract_kraken_reads,installed
 CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool,installed
 CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax,installed
 CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops,installed
@@ -2445,7 +2412,11 @@ CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/devt
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python,installed
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2,installed
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
-CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,Grep1,installed
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,sort1,installed
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool,installed
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular,installed
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2,installed
 CompBioBench,covid-patient-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,covid-patient-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
 CompBioBench,covid-patient-q1,DeepSeek V4 Pro,3,Grouping1,installed
@@ -2868,6 +2839,13 @@ CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2,installed
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff,installed
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_download,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,Cut1,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,UDT,udt
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_manipulate/anndata_manipulate,installed
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/scanpy_normalize/scanpy_normalize,installed
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_compute_graph/scanpy_compute_graph,installed
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_cluster/scanpy_find_cluster,installed
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_markers/scanpy_find_markers,installed
@@ -2960,7 +2938,6 @@ CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,1,UDT,udt
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,2,UDT,udt
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,2,encode-atac-223-static-probe-v1,installed
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,3,UDT,udt
 CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,2,UDT,udt
@@ -3068,9 +3045,9 @@ CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,2,Count1,installed
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,2,Grouping1,installed
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular,installed
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,UDT,udt
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam,installed
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem,installed
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup,installed
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,comp1,installed
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular,installed
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,3,wc_gnu,installed
 CompBioBench,exogenous-mix-reads-q1,GPT-5.5,1,UDT,udt
 CompBioBench,exogenous-mix-reads-q1,GPT-5.5,2,Count1,installed
 CompBioBench,exogenous-mix-reads-q1,GPT-5.5,2,UDT,udt
@@ -3186,7 +3163,6 @@ CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,1,UDT,udt
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,1,upload1,installed
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,2,UDT,udt
-CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/tyty/structurefold/predict_pipeline,installed
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,3,UDT,udt
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/tyty/structurefold/predict_pipeline,installed
@@ -3371,8 +3347,6 @@ CompBioBench,find-deletion-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/min
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/mosdepth/mosdepth,installed
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view,installed
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,1,UDT,udt
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_export/anndata_export,installed
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,2,comp1,installed
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool,installed
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/anndata_export/anndata_export,installed
@@ -3385,9 +3359,6 @@ CompBioBench,finding-geo-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/m
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect,installed
 CompBioBench,finding-geo-q1,GPT-5.5,1,UDT,udt
 CompBioBench,finding-geo-q1,GPT-5.5,2,UDT,udt
-CompBioBench,finding-geo-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool,installed
-CompBioBench,finding-geo-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
-CompBioBench,finding-geo-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect,installed
 CompBioBench,finding-geo-q1,GPT-5.5,3,UDT,udt
 CompBioBench,finding-geo-q1,GPT-5.6 Luna,1,CONVERTER_archive_to_directory,installed
 CompBioBench,finding-geo-q1,GPT-5.6 Luna,1,UDT,udt
@@ -3606,8 +3577,6 @@ CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/rep
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/scanpy_filter/scanpy_filter,installed
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute,installed
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,3,UDT,udt
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/scanpy_filter/scanpy_filter,installed
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,1,Cut1,installed
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,1,Filter1,installed
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,1,UDT,udt
@@ -3950,7 +3919,6 @@ CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,huggingface-entropy-q1,GPT-5.5,1,UDT,udt
 CompBioBench,huggingface-entropy-q1,GPT-5.5,2,UDT,udt
-CompBioBench,huggingface-entropy-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,huggingface-entropy-q1,GPT-5.5,3,UDT,udt
 CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/artbio/concatenate_multiple_datasets/cat_multi_datasets,installed
@@ -3998,18 +3966,7 @@ CompBioBench,identify-donor-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftoo
 CompBioBench,identify-donor-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query/bcftools_query,installed
 CompBioBench,identify-donor-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query_list_samples/bcftools_query_list_samples,installed
 CompBioBench,identify-donor-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,CONVERTER_vcf_bgzip_to_tabix_0,installed
 CompBioBench,identify-donor-q1,GPT-5.5,3,UDT,udt
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/samtools_idxstats/samtools_idxstats,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_gtcheck/bcftools_gtcheck,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_coverage/samtools_coverage,installed
-CompBioBench,identify-donor-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view,installed
 CompBioBench,identify-donor-q1,GPT-5.6 Luna,1,CONVERTER_vcf_bgzip_to_tabix_0,installed
 CompBioBench,identify-donor-q1,GPT-5.6 Luna,1,Grep1,installed
 CompBioBench,identify-donor-q1,GPT-5.6 Luna,1,UDT,udt
@@ -4126,12 +4083,7 @@ CompBioBench,identify-related-q1,GPT-5.5,1,UDT,udt
 CompBioBench,identify-related-q1,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/plink/plink,installed
 CompBioBench,identify-related-q1,GPT-5.5,2,UDT,udt
 CompBioBench,identify-related-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/plink/plink,installed
-CompBioBench,identify-related-q1,GPT-5.5,3,Cut1,installed
-CompBioBench,identify-related-q1,GPT-5.5,3,Paste1,installed
 CompBioBench,identify-related-q1,GPT-5.5,3,UDT,udt
-CompBioBench,identify-related-q1,GPT-5.5,3,lped2pbedconvert,installed
-CompBioBench,identify-related-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/datamash_transpose/datamash_transpose,installed
-CompBioBench,identify-related-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/plink/plink,installed
 CompBioBench,identify-related-q1,GPT-5.6 Luna,2,CONVERTER_gz_to_uncompressed,installed
 CompBioBench,identify-related-q1,GPT-5.6 Luna,2,UDT,udt
 CompBioBench,identify-related-q1,GPT-5.6 Luna,3,CONVERTER_gz_to_uncompressed,installed
@@ -4185,15 +4137,10 @@ CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,1,UDT,udt
 CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,match-genotypes-q1,GPT-5.5,1,UDT,udt
-CompBioBench,match-genotypes-q1,GPT-5.5,2,CONVERTER_archive_to_directory,installed
 CompBioBench,match-genotypes-q1,GPT-5.5,2,UDT,udt
-CompBioBench,match-genotypes-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip,installed
 CompBioBench,match-genotypes-q1,GPT-5.5,3,UDT,udt
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1,CONVERTER_archive_to_directory,installed
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1,UDT,udt
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1,cat1,installed
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool,installed
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,1,tp_grep_tool,installed
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,2,CONVERTER_archive_to_directory,installed
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,2,CONVERTER_gz_to_uncompressed,installed
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,2,UDT,udt
@@ -4508,8 +4455,6 @@ CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos
 CompBioBench,perturb-seq-align-q1,GPT-5.5,1,UDT,udt
 CompBioBench,perturb-seq-align-q1,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/anndata_export/anndata_export,installed
 CompBioBench,perturb-seq-align-q1,GPT-5.5,2,UDT,udt
-CompBioBench,perturb-seq-align-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_markers/scanpy_find_markers,installed
-CompBioBench,perturb-seq-align-q1,GPT-5.5,2,toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect,installed
 CompBioBench,perturb-seq-align-q1,GPT-5.5,3,UDT,udt
 CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,1,Grep1,installed
 CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,1,Grouping1,installed
@@ -4610,8 +4555,11 @@ CompBioBench,phase-chain-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/b
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed,installed
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth,installed
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,UDT,udt
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/bgruening/sambamba_sort/sambamba_sort,installed
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam,installed
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem,installed
-CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/devteam/samtools_idxstats/samtools_idxstats,installed
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call,installed
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup,installed
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem,installed
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes,installed
@@ -4748,16 +4696,7 @@ CompBioBench,protein-shape-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devtea
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/principal_component_analysis/pca1,installed
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/imgteam/morphological_operations/morphological_operations,installed
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/imgteam/points2binaryimage/ip_points_to_binaryimage,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,Convert characters1,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,Filter1,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,Grep1,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,Summary_Statistics1,installed
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,UDT,udt
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_svg_depiction/openbabel_svg_depiction,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/principal_component_analysis/pca1,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/devteam/scatterplot/scatterplot_rpy,installed
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1,installed
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,3,UDT,udt
 CompBioBench,protein-shape-q1,GPT-5.6 Sol,1,UDT,udt
 CompBioBench,protein-shape-q1,GPT-5.6 Sol,2,Convert characters1,installed
@@ -4812,9 +4751,7 @@ CompBioBench,read-proportions-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/
 CompBioBench,read-proportions-q1,GPT-5.5,1,UDT,udt
 CompBioBench,read-proportions-q1,GPT-5.5,2,UDT,udt
 CompBioBench,read-proportions-q1,GPT-5.5,3,UDT,udt
-CompBioBench,read-proportions-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2,installed
-CompBioBench,read-proportions-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/devteam/samtools_idxstats/samtools_idxstats,installed
-CompBioBench,read-proportions-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view,installed
+CompBioBench,read-proportions-q1,GPT-5.5,3,bowtie2,installed
 CompBioBench,read-proportions-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,read-proportions-q1,GPT-5.6 Luna,1,read-proportions-diagnostic-api,installed
 CompBioBench,read-proportions-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam,installed
@@ -4859,6 +4796,10 @@ CompBioBench,read-proportions-q1,GPT-5.6 Sol,3,UDT,udt
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2,installed
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/devteam/samtools_idxstats/samtools_idxstats,installed
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/kallisto_quant/kallisto_quant,installed
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,1,UDT,udt
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,1,liftOver1,installed
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,2,liftOver1,installed
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
@@ -5167,7 +5108,6 @@ CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/i
 CompBioBench,sample-swap-rna-q1,GPT-5.5,1,UDT,udt
 CompBioBench,sample-swap-rna-q1,GPT-5.5,2,UDT,udt
 CompBioBench,sample-swap-rna-q1,GPT-5.5,3,UDT,udt
-CompBioBench,sample-swap-rna-q1,GPT-5.5,3,udt-render-probe-v4,installed
 CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,1,Cut1,installed
 CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,1,Grouping1,installed
 CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,1,Remove beginning1,installed
@@ -5387,6 +5327,9 @@ CompBioBench,spatial-sim-q2,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/datam
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular,installed
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute,installed
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,3,UDT,udt
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,1,UDT,udt
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,3,UDT,udt
@@ -5395,14 +5338,11 @@ CompBioBench,splice-pred-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/e
 CompBioBench,splice-pred-q1,GPT-5.5,1,UDT,udt
 CompBioBench,splice-pred-q1,GPT-5.5,2,UDT,udt
 CompBioBench,splice-pred-q1,GPT-5.5,3,UDT,udt
-CompBioBench,splice-pred-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
-CompBioBench,splice-pred-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,2,UDT,udt
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,3,UDT,udt
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed,installed
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
 CompBioBench,splice-pred-q1,GPT-5.6 Sol,1,UDT,udt
 CompBioBench,splice-pred-q1,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1,installed
@@ -5594,32 +5534,15 @@ CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,2,UDT,udt
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/goeckslab/rds_to_tabular/rds_to_tabular,installed
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/seurat_data/seurat_data,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,Count1,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,Cut1,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,Grep1,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,Show beginning1,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,Show tail1,installed
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,UDT,udt
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/add_line_to_file/add_line_to_file,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/unique/bg_uniq,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/devteam/add_value/addValue,installed
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/ebi-gxa/sceasy_convert/sceasy_convert,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/ebi-gxa/seurat_filter_cells/seurat_filter_cells,installed
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/goeckslab/rds_to_tabular/rds_to_tabular,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/seurat_data/seurat_data,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/ufz/xlsx2tsv/xlsx2tsv,installed
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,3,wc_gnu,installed
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,1,UDT,udt
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,2,UDT,udt
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,3,UDT,udt
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,1,UDT,udt
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/ebi-gxa/seurat_export_cellbrowser/seurat_export_cellbrowser,installed
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/goeckslab/rds_to_tabular/rds_to_tabular,installed
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/ufz/xlsx2tsv/xlsx2tsv,installed
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,2,UDT,udt
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/goeckslab/rds_to_tabular/rds_to_tabular,installed
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/iuc/seurat_data/seurat_data,installed
@@ -5691,7 +5614,6 @@ CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,3,UDT,udt
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,1,UDT,udt
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,2,UDT,udt
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,3,UDT,udt
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query/bcftools_query,installed
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,1,UDT,udt
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool,installed
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query/bcftools_query,installed

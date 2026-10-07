@@ -1244,7 +1244,7 @@ CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,Galaxy,3,10611154,10461824,138
 CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,Galaxy,1,1757693,1703424,38
 CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,Galaxy,2,48100779,47859968,208
 CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,Galaxy,3,1701658,1660800,45
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,46159655,45872128,201
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,6373059,6225152,72
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,2,10370636,10235648,94
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,3,20143749,19964928,155
 CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,Galaxy,1,3493796,3416704,41
@@ -1273,9 +1273,9 @@ CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,Galaxy,2,36
 CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,Galaxy,3,4215625,4116096,89
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,1,60920993,60692480,180
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,21336822,21145856,171
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,53468506,52866560,328
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,16148214,16023936,150
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,1,793649,758272,30
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,52385906,51780992,217
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,2064774,2007936,53
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,3,906464,859904,20
 CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,Galaxy,1,13770055,13642624,136
 CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,Galaxy,2,43070777,42903808,180
@@ -1301,7 +1301,7 @@ CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,Galaxy,3,3624561,3438848,71
 CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,Galaxy,1,4974906,4834304,84
 CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,Galaxy,2,9083442,8886784,81
 CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,Galaxy,3,4858430,4722304,69
-CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,27176958,27016448,119
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,26249114,25881216,162
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,2,7037619,6928896,95
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,3,24872383,24722176,223
 CompBioBench,disease-samples-q1,DeepSeek V4 Pro,Galaxy,1,11412109,11277568,125
@@ -1324,7 +1324,7 @@ CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,Galaxy,2,8768492,8673792,102
 CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,Galaxy,3,18867335,18737024,182
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,1,5375263,5253888,70
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,2,12780463,12665472,151
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,3,4038945,3940608,79
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,3,7408889,7260544,83
 CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,Galaxy,1,16178265,15792896,102
 CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,Galaxy,2,27638140,26399744,268
 CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,Galaxy,3,14489848,13756416,155
@@ -1337,7 +1337,7 @@ CompBioBench,find-amplification-q1,DeepSeek V4 Pro,Galaxy,3,3234590,3110656,59
 CompBioBench,find-deletion-q1,DeepSeek V4 Pro,Galaxy,1,8311281,8045568,137
 CompBioBench,find-deletion-q1,DeepSeek V4 Pro,Galaxy,2,8296156,8102528,99
 CompBioBench,find-deletion-q1,DeepSeek V4 Pro,Galaxy,3,16100129,15880320,148
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,18040988,17858048,124
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,4433560,4373504,76
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,76188656,75307520,405
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,41498770,40491264,412
 CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,Galaxy,1,1963745,1919360,51
@@ -1422,7 +1422,7 @@ CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,Galaxy,1,13932601,13766528,13
 CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,Galaxy,2,11433659,11266048,158
 CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,Galaxy,3,29975423,29744000,190
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,1,18350048,17470976,119
-CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,9434095,9283712,96
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,16111194,15952896,119
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,3,30519241,30216448,162
 CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,Galaxy,1,1343148,1297152,18
 CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,Galaxy,2,4585471,4475904,85
@@ -1439,7 +1439,7 @@ CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,Galaxy,3,2754720,
 CompBioBench,read-proportions-q1,DeepSeek V4 Pro,Galaxy,1,813058,768000,22
 CompBioBench,read-proportions-q1,DeepSeek V4 Pro,Galaxy,2,19285050,19114752,148
 CompBioBench,read-proportions-q1,DeepSeek V4 Pro,Galaxy,3,6379413,6289280,79
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,58484036,58209920,247
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,21239622,20973568,143
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,2,18041894,17869440,177
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,3,73822449,73389184,328
 CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,Galaxy,1,16655972,16528512,147
@@ -1452,7 +1452,7 @@ CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,Galaxy,1,20566411,20407424,1
 CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,Galaxy,2,29205263,29021056,193
 CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,Galaxy,3,30578055,30385536,230
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,64591084,64287872,242
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,37129803,36887808,200
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,10001924,9885312,90
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,3,26366929,26144000,151
 CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,Galaxy,1,17485337,17308672,112
 CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,Galaxy,2,7326411,7198976,90
@@ -1472,7 +1472,7 @@ CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,Galaxy,3,7543908,7408512,112
 CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,Galaxy,1,5614897,5543040,97
 CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,Galaxy,2,4605411,4514304,83
 CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,Galaxy,3,42464566,42123648,225
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,86007864,85341696,363
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,11058951,10946432,112
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,2,3982311,3899904,78
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,3,28112077,27439488,306
 CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,Galaxy,1,25086818,24728192,172
@@ -1486,7 +1486,7 @@ CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,Galaxy,2,11377365,11199744,16
 CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,Galaxy,3,77996011,76135296,621
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,1,10415064,10275072,112
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,15335723,15153920,121
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,152409060,149904896,914
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,5015555,4883840,77
 CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,Galaxy,1,3669815,3613312,75
 CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,Galaxy,2,5892748,5795840,86
 CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,Galaxy,3,14138217,13993472,158
@@ -1801,10 +1801,10 @@ CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,custom code,2,423886,410752,19
 CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,custom code,3,284718,275840,14
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,1,435008,358528,11
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,2,415342,344192,13
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,5493257,5149440,87
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,492302,436736,14
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,1,474669,411264,22
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,2,879936,791808,23
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,5908177,5652352,72
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,5283565,5053440,68
 CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,Galaxy,1,1813178,1688832,36
 CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,Galaxy,2,2044997,1907200,38
 CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,Galaxy,3,5969321,5619968,92
@@ -1825,7 +1825,7 @@ CompBioBench,atac-doublet-q1,GPT-5.5,Galaxy,2,396973,349056,10
 CompBioBench,atac-doublet-q1,GPT-5.5,Galaxy,3,350037,295936,8
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,1,514826,436480,12
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,2,1743583,1641472,30
-CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,2476073,2356736,38
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,1708011,1568768,36
 CompBioBench,bam-infer-read-length-q1,GPT-5.5,Galaxy,1,162380,122496,4
 CompBioBench,bam-infer-read-length-q1,GPT-5.5,Galaxy,2,259895,202112,5
 CompBioBench,bam-infer-read-length-q1,GPT-5.5,Galaxy,3,132243,88704,6
@@ -1846,7 +1846,7 @@ CompBioBench,borzoi-basic-q1,GPT-5.5,Galaxy,2,8679664,8461824,78
 CompBioBench,borzoi-basic-q1,GPT-5.5,Galaxy,3,3664862,3478528,67
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,1,1781123,1555840,44
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,2,1408632,1322240,30
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,5083332,4845952,73
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,9131107,8871424,64
 CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,Galaxy,1,7030585,6740992,54
 CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,Galaxy,2,846576,775040,20
 CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,Galaxy,3,4034687,3836416,56
@@ -1876,13 +1876,13 @@ CompBioBench,conservation-lookup-q1,GPT-5.5,Galaxy,2,3428333,3093504,61
 CompBioBench,conservation-lookup-q1,GPT-5.5,Galaxy,3,6697957,6200064,112
 CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,1,702119,594560,21
 CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,2,876031,709504,19
-CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,3143393,3034240,45
+CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,1413361,1276416,30
 CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,1,1607817,1357824,29
 CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,2,1086091,905344,27
-CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,978671,913664,39
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,4233525,4078592,56
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,1,2891633,2552448,46
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,2,2126546,1882880,12
-CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,3506539,3327616,87
+CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,1418037,1226240,35
 CompBioBench,covid-patient-q1,GPT-5.5,Galaxy,1,1580151,1424384,28
 CompBioBench,covid-patient-q1,GPT-5.5,Galaxy,2,896256,787968,22
 CompBioBench,covid-patient-q1,GPT-5.5,Galaxy,3,3915697,3764224,57
@@ -1908,8 +1908,8 @@ CompBioBench,disease-samples-q1,GPT-5.5,Galaxy,1,228022,178176,6
 CompBioBench,disease-samples-q1,GPT-5.5,Galaxy,2,739276,662144,12
 CompBioBench,disease-samples-q1,GPT-5.5,Galaxy,3,2775884,2635392,52
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,1,4747212,4379008,49
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,11227687,10800128,104
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,13018246,12744192,103
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,6476178,6219264,71
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,5250787,5052928,79
 CompBioBench,enformer-basic-q1,GPT-5.5,Galaxy,1,413847,353408,13
 CompBioBench,enformer-basic-q1,GPT-5.5,Galaxy,2,1864157,1708544,43
 CompBioBench,enformer-basic-q1,GPT-5.5,Galaxy,3,1980285,1864832,38
@@ -1929,7 +1929,7 @@ CompBioBench,exogenous-mix-reads-q2,GPT-5.5,Galaxy,1,775630,706176,14
 CompBioBench,exogenous-mix-reads-q2,GPT-5.5,Galaxy,2,3618038,3354112,68
 CompBioBench,exogenous-mix-reads-q2,GPT-5.5,Galaxy,3,4380879,4160000,86
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,1,556376,498176,20
-CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,1203826,1089280,40
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,451876,411648,16
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,3,1270872,1180928,45
 CompBioBench,find-amplification-q1,GPT-5.5,Galaxy,1,1532621,1360128,27
 CompBioBench,find-amplification-q1,GPT-5.5,Galaxy,2,5230868,5071872,46
@@ -1938,8 +1938,8 @@ CompBioBench,find-deletion-q1,GPT-5.5,Galaxy,1,1734835,1574656,31
 CompBioBench,find-deletion-q1,GPT-5.5,Galaxy,2,2047492,1935488,44
 CompBioBench,find-deletion-q1,GPT-5.5,Galaxy,3,1532140,1391616,39
 CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,11249599,10259584,168
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,32759571,31280512,274
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,19321255,18903552,156
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,12699596,12417536,94
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,30205502,29527040,204
 CompBioBench,gene-expression-query-q1,GPT-5.5,Galaxy,1,630205,560768,16
 CompBioBench,gene-expression-query-q1,GPT-5.5,Galaxy,2,670115,614912,24
 CompBioBench,gene-expression-query-q1,GPT-5.5,Galaxy,3,737602,684416,28
@@ -1954,7 +1954,7 @@ CompBioBench,gene-info-grab-q1,GPT-5.5,Galaxy,2,2020154,1910016,49
 CompBioBench,gene-info-grab-q1,GPT-5.5,Galaxy,3,4288624,4075264,76
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,1,225800,192896,9
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,2,5456957,5218944,66
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,3790492,3614208,64
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,350193,316416,13
 CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,Galaxy,1,463808,399744,15
 CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,Galaxy,2,107235,86656,5
 CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,Galaxy,3,73633,64384,4
@@ -1969,36 +1969,36 @@ CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,Galaxy,2,2203594,2059648,6
 CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,Galaxy,3,1919090,1794304,57
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,1,629722,524032,17
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,2,7898593,7643392,120
-CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,1508217,1394816,38
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,391183,341504,13
 CompBioBench,gwas-ancestry-q1,GPT-5.5,Galaxy,1,1091643,1000192,22
 CompBioBench,gwas-ancestry-q1,GPT-5.5,Galaxy,2,3224633,2962816,75
 CompBioBench,gwas-ancestry-q1,GPT-5.5,Galaxy,3,6095433,5815680,92
-CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,7792821,7356032,63
+CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,1418133,1302016,42
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,2,6148904,5742208,88
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,3,1655205,1513984,46
 CompBioBench,histone-chip-q1,GPT-5.5,Galaxy,1,919302,807424,24
 CompBioBench,histone-chip-q1,GPT-5.5,Galaxy,2,2326689,2228736,73
 CompBioBench,histone-chip-q1,GPT-5.5,Galaxy,3,3247097,3005568,62
 CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,1,980823,813440,30
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,7208892,7000704,80
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,4395822,4155136,74
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,2886398,2643968,50
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,1949732,1715200,39
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,1,698384,596352,19
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,13015287,12457088,157
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,15114873,14687104,124
+CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,3042632,2808832,46
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,1,2535463,2384896,52
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,2,1894901,1759104,51
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,9180959,8878720,114
+CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,926377,843264,20
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,1,7044608,6650112,89
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,2,6285874,6002944,84
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,6190604,6002688,97
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,2262010,2145280,36
 CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,1,1209188,1099136,27
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,2313557,2126720,67
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,1892634,1758208,63
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,2302490,2101760,41
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,968661,882176,17
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,1,2043507,1875328,40
-CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,12832739,12615680,114
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,2476637,2319872,79
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,3,6982171,6702720,88
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,1,544745,437120,14
-CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,2,1049165,969856,44
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,2,495973,422400,13
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,3,2250188,2148736,54
 CompBioBench,mystery-peak-set-q1,GPT-5.5,Galaxy,1,463592,346240,14
 CompBioBench,mystery-peak-set-q1,GPT-5.5,Galaxy,2,1355203,1239808,36
@@ -2016,8 +2016,8 @@ CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,Galaxy,1,1329553,1105024,33
 CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,Galaxy,2,6459642,6256128,86
 CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,Galaxy,3,5729303,5399680,92
 CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,1295204,1192192,31
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,5609303,5409408,74
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,4122133,3977088,63
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,902664,806400,27
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,1691757,1591808,33
 CompBioBench,perturb-seq-effect-q1,GPT-5.5,Galaxy,1,699668,539520,17
 CompBioBench,perturb-seq-effect-q1,GPT-5.5,Galaxy,2,580090,457600,16
 CompBioBench,perturb-seq-effect-q1,GPT-5.5,Galaxy,3,2284009,2128768,52
@@ -2038,12 +2038,12 @@ CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,Galaxy,2,439838,368000,17
 CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,Galaxy,3,2194415,2063104,45
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,1,407450,359296,11
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,2,2769728,2578688,41
-CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,2680250,2551296,59
+CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,1374336,1285632,24
 CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,1,970580,871936,22
 CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,2,2945079,2811008,32
-CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,4749872,4544896,60
+CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,1139696,1029632,27
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,1,2334672,2145408,45
-CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,6706665,6543360,57
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,5687199,5481984,54
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,3,4994716,4665088,63
 CompBioBench,reverse-search-gwas-q1,GPT-5.5,Galaxy,1,12092761,11406336,115
 CompBioBench,reverse-search-gwas-q1,GPT-5.5,Galaxy,2,18459751,17778304,153
@@ -2053,7 +2053,7 @@ CompBioBench,reverse-search-gwas-q2,GPT-5.5,Galaxy,2,3881104,3625344,53
 CompBioBench,reverse-search-gwas-q2,GPT-5.5,Galaxy,3,14798614,14537216,104
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,1,1604370,1378560,40
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,2,1905167,1750656,40
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,9366607,9112192,91
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,3414949,3238912,66
 CompBioBench,sample-swap-atac-q1,GPT-5.5,Galaxy,1,2674156,2397184,44
 CompBioBench,sample-swap-atac-q1,GPT-5.5,Galaxy,2,8852109,8524160,80
 CompBioBench,sample-swap-atac-q1,GPT-5.5,Galaxy,3,5657786,5419904,88
@@ -2062,19 +2062,19 @@ CompBioBench,sample-swap-atac-q2,GPT-5.5,Galaxy,2,632112,515456,14
 CompBioBench,sample-swap-atac-q2,GPT-5.5,Galaxy,3,,,
 CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,1,2238930,1948160,37
 CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,2,3223818,2905472,43
-CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,2398631,2187776,51
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,2353619,2243072,38
 CompBioBench,sample-swap-rna-q2,GPT-5.5,Galaxy,1,4442976,4214144,61
 CompBioBench,sample-swap-rna-q2,GPT-5.5,Galaxy,2,1544501,1358208,30
 CompBioBench,sample-swap-rna-q2,GPT-5.5,Galaxy,3,4283272,4084864,72
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,1,413261,375040,11
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,2,2358262,2212992,36
-CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,3330620,3170688,78
+CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,282078,238592,8
 CompBioBench,spatial-sim-q2,GPT-5.5,Galaxy,1,580482,523392,16
 CompBioBench,spatial-sim-q2,GPT-5.5,Galaxy,2,455887,390400,12
 CompBioBench,spatial-sim-q2,GPT-5.5,Galaxy,3,11755832,11472512,107
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,1,1054487,937728,24
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,2,1070164,968448,29
-CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,5661521,5443328,76
+CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,6959425,6729216,71
 CompBioBench,subtype-inflammation-q1,GPT-5.5,Galaxy,1,350663,310784,10
 CompBioBench,subtype-inflammation-q1,GPT-5.5,Galaxy,2,534704,474112,15
 CompBioBench,subtype-inflammation-q1,GPT-5.5,Galaxy,3,4240866,3995136,75
@@ -2083,7 +2083,7 @@ CompBioBench,three-way-barnyard-q1,GPT-5.5,Galaxy,2,438480,321664,14
 CompBioBench,three-way-barnyard-q1,GPT-5.5,Galaxy,3,5547896,5279488,82
 CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,1,255152,191872,7
 CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,2,610673,494080,15
-CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,3895084,3751424,56
+CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,1587793,1468928,26
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,1,2126909,1786240,48
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,2,3525094,3254144,38
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,3,6596325,6350336,70
@@ -2095,7 +2095,7 @@ CompBioBench,variant-status-q1,GPT-5.5,Galaxy,2,528913,475136,14
 CompBioBench,variant-status-q1,GPT-5.5,Galaxy,3,231319,209408,11
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,1,4289493,3943168,69
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,2,1141860,961024,29
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,5196381,4999552,59
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,3252709,2793472,45
 CompBioBench,vcf-infer-build-q1,GPT-5.5,Galaxy,1,421808,352768,11
 CompBioBench,vcf-infer-build-q1,GPT-5.5,Galaxy,2,702035,616832,22
 CompBioBench,vcf-infer-build-q1,GPT-5.5,Galaxy,3,4341541,4180608,89
@@ -2472,9 +2472,9 @@ CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,Galaxy,1,13773
 CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,Galaxy,2,1883257,1768704,38
 CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,Galaxy,3,5448646,5218304,76
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,41837140,41157376,217
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,58528856,53749504,558
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,19728430,19171840,160
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,30505672,27467008,305
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,10296582,8110592,79
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,3767599,3616000,22
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,2,3143512,2171904,39
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,3,3688845,2172928,47
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,Galaxy,1,39700767,39065344,232
@@ -2591,7 +2591,7 @@ CompBioBench,identify-related-q1,GPT-5.6 Luna,Galaxy,3,1174767,1092096,29
 CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,Galaxy,1,6296751,5716736,69
 CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,Galaxy,2,14554754,14171392,150
 CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,Galaxy,3,11201864,10818048,87
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,28616447,28035072,252
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,33008968,32332032,152
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,2,59116458,57632256,478
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,3,4726609,3859968,79
 CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,Galaxy,1,7079873,6854144,49
@@ -2631,7 +2631,7 @@ CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,Galaxy,1,6635310,641075
 CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,Galaxy,2,973045,884480,31
 CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,Galaxy,3,5840585,5665280,82
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,53306398,52364160,425
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,35129322,33050240,258
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,5291649,5071104,33
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,3,5782974,5241088,44
 CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,Galaxy,1,5925510,5769216,56
 CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,Galaxy,2,15602146,15222272,129
@@ -2674,7 +2674,7 @@ CompBioBench,spatial-sim-q2,GPT-5.6 Luna,Galaxy,2,17582357,16971520,158
 CompBioBench,spatial-sim-q2,GPT-5.6 Luna,Galaxy,3,2333049,1731072,27
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,1,17448385,16647680,189
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,2,9499884,9218048,80
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,32949235,32328960,254
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,12846433,12434688,108
 CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,Galaxy,1,1561089,1405440,22
 CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,Galaxy,2,1878575,1709312,35
 CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,Galaxy,3,3971085,3279616,34
@@ -2684,7 +2684,7 @@ CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,Galaxy,3,10389767,10094336,75
 CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,Galaxy,1,131558656,129775104,467
 CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,Galaxy,2,48825354,43252224,424
 CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,Galaxy,3,7392706,6876672,98
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,51324119,50169856,258
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,45528719,44844288,154
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,2,9337308,8950272,89
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,3,20089106,18648192,172
 CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Luna,Galaxy,1,10408849,10077440,128
@@ -3082,7 +3082,7 @@ CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,Galaxy,2,1614676,1474304,36
 CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,Galaxy,3,52754626,51471360,39
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,1,9990698,9720064,34
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,99433367,98233088,93
-CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,3,53403916,52713216,9
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,3,26140878,25948288,34
 CompBioBench,covid-patient-q1,GPT-5.6 Sol,Galaxy,1,6613323,6414336,24
 CompBioBench,covid-patient-q1,GPT-5.6 Sol,Galaxy,2,5436714,5217536,49
 CompBioBench,covid-patient-q1,GPT-5.6 Sol,Galaxy,3,3768427,3576576,36

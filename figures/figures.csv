@@ -1,5 +1,5 @@
 figure_id,kind,title,script,source_data,status
 fig1_benchmark_overview,main,Study design and isolated execution pipeline,figures/fig1_benchmark_overview/make_figure.py,figures/fig1_benchmark_overview/source_data.csv,draft
-fig2_performance,main,Agents maintain bioinformatics accuracy when operating through Galaxy,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft
+fig2_performance,main,Agents show similar observed benchmark performance in Galaxy and custom code,figures/fig2_performance/make_figure.py,figures/fig2_performance/source_data.csv,draft
 fig3_structured_environment,main,Galaxy provides a structured environment for agent analyses,figures/fig3_structured_environment/make_figure.py,figures/fig3_structured_environment/source_data.csv,draft
 fig5_token_cost,main,Galaxy increases analysis inspectability at higher token cost,figures/fig5_token_cost/make_figure.py,figures/fig5_token_cost/source_data.csv,draft

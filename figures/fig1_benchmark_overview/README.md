@@ -1,38 +1,36 @@
-# Figure 1: benchmark overview
+# Figure 1: Study design and isolated execution pipeline
 
-Study design (a) and the isolated execution pipeline applied to every run (b), drawn as pictograms with minimal text.
-Definitions live in the legend draft, [legend.md](legend.md).
+Supports the study design (Results section 1 of `manuscript/outline.md`).
+The legend draft is in [legend.md](legend.md).
 
 ## Files
 
-- `make_figure.py`: draws the figure and writes every file below.
-- `fig1_benchmark_overview.pdf`: vector, with Arial embedded as TrueType.
-- `fig1_benchmark_overview.png`: 600 dpi, RGB.
-- `fig1_benchmark_overview.svg`: editable text, for composing panels in Inkscape.
-- `source_data.csv`: every plotted value with its kind (`data`, `design`, `derived` or `illustrative`) and source.
+- `make_figure.py`: the drawing code of the run archive's `figures/make_fig1_a.py`, copied unchanged; it replays the values that script computed and writes every file below.
+- `fig1_benchmark_overview.pdf`, `.png` (600 dpi, RGB) and `.svg` (editable text).
+- `source_data.csv`: every plotted value, interval, *P* value and count, one row each (the archive's `fig1_a_source_data.csv`).
 - `legend.md`: figure legend draft.
 
 ## Regenerate
 
 ```bash
+python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the archive changes
 python figures/fig1_benchmark_overview/make_figure.py
 ```
 
-## Where the numbers come from
+## Provenance
 
-The figure plots study-design constants, not results: tasks per benchmark, four model configurations, two execution conditions and three replicate runs.
-`data/results_manifest.csv` has no rows yet, so these values are set in `make_figure.py` and were checked against the benchmark repository at `paulocilasjr/Galaxy_benchmark@b66d91a`.
-`source_data.csv` names the file behind each value.
-The accuracy gauge, the interface-calls bars and the failure-cause bar are glyphs, not results, and are labelled `illustrative`.
+Every estimate, interval and *P* value was computed by `figures/make_fig1_a.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig1_a.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
+`make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
+Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
 
-## Style
+## Panels and methods (from the archive script)
 
-The figure is 180 mm wide, with Arial at 5–7 pt and 8 pt bold panel letters.
-Colours come from the Okabe-Ito palette: vermillion is custom code and blue is Galaxy, repeated by marker shape (square and circle) for greyscale.
-Where Arial is not installed, the script uses Liberation Sans, which has the same metrics.
+```text
+Fig. 1a,b schematic: study design (a) and the isolated per-run execution pipeline (b).
 
-## Open items
-
-- The Fig. 1 legend in `manuscript/results.qmd` still describes the earlier three-panel draft and should be replaced by `legend.md`.
-- Panel a's title uses "GalaxyBench", one of the naming questions listed in `manuscript/outline.md`.
-- GPT-5.6 Luna's max reasoning effort is confirmed by runtime records, except in 900 CompBioBench custom-code runs (GPT-5.5, GPT-5.6 Sol and GPT-5.6 Luna) that have no runtime record.
+Pictogram version: text is reduced to names, counts and short labels; definitions live in the legend
+(figures/fig1_a_legend.md). Writes figures/fig1_a.svg (editable text, for Inkscape), fig1_a.pdf (vector,
+TrueType) and fig1_a.png (600 dpi, RGB) at 180 mm width with the shared Nature Portfolio style in
+manuscript_material/scripts/style.py. Task counts are read from the repository.
+```
