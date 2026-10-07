@@ -1,8 +1,8 @@
 track,element,unit,with_record,total
-Galaxy,command,analysis steps,36100,37801
-Galaxy,tool_version,analysis steps,37801,37801
-Galaxy,parameters,analysis steps,37801,37801
-Galaxy,outputs,analysis steps,37801,37801
+Galaxy,command,analysis steps,36169,37589
+Galaxy,tool_version,analysis steps,37589,37589
+Galaxy,parameters,analysis steps,37589,37589
+Galaxy,outputs,analysis steps,37589,37589
 custom code,command,analysis steps,56404,56404
 custom code,tool_version,analysis steps,0,56404
 custom code,parameters,analysis steps,0,56404

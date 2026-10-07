@@ -26,13 +26,19 @@ Reads tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, i
 - galaxy_tool_lookup.csv (Figure 5): tools inspected and never run in the same run, per benchmark, from the archive's
   interface-friction table.
 - inspectability_counts.csv (Figure 5 text): what each analysis step leaves for inspection after the run, by condition.
+- figure_panels/ (Figures 1-5, Extended Data Figures 2-7): the values each archive figure script passed to its drawing
+  functions (figures/panel_data/*.json, written by figures/panel_io.py), each figure's source data
+  (figures/*_source_data.csv) and a manifest with the archive commit and SHA-256 of every file. The figure scripts in
+  figures/ replay these; nothing is recomputed.
 
 The tables hold identifiers, scores, counts, codes and tool identifiers only: no trace text, prompts or answers.
 The script prints the archive commit; record it in data/README.md.
 """
 import argparse
+import hashlib
 import json
 import re
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -51,6 +57,9 @@ ACTIONS = "manuscript_material/on_demand/Source_Data_OD_Fig6.xlsx"         # she
 FRICTION = "manuscript_narrative/original_layout/analysis/token_interface_friction.csv"
 FAILURE_CLASSES = "manuscript_narrative/original_layout/analysis/token_failure_classes.csv"
 COMPBIO_AUDIT = "CompBio/compBio_overview_audit.json"
+PANELS = "figures/panel_data"                                              # written by figures/panel_io.py
+FIGURE_SOURCE_DATA = [f"figures/{name}_source_data.csv" for name in
+                      ("fig2", "fig3", "fig4", "fig5", "ed_fig2", "ed_fig3", "ed_fig4", "ed_fig5", "ed_fig6", "ed_fig7")]
 # run-level evidence: <folder>/analysis/<task>/history_analysis_evidence.json
 EVIDENCE = {"BixBench_50": "BixBench-Verified-50", "CompBio": "CompBioBench", "IWC": "IWC"}
 CONDITION = {"Open-ended code condition": "custom code", "Galaxy condition": "Galaxy"}
@@ -74,7 +83,7 @@ EVIDENCE_MODEL = {**TRACE_MODEL, "gpt_5_5": "GPT-5.5", "gpt_5_6_sol": "GPT-5.6 S
 def archive_commit(source: Path) -> str:
     sha = subprocess.run(["git", "-C", str(source), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)
     dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE, ERRORS,
-                            LEDGER, TOKENS, ACTIONS, FRICTION, FAILURE_CLASSES, COMPBIO_AUDIT,
+                            LEDGER, TOKENS, ACTIONS, FRICTION, FAILURE_CLASSES, COMPBIO_AUDIT, PANELS, *FIGURE_SOURCE_DATA,
                             *[f"{folder}/analysis" for folder in EVIDENCE]],
                            capture_output=True, text=True)
     if dirty.stdout.strip():
@@ -342,6 +351,21 @@ def export_inspectability(source: Path) -> pd.DataFrame:
     return out
 
 
+def export_figure_panels(source: Path) -> dict:
+    """Copy each archive figure's recorded panel data and source data, with a manifest of hashes and the commit."""
+    dest = DATA / "figure_panels"
+    dest.mkdir(exist_ok=True)
+    files = sorted((source / PANELS).glob("*.json")) + [source / f for f in FIGURE_SOURCE_DATA]
+    for f in files:
+        shutil.copyfile(f, dest / f.name)
+    commit = subprocess.run(["git", "-C", str(source), "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    manifest = {"archive": "paulocilasjr/Galaxy_benchmark", "commit": commit,
+                "files": {f.name: {"source": str(f.relative_to(source)),
+                                   "sha256": hashlib.sha256((dest / f.name).read_bytes()).hexdigest()} for f in files}}
+    (dest / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n")
+    return manifest
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--source", required=True, type=Path, help="Path to a Galaxy_benchmark checkout")
@@ -398,6 +422,8 @@ def main() -> None:
                replicate_answer_agreement=export_answer_agreement(args.source, scores),
                inspectability_counts=export_inspectability(args.source))
     print("; ".join(f"{name}.csv: {len(t)} rows" for name, t in new.items()))
+    panels = export_figure_panels(args.source)
+    print(f"figure_panels/: {len(panels['files'])} files at {panels['commit'][:7]}")
 
 
 if __name__ == "__main__":
