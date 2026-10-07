@@ -19,7 +19,7 @@ python figures/ed_fig2_failure_causes/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_fig2.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+Every estimate, interval and *P* value was computed by `figures/make_fig2.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig2.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
@@ -43,12 +43,14 @@ d, why the conditions disagree on BixBench-Verified-50: the AI-assisted audit's 
 
 Extended Data Fig. 2 (written by the same script): a, the full census of causes by the number of incorrect runs in the
 set (the first version's panel d); b, sensitivity of the condition difference to the IWC correctness threshold and to
-the archive's population sensitivities.
+five population sensitivities, recomputed on these scores with the primary estimator.
 
 A run is correct when accepted or at >= 0.99 IWC output agreement. Intervals are 95% percentile cluster-bootstrap
 intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks). P values come from paired cluster
 sign-flip randomization tests (200,000 draws, or exact enumeration with at most 16 clusters), Holm-adjusted within each
 family. No test here is an equivalence test: the figure reports estimates and intervals.
+Scores come from figures/scored_runs.csv (make_scored_runs.py): every run as the public results site shows it
+(https://goeckslab.github.io/galaxy-agent-benchmark/), the IWC host-read removal task included.
 Writes figures/fig2.{svg,pdf,png}, figures/fig2_source_data.csv, figures/ed_fig2.{svg,pdf,png} and
 figures/ed_fig2_source_data.csv, and prints the statistics.
 ```

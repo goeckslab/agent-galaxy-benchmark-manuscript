@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extended Data Fig. 2: Failure causes and sensitivity of the accuracy comparison.
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@b3cbb944648a57104a6837d1640b255854dd7e3e:figures/make_fig2.py; the panel data are the
+Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0dbf3f443b83a91322098c9918d86a5846129215:figures/make_fig2.py; the panel data are the
 values that script computed and passed to its drawing functions (data/figure_panels/ed_fig2.json, written by the
 archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
 every number traces to the archive script at that commit. Writes, next to this script, ed_fig2_failure_causes.pdf, .png (600 dpi)
@@ -43,10 +43,10 @@ plt.rcParams.update({'mathtext.fontset': 'custom', 'mathtext.rm': 'Arial', 'math
 style.ENV_LABEL = {'open_ended_code': 'Custom code', 'galaxy': 'Galaxy'}   # the paper's name for the condition
 
 
-AN = os.path.join(ROOT, 'manuscript_narrative', 'original_layout', 'analysis')
-
-
 LEDGER = os.path.join(ROOT, 'analysis_reports', 'galaxy_improvement_20260924', 'v2_trace_friction', 'ledger.json')
+
+
+SCORED = os.path.join(OUT, 'scored_runs.csv')      # per-run scores as the results site shows them (make_scored_runs.py)
 
 
 B, SEED = 20000, 20261002
@@ -105,6 +105,9 @@ OVERLAP = {('RIGOR', 'SPEC'), ('SPEC', 'RIGOR')}     # validation and specificat
 
 
 LEDGER_MODEL = {'GPT-5.5': 'GPT-5.5', 'Sol': 'GPT-5.6 Sol', 'Luna': 'GPT-5.6 Luna', 'DS-Codex': 'DeepSeek V4 Pro'}
+
+
+REGRADED = {'bix-43-q2', 'bix-53-q2'}               # items the results site regraded
 
 
 EXAMPLE = 'bix-45-q1'                                 # traced discordant case: PhyKIT version
@@ -172,7 +175,7 @@ def paired_difference(d, col, group=None):
 
 
 def load_runs():
-    r = pd.read_csv(os.path.join(AN, 'accuracy_primary_runs.csv'))
+    r = pd.read_csv(SCORED)
     r['cluster'] = r.benchmark + ':' + r.cluster.astype(str)
     r['ok'] = (r.score >= r.benchmark.map(CORRECT_AT) - 1e-9).astype(int)
     return r
@@ -192,8 +195,18 @@ def load_ledger(r):
     led['cause'] = led.p.map(CAUSE_OF)
     wrong = r[(r.benchmark == 'BixBench50') & (r.ok == 0)]
     key = ['task', 'cfg', 'env', 'replicate']
-    j = wrong.merge(led[key + ['p', 's', 'cause', 'd']], on=key, how='outer', indicator=True)
-    assert (j._merge == 'both').all() and not led.duplicated(key).any(), 'ledger must label every incorrect run once'
+    assert not led.duplicated(key).any(), 'ledger must label every incorrect run once'
+    # grades follow the results site, which regraded bix-53-q2 and bix-43-q2 after the run-level
+    # audit. Audited runs the site grades correct leave the census; the four bix-43-q2 runs the site grades incorrect,
+    # but the original evaluator accepted, have no audit row. They take the task-level audit's cause (benchmark
+    # specification or scoring: platform-dependent numerical results under a two-decimal rule; individual_error_analysis.md)
+    # and are flagged in Source Data.
+    j = wrong.merge(led[key + ['p', 's', 'cause', 'd']], on=key, how='left', indicator=True)
+    new = j._merge == 'left_only'
+    assert set(j.loc[new, 'task']) <= REGRADED, sorted(set(j.loc[new, 'task']))
+    j.loc[new, ['p', 's', 'cause']] = ['EVALUATOR', '-', CAUSE_OF['EVALUATOR']]
+    j['cause_source'] = np.where(new, 'task-level audit (run regraded incorrect after the run-level audit)',
+                                 'run-level audit')
     return j.drop(columns='_merge')
 
 
@@ -320,10 +333,21 @@ def iwc_threshold(r):
     return pd.DataFrame(rows)
 
 
-def archive_sensitivities():
-    s = pd.read_csv(os.path.join(AN, 'accuracy_sensitivities.csv'))
-    scale = np.where(s.benchmark == 'IWC', 100.0, 1.0)            # IWC rows are agreement on a 0-1 scale
-    return s.assign(diff=s.difference * scale, lo=s.ci95_low * scale, hi=s.ci95_high * scale)
+SENSITIVITIES = [('BixBench_exclude_benchmark_side_C1_C2_C3_C6', 'BixBench50', lambda d: ~d.bix_benchmark_side_task.astype(bool)),
+                 ('CompBio_exclude_outcome_named_cells', 'CompBio', lambda d: ~d.compbio_outcome_named_cell.astype(bool)),
+                 ('IWC_exclude_tasks_with_zero_run', 'IWC', lambda d: ~d.iwc_zero_task.astype(bool)),
+                 ('IWC_exclude_ATAC_agent_calibrated_routes', 'IWC', lambda d: ~d.iwc_atac_task.astype(bool)),
+                 ('IWC_budget_matched_pairs', 'IWC', lambda d: d.budget_matched.astype(str).eq('True'))]
+
+
+def archive_sensitivities(r):
+    rows = []
+    for population, bm, keep in SENSITIVITIES:
+        d = r[r.benchmark == bm]
+        d = d[keep(d)]
+        v = paired_difference(d, 'score')[0]
+        rows.append(dict(population=population, benchmark=bm, tasks=d.task.nunique(), runs=len(d), **v))
+    return pd.DataFrame(rows)
 
 
 def axes_mm(fig, x, y, w, h, H):
@@ -674,8 +698,8 @@ def ed_sensitivity(fig, H, y0, th, sens, main):
     ax.set_xlim(-15, 35)
     style.grid_x(ax)
     ax.set_xlabel('Galaxy minus custom code (percentage points; IWC agreement × 100)')
-    ax.text(0.0, 1.02, 'Primary estimates (diamonds, bold) and alternatives; archive sensitivities from '
-            'accuracy_sensitivities.csv', transform=ax.transAxes, ha='left', va='bottom', fontsize=5, color=style.INK2)
+    ax.text(0.0, 1.02, 'Primary estimates (diamonds, bold) and alternatives; population sensitivities recomputed on the '
+            'scored runs', transform=ax.transAxes, ha='left', va='bottom', fontsize=5, color=style.INK2)
 
 
 def source_data(a_tab, a_reps, fr, b_tab, grids, summ, d_tab, d_over, d_cover, d_pairs, exp_sens, cinfo):
@@ -745,8 +769,8 @@ def ed_source_data(cen, secondary, th, sens):
                          p=t.p, n=t.clusters))
     for t in sens.itertuples():
         rows.append(dict(panel='b', condition='galaxy-custom_code', group=t.population,
-                         measure='difference_points (archive accuracy_sensitivities.csv)', value=t.diff,
-                         ci95_low=t.lo, ci95_high=t.hi, n=t.clusters))
+                         measure='difference_points (population sensitivity)', value=t.diff,
+                         ci95_low=t.lo, ci95_high=t.hi, n=t.clusters, p=t.p))
     out = pd.DataFrame(rows).reindex(columns=['panel', 'condition', 'group', 'measure', 'value', 'ci95_low',
                                               'ci95_high', 'n', 'p'])
     out['condition'] = out.condition.str.replace('open_ended_code', 'custom_code')
@@ -778,7 +802,7 @@ def main():
     cen, secondary = census(ledger)
     rng = np.random.default_rng(SEED + 2)
     th = iwc_threshold(r)
-    sens = archive_sensitivities()
+    sens = archive_sensitivities(r)
     import make_ed_validation as validation          # same statistics as Extended Data Fig. 6
     exp_counts, exp_sens, _ = validation.exposure(validation.load_runs())
     n_exposed = int(exp_counts[['verified', 'probable']].values.sum())

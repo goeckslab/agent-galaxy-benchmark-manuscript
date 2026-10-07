@@ -19,7 +19,7 @@ python figures/ed_fig6_audit_checks/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_ed_validation.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+Every estimate, interval and *P* value was computed by `figures/make_ed_validation.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/ed_validation.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
@@ -42,6 +42,8 @@ b, failure episodes: failed steps later re-run without error in the same run, an
 c, a worked parameter check (bix-43-q4): a request blocked before the job, then corrected;
 d, a selected case (variant-status-q1): outcomes of all 24 runs and the runs that ran a read-position diagnostic.
 
+Scores come from figures/scored_runs.csv (make_scored_runs.py): every run as the public results site shows it
+(https://goeckslab.github.io/galaxy-agent-benchmark/), the IWC host-read removal task included.
 Writes figures/ed_fig6.{svg,pdf,png}, ed_fig7.{svg,pdf,png}, ed_fig6_source_data.csv and ed_fig7_source_data.csv.
 CompBioBench answers are never written.
 ```

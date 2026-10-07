@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extended Data Fig. 6: Independent checks of the audits and of benchmark integrity.
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@b3cbb944648a57104a6837d1640b255854dd7e3e:figures/make_ed_validation.py; the panel data are the
+Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0dbf3f443b83a91322098c9918d86a5846129215:figures/make_ed_validation.py; the panel data are the
 values that script computed and passed to its drawing functions (data/figure_panels/ed_fig6.json, written by the
 archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
 every number traces to the archive script at that commit. Writes, next to this script, ed_fig6_audit_checks.pdf, .png (600 dpi)
