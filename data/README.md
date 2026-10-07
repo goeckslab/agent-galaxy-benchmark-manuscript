@@ -23,14 +23,18 @@ Each derived table needs a note on which script produced it.
 
 ## Tables exported from the run archive
 
-`analysis/export_galaxy_benchmark_tables.py` writes the tables below from the run archive (`paulocilasjr/Galaxy_benchmark`, commit `b3cbb94`, branch `archive/reruns-token-figures-2026-10-07`).
-That commit includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05, which replaced the runs they superseded (archive `CompBio/reruns_20261005/`); every other run is unchanged.
+`analysis/export_galaxy_benchmark_tables.py` writes the tables below from the run archive (`paulocilasjr/Galaxy_benchmark`, commit `0dbf3f4`, branch `archive/reruns-token-figures-2026-10-07`).
+That commit includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05, which replaced the runs they superseded (archive `CompBio/reruns_20261005/`).
+It also scores every run as the public results site shows it (https://goeckslab.github.io/galaxy-agent-benchmark/; archive `figures/make_scored_runs.py`):
+- BixBench-Verified-50 grades include the site's regrades of bix-53-q2 and bix-43-q2 (27 runs).
+- CompBioBench grades are the official-leaderboard grades.
+- The IWC host-read removal task is scored from each run's `run_record.json`.
 They cover the four primary model configurations and hold identifiers, scores, counts, cause codes and tool identifiers only: no trace text, prompts or answers.
 
 The figures (1-5, and Extended Data Figures 2-7) read `figure_panels/`: the values the archive's figure scripts computed and drew, which `figures/*/make_figure.py` replays with the same drawing code (see [figure_panels/README.md](figure_panels/README.md)).
-The tables below support the text and the earlier figure versions kept in `supplement/figures/previous_versions/`, which read them; versions before 2026-10-07 no longer reproduce their stored images, because the tables now include the reruns.
+The tables below support the text and the earlier figure versions kept in `supplement/figures/previous_versions/`, which read them; versions before 2026-10-07 no longer reproduce their stored images, because the tables now include the reruns and the site-matched scores.
 
-`run_scores.csv` has one row per scored run (3,816 runs):
+`run_scores.csv` has one row per scored run (3,840 runs):
 
 | Column | Meaning |
 | --- | --- |
@@ -42,7 +46,7 @@ The tables below support the text and the earlier figure versions kept in `suppl
 | replicate | Replicate number |
 | score | 1 or 0 for acceptance (BixBench-Verified-50, CompBioBench); output agreement from 0 to 1 (IWC) |
 
-IWC has nine tasks here: the host-read removal task has no comparable scores between conditions and is not scored.
+IWC has ten tasks here. The host-read removal task takes each run's `run_record.json` value, which the results site shows.
 
 `galaxy_traced_runs.csv` lists the Galaxy-condition runs with a parsed trace (1,908 runs), the denominators for tool use.
 Its columns are `benchmark`, `task_id`, `model` and `replicate`.
@@ -50,7 +54,7 @@ Its columns are `benchmark`, `task_id`, `model` and `replicate`.
 `galaxy_tool_use.csv` has one row for each traced Galaxy run and installed tool the run called, whether or not the job succeeded, and one row for each run that called a user-defined tool (UDT).
 Its columns are the four run columns, `tool_id` (the Tool Shed identifier without its version, a built-in identifier such as `Cut1`, or `UDT`) and `kind` (`installed` or `udt`).
 
-`run_execution_errors.csv` has one row per run with execution-error records (3,767 of the 3,816 scored runs), from sheet `abc_runs` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx` in the archive:
+`run_execution_errors.csv` has one row per run with execution-error records (3,791 of the 3,840 scored runs). It comes from sheet `abc_runs` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx` in the archive, plus the 24 host-read removal runs, which the archive extracts with the same rules (`figures/wf003_abc_runs.csv`):
 
 | Column | Meaning |
 | --- | --- |
@@ -58,7 +62,8 @@ Its columns are the four run columns, `tool_id` (the Tool Shed identifier withou
 | failed_shell_commands | Shell commands that failed, not counting a silent exit code 1 |
 | galaxy_jobs_in_error_state | Galaxy jobs of the run that ended in the error state (0 for custom-code runs) |
 
-`bixbench_failure_causes.csv` has one row per incorrect BixBench-Verified-50 run (170 runs), from the run-level failure audit (`analysis_reports/galaxy_improvement_20260924/v2_trace_friction/ledger.json` in the archive).
+`bixbench_failure_causes.csv` has one row per incorrect BixBench-Verified-50 run (151 runs), from the run-level failure audit (`analysis_reports/galaxy_improvement_20260924/v2_trace_friction/ledger.json` in the archive).
+The 4 bix-43-q2 runs that only the results site grades incorrect were never audited. They take the task-level audit's cause, `EVALUATOR` (the archive's `individual_error_analysis.md`).
 The export checks that every incorrect run in `run_scores.csv` has exactly one row.
 Only the cause codes are exported; the audit's answer and note fields are not.
 
@@ -67,9 +72,10 @@ Only the cause codes are exported; the audit's answer and note fields are not.
 | benchmark, task_id, model, track, replicate | Run identifiers, as in `run_scores.csv` |
 | primary_cause | `RIGOR` (no answer validation), `KNOWLEDGE` (wrong biological or statistical concept), `PLATFORM` (a Galaxy tool, wrapper or job gave the wrong result), `HARNESS` (no answer submitted), `SPEC` (under-specified task or reference) or `EVALUATOR` (scorer rejected a valid answer) |
 | secondary_cause | A second contributing cause, with the same codes; empty when there is none |
-| confidence | The auditor's confidence in the primary cause: `high`, `moderate`, `mixed` or `unresolved` |
+| confidence | The auditor's confidence in the primary cause: `high`, `moderate`, `mixed` or `unresolved`; empty for the task-level rows |
+| cause_source | `run-level audit`, or `task-level audit` for runs regraded incorrect after it |
 
-`run_tokens_actions.csv` has one row per scored run (3,816 runs), joining two archive tables: `manuscript_narrative/original_layout/analysis/token_run_observations.csv` for tokens and sheet `abf_runs` of `manuscript_material/on_demand/Source_Data_OD_Fig6.xlsx` for actions.
+`run_tokens_actions.csv` has one row per scored run (3,840 runs), joining two archive tables: `manuscript_narrative/original_layout/analysis/token_run_observations.csv` for tokens and sheet `abf_runs` of `manuscript_material/on_demand/Source_Data_OD_Fig6.xlsx` for actions.
 Some counts are empty, mostly for runs without a parsed trace: 14 runs have no token count, 15 no cached count and 12 no action count.
 
 | Column | Meaning |
@@ -104,7 +110,7 @@ It covers 1,812 of the 1,908 runs in `galaxy_traced_runs.csv`; the other 96 (95 
 Its columns are the four run columns of `galaxy_traced_runs.csv` and `step` (a Tool Shed identifier without version, a built-in identifier such as `Cut1`, or `UDT`).
 Only requests whose job was created count, unlike `galaxy_tool_use.csv`, which counts every request.
 
-`execution_error_types.csv` counts execution errors by type and by where they occurred, per run (6,193 rows, 11,807 errors), from sheet `abc_every_error` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx`.
+`execution_error_types.csv` counts execution errors by type and by where they occurred, per run (6,238 rows, 11,878 errors), from sheet `abc_every_error` of `manuscript_material/on_demand/Source_Data_OD_Fig5.xlsx`, plus the host-read removal runs (`figures/wf003_abc_every_error.csv`).
 
 | Column | Meaning |
 | --- | --- |

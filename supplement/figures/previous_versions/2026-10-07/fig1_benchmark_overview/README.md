@@ -1,3 +1,5 @@
+> Version of this figure in pull request #4 before every run was scored as the public results site shows it (2026-10-07), kept for comparison. The current figure is in `figures/fig1_benchmark_overview/`. This version was ported from the run archive at commit b3cbb94, which left the IWC host-read removal task unscored (3,816 scored runs on 159 tasks).
+
 # Figure 1: Study design and isolated execution pipeline
 
 Supports the study design (Results section 1 of `manuscript/outline.md`).
@@ -19,7 +21,7 @@ python figures/fig1_benchmark_overview/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_fig1_a.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
+Every estimate, interval and *P* value was computed by `figures/make_fig1_a.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig1_a.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
