@@ -1,42 +1,55 @@
 # Figure 3: Galaxy provides a structured environment for agent analyses
 
-Six panels that answer the questions of Results section 2 of `manuscript/outline.md`, read left to right and top to bottom.
+Supports Results section 2 of `manuscript/outline.md` (Galaxy as a structured environment).
 The legend draft is in [legend.md](legend.md).
-
-- **a**: runs correct by task domain in both conditions; no domain differs.
-- **b**: how each Galaxy run used Galaxy (installed tools, UDTs, both or neither), by benchmark and model.
-- **c**: execution errors by type and by where they occurred: installed-tool jobs, UDT jobs, and shell commands in Galaxy and custom-code runs.
-- **d**: runs ending correct by the number of execution errors in the run; at equal error counts Galaxy runs recover more often.
-- **e**: parameter checks on installed-tool requests; 20% of requests had a mismatch caught before the job ran.
-- **f**: failed Galaxy requests grouped by the change that would most likely prevent them.
 
 ## Files
 
-- `make_figure.py`: computes the statistics, draws the figure and writes every file below.
+- `make_figure.py`: the drawing code of the run archive's `figures/make_fig3.py`, copied unchanged; it replays the values that script computed and writes every file below.
 - `fig3_structured_environment.pdf`, `.png` (600 dpi, RGB) and `.svg` (editable text).
-- `source_data.csv`: every plotted value, interval, *P* value, fitted coefficient and count, one row each.
+- `source_data.csv`: every plotted value, interval, *P* value and count, one row each (the archive's `fig3_source_data.csv`).
 - `legend.md`: figure legend draft.
 
 ## Regenerate
 
 ```bash
-python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the data/ tables change
+python analysis/export_galaxy_benchmark_tables.py --source /path/to/Galaxy_benchmark   # only if the archive changes
 python figures/fig3_structured_environment/make_figure.py
 ```
 
-The figure reads `data/run_scores.csv`, `run_execution_errors.csv`, `execution_error_types.csv`, `compbiobench_task_domains.csv`, `galaxy_run_steps.csv`, `galaxy_traced_runs.csv`, `galaxy_parameter_checks.csv` and `galaxy_failure_classes.csv`, which `data/README.md` describes.
-The statistics take about six seconds and are reproducible: the random seed is fixed (20261002).
+## Provenance
 
-## Definitions and statistics
+Every estimate, interval and *P* value was computed by `figures/make_fig3.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig3.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
+`make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
+Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
 
-- Execution errors are failed shell commands, not counting a silent exit code 1, plus Galaxy jobs that ended in the error state; error types follow each error's message, exit code and command.
-- A Galaxy job error is a UDT error when its tool identifier is one the run submitted as a user-defined tool.
-- Panel d fits a binomial logistic regression of ending correct on ln(1 + errors) per condition with 2,000-resample cluster-bootstrap bands; its annotated comparison averages the Galaxy minus custom-code difference over four error bins, weighted by their share of runs with errors, and was chosen after inspecting the bins (unadjusted, +2.3 points, *P* = 0.07).
-- Panel f groups the failure classes of the request and job records (A1–A8, B1–B5, X, Z) by the change that would most likely prevent them; the grouping is ours and is listed in `source_data.csv`.
-- Intervals are 95% percentile cluster-bootstrap intervals (20,000 resamples); *P* values come from paired cluster randomization tests (200,000 draws), Holm-adjusted within each panel.
+## Panels and methods (from the archive script)
 
-## Style
+```text
+Fig. 3: Galaxy provides a structured environment for agent analyses.
 
-The figure is 180 × 170 mm, with Arial at 5–7 pt and 8 pt bold panel letters.
-Every bar segment in panels b, c and e carries its share: inside the segment when it fits, otherwise outside with a short leader line.
-Vermillion is custom code and blue is Galaxy; error types take Paul Tol's light scheme, which avoids both.
+Panels:
+a, correct runs by task domain, Galaxy against custom code (a run is correct when accepted, not merely completed);
+b, how each traced Galaxy run used Galaxy and how it ended: the kinds of job that completed (installed tools, user-defined
+   tools (UDTs), both), runs whose jobs all failed and runs that submitted no job, with the share of runs correct and the
+   exact number of runs per row;
+c, how often each kind of execution step failed: the share of installed-tool jobs, UDT jobs and shell commands that
+   failed, and all execution errors per run; right, the main error types in each channel (the seven-type breakdown is in
+   Extended Data);
+d, final correctness among runs with execution errors, by the number of errors, with the unadjusted and the
+   error-bin-adjusted (exploratory) Galaxy - custom code differences;
+e, what the interface's parameter check found for installed-tool requests: matched; a value Galaxy would set or set
+   differently (blocked before the job, or after it ran); a requested value with no recorded counterpart; no comparison;
+f, failed Galaxy requests by failure class, grouped into candidate infrastructure improvements (an unvalidated codebook,
+   written to figures/fig3_failure_class_codebook.csv), with the runs each group affected.
+
+Extended Data Fig. 3: a, the status of every task (correct runs of three per model and condition); b, the full seven-type
+error breakdown by channel; c, final correctness by error bin for each benchmark.
+
+A run is correct when accepted (BixBench-Verified-50, CompBioBench) or at >= 0.99 IWC output agreement. Intervals are
+95% percentile cluster-bootstrap intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks).
+P values come from paired cluster randomization tests (200,000 draws), Holm-adjusted within each panel.
+Writes figures/fig3.{svg,pdf,png}, fig3_source_data.csv, fig3_failure_class_codebook.csv, ed_fig3.{svg,pdf,png} and
+ed_fig3_source_data.csv, and prints the statistics.
+```

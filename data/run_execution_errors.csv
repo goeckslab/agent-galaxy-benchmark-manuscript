@@ -1176,7 +1176,7 @@ CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,1,1,0
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,2,0,1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,2,0,0
-CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,4,4
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,3,0,1
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,3,1,0
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,Galaxy,1,4,0
 CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,custom code,1,2,0
@@ -1200,7 +1200,7 @@ CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,1,0,0
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,1,3,0
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,2,0,0
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,2,2,0
-CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,6,3
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,3,0,8
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,3,1,0
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,custom code,1,7,0
 CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,Galaxy,2,5,3
@@ -1367,7 +1367,7 @@ CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,1,0,0
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,2,1,3
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,2,1,0
-CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,2,4
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,0,0
 CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,3,4,0
 CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,Galaxy,1,2,11
 CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,custom code,1,5,0
@@ -1525,7 +1525,7 @@ CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,Galaxy,2,0,0
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,2,3,0
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,Galaxy,3,1,1
 CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,3,4,0
-CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,10,10
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,2,5
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,custom code,1,13,0
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,2,1,5
 CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,custom code,2,9,0
@@ -1535,7 +1535,7 @@ CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,1,0,3
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,1,9,0
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,2,3,0
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,2,9,0
-CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,7,5
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,3,2,11
 CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,3,12,0
 CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,Galaxy,1,4,12
 CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,custom code,1,1,0
@@ -1743,7 +1743,7 @@ CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,1,19,0
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,1,5,0
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,6,7
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,2,3,0
-CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,10,14
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,3,7,6
 CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,3,7,0
 CompBioBench,conservation-lookup-q1,GPT-5.5,Galaxy,1,4,2
 CompBioBench,conservation-lookup-q1,GPT-5.5,custom code,1,6,0
@@ -1753,7 +1753,7 @@ CompBioBench,conservation-lookup-q1,GPT-5.5,Galaxy,3,4,6
 CompBioBench,conservation-lookup-q1,GPT-5.5,custom code,3,4,0
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,1,3,5
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,custom code,1,15,0
-CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,9,17
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,2,7,2
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,custom code,2,10,0
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,6,11
 CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,custom code,3,7,0
@@ -1765,7 +1765,7 @@ CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,Galaxy,3,0,8
 CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,custom code,3,11,0
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,1,1,0
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,1,14,0
-CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,11,2
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,2,0,0
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,2,5,0
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,3,0,0
 CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,3,3,0
@@ -1773,9 +1773,9 @@ CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,1,1,0
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,1,3,0
 CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,2,0,0
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,2,7,0
-CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,0,2
+CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,3,1,0
 CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,3,9,0
-CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,1,2
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,1,0,0
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,custom code,1,7,0
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,2,1,0
 CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,custom code,2,5,0
@@ -1797,7 +1797,7 @@ CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,1,2,0
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,1,6,0
 CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,2,2,0
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,2,5,0
-CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,0,0
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,3,2,9
 CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,3,3,0
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,Galaxy,1,4,4
 CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,custom code,1,10,0
@@ -1821,7 +1821,7 @@ CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,1,2,4
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,1,2,0
 CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,2,1,3
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,2,9,0
-CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,1,3
+CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,3,0,1
 CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,3,6,0
 CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,Galaxy,1,1,0
 CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,custom code,1,1,0
@@ -1833,7 +1833,7 @@ CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,1,0,1
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,1,2,0
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,2,3
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,2,5,0
-CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,3,0,0
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,3,1,0
 CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,3,7,0
 CompBioBench,covid-patient-q1,DeepSeek V4 Pro,Galaxy,1,13,1
 CompBioBench,covid-patient-q1,DeepSeek V4 Pro,custom code,1,25,0
@@ -1978,7 +1978,7 @@ CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,Galaxy,2,1,4
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,2,1,0
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,Galaxy,3,0,1
 CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,3,2,0
-CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,13,0
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,0,10
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,custom code,1,5,0
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,2,2,1
 CompBioBench,differential-composition-q1,DeepSeek V4 Pro,custom code,2,6,0
@@ -2034,9 +2034,9 @@ CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,Galaxy,3,1,24
 CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,custom code,3,12,0
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,1,0,4
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,1,6,0
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,7,7
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,8,4
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,2,19,0
-CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,10,4
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,3,4,9
 CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,3,5,0
 CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,Galaxy,1,6,9
 CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,custom code,1,13,0
@@ -2150,7 +2150,7 @@ CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,1,0,1
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,1,2,0
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,2,1,0
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,2,0,0
-CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,3,2,0
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,3,0,0
 CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,3,3,0
 CompBioBench,exogenous-mix-reads-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,exogenous-mix-reads-q1,GPT-5.5,custom code,1,1,0
@@ -2201,7 +2201,7 @@ CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,Galaxy,3,1,0
 CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,custom code,3,1,0
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,1,1,1
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,custom code,1,0,0
-CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,0,6
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,2,0,0
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,custom code,2,0,0
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,3,0,6
 CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,custom code,3,0,0
@@ -2265,7 +2265,7 @@ CompBioBench,find-deletion-q1,GPT-5.6 Sol,Galaxy,2,0,1
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,2,1,0
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,Galaxy,3,0,2
 CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,3,2,0
-CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,3,2
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,1,4,2
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,custom code,1,2,0
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,2,27,1
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,custom code,2,7,0
@@ -2273,9 +2273,9 @@ CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,7,17
 CompBioBench,finding-geo-q1,DeepSeek V4 Pro,custom code,3,8,0
 CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,1,4,3
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,1,4,0
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,17,3
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,2,3,4
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,2,7,0
-CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,11,3
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,9,4
 CompBioBench,finding-geo-q1,GPT-5.5,custom code,3,5,0
 CompBioBench,finding-geo-q1,GPT-5.6 Luna,Galaxy,1,8,4
 CompBioBench,finding-geo-q1,GPT-5.6 Luna,custom code,1,13,0
@@ -2395,7 +2395,7 @@ CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,1,2,0
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,2,0,4
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,2,1,0
-CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,0,6
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,3,0,0
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,3,1,0
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,Galaxy,1,1,2
 CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,custom code,1,0,0
@@ -2515,7 +2515,7 @@ CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,1,0,2
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,1,1,0
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,2,0,6
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,2,1,0
-CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,0,5
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,3,1,0
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,3,1,0
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,Galaxy,1,2,3
 CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,custom code,1,0,0
@@ -2559,7 +2559,7 @@ CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,Galaxy,2,2,0
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,2,2,0
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,Galaxy,3,0,7
 CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,3,11,0
-CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,5,3
+CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,3,0
 CompBioBench,hic-differential-loop-q1,GPT-5.5,custom code,1,3,0
 CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,2,5,5
 CompBioBench,hic-differential-loop-q1,GPT-5.5,custom code,2,6,0
@@ -2608,9 +2608,9 @@ CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,Galaxy,3,0,2
 CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,custom code,3,12,0
 CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,1,0,3
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,1,5,0
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,6,12
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,2,3,12
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,2,0,0
-CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,4,5
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,3,0,2
 CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,3,3,0
 CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,Galaxy,1,3,15
 CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,custom code,1,9,0
@@ -2634,7 +2634,7 @@ CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,1,0,2
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,1,2,0
 CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,2,0,9
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,2,0,0
-CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,6,10
+CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,3,1,1
 CompBioBench,identify-donor-q1,GPT-5.5,custom code,3,4,0
 CompBioBench,identify-donor-q1,GPT-5.6 Luna,Galaxy,1,5,10
 CompBioBench,identify-donor-q1,GPT-5.6 Luna,custom code,1,3,0
@@ -2658,7 +2658,7 @@ CompBioBench,identify-related-q1,GPT-5.5,Galaxy,1,2,6
 CompBioBench,identify-related-q1,GPT-5.5,custom code,1,3,0
 CompBioBench,identify-related-q1,GPT-5.5,Galaxy,2,1,3
 CompBioBench,identify-related-q1,GPT-5.5,custom code,2,1,0
-CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,3,8
+CompBioBench,identify-related-q1,GPT-5.5,Galaxy,3,0,1
 CompBioBench,identify-related-q1,GPT-5.5,custom code,3,3,0
 CompBioBench,identify-related-q1,GPT-5.6 Luna,custom code,1,1,0
 CompBioBench,identify-related-q1,GPT-5.6 Luna,Galaxy,2,0,1
@@ -2681,7 +2681,7 @@ CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,1,1,1
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,1,3,0
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,2,2,6
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,2,2,0
-CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,10,4
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,3,1,0
 CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,3,2,0
 CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,Galaxy,1,1,1
 CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,custom code,1,10,0
@@ -2703,11 +2703,11 @@ CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,Galaxy,3,8,0
 CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,custom code,3,2,0
 CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,1,0,3
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,1,4,0
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,3,4
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,2,0,3
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,2,2,0
-CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,2,6
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,3,2,0
 CompBioBench,match-genotypes-q1,GPT-5.5,custom code,3,1,0
-CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,9,13
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,4,17
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,custom code,1,0,0
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,2,12,20
 CompBioBench,match-genotypes-q1,GPT-5.6 Luna,custom code,2,7,0
@@ -2727,7 +2727,7 @@ CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,Galaxy,3,2,1
 CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,3,5,0
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,custom code,1,3,0
-CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,4,4
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,0,1
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,custom code,2,1,0
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,3,1,5
 CompBioBench,ml-model-track-overlap-q1,GPT-5.5,custom code,3,1,0
@@ -2751,7 +2751,7 @@ CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,Galaxy,3,3,12
 CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,custom code,3,0,0
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,custom code,1,1,0
-CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,2,0,4
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,2,0,0
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,custom code,2,1,0
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,3,3,7
 CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,custom code,3,3,0
@@ -2894,9 +2894,9 @@ CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,Galaxy,3,0,7
 CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,custom code,3,9,0
 CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,1,1,5
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,1,3,0
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,1,8
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,0,3
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,2,4,0
-CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,2,5
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,3,0,1
 CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,3,4,0
 CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,Galaxy,1,1,5
 CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,custom code,1,5,0
@@ -2935,7 +2935,7 @@ CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,Galaxy,3,0,0
 CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,custom code,3,0,0
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,1,3,0
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,custom code,1,1,0
-CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,1,1
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,5,0
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,custom code,2,6,0
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,3,9,1
 CompBioBench,phase-chain-q1,DeepSeek V4 Pro,custom code,3,2,0
@@ -3018,7 +3018,7 @@ CompBioBench,protein-shape-q1,GPT-5.5,Galaxy,3,1,6
 CompBioBench,protein-shape-q1,GPT-5.5,custom code,3,1,0
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,1,6,8
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,custom code,1,6,0
-CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,4,8
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,2,0,1
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,custom code,2,1,0
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,3,1,2
 CompBioBench,protein-shape-q1,GPT-5.6 Luna,custom code,3,2,0
@@ -3062,7 +3062,7 @@ CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,1,0,1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,1,1,0
 CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,2,1,1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,2,3,0
-CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,1,4
+CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,3,1,1
 CompBioBench,read-proportions-q1,GPT-5.5,custom code,3,2,0
 CompBioBench,read-proportions-q1,GPT-5.6 Luna,Galaxy,1,1,8
 CompBioBench,read-proportions-q1,GPT-5.6 Luna,custom code,1,4,0
@@ -3076,7 +3076,7 @@ CompBioBench,read-proportions-q1,GPT-5.6 Sol,Galaxy,2,0,0
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,2,2,0
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,Galaxy,3,0,0
 CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,3,2,0
-CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,14,4
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,4,9
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,1,31,0
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,2,11,5
 CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,2,8,0
@@ -3086,7 +3086,7 @@ CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,1,4,0
 CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,2,1,0
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,2,3,0
-CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,6,6
+CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,3,0,2
 CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,3,5,0
 CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,Galaxy,1,5,8
 CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,custom code,1,22,0
@@ -3108,7 +3108,7 @@ CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,Galaxy,3,1,4
 CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,3,5,0
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,reverse-encode-q1,GPT-5.5,custom code,1,8,0
-CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,8,5
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,3,1
 CompBioBench,reverse-encode-q1,GPT-5.5,custom code,2,8,0
 CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,3,2,5
 CompBioBench,reverse-encode-q1,GPT-5.5,custom code,3,6,0
@@ -3172,7 +3172,7 @@ CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,Galaxy,3,18,2
 CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,custom code,3,8,0
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,8,5
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,1,18,0
-CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,8,13
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,2,8,2
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,2,2,0
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,3,5,12
 CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,3,12,0
@@ -3180,7 +3180,7 @@ CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,1,3,0
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,2,0,0
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,2,4,0
-CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,3,8
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,3,0,2
 CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,3,4,0
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,1,2,5
 CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,custom code,1,8,0
@@ -3251,7 +3251,7 @@ CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,1,0,0
 CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,2,2,0
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,2,1,0
-CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,0,4
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,3,3,2
 CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,3,3,0
 CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,Galaxy,1,1,16
 CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,custom code,1,5,0
@@ -3299,7 +3299,7 @@ CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,1,0,1
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,1,0,0
 CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,2,2,3
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,2,0,0
-CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,1,4
+CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,3,0,0
 CompBioBench,spatial-sim-q1,GPT-5.5,custom code,3,3,0
 CompBioBench,spatial-sim-q1,GPT-5.6 Luna,Galaxy,1,3,14
 CompBioBench,spatial-sim-q1,GPT-5.6 Luna,custom code,1,2,0
@@ -3337,7 +3337,7 @@ CompBioBench,spatial-sim-q2,GPT-5.6 Sol,Galaxy,2,3,16
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,2,0,0
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,Galaxy,3,0,0
 CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,3,4,0
-CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,21,9
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,4,5
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,custom code,1,3,0
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,2,0,3
 CompBioBench,splice-pred-q1,DeepSeek V4 Pro,custom code,2,1,0
@@ -3347,13 +3347,13 @@ CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,1,0,0
 CompBioBench,splice-pred-q1,GPT-5.5,custom code,1,4,0
 CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,2,1,1
 CompBioBench,splice-pred-q1,GPT-5.5,custom code,2,3,0
-CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,1,9
+CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,3,2,13
 CompBioBench,splice-pred-q1,GPT-5.5,custom code,3,2,0
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,1,1,8
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,1,3,0
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,2,2,2
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,2,4,0
-CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,3,16
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,3,2,10
 CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,3,7,0
 CompBioBench,splice-pred-q1,GPT-5.6 Sol,Galaxy,1,0,2
 CompBioBench,splice-pred-q1,GPT-5.6 Sol,custom code,1,1,0
@@ -3419,7 +3419,7 @@ CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,1,0,0
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,1,1,0
 CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,2,0,1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,2,3,0
-CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,5,4
+CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,3,0,1
 CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,3,4,0
 CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,Galaxy,1,5,14
 CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,custom code,1,1,0
@@ -3437,7 +3437,7 @@ CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,1,1,6
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,1,1,0
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,2,12
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,2,4,0
-CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,13,32
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,3,2,3
 CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,3,2,0
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,1,3,3
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,1,7,0
@@ -3445,7 +3445,7 @@ CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,2,1,1
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,2,6,0
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,3,6,6
 CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,3,3,0
-CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,7,13
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,1,7,7
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,custom code,1,17,0
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,2,0,2
 CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,custom code,2,3,0
@@ -3514,7 +3514,7 @@ CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,1,0,4
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,1,2,0
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,2,0,1
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,2,8,0
-CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,7,7
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,3,0,3
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,3,6,0
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,Galaxy,1,2,3
 CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,custom code,1,7,0

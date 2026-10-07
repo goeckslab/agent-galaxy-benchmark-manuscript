@@ -1,16 +1,16 @@
 **Fig. 3 \| Galaxy provides a structured environment for agent analyses.**
-**a**, Runs correct by task domain (squares, custom code; circles, Galaxy): CompBioBench domains as labelled by the benchmark (spatial and structure merged), BixBench-Verified-50 and IWC; tasks in parentheses.
-No domain differs after Holm adjustment (smallest adjusted *P* = 0.56).
-**b**, How each traced Galaxy run used Galaxy, from the jobs it submitted through the agent interface: installed tools only, installed tools and user-defined tools (UDTs; agent-written code run as a Galaxy job), UDTs only, or neither.
-Numbers are percentages of runs; UDTs were not offered on IWC.
-**c**, Execution errors by type and by where they occurred: Galaxy jobs of installed tools or of UDTs, and failed shell commands (a silent exit code 1 is not counted) in Galaxy and custom-code runs.
-Types follow each error's message, exit code and command; right, errors and errors per run (1,859 Galaxy and 1,908 custom-code runs with records).
-**d**, Runs ending correct by the number of execution errors in the run.
-Circles group runs with the same number of errors (area proportional to runs); lines are logistic fits on ln(1 + errors) with 95% cluster-bootstrap bands.
-The annotated comparison averages the Galaxy minus custom-code difference over four error bins (1–2, 3–5, 6–10, >10), weighted by their share of runs with errors; it was chosen after inspecting the bins (unadjusted, +2.3 points, *P* = 0.07).
-**e**, Parameter checks on 17,180 installed-tool requests: the interface compares the parameters the agent requested with those Galaxy validated before the job or recorded after it.
-**f**, Failed Galaxy requests (7,354) grouped by the change that would most likely prevent them; the failure classes come from the request and job records, and their grouping is ours (classes in Source Data).
-Tool runtime errors cannot be attributed to the agent or the tool from the records alone.
-A run is correct when accepted or, for IWC, at ≥ 0.99 output agreement.
-Error bars, 95% percentile cluster-bootstrap intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks).
-*P* values come from paired cluster randomization tests (200,000 draws).
+**a**, Runs correct (accepted, not merely completed) by domain (squares, custom code; circles, Galaxy): CompBioBench domains (spatial and structure merged), BixBench-Verified-50 and IWC; tasks in parentheses.
+No domain differs after Holm adjustment.
+**b**, How each traced Galaxy run used Galaxy, from the jobs it submitted through the agent interface: completed jobs of installed tools, of user-defined tools (UDTs; agent-written code run as a Galaxy job) or of both; jobs that all failed; or no job.
+Right, traced runs and the share of scored runs correct.
+Route–correctness associations are descriptive; twelve CompBioBench runs have no trace.
+**c**, Share of execution steps that failed: Galaxy jobs of installed tools and of UDTs, and shell commands (a silent exit code 1 is not counted) in each condition, with the number of steps in parentheses.
+Fixed later, failed steps later re-run without error in the same run (for shell commands, named analysis programs only; Extended Data Fig. 7b).
+Below, errors per run; right, error types (all seven in Extended Data Fig. 3b).
+**d**, Runs correct by the number of execution errors in the run (failed shell commands plus Galaxy jobs in the error state; 3,767 runs with records).
+Final correctness is not recovery from each failure, and error counts are outcomes of the run.
+The unadjusted difference among runs with errors is the primary estimate; the error-bin adjustment was chosen after inspecting the bins and is exploratory.
+**e**, Parameter checks on 16,757 installed-tool requests, comparing the requested parameters with those Galaxy validated before the job or recorded after it.
+A value not recorded has no counterpart in Galaxy's record, as with defaults or reformatting.
+**f**, Failed Galaxy requests (four model configurations) by failure class, grouped by the change most likely to prevent them (codebook in Source Data, checked by an independent AI rater; Extended Data Fig. 6d). Right, runs with at least one such failure; grey groups cannot be attributed.
+Intervals, 95% percentile cluster-bootstrap (20,000 resamples; clusters are BixBench source capsules, otherwise tasks). *P* values come from paired cluster randomization tests (200,000 draws).

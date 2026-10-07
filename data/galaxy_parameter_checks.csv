@@ -20,27 +20,27 @@ BixBench-Verified-50,GPT-5.6 Sol,mismatch,post_run,71
 BixBench-Verified-50,GPT-5.6 Sol,mismatch,validation,235
 BixBench-Verified-50,GPT-5.6 Sol,no_explicit_non_dataset_parameters,post_run,74
 BixBench-Verified-50,GPT-5.6 Sol,none,none,36
-CompBioBench,DeepSeek V4 Pro,matched,post_run,2354
-CompBioBench,DeepSeek V4 Pro,mismatch,post_run,230
-CompBioBench,DeepSeek V4 Pro,mismatch,validation,610
-CompBioBench,DeepSeek V4 Pro,no_explicit_non_dataset_parameters,post_run,282
+CompBioBench,DeepSeek V4 Pro,matched,post_run,2258
+CompBioBench,DeepSeek V4 Pro,mismatch,post_run,225
+CompBioBench,DeepSeek V4 Pro,mismatch,validation,606
+CompBioBench,DeepSeek V4 Pro,no_explicit_non_dataset_parameters,post_run,278
 CompBioBench,DeepSeek V4 Pro,none,none,297
-CompBioBench,GPT-5.5,matched,post_run,692
-CompBioBench,GPT-5.5,mismatch,post_run,76
-CompBioBench,GPT-5.5,mismatch,validation,182
-CompBioBench,GPT-5.5,no_explicit_non_dataset_parameters,post_run,91
-CompBioBench,GPT-5.5,none,none,79
-CompBioBench,GPT-5.6 Luna,matched,post_run,2894
-CompBioBench,GPT-5.6 Luna,mismatch,post_run,313
-CompBioBench,GPT-5.6 Luna,mismatch,validation,877
-CompBioBench,GPT-5.6 Luna,no_explicit_non_dataset_parameters,post_run,373
-CompBioBench,GPT-5.6 Luna,none,none,468
+CompBioBench,GPT-5.5,matched,post_run,629
+CompBioBench,GPT-5.5,mismatch,post_run,73
+CompBioBench,GPT-5.5,mismatch,validation,168
+CompBioBench,GPT-5.5,no_explicit_non_dataset_parameters,post_run,76
+CompBioBench,GPT-5.5,none,none,73
+CompBioBench,GPT-5.6 Luna,matched,post_run,2706
+CompBioBench,GPT-5.6 Luna,mismatch,post_run,306
+CompBioBench,GPT-5.6 Luna,mismatch,validation,862
+CompBioBench,GPT-5.6 Luna,no_explicit_non_dataset_parameters,post_run,375
+CompBioBench,GPT-5.6 Luna,none,none,455
 CompBioBench,GPT-5.6 Luna,not_comparable,post_run,2
-CompBioBench,GPT-5.6 Sol,matched,post_run,1163
+CompBioBench,GPT-5.6 Sol,matched,post_run,1164
 CompBioBench,GPT-5.6 Sol,mismatch,post_run,73
-CompBioBench,GPT-5.6 Sol,mismatch,validation,297
+CompBioBench,GPT-5.6 Sol,mismatch,validation,303
 CompBioBench,GPT-5.6 Sol,no_explicit_non_dataset_parameters,post_run,108
-CompBioBench,GPT-5.6 Sol,none,none,137
+CompBioBench,GPT-5.6 Sol,none,none,138
 IWC,DeepSeek V4 Pro,matched,post_run,119
 IWC,DeepSeek V4 Pro,mismatch,post_run,20
 IWC,DeepSeek V4 Pro,mismatch,validation,52

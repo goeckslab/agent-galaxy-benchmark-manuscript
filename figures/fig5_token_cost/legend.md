@@ -1,12 +1,17 @@
-**Fig. 5 \| Galaxy increases analysis inspectability at higher token cost.**
-**a**, Accuracy against median input tokens per run, including cached context, for each replicate of each model and condition (one run per BixBench-Verified-50 and CompBioBench task; 146–150 runs with token counts per point); colour, model; squares, custom code; circles, Galaxy.
-Numbers give how many times more input tokens Galaxy used on the same task and, for all four models, counting only uncached input (150 task cells per model; all *P* < 0.001); accuracy differences are not significant (Fig. 2a).
-**b**, Input tokens of correct (light) and incorrect (solid) runs.
-Numbers compare incorrect with correct runs of the same task and model, in replicate sets with both outcomes (93 custom-code and 70 Galaxy sets); headers pool the four models.
-**c**, Input tokens against actions (agent tool calls) for correct runs; lines join medians within bins of actions (bins with at least ten runs).
-On the same task, Galaxy runs took 2.5 times more actions and used 1.9 times more input tokens per action.
-**d**, Share of requests to Galaxy (left) and of the text Galaxy sent back, in characters (right), by what the request was for (1,908 traced Galaxy runs).
-Notes give the share of tools read about but never run in the same run (range over benchmarks) and the median share of input reread from the prompt cache.
+**Fig. 5 \| Galaxy records analyses as structured provenance and uses more input tokens on question-answering tasks.**
+**a**, Galaxy relative to custom code in input (including cached context), uncached input and output tokens, per benchmark.
+Diamonds (primary), the geometric mean over task–model cells of the ratio of median tokens per run; circles, the ratio of total tokens over the same cells.
+On IWC, Galaxy did not use clearly more input (1.7×, 95% interval 0.8–3.5; aggregate 0.90×).
+Below, incorrect relative to correct runs of the same task and model.
+Ratios are not monetary costs.
+**b**, Left, Galaxy relative to custom code in actions (tool calls) and input tokens per action.
+Right, characters Galaxy returned to the agent, by request type (1,908 traced runs); a reply enters the context once, then is reread from cache.
+**c**, Galaxy / custom-code tokens per complete 50-task BixBench-Verified-50 run, before and after rounds of interface changes, in two separate comparisons.
+July (GPT-5.5; round 1, shorter skills and prompt guidance, in place): round 2 moved submission, waiting and parameter checks into one call that returns compact results; both conditions were rerun.
+October (GPT-5.6 Sol; archived custom-code runs): round 3 shortened and deduplicated replies and added submission templates, then longer waits between model requests.
+Batch comparisons, not effects of single changes; the agent CLI version also changed.
+**d**, What the retained record holds for each analysis step (Galaxy jobs; custom-code shell commands labelled as analysis): structured, a field in the Galaxy job record (for UDTs, a versioned container) or, for exit codes, the agent trace; free text, commands or printed output in the trace; partial, an environment image or history metadata only; not retained, evidence the benchmark did not keep, such as custom-code output files (unknown, not absent).
+The whole-analysis row counts runs with a retrieved Galaxy history; nothing was rerun.
+**e**, One analysis step recorded in both conditions.
 A run is correct when accepted or, for IWC, at ≥ 0.99 output agreement.
-Boxes, middle 50% and median; whiskers, 1.5 times the interquartile range.
-Ratios are geometric means over paired cells; *P* values come from two-sided paired cluster sign-flip tests (200,000 draws), Holm-adjusted within each panel; intervals are in Source Data.
+Intervals, 95% percentile cluster-bootstrap (clusters are BixBench source capsules, otherwise tasks). *P* values (Source Data) come from paired cluster sign-flip tests (200,000 draws; exact for IWC).
