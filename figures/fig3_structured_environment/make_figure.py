@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Figure 3: Galaxy provides a structured environment for agent analyses.
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@b3cbb944648a57104a6837d1640b255854dd7e3e:figures/make_fig3.py; the panel data are the
+Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0dbf3f443b83a91322098c9918d86a5846129215:figures/make_fig3.py; the panel data are the
 values that script computed and passed to its drawing functions (data/figure_panels/fig3.json, written by the
 archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
 every number traces to the archive script at that commit. Writes, next to this script, fig3_structured_environment.pdf, .png (600 dpi)

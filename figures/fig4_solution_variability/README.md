@@ -19,7 +19,7 @@ python figures/fig4_solution_variability/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_fig4.py` in the run archive, [paulocilasjr/Galaxy_benchmark@b3cbb94](https://github.com/paulocilasjr/Galaxy_benchmark/tree/b3cbb944648a57104a6837d1640b255854dd7e3e).
+Every estimate, interval and *P* value was computed by `figures/make_fig4.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/fig4.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).
@@ -49,6 +49,8 @@ Extended Data Fig. 4: a, the 15 installed tools in the most Galaxy runs (complet
 similarity by model and benchmark, with sensitivity analyses; c, answer agreement under three answer-matching rules.
 
 A run is correct when accepted or, for IWC, at >= 0.99 output agreement. Intervals are 95% percentile cluster-bootstrap
-intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks). Writes figures/fig4.{svg,pdf,png},
+intervals (20,000 resamples; clusters are BixBench source capsules, otherwise tasks). Scores come from figures/scored_runs.csv (make_scored_runs.py): every run as the public results site shows it
+(https://goeckslab.github.io/galaxy-agent-benchmark/), the IWC host-read removal task included.
+Writes figures/fig4.{svg,pdf,png},
 fig4_source_data.csv, fig4_tool_family_codebook.csv, ed_fig4.{svg,pdf,png} and ed_fig4_source_data.csv.
 ```
