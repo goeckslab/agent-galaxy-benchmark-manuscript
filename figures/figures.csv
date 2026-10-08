@@ -1,1 +1,2 @@
 figure_id,kind,title,script,source_data,status
+fig1_benchmark_overview,main,Study design and isolated execution pipeline,figures/fig1_benchmark_overview/make_figure.py,figures/fig1_benchmark_overview/source_data.csv,draft
