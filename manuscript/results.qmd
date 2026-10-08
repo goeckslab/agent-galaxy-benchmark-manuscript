@@ -20,6 +20,7 @@ All 160 tasks were analyzed individually for each of the three replicates.
 
 Each benchmark keeps its own endpoint.
 BixBench uses an established ground truth set by the original creators and made publicly available.
+Grades are those shown on the project's results site, which corrected the scoring of two items (bix-53-q2 and bix-43-q2) after the original evaluation.
 CompBioBench uses an agreement with a reconstructed answer key, in which 54 references were inferred from recorded scores and 46 from predicted answers.
 This is because the authors of the benchmark evaluated the answer but obscured the ground truth.
 IWC uses continuous agreement, a scale from 0 to 1, with curated workflow outputs.
@@ -37,10 +38,10 @@ Our comparisons are driven by the environment, deployment, benchmark task, agent
 
 We first asked whether working in Galaxy changes how often agents reach the correct answer.
 Overall performance was similar in the two envrionments (Fig. 2).
-On BixBench, acceptance was 85.2% with custom code and 86.5% with Galaxy, a difference of +1.3 (-3.5 to 6.4) percentage points (estimate and 95% cluster-bootstrap interval; Fig. 2a).
-On CompBioBench, agreement with the reconstructed key was 86.7% and 87.1%, a difference of +0.4 (-1.6 to 2.4) points (Fig. 2b).
-Both differences stayed within about one point of zero when we removed 15 BixBench tasks with audited benchmark-side problems or 66 CompBioBench taks-configuration cells containing wrong answers or target scores (Fig. 2d,e).
-On IWC, output agreement was 0.94 with custom code and 0.98 with Galaxy (+0.04 (0.009 to 0.078); Fig. 2c), and three tasks containing a zero-scored run accounted for most of this difference (Fig. 2f).
+On BixBench, acceptance was 87.2% with custom code and 87.7% with Galaxy, a difference of +0.5 (-3.9 to 4.8) percentage points (estimate and 95% cluster-bootstrap interval; Fig. 2b).
+On CompBioBench, agreement with the reconstructed key was 86.7% and 87.0%, a difference of +0.3 (-1.8 to 2.5) points (Fig. 2b).
+Both differences stayed within about one point of zero when we removed 15 BixBench tasks with audited benchmark-side problems or 66 CompBioBench taks-configuration cells containing wrong answers or target scores (Extended Data Fig. 2b).
+On IWC, output agreement over all ten tasks was 0.95 with custom code and 0.98 with Galaxy (+0.036 (0.006 to 0.074); Fig. 2b), and three tasks containing a zero-scored run accounted for most of this difference (Extended Data Fig. 2b).
 
 <!-- Draft image image1.emf from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
 
@@ -71,12 +72,11 @@ a, BixBench-Verified-50: condition difference in accuracy, in percentage points 
 b, CompBioBench: condition difference in the mean reported benchmark score (answers credited, of 100) over three replicate runs per condition.
 Open points have no interval, because the archive keeps only reported benchmark scores, some labelled predicted.
 GPT-6 Astra (custom-code condition only, not paired) scored 93 (Supplementary Tables 5 and 6).
-c, IWC: condition difference in mean output agreement over the nine tasks scored in both conditions (Supplementary Table 7).
+c, IWC: condition difference in mean output agreement over the ten tasks scored in both conditions (Supplementary Table 7).
 d, IWC output agreement of every run on all ten tasks.
 Ticks mark the mean of 12 replicate runs, and the axis is broken between 0.45 and 0.80.
 Numbered notes give the cause of every run below 0.5, established from its execution trace.
-Note 4 is a score conflict (Supplementary Table 18; Extended Data Fig. 2d).
-e, Primary and secondary cause of every scored-incorrect BixBench-Verified-50 run (135 custom-code condition, 111 Galaxy condition), adjudicated from execution traces (Supplementary Table 14; Supplementary Note 6).
+e, Primary and secondary cause of every scored-incorrect BixBench-Verified-50 run of the four Codex model configurations (77 custom-code condition, 74 Galaxy condition), adjudicated from execution traces (Supplementary Table 14; Supplementary Note 6).
 
 <!-- Draft image image5.png from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
 
@@ -95,7 +95,7 @@ For bix-45-q1, custom code returned the accepted result in 8 of 12 runs, whereas
 <!-- Draft image image6.png from the Word draft is not included. Figures are generated from code in figures/; see figures/README.md. -->
 
 **Figure 4 \| Galaxy preserves CompBioBench accuracy with greater model interaction. a**, Overall accuracy across 2,400 runs.
-Galaxy returned 1,043/1,200 correct answers (86.9%) versus 1,040/1,200 (86.7%) for custom code.
+Galaxy returned 1,044/1,200 correct answers (87.0%) versus 1,040/1,200 (86.7%) for custom code.
 **b**, Accuracy by model and execution condition across three replicates of 100 tasks.
 **c**, Total model tokens by model and condition; Galaxy used 14.15 billion tokens versus 5.19 billion for custom code overall (2.7-fold increase).
 **d**, Representative condition-specific analytical trajectories for variant-status-q1 and reverse-search-gwas-q2, with contaminated-rna-q3 illustrating that trajectory-dependent accuracy differences were not uniformly directional.

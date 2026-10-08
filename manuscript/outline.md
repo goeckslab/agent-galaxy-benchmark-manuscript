@@ -90,11 +90,13 @@ Comments attached to surviving text are kept as `REVIEW COMMENT` blocks in the r
 Noted while moving the draft into the repository; none of these were changed in the text.
 
 - Scope: Introduction and Results describe three benchmarks (160 tasks, 3,840 runs, including IWC), but Online Methods describe only BixBench-Verified-50 and CompBioBench (3,600 runs) and have no IWC subsection.
-- BixBench numbers: Results text gives 85.2% (custom code) and 86.5% (Galaxy); the Figure 3 legend gives 87.2% and 87.7%.
-- CompBioBench numbers: Results text gives 86.7% and 87.1%; the Figure 4 legend gives 86.7% and 86.9%.
+- BixBench numbers: resolved 2026-10-07. The Results text and the Figure 3 legend both give 87.2% (custom code) and 87.7% (Galaxy), with grades as the results site shows them.
+- CompBioBench numbers: resolved 2026-10-07. The Results text and the Figure 4 legend both give 86.7% (custom code) and 87.0% (Galaxy).
 - Harness: Results say "Four Codex model configurations", Methods say DeepSeek V4 Pro was run through Codex, and the Fig. 1 legend says "DeepSeek V4 Pro (Claude Code, superseded) is reported separately" and mentions an unpaired GPT-6 Astra configuration.
 - Naming: the Abstract and Discussion use "Galaxy-Bench"; the title comment and abstract comment question whether this paper introduces a benchmark.
-- Figures 3 and 4 have legends but their Results text was deleted; the Results text cites Fig. 2d,e for the sensitivity analysis and Fig. 2f for IWC, but the Fig. 2 legend has panels a–e only, with d showing IWC runs and e showing BixBench failure causes.
+- Figures 3 and 4 have legends but their Results text was deleted.
+  The Results paragraph now cites the current figures (Fig. 2b for the differences, Extended Data Fig. 2b for the sensitivity analyses; 2026-10-07).
+  The draft legends in `results.qmd` still describe the earlier figure layout; the current legends are in `figures/*/legend.md`.
 - Bracketed placeholders remain in Methods (for example `[time limit]`, `[verifier model, version and provider]`, `[N]` bootstrap replicates, Galaxy commit hash).
 - The draft has no reference list; citation numbers in the text are placeholders until entries are added to `references.bib`.
 - Typos carried over: "envrionments", "taks-configuration".
