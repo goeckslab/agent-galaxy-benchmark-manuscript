@@ -76,6 +76,34 @@ This subsection should carry the evidence; the Discussion carries the recommenda
 
 Current draft text: none yet. The Figure 4 legend in `results.qmd` reports token totals for CompBioBench.
 
+Reducing Galaxy token overhead on BixBench (Junhao Qiu, added 2026-10-07): a third round of interface and execution changes cut Galaxy token use on BixBench by more than half without lowering accuracy.
+It follows the process of identifying where the extra tokens come from, changing the interface and execution behavior, and measuring the complete benchmark again.
+
+- Setup: GPT-5.6 Sol, all 50 BixBench tasks, three new Galaxy replicates.
+  The custom-code baseline is the existing three custom-code replicates of the same tasks with the same model.
+- Tokens per 50-task run:
+  - Custom code: 35.51M.
+  - Previous Galaxy runs: 122.41M (3.45× custom code).
+  - Interface changes 1 and 2 below, one complete replicate: 85.93M (2.42×).
+  - Interface changes 1 and 2 plus the longer-wait instructions, mean of three replicates: 54.35M (1.53×), 55.6% lower than the previous Galaxy runs.
+- Accuracy of the three new replicates: 46/50, 46/50 and 45/50.
+- Changes, each aimed at one source of overhead:
+  1. Repeated context: the MCP interface already returned summaries and saved full execution records, but summaries could still repeat output text and detailed check results.
+     It now returns short check statuses, removes duplicate output references, and returns an "unchanged" notice pointing to the earlier record when the agent re-inspects unchanged content such as tool parameters.
+     Inline result text is capped at 4 KiB per output and 8 KiB per reply; full requests, responses and job details are still saved for inspection.
+  2. Parameter submission and retries: shorter parameter descriptions, fill-in templates showing required fields and format (for example, where a Galaxy dataset ID goes), and parameter checks with fewer false warnings.
+     For UDTs, checks before job submission now catch errors such as a script referring to an undeclared input or two outputs with the same name.
+  3. Repeated waiting requests: agents were told to wait at least five minutes, preferably thirty, before checking an asynchronous operation again, reusing instructions from some later CompBioBench runs.
+     MCP already waited for Galaxy jobs; the remaining overhead was the model repeatedly checking whether the MCP call had returned.
+     Waiting calls fell from 481 in the preceding complete replicate to a mean of 78 per run across the three new replicates, and model requests from 1,799 to a mean of 1,332.
+- Why it matters: it answers "why does Galaxy use more tokens" with measured sources of overhead (repeated context, retries, polling) rather than failed analyses, and shows the cost gap is largely an interface property that can be engineered down.
+  It is also a worked example of agents as virtual users (Results part 2 and Discussion): agent traces pointed to specific interface fixes.
+- Open questions before this goes into the text:
+  - These numbers are not yet in `data/results_manifest.csv` or a script in `analysis/`; the run records exist alongside the previous results and need to be added before any number is cited.
+  - Whether these runs replace the main Galaxy BixBench results or are reported as a follow-up experiment, since they use a different interface from the other Galaxy runs.
+  - Online Methods describe token accounting for CompBioBench only; it needs extending to BixBench, and the message does not say whether these are total or input tokens.
+  - "Previous Galaxy runs" is "the previous website Galaxy runs" in Junhao's message; confirm which runs these are.
+
 ## Observations to fold into Results and Discussion
 
 From Jeremy Goecks's review comment on the Results heading (2026-09-02).
