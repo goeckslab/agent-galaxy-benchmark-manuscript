@@ -33,8 +33,8 @@ The paper fits as a tool report: an interface that lets AI agents run bioinforma
 | Part | Words |
 |---|---|
 | Abstract | 70 |
-| Main text, six paragraphs | 830 |
-| Figure 1 legend | 150 |
+| Main text, six paragraphs | 855 |
+| Figure 1 legend | 125 |
 | Figure 2 legend | 150 |
 | References, 20 entries | about 300 |
 | Total | about 1,500 |
@@ -62,7 +62,7 @@ The abstract comment asks for concrete numbers (tasks, agents, accuracy); fit ta
 - Scientific workbenches such as Galaxy are a widely used alternative for people: versioned tools, managed compute, and histories that record parameters, inputs and outputs and can be shared, turned into workflows and rerun.
 - Whether agents can work through a workbench to complete bioinformatics tasks as accurately as they can write code has not been tested.
 
-### P2. The tool and the study (about 160 words; Fig. 1a)
+### P2. The tool and the study (about 135 words; Fig. 1a)
 
 - One sentence about how we're filling this gap: a study evaluating agent performance on three bioinformatics benchmarks using Galaxy and using custom code.
 - Define the two conditions here, once: Galaxy (all analysis runs as Galaxy jobs, including UDTs) and custom code (the agent installs software and writes its own code), with custom code as the baseline.
@@ -77,15 +77,54 @@ The abstract comment asks for concrete numbers (tasks, agents, accuracy); fit ta
 - Use the numbers from PR #12 ("Results: update numbers to the site-matched scores"), which match the public results site and resolve the inconsistencies listed in `outline.md`.
   Do not draft numbers until #12 and the figure PRs it depends on (#4, #5, #11) are merged.
 
-### P4. Error analysis, lack of rigor/validation of results, and opportunities for using consensus to improve results (about 150 words; Fig. 2a)
+### P4. Error analysis, lack of rigor/validation of results, and opportunities for using consensus to improve results (about 200 words; Fig. 2a,b)
 
-- Most incorrect runs come from a few tasks, and their causes are analytical decisions rather than execution failures (BixBench failure-cause adjudication, `data/bixbench_failure_causes.csv` in PR #12).
-- Two contrasting examples:
-  - bix-30-q3: Galaxy 12/12 correct versus custom code 4/12; failed custom-code runs added unrequested steps.
-  - bix-45-q1: custom code 8/12 versus Galaxy 0/12, caused by a PhyKIT version difference between the Galaxy tool and the accepted answer.
-- One-clause takeaway linking to analytical rigor: accuracy is limited more by analytical judgment than by the ability to run analyses (only if Results part 3 analyses in `outline.md` support it).
+The thread: errors come in two kinds.
+Systematic errors repeat in every replicate and come mostly from the benchmark; random errors differ between replicates and come mostly from missing validation.
+Consensus across replicates can only fix the second kind, and a validation step that picks a correct replicate would help more than a vote.
 
-### P5. What Galaxy adds, and what it costs (about 140 words; Fig. 2b,c)
+Sources: BixBench failure causes from `data/bixbench_failure_causes.csv` (PR #12); everything about replicates from `analysis/replicate_consensus.py`, which writes `data/replicate_consensus.csv` and `data/bixbench_causes_by_agreement.csv`.
+A replicate group is the three replicates of one task, model and condition.
+IWC is left out because its scores are continuous.
+
+- Where errors come from (BixBench, 151 incorrect runs, causes assigned from execution traces):
+  - 71% came from the benchmark: an under-specified task or reference answer (94 runs) or a scorer rejecting a valid answer (13).
+  - 25% were agent errors: no validation of the answer (32) or wrong biological or statistical knowledge (5).
+  - Galaxy itself caused 3 incorrect runs, and 4 runs submitted no answer.
+  - Errors are concentrated: five tasks account for 97 of the 151.
+- Lack of rigor when agents are wrong: missing validation is the main agent-side cause, and it is a primary or secondary cause in 116 of the 151 incorrect runs.
+  It often turns an ambiguous task into a confidently wrong answer.
+  - bix-30-q3: failed custom-code runs added exclusions, normalization and a statistical test the task did not ask for (Galaxy 12/12 correct, custom code 4/12).
+  - Counter-example, CompBioBench variant-status-q1: the Galaxy runs that added a read-position check reached the right answer.
+- Systematic versus random errors:
+  - In BixBench, 105 of the 151 incorrect runs are in replicate groups where all three replicates were wrong, including 85 of the 94 benchmark-specification errors.
+  - Missing-validation errors are spread out: 16 of the 32 are in groups where the other two replicates were correct.
+  - In CompBioBench, 144 of 316 incorrect runs are in all-wrong groups; CompBioBench has no cause assignment, so its errors cannot be split by type.
+- Consensus helps a little; a validation step that picks the correct replicate would help more (Fig. 2b; table below):
+  - A majority vote over three replicates adds 0.3 to 2.3 points.
+  - At least one replicate was correct in 91–94% of replicate groups, so most of the room left is in groups where a correct answer was produced but not chosen.
+  - A majority over all 12 runs of a task (four models × three replicates) reaches 89–92%.
+- Disagreement between replicates flags answers to check: replicates split on 8–10% of BixBench groups and 15–17% of CompBioBench groups, without needing the true answer.
+- Galaxy runs are more consistent, which cuts both ways: Galaxy replicates agree more often, so voting gains 0.3 points in Galaxy against 2.3 for custom code on both benchmarks.
+  Consistent wrong answers need fixes in the tools, not votes: bix-45-q1 failed in all 12 Galaxy runs because the Galaxy PhyKIT version differs from the one behind the accepted answer (custom code 8/12).
+  This leads into P6: agents as virtual users, and consensus across different methods rather than repeats of the same one.
+
+Consensus table (`data/replicate_consensus.csv`):
+
+| Benchmark, condition | Single run | Majority of 3 replicates | At least 1 of 3 correct (ceiling for picking a correct replicate) | Majority of 12 runs |
+|---|---|---|---|---|
+| BixBench-Verified-50, Galaxy | 87.7% | 88.0% | 91.5% | 92.0% |
+| BixBench-Verified-50, custom code | 87.2% | 89.5% | 91.0% | 90.0% |
+| CompBioBench, Galaxy | 87.0% | 87.3% | 94.3% | 91.0% |
+| CompBioBench, custom code | 86.7% | 89.0% | 93.8% | 89.0% |
+
+Caveats to state in Methods:
+- Votes are computed from correctness, not from the answers themselves, assuming correct answers agree with each other; a real vote would compare normalized answers.
+- The 12-run vote counts ties as incorrect, so it is conservative.
+- None of these consensus strategies were run; they are estimates from the existing runs.
+- The committed tables were generated from PR #12's data before it merged; rerun the script once #12 merges.
+
+### P5. What Galaxy adds, and what it costs (about 140 words; Fig. 2c,d)
 
 - Every Galaxy run leaves a structured record: tool identities and versions, requested and resolved parameters, datasets and job states (archive totals of Galaxy jobs and interface calls from the Fig. 1 legend).
   People can review the analysis in the existing Galaxy interface and rerun or continue it without using model tokens.
@@ -105,14 +144,17 @@ The abstract comment asks for concrete numbers (tasks, agents, accuracy); fit ta
 
 - a: Study design schematic: same model configuration, two conditions, the Galaxy interface (from Fig. 1 in PR #4).
 - b–d: Condition difference (Galaxy − custom code) per benchmark with 95% intervals, by model and pooled (from Fig. 2a–c in PR #5).
-- Legend: about 150 words; the current draft legends for Figs. 1 and 2 total about 450 words and need cutting by two-thirds.
+- Legend: about 125 words; the current draft legends for Figs. 1 and 2 total about 450 words and need cutting by more than two-thirds.
 
-### Figure 2: What Galaxy records and costs
+### Figure 2: Errors, consensus, and what Galaxy records and costs
 
-- a: Tasks with the largest condition-specific differences, including bix-30-q3 and bix-45-q1 (from draft Fig. 3d or Fig. 4 in PR #10).
-- b: An example Galaxy history or provenance record for one run (from Fig. 5 in PR #7).
-- c: Tokens per run by condition, with the reduced-overhead BixBench runs if they are reported (from Fig. 5 in PR #7, plus a new panel).
-- Legend: about 150 words.
+- a: Causes of incorrect BixBench runs, split by how many of the other replicates were correct (0, 1 or 2): shows systematic benchmark errors against random validation errors (new panel from `data/bixbench_causes_by_agreement.csv`).
+- b: Consensus panel, drawing the consensus table under P4: for each benchmark and condition, accuracy of a single run, a majority of 3 replicates, at least 1 of 3 correct, and a majority of 12 runs (new panel from `data/replicate_consensus.csv`).
+  For example, one row per benchmark and condition with the four values as points on a shared accuracy axis, so the gap between the vote and the ceiling is visible.
+- c: An example Galaxy history or provenance record for one run (from Fig. 5 in PR #7).
+- d: Tokens per run by condition, with the reduced-overhead BixBench runs if they are reported (from Fig. 5 in PR #7, plus a new panel).
+- The task-level examples (bix-30-q3, bix-45-q1) move from the figure to the text.
+- Legend: about 150 words for four panels is tight; if it runs over, move panel c to the Supplementary Information.
 
 ### Optional third item (editorial discretion)
 
