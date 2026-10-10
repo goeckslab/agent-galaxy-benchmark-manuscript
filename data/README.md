@@ -51,3 +51,25 @@ The committed version was fetched on 2026-10-12, when the deployed files matched
 | source | Website page or table, and fetch date |
 
 `token_ratios_main_runs.csv` is written by `analysis/token_usage.py` from `site_token_totals.csv`: one row per benchmark and model, plus `All models`, with Galaxy and custom-code total tokens and their `ratio`.
+
+`replicate_consensus.csv` and `bixbench_causes_by_agreement.csv` are written by `analysis/replicate_consensus.py` from `run_scores.csv` and `bixbench_failure_causes.csv`.
+The committed versions were generated from those two inputs at PR #12 commit `9c8593f`, before they were merged to `main`; rerun the script after they merge and check that nothing changed.
+Votes are computed from correctness, assuming correct answers agree; see the script's docstring.
+
+`replicate_consensus.csv` has one row per benchmark (BixBench-Verified-50 and CompBioBench) and condition.
+A replicate group is the 3 replicate runs of one task, model and condition.
+
+| Column | Meaning |
+| --- | --- |
+| benchmark, track | Benchmark and execution condition |
+| runs, replicate_groups, tasks | Counts the rates are computed over |
+| single_run_accuracy | Share of runs correct |
+| majority_of_3_accuracy | Share of replicate groups with at least 2 of 3 runs correct |
+| any_of_3_accuracy | Share of replicate groups with at least 1 run correct: the ceiling for a step that picks a correct replicate |
+| majority_of_12_accuracy | Share of tasks with more than 6 of their 12 runs (4 models × 3 replicates) correct |
+| groups_3_of_3 … groups_0_of_3 | Share of replicate groups with 3, 2, 1 or 0 runs correct |
+| incorrect_runs | Incorrect runs |
+| incorrect_in_all_wrong_groups | Incorrect runs whose replicate group had no correct run |
+| incorrect_in_majority_correct_groups | Incorrect runs whose other 2 replicates were correct, which a majority vote would fix |
+
+`bixbench_causes_by_agreement.csv` counts incorrect BixBench-Verified-50 runs by `track`, `primary_cause` (codes as in `bixbench_failure_causes.csv`) and `correct_replicates_in_group` (0, 1 or 2 of the run's other replicates correct), in `incorrect_runs`.
