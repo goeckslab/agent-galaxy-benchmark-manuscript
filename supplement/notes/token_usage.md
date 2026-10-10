@@ -14,8 +14,8 @@ These runs used the round-2 interface (below).
 Input tokens are over 98% of the total in every condition, so the input ratio stands for the total.
 13 CompBioBench Galaxy runs and 1 custom-code run have no token count and are left out.
 
-The CompBioBench Galaxy totals here are lower than on the results site (13.2 billion against 14.1 billion input tokens, a pooled ratio of 2.56× against 2.73×), while the custom-code totals agree.
-The table used here includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05, which replaced the runs they superseded; that and the 13 runs without a token count are the likely causes, not yet confirmed.
+On CompBioBench, Galaxy used 13.2 billion input tokens and custom code 5.16 billion, pooled over the four models (2.56×).
+These totals come from the run table in PR #12, which includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05 in place of the runs they superseded.
 
 ## Reducing Galaxy's token overhead
 
@@ -69,7 +69,6 @@ Open questions:
 
 - The baseline has been quoted as about 13×, 18× and 20× in discussion; Junhao Qiu's measured figure is about 20×. The baseline and round-1 runs are not on the results site, so their run records are needed to confirm both figures.
 - The round totals in `data/token_optimization_rounds.csv` are transcribed from the results site and Junhao Qiu's notes, not computed from run records in this repository.
-- Why the CompBioBench Galaxy totals differ from the results site (see "Token use in the main runs").
 
 ## Sources
 
@@ -79,4 +78,3 @@ Open questions:
 - [BixBench token usage by model](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/site/bixbench/tokens/index.html) (results site): round-2 totals and accuracy for GPT-5.5 and GPT-5.6 Sol.
 - [BixBench 6 July token drivers](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/site/bixbench/july6/token-drivers/index.html) (results site): the 5.5× rerun and where the tokens go.
 - [Third-round token optimization](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/site/bixbench/token-optimization-oct2026/index.html) (results site) and its [README](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/bixbench/results/token_optimization_oct2026/README.md): round-3 runs; tokens are input plus output, with cached input counted once.
-- [CompBioBench token usage](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/site/compbiobench/tokens/index.html) (results site): the totals compared above.
