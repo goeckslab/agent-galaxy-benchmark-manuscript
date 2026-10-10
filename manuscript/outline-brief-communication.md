@@ -60,25 +60,24 @@ The abstract comment asks for concrete numbers (tasks, agents, accuracy); fit ta
 - Agents are being used for biomedical data analysis, and benchmarks now test whether they can complete whole bioinformatics analyses.
 - These benchmarks evaluate agents as programmers: each agent writes and runs its own code.
 - Scientific workbenches such as Galaxy are a widely used alternative for people: versioned tools, managed compute, and histories that record parameters, inputs and outputs and can be shared, turned into workflows and rerun.
-- Whether agents can work through a workbench as accurately as they can write code has not been tested.
-- Source: Introduction paragraphs 1–2 and Jeremy Goecks's suggested gap structure in `introduction.qmd`.
+- Whether agents can work through a workbench to complete bioinformatics tasks as accurately as they can write code has not been tested.
 
 ### P2. The tool and the study (about 160 words; Fig. 1a)
 
-- The interface: a Model Context Protocol server that gives agents tool search, parameter descriptions, history inspection, job submission and monitoring, and user-defined tools (UDTs) for operations no installed tool covers.
-  Settle the open note "Confirm use of the MCP server and how we're using it" (`outline.md`) before writing this.
+- One sentence about how we're filling this gap: a study evaluating agent performance on three bioinformatics benchmarks using Galaxy and using custom code.
 - Define the two conditions here, once: Galaxy (all analysis runs as Galaxy jobs, including UDTs) and custom code (the agent installs software and writes its own code), with custom code as the baseline.
-- Design: four model configurations in the Codex harness, 160 tasks (BixBench-Verified-50, CompBioBench, IWC-derived tasks), three replicates per task and condition, 3,840 runs.
+- Galaxy provides a Model Context Protocol server that gives agents tool search, parameter descriptions, history inspection, job submission and monitoring, and user-defined tools (UDTs) for operations no installed tool covers.
+- Summarize evaluation: four model configurations in the Codex harness, 160 tasks (BixBench-Verified-50, CompBioBench, IWC-derived tasks), three replicates per task and condition, 3,840 runs.
 - One sentence on why IWC is included: its tasks come from Galaxy workflows, so they test whether workbench-native tasks behave differently from platform-neutral ones.
 
-### P3. Accuracy holds (about 170 words; Fig. 1b–d)
+### P3. Result 1: Agents can use Galaxy to accurately complete bioinformatics tasks at the same level of accuracy as custom code (about 170 words; Fig. 1b–d)
 
 - BixBench-Verified-50, CompBioBench and IWC, one sentence each with the two condition values and the difference with its 95% interval.
 - One sentence on robustness: differences stay near zero after removing tasks with audited benchmark-side problems.
 - Use the numbers from PR #12 ("Results: update numbers to the site-matched scores"), which match the public results site and resolve the inconsistencies listed in `outline.md`.
   Do not draft numbers until #12 and the figure PRs it depends on (#4, #5, #11) are merged.
 
-### P4. Where the conditions differ, failures are analytical (about 150 words; Fig. 2a)
+### P4. Error analysis, lack of rigor/validation of results, and opportunities for using consensus to improve results (about 150 words; Fig. 2a)
 
 - Most incorrect runs come from a few tasks, and their causes are analytical decisions rather than execution failures (BixBench failure-cause adjudication, `data/bixbench_failure_causes.csv` in PR #12).
 - Two contrasting examples:
