@@ -1,0 +1,8 @@
+order,stage,change,model,runs_per_task,galaxy_tokens_m,custom_code_tokens_m,token_unit,ratio,approximate,galaxy_correct,galaxy_runs
+1,Baseline,no changes,GPT-5.5,1,,,,20.0,True,,
+2,Round 1,"prompts, skills",GPT-5.5,1,,,,8.0,True,,
+3,Round 1,3 replicates,GPT-5.5,3,446.7,81.5,total over 150 runs,5.481,False,,
+4,Round 2,MCP server,GPT-5.5,3,199.94,71.21,total over 150 runs,2.8078,False,137.0,150.0
+5,Round 2,same interface,GPT-5.6 Sol,3,122.41,35.51,mean per 50-task run,3.4472,False,136.0,150.0
+6,Round 3a,interface,GPT-5.6 Sol,1,85.93,35.51,mean per 50-task run,2.4199,False,,
+7,Round 3b,+ longer waits,GPT-5.6 Sol,3,54.35,35.51,mean per 50-task run,1.5306,False,137.0,150.0
