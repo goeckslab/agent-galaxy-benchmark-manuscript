@@ -101,7 +101,8 @@ It follows the process of identifying where the extra tokens come from, changing
 - Open questions before this goes into the text:
   - These numbers are not yet in `data/results_manifest.csv` or a script in `analysis/`; the run records exist alongside the previous results and need to be added before any number is cited.
   - Whether these runs replace the main Galaxy BixBench results or are reported as a follow-up experiment, since they use a different interface from the other Galaxy runs.
-  - Online Methods describe token accounting for CompBioBench only; it needs extending to BixBench, and the message does not say whether these are total or input tokens.
+  - Online Methods describe token accounting for CompBioBench only; it needs extending to BixBench.
+    The tokens are input plus output, with cached input counted once (`bixbench/results/token_optimization_oct2026/README.md` in `goeckslab/galaxy-agent-benchmark`).
   - "Previous Galaxy runs" is "the previous website Galaxy runs" in Junhao's message; confirm which runs these are.
 
 ## Observations to fold into Results and Discussion

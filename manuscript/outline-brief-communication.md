@@ -137,17 +137,52 @@ Caveats to state in Methods:
 - The committed tables were generated from PR #12's data before it merged; rerun the script once #12 merges.
 - Before the paper claims anything about causes on CompBioBench or IWC, those benchmarks need the same trace-based cause audit as BixBench (316 and 44 incorrect runs).
 
-### P5. What Galaxy adds, and what it costs (about 140 words; Fig. 2c,d)
+### P5. What Galaxy adds, what it costs, and how agent use made Galaxy cheaper to use (about 160 words; Fig. 2c,d)
 
-- Every Galaxy run leaves a structured record: tool identities and versions, requested and resolved parameters, datasets and job states (archive totals of Galaxy jobs and interface calls from the Fig. 1 legend).
+The thread: Galaxy's token overhead was mostly a property of the interface, not of the analyses.
+Agent traces showed where the tokens went, and fixing those spots cut Galaxy's cost from many times custom code to about 1.5×.
+That makes agents useful as virtual users who show where scientific software is hard to use.
+
+Sources: the benchmark repository `goeckslab/galaxy-agent-benchmark` (results site pages `bixbench/july6/token-drivers`, `bixbench/tokens` and `bixbench/token-optimization-oct2026`, and `bixbench/results/token_optimization_oct2026/`) and Junhao Qiu's update in `outline.md` Results part 4.
+Tokens are input plus output, with cached input counted once.
+None of these numbers is in `data/results_manifest.csv` or `analysis/` yet.
+
+- What Galaxy adds: every Galaxy run leaves a structured record of tool identities and versions, requested and resolved parameters, datasets and job states (archive totals of Galaxy jobs and interface calls from the Fig. 1 legend).
   People can review the analysis in the existing Galaxy interface and rerun or continue it without using model tokens.
-- Cost: Galaxy runs used more tokens than custom-code runs (CompBioBench total in the Fig. 4 legend draft).
-- The overhead comes from the interface rather than from failed analyses: on BixBench with GPT-5.6 Sol, interface and waiting-behavior changes cut the Galaxy-to-custom-code ratio from 3.45× to 1.53× with accuracy unchanged (Junhao Qiu's update in `outline.md` Results part 4).
-  This depends on decisions still open there: whether those runs are reported as a follow-up, and adding them to the manifest.
+- What it cost at first: early Galaxy runs used many times the tokens of custom code (Junhao Qiu recalls about 18×; source needed, see below).
+- Where the tokens went (BixBench, 6 July experiment, 150 runs per condition):
+  - Cached input was 95% of Galaxy tokens and output under 1%, so the cost came from re-reading context, not from reasoning or long answers.
+  - Galaxy runs took 2.66× as many agent steps as custom-code runs, and each step carried 2.2× as much context.
+  - Cost is therefore round trips times context size, and each fix below targets one or the other.
+- How it came down (BixBench, total tokens relative to custom code):
 
-### P6. Implications (about 80 words)
+  | Stage | Galaxy ÷ custom code | What changed | Source |
+  |---|---|---|---|
+  | Early runs | about 18× (to confirm) | – | Junhao Qiu; not found in the repositories |
+  | 6 July 2026 experiment | 5.48× (446.7M versus 81.5M tokens over 150 runs) | Token-efficient operations skill: save bulky Galaxy responses to files and print short summaries with output budgets; without it, Galaxy runs used 12.3–12.6% more tokens (the page gives both) | `bixbench/july6/token-drivers`, `bixbench/july6/tokens` |
+  | Runs on the results site (GPT-5.6 Sol) | 3.45× (122.41M versus 35.51M per 50-task run) | Galaxy MCP server replacing shell calls to the Galaxy API, with summarized replies and full records saved (to confirm) | `bixbench/token-optimization-oct2026` |
+  | Third round, interface changes | 2.42× (85.93M, one replicate) | Shorter replies capped at 4 KiB per output and 8 KiB per reply; an "unchanged" notice instead of repeating content; parameter templates; pre-submission checks for user-defined tools; fewer false parameter warnings | Junhao Qiu's update |
+  | Third round, plus longer waits | 1.53× (54.35M, mean of three replicates; 137/150 correct) | Agents told to wait five to thirty minutes before re-checking a running job; waiting calls fell from 481 to 78 per run and model requests from 1,799 to 1,332 | `bixbench/token-optimization-oct2026` |
 
-- Agents act as virtual users of Galaxy: their traces point to specific fixes in documentation, API design and tool and parameter descriptions (the token-reduction work is an example).
+- Agents as virtual users: each overhead was found in agent traces and fixed in the interface, then the full benchmark was rerun to measure the effect.
+  - This is usability testing at scale: every failed tool search, misread parameter, retry and redundant check is recorded, and tokens give a quantitative cost for each.
+  - The fixes are ordinary usability improvements (clearer parameter formats, earlier error checking, shorter replies); whether they also help human users is a hypothesis this study did not test.
+  - The same loop could become routine for scientific software: run agents on representative tasks, attribute cost and failure to specific interface features, fix them, and re-measure.
+    Tool authors and Galaxy developers could use agent traces as a continuous source of usability evidence.
+- Caveats for the text:
+  - The stages are not a controlled ablation: models, Codex CLI versions (0.146.0 versus 0.156.0 for the third round), prompts and skills changed between them, and the results site notes that savings were not measured separately for each change.
+  - The third-round runs are a supplementary batch on one benchmark and one model; the main Galaxy results use the earlier interface.
+  - CompBioBench and IWC token totals in the main runs are higher than BixBench's (Galaxy used 2.7× custom code on CompBioBench, from the Fig. 4 legend draft) and were not re-run with the third-round interface.
+- To settle before drafting:
+  - Source of the 18× figure: which runs, model and benchmark.
+    The closest numbers found are narrower 6 July measures: Galaxy API operations produced 18.02× the visible command text and output of comparable custom-code work, and Galaxy runs made 18.73× as many web searches; neither is a total-token ratio.
+  - What the first and second optimization rounds were, and which runs and model each was measured on; the table's "What changed" entries for those rows are inferred from the repository and need Junhao Qiu's confirmation.
+  - The model used in the 6 July experiment, which the results site does not state.
+  - Add the stage totals to `data/` with a script, as for every other number.
+
+### P6. Implications (about 60 words)
+
+- Agents as virtual users is now carried by P5; P6 can close with one sentence that generalizes it.
 - Galaxy makes rigor-improving approaches cheap, such as running several methods for the same step and comparing them, or validating results before reporting; present these as hypotheses this study did not test.
 - One sentence of limitations: a fixed set of models and benchmarks, prompts that differ between conditions, and models that change quickly.
 
@@ -167,7 +202,7 @@ Caveats to state in Methods:
   Show the vote from correctness and note the answer-text vote in the legend, or show both if space allows.
   For example, one row per benchmark and condition with the four values as points on a shared accuracy axis, so the gap between the vote and the ceiling is visible.
 - c: An example Galaxy history or provenance record for one run (from Fig. 5 in PR #7).
-- d: Tokens per run by condition, with the reduced-overhead BixBench runs if they are reported (from Fig. 5 in PR #7, plus a new panel).
+- d: Token cost of Galaxy relative to custom code at each optimization stage on BixBench (the table under P5), as a step plot from early runs to 1.53×, with accuracy marked at each stage where it was measured (new panel; the main-run token comparison from Fig. 5 in PR #7 moves to the Supplementary Information).
 - The task-level examples (bix-30-q3, bix-45-q1) move from the figure to the text.
 - Legend: about 150 words for four panels is tight; if it runs over, move panel c to the Supplementary Information.
 
