@@ -9,7 +9,7 @@ The full-paper outline is in `outline.md`; this file reuses its terminology ("Ga
 From the Nature Methods Brief Communication guidelines (supplied by Jeremy Goecks, 2026-10-10).
 
 - Abstract: up to 70 words, unreferenced.
-- Main text: 1,200 words, or up to 1,600 at editorial discretion, counting abstract, references and figure legends.
+- Main text: 1,200 words, or up to 1,600 at editorial discretion; references and figure legends do not count toward it.
   The target here is 1,500 words, which is above the standard limit and relies on editorial discretion.
 - No sections or subheadings in the main text.
 - Display items: at most 2 figures or tables (3 at editorial discretion).
@@ -27,20 +27,6 @@ The paper fits as a tool report: an interface that lets AI agents run bioinforma
 - Not the claim: that this paper introduces a new benchmark ("Galaxy-Bench"), or that Galaxy beats custom code.
   Both follow Jeremy Goecks's review comments on the title and abstract (2026-09-07).
 - Candidate title, adapted from Jeremy Goecks's title comment: "AI agents can perform accurate bioinformatics analyses through a computational workbench".
-
-## Word budget (1,500 words)
-
-| Part | Words |
-|---|---|
-| Abstract | 70 |
-| Main text, six paragraphs | 855 |
-| Figure 1 legend | 125 |
-| Figure 2 legend | 150 |
-| References, 20 entries | about 300 |
-| Total | about 1,500 |
-
-The reference estimate assumes about 15 words per entry in Nature style; check it with a word count of the rendered references.
-If references count for more, cut main text first, then legends.
 
 ## Abstract (70 words)
 
@@ -190,7 +176,7 @@ All token totals come from the results website; tokens are input plus output, wi
 
 - a: Study design schematic: same model configuration, two conditions, the Galaxy interface (from Fig. 1 in PR #4).
 - b–d: Condition difference (Galaxy − custom code) per benchmark with 95% intervals, by model and pooled (from Fig. 2a–c in PR #5).
-- Legend: about 125 words; the current draft legends for Figs. 1 and 2 total about 450 words and need cutting by more than two-thirds.
+- Legend: condensed from the current draft legends for Figs. 1 and 2.
 
 ### Figure 2: Errors, consensus, and what Galaxy records and costs
 
@@ -202,7 +188,6 @@ All token totals come from the results website; tokens are input plus output, wi
 - c: An example Galaxy history or provenance record for one run (from Fig. 5 in PR #7).
 - d: Token cost of Galaxy relative to custom code at each optimization stage on BixBench (the table under P5), as a step plot from early runs to 1.53×, with accuracy marked at each stage where it was measured (new panel; the main-run token comparison from Fig. 5 in PR #7 moves to the Supplementary Information).
 - The task-level examples (bix-30-q3, bix-45-q1) move from the figure to the text.
-- Legend: about 150 words for four panels is tight; if it runs over, move panel c to the Supplementary Information.
 
 ### Optional third item (editorial discretion)
 
