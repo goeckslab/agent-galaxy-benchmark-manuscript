@@ -8748,66 +8748,6 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,inspect_galaxy_history,
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,inspect_galaxy_tool,20,441496
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,run_galaxy_tool_and_wait,12,46649
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,search_galaxy_tools,9,30720
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,inspect_galaxy_history,1,956
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,inspect_galaxy_tool,1,15296
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,run_galaxy_tool_and_wait,3,8270
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,search_galaxy_tools,1,2507
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,wait_for_galaxy_jobs,3,7997
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,inspect_galaxy_history,2,3188
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,inspect_galaxy_tool,3,34542
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,run_galaxy_tool_and_wait,2,7747
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,search_galaxy_tools,2,3833
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,wait_for_galaxy_jobs,3,13814
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,inspect_archive_inventory,3,299
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,inspect_galaxy_history,5,10348
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,inspect_galaxy_tool,16,322249
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,run_galaxy_tool_and_wait,19,344469
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,search_galaxy_tools,19,58724
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,stage_workspace_file,1,822
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,inspect_galaxy_history,3,5693
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,inspect_galaxy_tool,6,60577
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,run_galaxy_tool_and_wait,5,3799
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,search_galaxy_tools,3,9876
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,stage_workspace_file,1,868
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2,inspect_galaxy_history,2,2073
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2,inspect_galaxy_tool,1,15265
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2,search_galaxy_tools,2,5143
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2,wait_for_galaxy_jobs,3,8189
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,inspect_galaxy_history,5,6827
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,inspect_galaxy_tool,6,58224
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,run_galaxy_tool_and_wait,3,8135
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,search_galaxy_tools,5,16257
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,wait_for_galaxy_jobs,3,8476
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,inspect_archive_inventory,4,397
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,inspect_galaxy_history,1,956
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,inspect_galaxy_tool,7,45616
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,run_galaxy_tool_and_wait,11,263184
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,search_galaxy_tools,20,63423
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,stage_workspace_file,1,880
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,inspect_archive_inventory,2,196
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,inspect_galaxy_history,2,3898
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,inspect_galaxy_tool,4,52694
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,run_galaxy_tool_and_wait,5,121373
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,search_galaxy_tools,9,28051
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,inspect_archive_inventory,3,299
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,inspect_galaxy_history,2,2146
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,inspect_galaxy_tool,10,51877
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,run_galaxy_tool_and_wait,7,232853
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,search_galaxy_tools,16,51932
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,inspect_galaxy_history,1,956
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,inspect_galaxy_tool,14,192557
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,run_galaxy_tool_and_wait,14,325680
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,search_galaxy_tools,11,42943
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,inspect_galaxy_history,1,956
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,inspect_galaxy_tool,10,82713
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,run_galaxy_tool_and_wait,3,948
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,search_galaxy_tools,10,30517
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,stage_workspace_file,2,1815
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,wait_for_galaxy_jobs,7,5921
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,inspect_galaxy_history,2,3082
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,inspect_galaxy_tool,2,16634
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,run_galaxy_tool_and_wait,5,228084
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,search_galaxy_tools,5,16576
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2,inspect_galaxy_history,2,3906
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2,inspect_galaxy_tool,3,21348
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2,run_galaxy_tool_and_wait,4,121617

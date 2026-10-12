@@ -5889,46 +5889,6 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp,installed
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak,installed
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/ngsutils_bam_filter/ngsutils_bam_filter,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/ivar_consensus/ivar_consensus,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx,installed
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/galaxyp/filter_by_fasta_ids/filter_by_fasta_ids,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/gfa_to_fa/gfa_to_fa,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.bgruening/mitohifi/mitohifi/3.2.3+galaxy2,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_fqchk,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_subseq,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtofastq,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2,toolshed.g2.bx.psu.edu/repos/iuc/mitos2/mitos2,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi,installed
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats,installed
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/staramr/staramr_search,installed
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3,CONVERTER_gz_to_uncompressed,installed
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/staramr/staramr_search,installed

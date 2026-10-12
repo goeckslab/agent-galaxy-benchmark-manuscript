@@ -5327,38 +5327,6 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/ngsutils_bam_filter/ngsutils_bam_filter
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/ivar_consensus/ivar_consensus
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1,toolshed.g2.bx.psu.edu/repos/iuc/gfa_to_fa/gfa_to_fa
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_fqchk
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1,toolshed.g2.bx.psu.edu/repos/iuc/seqtk/seqtk_subseq
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3,toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtofastq
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1,toolshed.g2.bx.psu.edu/repos/peterjc/seq_filter_by_id/seq_filter_by_id
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3,toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2,toolshed.g2.bx.psu.edu/repos/iuc/staramr/staramr_search
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3,CONVERTER_gz_to_uncompressed
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3,toolshed.g2.bx.psu.edu/repos/iuc/staramr/staramr_search
