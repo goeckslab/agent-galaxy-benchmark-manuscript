@@ -1,21 +1,19 @@
 # Agent Token Usage in Galaxy
 
-Exported 2026-10-10 from the Claude Docs page [Agent Token Usage in Galaxy](https://claude.ai/code/artifact/d0f5198e-045f-40c6-80b3-5bcd7514432f), compiled by Jeremy Goecks from Junhao Qiu's notes and the benchmark results site.
+Exported 2026-10-10, and updated 2026-10-12, from the Claude Docs page [Agent Token Usage in Galaxy](https://claude.ai/code/artifact/d0f5198e-045f-40c6-80b3-5bcd7514432f), compiled by Jeremy Goecks from Junhao Qiu's notes and the benchmark results site.
+All token totals come from the [results website](https://goeckslab.github.io/galaxy-agent-benchmark/).
 The figures are regenerated from code in `figures/`, and every number traces to a table in `data/` (see Sources).
 
-In the main benchmark runs, Galaxy used 4.3× the tokens of custom code on BixBench, 2.6× on CompBioBench and 0.89× on IWC.
+In the main benchmark runs, Galaxy used 4.2× the tokens of custom code on BixBench, 2.7× on CompBioBench and 0.92× on IWC.
 Three rounds of interface and prompt changes then cut Galaxy's overhead on BixBench from about 20× to 1.53× custom code, with accuracy unchanged.
 
 ## Token use in the main runs
 
-![Galaxy ÷ custom-code input tokens by benchmark and model](../../figures/sfig_token_main_runs/sfig_token_main_runs.png)
+![Galaxy ÷ custom-code total tokens by benchmark and model](../../figures/sfig_token_main_runs/sfig_token_main_runs.png)
 
 These runs used the round-2 interface (below).
-Input tokens are over 98% of the total in every condition, so the input ratio stands for the total.
-13 CompBioBench Galaxy runs and 1 custom-code run have no token count and are left out.
-
-On CompBioBench, Galaxy used 13.2 billion input tokens and custom code 5.16 billion, pooled over the four models (2.56×).
-These totals come from the run table in PR #12, which includes the 53 reviewed CompBioBench Galaxy reruns of 2026-10-05 in place of the runs they superseded.
+Totals are as published on the results website on 2026-10-12, including that day's replacement of the IWC wf007 runs.
+On CompBioBench, Galaxy used 14.15 billion total tokens and custom code 5.19 billion, pooled over the four models.
 
 ## Reducing Galaxy's token overhead
 
@@ -72,7 +70,7 @@ Open questions:
 
 ## Sources
 
-- `data/token_ratios_main_runs.csv`, written by `analysis/token_usage.py` from `data/run_tokens_actions.csv` (added in [PR #12](https://github.com/goeckslab/agent-galaxy-benchmark-manuscript/pull/12)): main-run input tokens per benchmark and model.
+- `data/site_token_totals.csv`, fetched from the results website by `analysis/fetch_site_token_totals.py` on 2026-10-12: main-run total tokens per benchmark, model and condition. `data/token_ratios_main_runs.csv`, written from it by `analysis/token_usage.py`, has the ratios.
 - `data/token_optimization_rounds.csv`: the round totals, one source per row, and `data/token_optimization_ratios.csv`, written by `analysis/token_usage.py`, with each round's ratio.
 - Junhao Qiu's notes on the three optimization rounds (Slack, October 2026): changes made, the about-20× baseline, and the round-1 and round-3a figures.
 - [BixBench token usage by model](https://github.com/goeckslab/galaxy-agent-benchmark/blob/main/site/bixbench/tokens/index.html) (results site): round-2 totals and accuracy for GPT-5.5 and GPT-5.6 Sol.

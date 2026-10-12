@@ -37,5 +37,17 @@ Each derived table needs a note on which script produced it.
 
 `token_optimization_ratios.csv` is that table plus `ratio` (computed from the totals, or the reported ratio) and `approximate`, written by `analysis/token_usage.py`.
 
-`token_ratios_main_runs.csv` is written by `analysis/token_usage.py` from `run_tokens_actions.csv` (added in PR #12; the committed version was generated from PR #12 commit `9c8593f`).
-It has one row per benchmark and model, plus `All models`, with Galaxy and custom-code run counts, runs without a token count, summed input tokens, and their `ratio`.
+All token totals in the paper come from the results website (https://goeckslab.github.io/galaxy-agent-benchmark/).
+
+`site_token_totals.csv` is written by `analysis/fetch_site_token_totals.py` from the website: summed from its per-replicate tables for CompBioBench and IWC, and read from the per-model table on its BixBench tokens page (rounded to 0.01M) for BixBench-Verified-50.
+The committed version was fetched on 2026-10-12, when the deployed files matched commit `ff9c4f5` of `goeckslab/galaxy-agent-benchmark`.
+
+| Column | Meaning |
+| --- | --- |
+| benchmark, model, track | Benchmark, model configuration and execution condition |
+| runs_with_usage | Runs with a usage record (empty for BixBench-Verified-50, whose page does not give it) |
+| input_tokens, total_tokens | Input tokens (cached input included) and total tokens (input plus output) |
+| precision | `exact`, or `rounded to 0.01M` |
+| source | Website page or table, and fetch date |
+
+`token_ratios_main_runs.csv` is written by `analysis/token_usage.py` from `site_token_totals.csv`: one row per benchmark and model, plus `All models`, with Galaxy and custom-code total tokens and their `ratio`.

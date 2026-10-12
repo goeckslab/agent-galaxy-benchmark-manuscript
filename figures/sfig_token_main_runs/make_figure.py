@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplementary figure: Galaxy / custom-code input tokens by benchmark and model, main runs.
+"""Supplementary figure: Galaxy / custom-code total tokens by benchmark and model, main runs.
 
 Reads data/token_ratios_main_runs.csv (written by analysis/token_usage.py) and writes
 the figure (PDF and PNG) and source_data.csv next to this script.
@@ -29,8 +29,8 @@ def main() -> None:
     df = pd.read_csv(DATA)
     df = df[df.benchmark.isin(BENCHMARKS) & df.model.isin(MODELS)]
     df = df.assign(b=df.benchmark.map(BENCHMARKS.index), m=df.model.map(MODELS.index)).sort_values(["b", "m"])
-    df[["benchmark", "model", "galaxy_input_tokens", "custom_code_input_tokens", "ratio",
-        "galaxy_runs_without_tokens", "custom_code_runs_without_tokens"]].to_csv(HERE / "source_data.csv", index=False)
+    df[["benchmark", "model", "galaxy_total_tokens", "custom_code_total_tokens", "ratio"]].to_csv(
+        HERE / "source_data.csv", index=False)
 
     fig, ax = plt.subplots(figsize=(7.2, 6.0))
     y, ticks, labels = 0, [], []
@@ -64,7 +64,7 @@ def main() -> None:
     for s in ["top", "right", "left"]:
         ax.spines[s].set_visible(False)
     ax.tick_params(axis="y", length=0)
-    ax.set_xlabel("Galaxy ÷ custom-code input tokens (incl. cached context); log scale", fontsize=8)
+    ax.set_xlabel("Galaxy ÷ custom-code total tokens (results website); log scale", fontsize=8)
     fig.suptitle("Galaxy used more tokens than custom code on BixBench and CompBioBench, not on IWC",
                  fontsize=10, x=0.02, ha="left", color=INK)
     plt.tight_layout()
