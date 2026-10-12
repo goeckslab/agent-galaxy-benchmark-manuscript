@@ -35,6 +35,10 @@ Reads tracked files of the archive (paulocilasjr/Galaxy_benchmark) and writes, i
 
 The tables hold identifiers, scores, counts, codes and tool identifiers only: no trace text, prompts or answers.
 The script prints the archive commit; record it in data/README.md.
+
+Runs the results site replaced after the archive's derived tables were built (IWC wf_007, 24 runs, 2026-10-12) are
+handled by the archive's figures/replaced_runs.py: the replacing runs' scores (in scored_runs.csv) and token counts are
+used, and the superseded runs' trace-derived records are dropped from every table built from traces.
 """
 import argparse
 import hashlib
@@ -86,6 +90,14 @@ RUN_KEY = ["benchmark", "task_id", "model", "replicate"]
 EVIDENCE_MODEL = {**TRACE_MODEL, "gpt_5_5": "GPT-5.5", "gpt_5_6_sol": "GPT-5.6 Sol", "gpt_5_6_luna": "GPT-5.6 Luna"}
 
 
+def replaced(source: Path):
+    """The archive's record of runs the results site replaced (figures/replaced_runs.py)."""
+    import sys
+    sys.path.insert(0, str(source / "figures"))
+    import replaced_runs
+    return replaced_runs
+
+
 def archive_commit(source: Path) -> str:
     sha = subprocess.run(["git", "-C", str(source), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)
     dirty = subprocess.run(["git", "-C", str(source), "status", "--porcelain", "--", SCORES, CALLS, COVERAGE, ERRORS,
@@ -106,6 +118,7 @@ def export_execution_errors(source: Path) -> pd.DataFrame:
     rows = list(ws.iter_rows(values_only=True))
     e = pd.concat([pd.DataFrame(rows[1:], columns=rows[0]), pd.read_csv(source / WF003_RUNS)], ignore_index=True)
     e = e[e.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
+    e = replaced(source).drop_replaced(e)                     # IWC wf_007: superseded runs
     out = pd.DataFrame({
         "benchmark": e.benchmark,
         "task_id": e.task,
@@ -159,7 +172,7 @@ def export_tokens_actions(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
     import openpyxl
 
     t = pd.read_csv(source / TOKENS)
-    t = t[t.model_primary]
+    t = replaced(source).replace_tokens(t[t.model_primary])   # IWC wf_007: the replacing runs' usage
     t = pd.DataFrame({"benchmark": t.benchmark.map(BENCHMARK), "task_id": t.task, "model": t.cfg,
                       "track": t.env.map(TRACK), "replicate": t.replicate, "input_tokens": t.input_tokens,
                       "cached_input_tokens": t.cached})
@@ -167,6 +180,7 @@ def export_tokens_actions(source: Path, scores: pd.DataFrame) -> pd.DataFrame:
     rows = list(ws.iter_rows(values_only=True))
     a = pd.DataFrame(rows[1:], columns=rows[0])
     a = a[a.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
+    a = replaced(source).drop_replaced(a)                     # IWC wf_007: no actions recorded for the replacing runs
     a = pd.DataFrame({"benchmark": a.benchmark, "task_id": a.task,
                       "model": a.model_configuration.replace({"DeepSeek V4 Pro (Codex)": "DeepSeek V4 Pro"}),
                       "track": a.execution_condition.map(CONDITION), "replicate": a.replicate, "actions": a.actions})
@@ -185,7 +199,7 @@ def export_interface_calls(source: Path, runs: pd.DataFrame) -> pd.DataFrame:
     """Requests to the Galaxy interface and characters it returned to the agent, per traced Galaxy run and function."""
     c = pd.read_csv(source / CALLS, low_memory=False,
                     usecols=["benchmark", "task", "model", "replicate", "tool", "galaxy_server", "chars_returned"])
-    c = c[c.model.isin(TRACE_MODEL) & c.galaxy_server]
+    c = replaced(source).drop_replaced(c[c.model.isin(TRACE_MODEL) & c.galaxy_server])
     c = c.assign(benchmark=c.benchmark.map(BENCHMARK), task_id=c.task, model=c.model.map(TRACE_MODEL),
                  interface_function=c.tool)
     out = (c.groupby(RUN_KEY + ["interface_function"]).agg(requests=("tool", "size"), chars_returned=("chars_returned", "sum"))
@@ -198,7 +212,11 @@ def export_interface_calls(source: Path, runs: pd.DataFrame) -> pd.DataFrame:
 def export_tool_lookup(source: Path) -> pd.DataFrame:
     """Distinct tools an agent inspected in a traced Galaxy run, and how many of them that run never ran, per benchmark."""
     fr = pd.read_csv(source / FRICTION)
-    fr = fr[fr.measure == "Inspected tools never run in the same run"]
+    fr = fr[fr.measure == "Inspected tools never run in the same run"].set_index("benchmark")
+    gone = replaced(source).superseded_inspection()           # IWC wf_007: the superseded runs' share
+    fr.loc["IWC", "count"] -= gone["never_run"]
+    fr.loc["IWC", "denominator"] -= gone["inspected"]
+    fr = fr.assign(percent=100 * fr["count"] / fr.denominator).reset_index()
     out = pd.DataFrame({"benchmark": fr.benchmark.map(BENCHMARK), "tools_inspected": fr.denominator.astype(int),
                         "never_run": fr["count"].astype(int), "percent": fr.percent})
     assert out.notna().all().all() and len(out) == 3, "expected one row per benchmark"
@@ -210,7 +228,7 @@ def read_calls(source: Path, columns: list) -> pd.DataFrame:
     """Galaxy interface calls of the four primary configurations, with display names."""
     c = pd.read_csv(source / CALLS, low_memory=False, usecols=["benchmark", "task", "model", "replicate", "tool",
                                                               "galaxy_server", *columns])
-    c = c[c.model.isin(TRACE_MODEL) & c.galaxy_server]
+    c = replaced(source).drop_replaced(c[c.model.isin(TRACE_MODEL) & c.galaxy_server])   # IWC wf_007: superseded runs
     return c.assign(benchmark=c.benchmark.map(BENCHMARK), task_id=c.task, model=c.model.map(TRACE_MODEL))
 
 
@@ -250,6 +268,7 @@ def export_error_types(source: Path) -> pd.DataFrame:
     rows = list(ws.iter_rows(values_only=True))
     e = pd.concat([pd.DataFrame(rows[1:], columns=rows[0]), pd.read_csv(source / WF003_ERRORS)], ignore_index=True)
     e = e[e.model_configuration != "DeepSeek V4 Pro (Claude Code, superseded)"]
+    e = replaced(source).drop_replaced(e)                     # IWC wf_007: superseded runs
     c = read_calls(source, ["tool_id_base", "tool_id_full"])
     udt = c[c.tool == "run_galaxy_udt_and_wait"]
     udt_ids = set(udt.tool_id_base.dropna()) | set(udt.tool_id_full.dropna())
@@ -279,6 +298,12 @@ def export_parameter_checks(source: Path) -> pd.DataFrame:
 def export_failure_classes(source: Path) -> pd.DataFrame:
     t = pd.read_csv(source / FAILURE_CLASSES)
     t = t[t.population == "four_primary_configurations"]
+    gone = replaced(source).superseded_failures()             # IWC wf_007: the superseded runs' failed requests
+    key = ["benchmark", "failure_class", "a1_subclass"]
+    t = t.merge(gone, on=key, how="left", suffixes=("", "_gone"), validate="1:1")
+    assert t.calls_gone.notna().sum() == len(gone), "every superseded failure class must be in the table"
+    t = t.assign(calls=t.calls - t.calls_gone.fillna(0).astype(int))
+    t = t[t.calls > 0]
     out = pd.DataFrame({"benchmark": t.benchmark.map(BENCHMARK), "failure_stage": t.failure_stage,
                         "failure_class": t.failure_class, "subclass": t.a1_subclass, "requests": t.calls})
     assert out.benchmark.notna().all(), "unexpected failure-class rows"
@@ -333,6 +358,8 @@ def export_inspectability(source: Path) -> pd.DataFrame:
     steps, runs = [], []
     for folder in EVIDENCE:
         for path in sorted((source / folder / "analysis").glob("*/history_analysis_evidence.json")):
+            if replaced(source).replaced_evidence(str(path)):     # IWC wf_007: describes the superseded runs
+                continue
             for run in json.loads(path.read_text())["runs"]:
                 if run_model(run) not in EVIDENCE_MODEL:
                     continue
@@ -402,7 +429,7 @@ def main() -> None:
     scores.to_csv(DATA / "run_scores.csv", index=False)
 
     cov = pd.read_csv(args.source / COVERAGE)
-    cov = cov[cov.model.isin(TRACE_MODEL)]
+    cov = replaced(args.source).drop_replaced(cov[cov.model.isin(TRACE_MODEL)])   # IWC wf_007: superseded runs
     runs = pd.DataFrame({"benchmark": cov.benchmark.map(BENCHMARK), "task_id": cov.task,
                          "model": cov.model.map(TRACE_MODEL), "replicate": cov.replicate})
     runs = runs.drop_duplicates().sort_values(RUN_KEY)
@@ -410,7 +437,7 @@ def main() -> None:
 
     calls = pd.read_csv(args.source / CALLS, low_memory=False,
                         usecols=["benchmark", "task", "model", "replicate", "tool", "galaxy_server", "tool_id_base"])
-    calls = calls[calls.model.isin(TRACE_MODEL) & calls.galaxy_server]
+    calls = replaced(args.source).drop_replaced(calls[calls.model.isin(TRACE_MODEL) & calls.galaxy_server])
     calls = calls.assign(benchmark=calls.benchmark.map(BENCHMARK), task_id=calls.task,
                          model=calls.model.map(TRACE_MODEL))
     installed = calls[calls.tool == "run_galaxy_tool_and_wait"].dropna(subset=["tool_id_base"])

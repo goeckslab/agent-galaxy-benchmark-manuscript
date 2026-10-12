@@ -3670,30 +3670,6 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,Galaxy,2,0,3
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,custom code,2,6,0
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,Galaxy,3,1,3
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,custom code,3,4,0
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,1,2,2
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,1,7,0
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,2,2,2
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,2,10,0
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,3,3,3
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,3,9,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,1,0,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,1,10,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,2,3,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,2,6,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,3,4,2
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,3,7,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,1,1,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,1,6,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,2,0,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,2,7,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,3,2,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,3,7,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,1,0,4
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,1,5,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,2,3,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,2,5,0
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,3,1,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,3,8,0
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,Galaxy,1,2,0
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,custom code,1,8,0
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,Galaxy,2,1,0

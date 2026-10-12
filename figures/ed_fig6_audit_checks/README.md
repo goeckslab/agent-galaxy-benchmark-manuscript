@@ -19,7 +19,7 @@ python figures/ed_fig6_audit_checks/make_figure.py
 
 ## Provenance
 
-Every estimate, interval and *P* value was computed by `figures/make_ed_validation.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0dbf3f4](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0dbf3f443b83a91322098c9918d86a5846129215).
+Every estimate, interval and *P* value was computed by `figures/make_ed_validation.py` in the run archive, [paulocilasjr/Galaxy_benchmark@0fe4395](https://github.com/paulocilasjr/Galaxy_benchmark/tree/0fe43954c77f87dddbaf219c62b48b95c7c9f866).
 While drawing, that script recorded the arguments of each drawing call in `figures/panel_data/ed_validation.json` (`figures/panel_io.py`); `analysis/export_galaxy_benchmark_tables.py` copies the file to `data/figure_panels/`.
 `make_figure.py` replays those calls with the same drawing code, so this figure is the archive's figure: the two PNGs were compared pixel for pixel and the source data byte for byte.
 Nothing is recomputed in this repository; the recorded tables hold identifiers, scores, counts and estimates only (no trace text, prompts or answers).

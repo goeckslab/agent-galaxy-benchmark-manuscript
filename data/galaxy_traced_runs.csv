@@ -1847,18 +1847,6 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Luna,3
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,1
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,2
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,3
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,1
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,2
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,3
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,2
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,3
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,2
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,3
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,1
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,2
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,3
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,1
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,2
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,3

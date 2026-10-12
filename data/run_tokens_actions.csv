@@ -3719,30 +3719,30 @@ IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,Galaxy,3,6101892,5901056,
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,custom code,1,6780165,6619904,34
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,custom code,2,16029082,15780864,88
 IWC,wf_006_atacseq_chromatin_accessibility,GPT-5.6 Sol,custom code,3,6214004,6062336,58
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,1,1053384,1022592,33
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,2,3405062,3327104,48
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,3,16115780,15602944,155
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,1,18432345,18300800,142
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,2,20792032,20673024,93
-IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,3,3093637,3044864,61
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,1,1348084,1283712,48
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,2,698475,658304,30
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,3,4665721,4475264,74
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,1,22550041,22084096,119
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,2,5302456,5163520,95
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,3,3602377,3443200,68
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,1,11181930,10541568,71
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,2,4038075,3856640,44
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,3,10252796,9828096,80
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,1,32566952,31937024,209
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,2,15659306,15339264,119
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,3,26905518,26526464,141
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,1,5228867,4967936,50
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,2,8532926,8327680,85
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,3,1578582,1464576,23
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,1,5343974,5180160,48
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,2,3912641,3764992,35
-IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,3,2851790,2729984,47
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,1,3249688,3178752,
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,2,1287550,1249408,
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,Galaxy,3,2116369,2045312,
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,1,9088876,8967424,
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,2,12601978,12506112,
+IWC,wf_007_vgp_mitogenome_assembly,DeepSeek V4 Pro,custom code,3,29095555,29008896,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,1,3197848,2906752,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,2,1579882,1377152,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,Galaxy,3,1970429,1843712,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,1,3882842,3750528,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,2,3399436,3256576,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.5,custom code,3,1575492,1505664,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,1,4564193,4391680,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,2,5956949,5693184,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,Galaxy,3,22063772,21569280,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,1,14673356,14380544,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,2,20983545,20571904,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Luna,custom code,3,24130938,23637760,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,1,11812650,11547648,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,2,19386798,19086464,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,Galaxy,3,6626196,6475136,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,1,4099525,4002560,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,2,2742261,2644608,
+IWC,wf_007_vgp_mitogenome_assembly,GPT-5.6 Sol,custom code,3,18171638,17899904,
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,Galaxy,1,1097502,1038208,26
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,Galaxy,2,1718066,1617920,29
 IWC,wf_008_amr_gene_detection,DeepSeek V4 Pro,Galaxy,3,1382078,1320192,49
