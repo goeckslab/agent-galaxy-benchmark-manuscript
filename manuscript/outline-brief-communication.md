@@ -143,26 +143,27 @@ The thread: Galaxy's token overhead was mostly a property of the interface, not 
 Agent traces showed where the tokens went, and fixing those spots cut Galaxy's cost from many times custom code to about 1.5×.
 That makes agents useful as virtual users who show where scientific software is hard to use.
 
-Sources: the benchmark repository `goeckslab/galaxy-agent-benchmark` (results site pages `bixbench/july6/token-drivers`, `bixbench/tokens` and `bixbench/token-optimization-oct2026`, and `bixbench/results/token_optimization_oct2026/`) and Junhao Qiu's update in `outline.md` Results part 4.
-Tokens are input plus output, with cached input counted once.
-None of these numbers is in `data/results_manifest.csv` or `analysis/` yet.
+Sources: `supplement/notes/token_usage.md` and its tables (PR #14): `data/token_ratios_main_runs.csv` (main runs, from `data/site_token_totals.csv`) and `data/token_optimization_ratios.csv` (optimization rounds), both written by `analysis/token_usage.py`.
+All token totals come from the results website; tokens are input plus output, with cached input counted once.
 
 - What Galaxy adds: every Galaxy run leaves a structured record of tool identities and versions, requested and resolved parameters, datasets and job states (archive totals of Galaxy jobs and interface calls from the Fig. 1 legend).
   People can review the analysis in the existing Galaxy interface and rerun or continue it without using model tokens.
-- What it cost at first: early Galaxy runs used many times the tokens of custom code (Junhao Qiu recalls about 18×; source needed, see below).
-- Where the tokens went (BixBench, 6 July experiment, 150 runs per condition):
+- What it cost at first: in the earliest comparison (GPT-5.5, 50 BixBench tasks, one run per task per condition), Galaxy used about 20× the tokens of custom code (Junhao Qiu's measurement; see below).
+- Where the tokens went (BixBench, 6 July experiment, GPT-5.5, 150 runs per condition):
   - Cached input was 95% of Galaxy tokens and output under 1%, so the cost came from re-reading context, not from reasoning or long answers.
   - Galaxy runs took 2.66× as many agent steps as custom-code runs, and each step carried 2.2× as much context.
   - Cost is therefore round trips times context size, and each fix below targets one or the other.
 - How it came down (BixBench, total tokens relative to custom code):
 
-  | Stage | Galaxy ÷ custom code | What changed | Source |
+  | Stage | Model and runs | What changed | Galaxy ÷ custom code |
   |---|---|---|---|
-  | Early runs | about 18× (to confirm) | – | Junhao Qiu; not found in the repositories |
-  | 6 July 2026 experiment | 5.48× (446.7M versus 81.5M tokens over 150 runs) | Token-efficient operations skill: save bulky Galaxy responses to files and print short summaries with output budgets; without it, Galaxy runs used 12.3–12.6% more tokens (the page gives both) | `bixbench/july6/token-drivers`, `bixbench/july6/tokens` |
-  | Runs on the results site (GPT-5.6 Sol) | 3.45× (122.41M versus 35.51M per 50-task run) | Galaxy MCP server replacing shell calls to the Galaxy API, with summarized replies and full records saved (to confirm) | `bixbench/token-optimization-oct2026` |
-  | Third round, interface changes | 2.42× (85.93M, one replicate) | Shorter replies capped at 4 KiB per output and 8 KiB per reply; an "unchanged" notice instead of repeating content; parameter templates; pre-submission checks for user-defined tools; fewer false parameter warnings | Junhao Qiu's update |
-  | Third round, plus longer waits | 1.53× (54.35M, mean of three replicates; 137/150 correct) | Agents told to wait five to thirty minutes before re-checking a running job; waiting calls fell from 481 to 78 per run and model requests from 1,799 to 1,332 | `bixbench/token-optimization-oct2026` |
+  | Baseline | GPT-5.5, 1 run per task | – | about 20× |
+  | Round 1: prompt and skills | GPT-5.5, 1 run per task | Shorter skill text; agents told to save full Galaxy API responses to files and show only summaries, reuse saved tool inventories, inspect only relevant parameters, and stop reprinting histories and logs; agents did not always follow it | about 8× |
+  | Round 1, rerun with replicates | GPT-5.5, 3 runs per task (6 July 2026) | Same as round 1 | 5.48× |
+  | Round 2: MCP and execution | GPT-5.5, 3 runs per task | Routine operations moved into the Galaxy MCP server: one call submits a job, waits, checks the resolved inputs and parameters and returns a compact result; automatic record keeping and parameter checks; live tool search | 2.81×; Galaxy tokens down 55.2% |
+  | Round 2, newer model | GPT-5.6 Sol, 3 runs per task (the main runs) | Same as round 2 | 3.45× |
+  | Round 3a: interface | GPT-5.6 Sol, 1 Galaxy replicate | Shorter replies capped at 4 KiB per output and 8 KiB per reply; an "unchanged" notice instead of repeating content; parameter templates; fewer false parameter warnings; pre-submission checks for user-defined tools | 2.42× |
+  | Round 3b: longer waits | GPT-5.6 Sol, 3 Galaxy replicates | Agents told to wait five to thirty minutes before re-checking a running operation; waiting calls fell from 481 to 78 per run and model requests from 1,799 to 1,332 | 1.53×; 137/150 correct |
 
 - Agents as virtual users: each overhead was found in agent traces and fixed in the interface, then the full benchmark was rerun to measure the effect.
   - This is usability testing at scale: every failed tool search, misread parameter, retry and redundant check is recorded, and tokens give a quantitative cost for each.
@@ -170,15 +171,12 @@ None of these numbers is in `data/results_manifest.csv` or `analysis/` yet.
   - The same loop could become routine for scientific software: run agents on representative tasks, attribute cost and failure to specific interface features, fix them, and re-measure.
     Tool authors and Galaxy developers could use agent traces as a continuous source of usability evidence.
 - Caveats for the text:
-  - The stages are not a controlled ablation: models, Codex CLI versions (0.146.0 versus 0.156.0 for the third round), prompts and skills changed between them, and the results site notes that savings were not measured separately for each change.
-  - The third-round runs are a supplementary batch on one benchmark and one model; the main Galaxy results use the earlier interface.
-  - CompBioBench and IWC token totals in the main runs are higher than BixBench's (Galaxy used 2.7× custom code on CompBioBench, from the Fig. 4 legend draft) and were not re-run with the third-round interface.
+  - The stages are not a controlled ablation: the model changed between rounds 2 and 3 (and alone moves the ratio, 2.81× for GPT-5.5 against 3.45× for GPT-5.6 Sol with the same interface), the baseline and round 1 used one run per task, the Codex CLI changed for round 3 (0.156.0 against 0.146.0), and savings were not measured separately for each change.
+  - The third-round runs are a supplementary batch on one benchmark and one model; the main Galaxy results use the round-2 interface.
+  - In the main runs, Galaxy used 4.2× the tokens of custom code on BixBench, 2.7× on CompBioBench and 0.92× on IWC (four models pooled); CompBioBench and IWC were not rerun with the third-round interface.
 - To settle before drafting:
-  - Source of the 18× figure: which runs, model and benchmark.
-    The closest numbers found are narrower 6 July measures: Galaxy API operations produced 18.02× the visible command text and output of comparable custom-code work, and Galaxy runs made 18.73× as many web searches; neither is a total-token ratio.
-  - What the first and second optimization rounds were, and which runs and model each was measured on; the table's "What changed" entries for those rows are inferred from the repository and need Junhao Qiu's confirmation.
-  - The model used in the 6 July experiment, which the results site does not state.
-  - Add the stage totals to `data/` with a script, as for every other number.
+  - The baseline has been quoted as about 13×, 18× and 20×; Junhao Qiu's measurement is about 20×.
+    The baseline and round-1 runs are not on the results website, so their run records are needed before the about-20× and about-8× figures can be cited.
 
 ### P6. Implications (about 60 words)
 
