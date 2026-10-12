@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Figure 1: Study design and isolated execution pipeline.
 
-Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0dbf3f443b83a91322098c9918d86a5846129215:figures/make_fig1_a.py; the panel data are the
+Drawing code copied unchanged from the run archive, paulocilasjr/Galaxy_benchmark@0fe43954c77f87dddbaf219c62b48b95c7c9f866:figures/make_fig1_a.py; the panel data are the
 values that script computed and passed to its drawing functions (data/figure_panels/fig1_a.json, written by the
 archive's figures/panel_io.py and copied by analysis/export_galaxy_benchmark_tables.py). Nothing is recomputed here:
 every number traces to the archive script at that commit. Writes, next to this script, fig1_benchmark_overview.pdf, .png (600 dpi)
@@ -660,7 +660,7 @@ def main():
         w = _csv.writer(fh)
         w.writerow(['quantity', 'value', 'source'])
         for k, v in f.items():
-            w.writerow([k, v, 'archive figures/make_fig1_a.py facts() at 0dbf3f443b83a91322098c9918d86a5846129215'])
+            w.writerow([k, v, 'archive figures/make_fig1_a.py facts() at 0fe43954c77f87dddbaf219c62b48b95c7c9f866'])
 
 
 if __name__ == '__main__':
