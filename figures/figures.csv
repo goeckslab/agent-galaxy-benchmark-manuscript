@@ -1,1 +1,3 @@
 figure_id,kind,title,script,source_data,status
+sfig_token_main_runs,supplementary,Galaxy / custom-code input tokens by benchmark and model,figures/sfig_token_main_runs/make_figure.py,figures/sfig_token_main_runs/source_data.csv,draft
+sfig_token_optimization,supplementary,Galaxy / custom-code tokens on BixBench across the optimization rounds,figures/sfig_token_optimization/make_figure.py,figures/sfig_token_optimization/source_data.csv,draft
