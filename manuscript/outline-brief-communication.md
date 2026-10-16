@@ -165,11 +165,15 @@ All token totals come from the results website; tokens are input plus output, wi
   | Round 3a: interface | GPT-5.6 Sol, 1 Galaxy replicate | Shorter replies capped at 4 KiB per output and 8 KiB per reply; an "unchanged" notice instead of repeating content; parameter templates; fewer false parameter warnings; pre-submission checks for user-defined tools | 2.42× |
   | Round 3b: longer waits | GPT-5.6 Sol, 3 Galaxy replicates | Agents told to wait five to thirty minutes before re-checking a running operation; waiting calls fell from 481 to 78 per run and model requests from 1,799 to 1,332 | 1.53×; 137/150 correct |
 
-- Agents as virtual users: each overhead was found in agent traces and fixed in the interface, then the full benchmark was rerun to measure the effect.
-  - This is usability testing at scale: every failed tool search, misread parameter, retry and redundant check is recorded, and tokens give a quantitative cost for each.
-  - The fixes are ordinary usability improvements (clearer parameter formats, earlier error checking, shorter replies); whether they also help human users is a hypothesis this study did not test.
-  - The same loop could become routine for scientific software: run agents on representative tasks, attribute cost and failure to specific interface features, fix them, and re-measure.
-    Tool authors and Galaxy developers could use agent traces as a continuous source of usability evidence.
+- Agents as virtual users (Jeremy Goecks, 2026-10-16): we are using agents as "virtual users" to identify gaps and issues in the Galaxy software ecosystem.
+  Agent traces showed where Galaxy fell short; we fixed what they showed and reran the benchmark to measure the effect.
+  This is usability testing at scale: every failed tool search, misread parameter, retry and redundant check is recorded, and tokens give a quantitative cost for each.
+  Three outcomes so far:
+  - Gaps in Galaxy's toolset: agents found analyses that no installed Galaxy tool covered, and we developed new software tools to fill those gaps.
+    Evidence needed: which tools, which gaps they fill, and where they are published (for example, Tool Shed or IWC pull requests), plus how often agents needed user-defined tools for the same operations.
+  - A clearer, more consistent Galaxy API for agents and human users alike: for example, parameter templates, earlier error checking and fewer false parameter warnings (round 3a in the table above).
+    Evidence needed: which changes landed in Galaxy itself rather than only in the MCP server, since only those reach human users; the claim that they help human users is untested here.
+  - Lower token use, which makes Galaxy cheaper for agents: from about 20× custom code to 1.53× on BixBench (the table above).
 - Caveats for the text:
   - The stages are not a controlled ablation: the model changed between rounds 2 and 3 (and alone moves the ratio, 2.81× for GPT-5.5 against 3.45× for GPT-5.6 Sol with the same interface), the baseline and round 1 used one run per task, the Codex CLI changed for round 3 (0.156.0 against 0.146.0), and savings were not measured separately for each change.
   - The third-round runs are a supplementary batch on one benchmark and one model; the main Galaxy results use the round-2 interface.
@@ -180,7 +184,9 @@ All token totals come from the results website; tokens are input plus output, wi
 
 ### P6. Implications (about 60 words)
 
-- Agents as virtual users is now carried by P5; P6 can close with one sentence that generalizes it.
+- Agents as virtual users, going forward (Jeremy Goecks, 2026-10-16): we want to use agents as "virtual users" to keep identifying gaps and issues in the Galaxy software ecosystem.
+  With agents we can find gaps in Galaxy's toolset and develop new tools to fill them, improve the clarity and consistency of the Galaxy API for agents and human users, and keep reducing the token cost of using Galaxy.
+  The same loop could become routine for scientific software: run agents on representative tasks, attribute cost and failure to specific tools and interface features, fix them, and re-measure; tool authors and Galaxy developers could use agent traces as a continuous source of usability evidence.
 - Galaxy makes rigor-improving approaches cheap, such as running several methods for the same step and comparing them, or validating results before reporting; present these as hypotheses this study did not test.
 - One sentence of limitations: a fixed set of models and benchmarks, prompts that differ between conditions, and models that change quickly.
 
