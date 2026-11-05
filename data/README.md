@@ -58,6 +58,16 @@ Rules from the website's `data/README.md` that every analysis of these files mus
 The files include reference answers.
 They are for reporting and plotting, and must not be given to agents taking the benchmark.
 
+### License
+
+`data/site/` is copied from `goeckslab/galaxy-agent-benchmark` under its MIT license, reproduced in `data/site/LICENSE` from commit `804299a`.
+That file is copied from the repository, not from the website, so `fetch_site_data.py` does not fetch it and `MANIFEST.csv` does not list it.
+The copy also contains questions and answers from the original benchmarks, which keep their own licenses:
+
+- BixBench-Verified-50: Apache 2.0 (Hugging Face dataset `phylobio/BixBench-Verified-50`).
+- CompBioBench v1: CC BY 4.0 (Zenodo record 19443186, DOI 10.5281/zenodo.19443186).
+- IWC: the workflows are from the Intergalactic Workflow Commission (https://iwc.galaxyproject.org/), where each workflow states its own license; the copy names and links to them.
+
 ## Token usage tables
 
 `token_optimization_rounds.csv` lists the BixBench-Verified-50 token totals at each Galaxy token-optimization stage, transcribed by hand from the benchmark results site (`goeckslab/galaxy-agent-benchmark`) and Junhao Qiu's notes; its `source` column names where each row comes from.

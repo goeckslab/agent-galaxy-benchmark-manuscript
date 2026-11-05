@@ -59,7 +59,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Agents should also read [AGENTS.md](AGEN
 
 - Code: MIT ([LICENSE](LICENSE))
 - Text, figures, and supplementary material: CC BY 4.0 ([LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt))
-- Derived tables in `data/` and the Hugging Face trace dataset: license to be decided
+- Data in `data/`: MIT, the license of the source repository `goeckslab/galaxy-agent-benchmark`. Tables built here are under [LICENSE](LICENSE); the copy of the results website's data in `data/site/` is under that repository's own license ([data/site/LICENSE](data/site/LICENSE)). Benchmark questions and answers in that copy keep their original licenses (see [data/README.md](data/README.md)).
+- Hugging Face trace dataset: license to be decided
 
 ## Citing
 
