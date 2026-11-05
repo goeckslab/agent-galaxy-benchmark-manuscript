@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "documentation": "README.md",
+  "datasets": [
+    {
+      "id": "bixbench",
+      "label": "BixBench",
+      "url": "../bixbench/data/results.json",
+      "source": "bixbench/results/current_bixbench/summary.json",
+      "bytes": 1568719,
+      "sha256": "04be039d99e2b825af309b9cbf1d7965fb1da3dc525f45b160d005003668399f",
+      "items": 50
+    },
+    {
+      "id": "compbiobench",
+      "label": "CompBioBench",
+      "url": "../compbiobench/data/paper_results.json",
+      "source": "site/compbiobench/data/paper_results.json",
+      "bytes": 2173797,
+      "sha256": "d3fc3b30f16387fcc2b6e56634d97323a2cff2f8f58bb00a5205764742dc7bce",
+      "items": 100
+    },
+    {
+      "id": "iwc",
+      "label": "IWC",
+      "url": "../iwc/data/results.json",
+      "source": "iwc/results/current_iwc/summary.json",
+      "bytes": 287952,
+      "sha256": "9886d57da84a2868efa7fa5c840c9e9d61f2f50670d2dd0b203175dd1af881b3",
+      "items": 10
+    },
+    {
+      "id": "iwc_multi_step",
+      "label": "IWC multi-step tasks",
+      "url": "../iwc/long-chain/data/results.json",
+      "source": "site/iwc/long-chain/data/results.json",
+      "bytes": 1070650,
+      "sha256": "af8b74537066977956c955e8fc238ab756ab8b367b249782b1e763059badaf63",
+      "items": 10
+    }
+  ]
+}

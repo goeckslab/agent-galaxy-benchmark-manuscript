@@ -21,6 +21,43 @@ Small derived tables only. Raw traces stay on Hugging Face and are fetched by `a
 
 Each derived table needs a note on which script produced it.
 
+## Website data copy (`data/site/`)
+
+`data/site/` is a verbatim copy of the machine-readable results the benchmark results website publishes (https://goeckslab.github.io/galaxy-agent-benchmark/data/index.json), written by `analysis/fetch_site_data.py`.
+Analyses must read these copies, never the live URLs, because the website regenerates its files on every deployment.
+Refresh the copy in a pull request of its own, so the diff shows which results changed.
+
+Files keep their paths on the website, so the index's relative URLs still resolve:
+
+| File | Contents |
+| --- | --- |
+| `data/index.json`, `data/README.md` | The website's index of results files and its documentation of their fields |
+| `bixbench/data/results.json` | BixBench-Verified-50: per-item runs and per-experiment accuracy |
+| `compbiobench/data/paper_results.json` | CompBioBench: per-item runs and per-replicate official scores |
+| `compbiobench/data/public_token_usage.tsv`, `compbiobench/data/public_udt_usage.tsv` | CompBioBench token use and user-defined-tool use, per replicate |
+| `iwc/data/results.json`, `iwc/data/token_usage.tsv` | IWC workflow generation (ten items): per-item runs and token use |
+| `iwc/long-chain/data/results.json` | IWC multi-step tasks: per-run scores |
+
+`data/site/MANIFEST.csv` records each file's URL, size, SHA-256, fetch date and the server's Last-Modified time.
+Its `checksum_source` column says whether the SHA-256 was checked against `index.json`: the four results files were; the index, its README and the usage tables are not listed in it.
+`source_commit` is the commit of `goeckslab/galaxy-agent-benchmark` (private) the website was deployed from; the website does not publish it, so it is recorded only after a check (see below).
+Run `python analysis/fetch_site_data.py --check` to confirm the local copies still match the manifest.
+
+The committed copy was fetched on 2026-11-05 from a deployment last modified at 2026-10-28 01:15:59 GMT.
+Its `source_commit` is `804299a`: the six files that are committed under `site/` in the benchmark repository are byte-identical to that commit, and the CompBioBench results differ from its parent `df07b3e`.
+The other three (`bixbench/data/results.json`, `iwc/data/results.json` and `data/index.json`) are generated at deployment and are not committed there.
+
+Rules from the website's `data/README.md` that every analysis of these files must follow:
+
+- BixBench: use `status`, not the historical `raw_status`; exclude experiments with `superseded` metadata from the main comparison.
+- CompBioBench: use per-replicate `official_score` (out of 100) for accuracy; `predicted_score` is a prediction, not a score; select main or supplementary model configurations to match the intended figure rather than pooling them.
+- IWC: accuracy is `acc`; keep `acc_status` and nulls; `step_score` is a separate metric.
+- IWC multi-step tasks: leave runs in `held_reruns` out of every average until rescored; average `acc` over scored runs per task, then over tasks.
+- In every benchmark, never treat a missing score as zero.
+
+The files include reference answers.
+They are for reporting and plotting, and must not be given to agents taking the benchmark.
+
 ## Token usage tables
 
 `token_optimization_rounds.csv` lists the BixBench-Verified-50 token totals at each Galaxy token-optimization stage, transcribed by hand from the benchmark results site (`goeckslab/galaxy-agent-benchmark`) and Junhao Qiu's notes; its `source` column names where each row comes from.
