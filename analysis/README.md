@@ -3,6 +3,7 @@
 Code that turns benchmark runs and traces into the numbers and tables used in the paper.
 
 - `fetch_traces.py` downloads traces from the Hugging Face dataset into `traces/` (git-ignored).
+- `fetch_site_data.py` copies the results website's machine-readable data (per-run results, scores and token use for every benchmark) into `data/site/`, checks it against the website's published checksums, and records each file in `data/site/MANIFEST.csv`; new analyses should read these copies.
 - `fetch_site_token_totals.py` fetches main-run token totals per benchmark, model and condition from the results website into `data/site_token_totals.csv`; all token totals in the paper come from the website.
 - `token_usage.py` computes Galaxy ÷ custom-code token ratios for the main runs (from `data/site_token_totals.csv`) and for each BixBench token-optimization round (from `data/token_optimization_rounds.csv`); its outputs feed `figures/sfig_token_*` and `supplement/notes/token_usage.md`.
 - `failure_analysis/` holds one write-up per task, named `<task-id>.md`, each ending with trace references.
