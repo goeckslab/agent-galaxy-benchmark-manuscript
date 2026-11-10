@@ -98,3 +98,34 @@ The committed version was fetched on 2026-10-12, when the deployed files matched
 | source | Website page or table, and fetch date |
 
 `token_ratios_main_runs.csv` is written by `analysis/token_usage.py` from `site_token_totals.csv`: one row per benchmark and model, plus `All models`, with Galaxy and custom-code total tokens and their `ratio`.
+
+## Accuracy (`accuracy_by_model.csv`)
+
+`accuracy_by_model.csv` is written by `analysis/accuracy.py` from `data/site/`, read through `analysis/site_data.py`, which applies the website's rules listed above.
+It has one row per benchmark, model and condition, plus an `All models` row per benchmark and condition.
+Only models run in both conditions are included, so GPT-6 Astra (CompBioBench custom code only) is left out; the IWC multi-step tasks have three models.
+
+| Column | Meaning |
+| --- | --- |
+| benchmark, model, condition | Benchmark, model configuration and execution condition (`Galaxy` or `custom code`) |
+| accuracy_pct | Accuracy in percent, defined per benchmark in `definition` |
+| n_runs | Runs behind the value (for CompBioBench, 100 items per official score) |
+| rep1, rep2, rep3, rep_sd, rep_min, rep_max | Accuracy of each replicate, and their standard deviation, minimum and maximum |
+| n_models, model_min, model_max | `All models` rows only: number of models and the lowest and highest model accuracy |
+| strict_pct | IWC: runs with `acc` ≥ 0.99; IWC multi-step: runs in which every required result passed |
+| definition | How accuracy is computed for the benchmark |
+
+`All models` is the unweighted mean of the model accuracies, which equals pooled-run accuracy because every model has the same number of runs; the script checks this.
+The script also checks BixBench accuracy and per-replicate pass counts against the website's experiment summaries, and stops if they differ.
+
+`accuracy_summary.csv` is also written by `analysis/accuracy.py` and aggregates across models, one row per benchmark:
+
+| Column | Meaning |
+| --- | --- |
+| benchmark, n_models, n_runs_per_condition | Benchmark, number of models, and runs pooled in each condition (for CompBioBench, items × replicates × models) |
+| galaxy_pct, custom_code_pct, diff_pp | `All models` accuracy in each condition, and Galaxy minus custom code in percentage points |
+| models_galaxy_higher, models_tied, models_custom_code_higher | Number of models whose Galaxy accuracy is higher than, equal to, or lower than their custom-code accuracy |
+| model_diff_min_pp, model_diff_max_pp | Smallest and largest per-model difference, Galaxy minus custom code |
+| galaxy_model_min, galaxy_model_max, custom_code_model_min, custom_code_model_max | Lowest and highest model accuracy in each condition |
+| galaxy_strict_pct, custom_code_strict_pct | `All models` `strict_pct` in each condition (IWC and IWC multi-step only) |
+| definition | How accuracy is computed for the benchmark |

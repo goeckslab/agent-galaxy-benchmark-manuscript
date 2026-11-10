@@ -1,0 +1,5 @@
+benchmark,n_models,n_runs_per_condition,galaxy_pct,custom_code_pct,diff_pp,models_galaxy_higher,models_tied,models_custom_code_higher,model_diff_min_pp,model_diff_max_pp,galaxy_model_min,galaxy_model_max,custom_code_model_min,custom_code_model_max,galaxy_strict_pct,custom_code_strict_pct,definition
+BixBench-Verified-50,4,600,89.5,88.33,1.17,3,0,1,-0.67,3.33,83.33,93.33,82.67,92.0,,,runs with reviewed status pass / planned runs
+CompBioBench,4,1200,87.0,86.75,0.25,2,1,1,-0.67,1.33,84.67,92.33,84.67,91.0,,,mean of per-replicate official scores (out of 100)
+IWC,4,120,98.99,95.34,3.65,4,0,0,0.12,10.3,98.5,99.88,88.2,98.86,79.17,72.5,"mean acc over runs of each item, then over items"
+IWC multi-step,3,90,67.48,58.73,8.76,3,0,0,1.94,15.59,49.48,89.89,33.89,87.95,24.44,23.33,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
