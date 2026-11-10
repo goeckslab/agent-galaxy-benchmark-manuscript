@@ -1,0 +1,39 @@
+benchmark,model,condition,accuracy_pct,rep1,rep2,rep3,n_runs,definition
+BixBench-Verified-50,GPT-5.5,Galaxy,93.33,92.0,94.0,94.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,GPT-5.5,custom code,92.0,92.0,92.0,92.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,GPT-5.6 Sol,Galaxy,92.67,92.0,94.0,92.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,GPT-5.6 Sol,custom code,89.33,86.0,92.0,90.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,GPT-5.6 Luna,Galaxy,88.67,94.0,86.0,86.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,GPT-5.6 Luna,custom code,89.33,90.0,92.0,86.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,DeepSeek V4 Pro,Galaxy,83.33,82.0,84.0,84.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,DeepSeek V4 Pro,custom code,82.67,82.0,82.0,84.0,150,runs with reviewed status pass / planned runs
+BixBench-Verified-50,All models,Galaxy,89.5,,,,600,runs with reviewed status pass / planned runs
+BixBench-Verified-50,All models,custom code,88.33,,,,600,runs with reviewed status pass / planned runs
+CompBioBench,GPT-5.5,Galaxy,85.67,84.0,87.0,86.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,GPT-5.5,custom code,86.33,87.0,88.0,84.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,GPT-5.6 Sol,Galaxy,92.33,93.0,91.0,93.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,GPT-5.6 Sol,custom code,91.0,88.0,90.0,95.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,GPT-5.6 Luna,Galaxy,84.67,86.0,83.0,85.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,GPT-5.6 Luna,custom code,84.67,85.0,85.0,84.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,DeepSeek V4 Pro,Galaxy,85.33,86.0,85.0,85.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,DeepSeek V4 Pro,custom code,85.0,81.0,86.0,88.0,300,mean of per-replicate official scores (out of 100)
+CompBioBench,All models,Galaxy,87.0,,,,1200,mean of per-replicate official scores (out of 100)
+CompBioBench,All models,custom code,86.75,,,,1200,mean of per-replicate official scores (out of 100)
+IWC,GPT-5.5,Galaxy,98.5,98.25,97.92,99.33,30,"mean acc over runs of each item, then over items"
+IWC,GPT-5.5,custom code,88.2,89.71,96.65,78.23,30,"mean acc over runs of each item, then over items"
+IWC,GPT-5.6 Sol,Galaxy,99.08,99.31,99.38,98.54,30,"mean acc over runs of each item, then over items"
+IWC,GPT-5.6 Sol,custom code,98.86,98.61,98.83,99.15,30,"mean acc over runs of each item, then over items"
+IWC,GPT-5.6 Luna,Galaxy,98.5,98.96,98.2,98.33,30,"mean acc over runs of each item, then over items"
+IWC,GPT-5.6 Luna,custom code,98.38,98.58,99.53,97.03,30,"mean acc over runs of each item, then over items"
+IWC,DeepSeek V4 Pro,Galaxy,99.88,99.99,99.67,99.96,30,"mean acc over runs of each item, then over items"
+IWC,DeepSeek V4 Pro,custom code,95.92,99.07,98.83,89.86,30,"mean acc over runs of each item, then over items"
+IWC,All models,Galaxy,98.99,,,,120,"mean acc over runs of each item, then over items"
+IWC,All models,custom code,95.34,,,,120,"mean acc over runs of each item, then over items"
+IWC multi-step,GPT-5.6 Sol,Galaxy,89.89,94.17,91.75,83.75,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,GPT-5.6 Sol,custom code,87.95,85.92,88.83,89.11,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,GPT-5.6 Luna,Galaxy,49.48,49.33,42.81,56.31,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,GPT-5.6 Luna,custom code,33.89,34.08,28.75,38.83,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,DeepSeek V4 Pro,Galaxy,63.08,65.58,68.25,55.42,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,DeepSeek V4 Pro,custom code,54.33,52.25,56.67,54.08,30,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,All models,Galaxy,67.48,,,,90,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
+IWC multi-step,All models,custom code,58.73,,,,90,"mean acc (passed results / required results) over scored runs of each task, then over tasks"
