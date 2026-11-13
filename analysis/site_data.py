@@ -46,7 +46,8 @@ LC_CONDITION = {"galaxy": GALAXY, "open": CUSTOM}
 
 
 def _load(path: str) -> dict:
-    return json.loads((SITE / path).read_text())
+    # The exports are UTF-8; read_text() without an encoding uses the locale's (cp1252 on Windows) and garbles them.
+    return json.loads((SITE / path).read_text(encoding="utf-8"))
 
 
 def _map(value: str, table: dict, what: str) -> str:

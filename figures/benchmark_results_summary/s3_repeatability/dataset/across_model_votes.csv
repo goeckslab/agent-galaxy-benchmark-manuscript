@@ -1,0 +1,321 @@
+benchmark,task,condition,runs_meeting_criterion,strict_majority_of_12,tie
+BixBench,bix-11-q1,Galaxy,12,True,False
+BixBench,bix-11-q1,custom code,12,True,False
+BixBench,bix-11-q2,Galaxy,12,True,False
+BixBench,bix-11-q2,custom code,12,True,False
+BixBench,bix-12-q2,Galaxy,12,True,False
+BixBench,bix-12-q2,custom code,12,True,False
+BixBench,bix-12-q4,Galaxy,12,True,False
+BixBench,bix-12-q4,custom code,11,True,False
+BixBench,bix-12-q5,Galaxy,12,True,False
+BixBench,bix-12-q5,custom code,12,True,False
+BixBench,bix-12-q6,Galaxy,12,True,False
+BixBench,bix-12-q6,custom code,11,True,False
+BixBench,bix-14-q1,Galaxy,9,True,False
+BixBench,bix-14-q1,custom code,9,True,False
+BixBench,bix-16-q1,Galaxy,9,True,False
+BixBench,bix-16-q1,custom code,9,True,False
+BixBench,bix-16-q3,Galaxy,12,True,False
+BixBench,bix-16-q3,custom code,12,True,False
+BixBench,bix-16-q4,Galaxy,12,True,False
+BixBench,bix-16-q4,custom code,11,True,False
+BixBench,bix-17-q2,Galaxy,12,True,False
+BixBench,bix-17-q2,custom code,12,True,False
+BixBench,bix-18-q1,Galaxy,12,True,False
+BixBench,bix-18-q1,custom code,12,True,False
+BixBench,bix-18-q3,Galaxy,12,True,False
+BixBench,bix-18-q3,custom code,12,True,False
+BixBench,bix-20-q3,Galaxy,12,True,False
+BixBench,bix-20-q3,custom code,12,True,False
+BixBench,bix-22-q1,Galaxy,12,True,False
+BixBench,bix-22-q1,custom code,12,True,False
+BixBench,bix-22-q4,Galaxy,12,True,False
+BixBench,bix-22-q4,custom code,12,True,False
+BixBench,bix-24-q2,Galaxy,11,True,False
+BixBench,bix-24-q2,custom code,11,True,False
+BixBench,bix-26-q3,Galaxy,12,True,False
+BixBench,bix-26-q3,custom code,12,True,False
+BixBench,bix-26-q5,Galaxy,0,False,False
+BixBench,bix-26-q5,custom code,0,False,False
+BixBench,bix-27-q5,Galaxy,11,True,False
+BixBench,bix-27-q5,custom code,10,True,False
+BixBench,bix-28-q3,Galaxy,11,True,False
+BixBench,bix-28-q3,custom code,12,True,False
+BixBench,bix-30-q3,Galaxy,10,True,False
+BixBench,bix-30-q3,custom code,4,False,False
+BixBench,bix-31-q2,Galaxy,10,True,False
+BixBench,bix-31-q2,custom code,11,True,False
+BixBench,bix-32-q2,Galaxy,9,True,False
+BixBench,bix-32-q2,custom code,9,True,False
+BixBench,bix-34-q2,Galaxy,12,True,False
+BixBench,bix-34-q2,custom code,12,True,False
+BixBench,bix-34-q5,Galaxy,12,True,False
+BixBench,bix-34-q5,custom code,12,True,False
+BixBench,bix-35-q1,Galaxy,12,True,False
+BixBench,bix-35-q1,custom code,12,True,False
+BixBench,bix-35-q2,Galaxy,12,True,False
+BixBench,bix-35-q2,custom code,12,True,False
+BixBench,bix-37-q1,Galaxy,12,True,False
+BixBench,bix-37-q1,custom code,12,True,False
+BixBench,bix-37-q4,Galaxy,12,True,False
+BixBench,bix-37-q4,custom code,12,True,False
+BixBench,bix-38-q1,Galaxy,12,True,False
+BixBench,bix-38-q1,custom code,12,True,False
+BixBench,bix-41-q5,Galaxy,12,True,False
+BixBench,bix-41-q5,custom code,12,True,False
+BixBench,bix-43-q2,Galaxy,7,True,False
+BixBench,bix-43-q2,custom code,5,False,False
+BixBench,bix-43-q4,Galaxy,11,True,False
+BixBench,bix-43-q4,custom code,10,True,False
+BixBench,bix-45-q1,Galaxy,12,True,False
+BixBench,bix-45-q1,custom code,12,True,False
+BixBench,bix-46-q4,Galaxy,11,True,False
+BixBench,bix-46-q4,custom code,12,True,False
+BixBench,bix-47-q3,Galaxy,12,True,False
+BixBench,bix-47-q3,custom code,12,True,False
+BixBench,bix-49-q4,Galaxy,12,True,False
+BixBench,bix-49-q4,custom code,12,True,False
+BixBench,bix-51-q2,Galaxy,12,True,False
+BixBench,bix-51-q2,custom code,12,True,False
+BixBench,bix-51-q8,Galaxy,12,True,False
+BixBench,bix-51-q8,custom code,12,True,False
+BixBench,bix-52-q2,Galaxy,11,True,False
+BixBench,bix-52-q2,custom code,12,True,False
+BixBench,bix-52-q6,Galaxy,12,True,False
+BixBench,bix-52-q6,custom code,12,True,False
+BixBench,bix-52-q7,Galaxy,9,True,False
+BixBench,bix-52-q7,custom code,12,True,False
+BixBench,bix-53-q2,Galaxy,12,True,False
+BixBench,bix-53-q2,custom code,12,True,False
+BixBench,bix-53-q5,Galaxy,12,True,False
+BixBench,bix-53-q5,custom code,12,True,False
+BixBench,bix-54-q7,Galaxy,0,False,False
+BixBench,bix-54-q7,custom code,1,False,False
+BixBench,bix-55-q1,Galaxy,12,True,False
+BixBench,bix-55-q1,custom code,10,True,False
+BixBench,bix-6-q4,Galaxy,12,True,False
+BixBench,bix-6-q4,custom code,12,True,False
+BixBench,bix-61-q2,Galaxy,12,True,False
+BixBench,bix-61-q2,custom code,12,True,False
+BixBench,bix-61-q5,Galaxy,0,False,False
+BixBench,bix-61-q5,custom code,0,False,False
+CompBioBench,1000G-retrieve-genotype-q1,Galaxy,10,True,False
+CompBioBench,1000G-retrieve-genotype-q1,custom code,12,True,False
+CompBioBench,1000G-retrieve-genotype-q2,Galaxy,12,True,False
+CompBioBench,1000G-retrieve-genotype-q2,custom code,12,True,False
+CompBioBench,afgr-1000g-intersect-atac-q1,Galaxy,10,True,False
+CompBioBench,afgr-1000g-intersect-atac-q1,custom code,9,True,False
+CompBioBench,align-one-sequence-to-reference-q1,Galaxy,12,True,False
+CompBioBench,align-one-sequence-to-reference-q1,custom code,10,True,False
+CompBioBench,annotate-variant-gene-impact-q1,Galaxy,12,True,False
+CompBioBench,annotate-variant-gene-impact-q1,custom code,12,True,False
+CompBioBench,annotate-variant-gene-impact-q2,Galaxy,12,True,False
+CompBioBench,annotate-variant-gene-impact-q2,custom code,12,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,Galaxy,7,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,custom code,8,True,False
+CompBioBench,atac-doublet-q1,Galaxy,9,True,False
+CompBioBench,atac-doublet-q1,custom code,11,True,False
+CompBioBench,atac-tn5-shift-q1,Galaxy,10,True,False
+CompBioBench,atac-tn5-shift-q1,custom code,8,True,False
+CompBioBench,bam-infer-read-length-q1,Galaxy,12,True,False
+CompBioBench,bam-infer-read-length-q1,custom code,12,True,False
+CompBioBench,bam-ops-q1,Galaxy,12,True,False
+CompBioBench,bam-ops-q1,custom code,12,True,False
+CompBioBench,bedtools-chromhmm-q1,Galaxy,12,True,False
+CompBioBench,bedtools-chromhmm-q1,custom code,12,True,False
+CompBioBench,bedtools-ops-q1,Galaxy,12,True,False
+CompBioBench,bedtools-ops-q1,custom code,11,True,False
+CompBioBench,bigwig-density-q1,Galaxy,12,True,False
+CompBioBench,bigwig-density-q1,custom code,12,True,False
+CompBioBench,borzoi-basic-q1,Galaxy,12,True,False
+CompBioBench,borzoi-basic-q1,custom code,12,True,False
+CompBioBench,borzoi-rnaseq-q1,Galaxy,12,True,False
+CompBioBench,borzoi-rnaseq-q1,custom code,10,True,False
+CompBioBench,calculate-average-gene-expression-q1,Galaxy,12,True,False
+CompBioBench,calculate-average-gene-expression-q1,custom code,12,True,False
+CompBioBench,cell-proportions-q1,Galaxy,12,True,False
+CompBioBench,cell-proportions-q1,custom code,12,True,False
+CompBioBench,characterize-response-q1,Galaxy,6,False,True
+CompBioBench,characterize-response-q1,custom code,9,True,False
+CompBioBench,chip-pioneer-q1,Galaxy,9,True,False
+CompBioBench,chip-pioneer-q1,custom code,10,True,False
+CompBioBench,compute-gc-content-interval-q1,Galaxy,12,True,False
+CompBioBench,compute-gc-content-interval-q1,custom code,12,True,False
+CompBioBench,compute-gccontent-promoter-q1,Galaxy,12,True,False
+CompBioBench,compute-gccontent-promoter-q1,custom code,12,True,False
+CompBioBench,compute-hvg-jaccard-q1,Galaxy,12,True,False
+CompBioBench,compute-hvg-jaccard-q1,custom code,12,True,False
+CompBioBench,compute-nonoverlapping-exonic-length-q1,Galaxy,12,True,False
+CompBioBench,compute-nonoverlapping-exonic-length-q1,custom code,12,True,False
+CompBioBench,conservation-lookup-q1,Galaxy,7,True,False
+CompBioBench,conservation-lookup-q1,custom code,7,True,False
+CompBioBench,contaminated-rna-q1,Galaxy,11,True,False
+CompBioBench,contaminated-rna-q1,custom code,11,True,False
+CompBioBench,contaminated-rna-q2,Galaxy,8,True,False
+CompBioBench,contaminated-rna-q2,custom code,6,False,True
+CompBioBench,contaminated-rna-q3,Galaxy,10,True,False
+CompBioBench,contaminated-rna-q3,custom code,6,False,True
+CompBioBench,covid-patient-q1,Galaxy,7,True,False
+CompBioBench,covid-patient-q1,custom code,10,True,False
+CompBioBench,cryptic-exon-q1,Galaxy,10,True,False
+CompBioBench,cryptic-exon-q1,custom code,12,True,False
+CompBioBench,deg-simple-q1,Galaxy,12,True,False
+CompBioBench,deg-simple-q1,custom code,12,True,False
+CompBioBench,deg-simple-q2,Galaxy,11,True,False
+CompBioBench,deg-simple-q2,custom code,12,True,False
+CompBioBench,deleterious-mutation-q1,Galaxy,12,True,False
+CompBioBench,deleterious-mutation-q1,custom code,12,True,False
+CompBioBench,deleterious-mutation-q2,Galaxy,12,True,False
+CompBioBench,deleterious-mutation-q2,custom code,12,True,False
+CompBioBench,differential-composition-q1,Galaxy,12,True,False
+CompBioBench,differential-composition-q1,custom code,11,True,False
+CompBioBench,disease-samples-q1,Galaxy,12,True,False
+CompBioBench,disease-samples-q1,custom code,12,True,False
+CompBioBench,encode-atac-pipeline-q1,Galaxy,0,False,False
+CompBioBench,encode-atac-pipeline-q1,custom code,0,False,False
+CompBioBench,enformer-basic-q1,Galaxy,12,True,False
+CompBioBench,enformer-basic-q1,custom code,11,True,False
+CompBioBench,enriched-motif-identification-q1,Galaxy,12,True,False
+CompBioBench,enriched-motif-identification-q1,custom code,12,True,False
+CompBioBench,ensembl-grab-q1,Galaxy,12,True,False
+CompBioBench,ensembl-grab-q1,custom code,12,True,False
+CompBioBench,ep-interactions-q1,Galaxy,9,True,False
+CompBioBench,ep-interactions-q1,custom code,7,True,False
+CompBioBench,exogenous-mix-reads-q1,Galaxy,10,True,False
+CompBioBench,exogenous-mix-reads-q1,custom code,11,True,False
+CompBioBench,exogenous-mix-reads-q2,Galaxy,7,True,False
+CompBioBench,exogenous-mix-reads-q2,custom code,9,True,False
+CompBioBench,extract-rna-secondary-structure-q1,Galaxy,12,True,False
+CompBioBench,extract-rna-secondary-structure-q1,custom code,12,True,False
+CompBioBench,find-amplification-q1,Galaxy,12,True,False
+CompBioBench,find-amplification-q1,custom code,12,True,False
+CompBioBench,find-deletion-q1,Galaxy,11,True,False
+CompBioBench,find-deletion-q1,custom code,12,True,False
+CompBioBench,finding-geo-q1,Galaxy,7,True,False
+CompBioBench,finding-geo-q1,custom code,10,True,False
+CompBioBench,gene-expression-query-q1,Galaxy,12,True,False
+CompBioBench,gene-expression-query-q1,custom code,12,True,False
+CompBioBench,gene-fusion-q1,Galaxy,12,True,False
+CompBioBench,gene-fusion-q1,custom code,12,True,False
+CompBioBench,gene-fusion-q2,Galaxy,11,True,False
+CompBioBench,gene-fusion-q2,custom code,10,True,False
+CompBioBench,gene-info-grab-q1,Galaxy,12,True,False
+CompBioBench,gene-info-grab-q1,custom code,12,True,False
+CompBioBench,gene-pair-ordering-fraction-q1,Galaxy,12,True,False
+CompBioBench,gene-pair-ordering-fraction-q1,custom code,11,True,False
+CompBioBench,genome-assembly-contiguity-q1,Galaxy,12,True,False
+CompBioBench,genome-assembly-contiguity-q1,custom code,12,True,False
+CompBioBench,genome-coords-q1,Galaxy,12,True,False
+CompBioBench,genome-coords-q1,custom code,12,True,False
+CompBioBench,genomic-state-q1,Galaxy,12,True,False
+CompBioBench,genomic-state-q1,custom code,11,True,False
+CompBioBench,geo-lookup-read-matrix-market-q1,Galaxy,12,True,False
+CompBioBench,geo-lookup-read-matrix-market-q1,custom code,12,True,False
+CompBioBench,gtf-5-utr-median-len-q1,Galaxy,12,True,False
+CompBioBench,gtf-5-utr-median-len-q1,custom code,12,True,False
+CompBioBench,gwas-ancestry-q1,Galaxy,11,True,False
+CompBioBench,gwas-ancestry-q1,custom code,11,True,False
+CompBioBench,hic-differential-loop-q1,Galaxy,12,True,False
+CompBioBench,hic-differential-loop-q1,custom code,11,True,False
+CompBioBench,histone-chip-q1,Galaxy,9,True,False
+CompBioBench,histone-chip-q1,custom code,12,True,False
+CompBioBench,huggingface-entropy-q1,Galaxy,12,True,False
+CompBioBench,huggingface-entropy-q1,custom code,11,True,False
+CompBioBench,identify-donor-q1,Galaxy,12,True,False
+CompBioBench,identify-donor-q1,custom code,12,True,False
+CompBioBench,identify-related-q1,Galaxy,12,True,False
+CompBioBench,identify-related-q1,custom code,12,True,False
+CompBioBench,lung-cancer-sc-q1,Galaxy,2,False,False
+CompBioBench,lung-cancer-sc-q1,custom code,6,False,True
+CompBioBench,match-genotypes-q1,Galaxy,12,True,False
+CompBioBench,match-genotypes-q1,custom code,12,True,False
+CompBioBench,ml-model-track-overlap-q1,Galaxy,1,False,False
+CompBioBench,ml-model-track-overlap-q1,custom code,4,False,False
+CompBioBench,multiome-match-atac-rna-q1,Galaxy,12,True,False
+CompBioBench,multiome-match-atac-rna-q1,custom code,12,True,False
+CompBioBench,mystery-peak-set-q1,Galaxy,12,True,False
+CompBioBench,mystery-peak-set-q1,custom code,12,True,False
+CompBioBench,odd-one-out-q1,Galaxy,1,False,False
+CompBioBench,odd-one-out-q1,custom code,2,False,False
+CompBioBench,orf-annot-q1,Galaxy,12,True,False
+CompBioBench,orf-annot-q1,custom code,12,True,False
+CompBioBench,overexpress-tf-q1,Galaxy,7,True,False
+CompBioBench,overexpress-tf-q1,custom code,10,True,False
+CompBioBench,pathogenic-variant-lookup-q1,Galaxy,12,True,False
+CompBioBench,pathogenic-variant-lookup-q1,custom code,12,True,False
+CompBioBench,perturb-seq-align-q1,Galaxy,11,True,False
+CompBioBench,perturb-seq-align-q1,custom code,12,True,False
+CompBioBench,perturb-seq-effect-q1,Galaxy,11,True,False
+CompBioBench,perturb-seq-effect-q1,custom code,9,True,False
+CompBioBench,phase-chain-q1,Galaxy,11,True,False
+CompBioBench,phase-chain-q1,custom code,11,True,False
+CompBioBench,pooled-infer-donors-q1,Galaxy,12,True,False
+CompBioBench,pooled-infer-donors-q1,custom code,12,True,False
+CompBioBench,promoter-sequence-retrieval-q1,Galaxy,12,True,False
+CompBioBench,promoter-sequence-retrieval-q1,custom code,12,True,False
+CompBioBench,protein-shape-q1,Galaxy,5,False,False
+CompBioBench,protein-shape-q1,custom code,7,True,False
+CompBioBench,read-paper-download-file-parse-q1,Galaxy,12,True,False
+CompBioBench,read-paper-download-file-parse-q1,custom code,12,True,False
+CompBioBench,read-proportions-q1,Galaxy,11,True,False
+CompBioBench,read-proportions-q1,custom code,12,True,False
+CompBioBench,retina-score-snps-q1,Galaxy,12,True,False
+CompBioBench,retina-score-snps-q1,custom code,11,True,False
+CompBioBench,reverse-encode-q1,Galaxy,11,True,False
+CompBioBench,reverse-encode-q1,custom code,12,True,False
+CompBioBench,reverse-search-gwas-q1,Galaxy,1,False,False
+CompBioBench,reverse-search-gwas-q1,custom code,3,False,False
+CompBioBench,reverse-search-gwas-q2,Galaxy,11,True,False
+CompBioBench,reverse-search-gwas-q2,custom code,9,True,False
+CompBioBench,saluki-setup-optimize-q1,Galaxy,12,True,False
+CompBioBench,saluki-setup-optimize-q1,custom code,10,True,False
+CompBioBench,sample-swap-atac-q1,Galaxy,11,True,False
+CompBioBench,sample-swap-atac-q1,custom code,12,True,False
+CompBioBench,sample-swap-atac-q2,Galaxy,12,True,False
+CompBioBench,sample-swap-atac-q2,custom code,12,True,False
+CompBioBench,sample-swap-rna-q1,Galaxy,11,True,False
+CompBioBench,sample-swap-rna-q1,custom code,11,True,False
+CompBioBench,sample-swap-rna-q2,Galaxy,12,True,False
+CompBioBench,sample-swap-rna-q2,custom code,12,True,False
+CompBioBench,spatial-sim-q1,Galaxy,12,True,False
+CompBioBench,spatial-sim-q1,custom code,12,True,False
+CompBioBench,spatial-sim-q2,Galaxy,11,True,False
+CompBioBench,spatial-sim-q2,custom code,12,True,False
+CompBioBench,splice-pred-q1,Galaxy,12,True,False
+CompBioBench,splice-pred-q1,custom code,12,True,False
+CompBioBench,subtype-inflammation-q1,Galaxy,12,True,False
+CompBioBench,subtype-inflammation-q1,custom code,12,True,False
+CompBioBench,three-way-barnyard-q1,Galaxy,12,True,False
+CompBioBench,three-way-barnyard-q1,custom code,12,True,False
+CompBioBench,three-way-barnyard-q2,Galaxy,7,True,False
+CompBioBench,three-way-barnyard-q2,custom code,8,True,False
+CompBioBench,tissue-fibroblast-q1,Galaxy,6,False,True
+CompBioBench,tissue-fibroblast-q1,custom code,10,True,False
+CompBioBench,variant-coordinate-lookup-q1,Galaxy,12,True,False
+CompBioBench,variant-coordinate-lookup-q1,custom code,12,True,False
+CompBioBench,variant-status-q1,Galaxy,2,False,False
+CompBioBench,variant-status-q1,custom code,2,False,False
+CompBioBench,vcf-infer-ancestry-q1,Galaxy,12,True,False
+CompBioBench,vcf-infer-ancestry-q1,custom code,12,True,False
+CompBioBench,vcf-infer-build-q1,Galaxy,12,True,False
+CompBioBench,vcf-infer-build-q1,custom code,12,True,False
+IWC,wf_001_short_read_qc_trim,Galaxy,12,True,False
+IWC,wf_001_short_read_qc_trim,custom code,12,True,False
+IWC,wf_002_rnaseq_de_visualization,Galaxy,12,True,False
+IWC,wf_002_rnaseq_de_visualization,custom code,12,True,False
+IWC,wf_003_host_contamination_removal,Galaxy,12,True,False
+IWC,wf_003_host_contamination_removal,custom code,12,True,False
+IWC,wf_005_amplicon_dada2_pe_denoising,Galaxy,3,False,False
+IWC,wf_005_amplicon_dada2_pe_denoising,custom code,3,False,False
+IWC,wf_006_atacseq_chromatin_accessibility,Galaxy,12,True,False
+IWC,wf_006_atacseq_chromatin_accessibility,custom code,11,True,False
+IWC,wf_007_vgp_mitogenome_assembly,Galaxy,7,True,False
+IWC,wf_007_vgp_mitogenome_assembly,custom code,2,False,False
+IWC,wf_008_amr_gene_detection,Galaxy,12,True,False
+IWC,wf_008_amr_gene_detection,custom code,12,True,False
+IWC,wf_009_clinicalmp_peptide_verification,Galaxy,2,False,False
+IWC,wf_009_clinicalmp_peptide_verification,custom code,2,False,False
+IWC,wf_010_pseudobulk_scrna_de,Galaxy,11,True,False
+IWC,wf_010_pseudobulk_scrna_de,custom code,9,True,False
+IWC,wf_011_bioproject_metadata_sequence_retrieval,Galaxy,12,True,False
+IWC,wf_011_bioproject_metadata_sequence_retrieval,custom code,12,True,False

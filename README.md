@@ -5,18 +5,23 @@ Manuscript, figures, and analysis code for a paper benchmarking AI coding agents
 - Benchmark: [goeckslab/galaxy-agent-benchmark](https://github.com/goeckslab/galaxy-agent-benchmark)
 - Run traces (Hugging Face): [goeckslab/galaxy-agent-benchmark-run-traces](https://huggingface.co/datasets/goeckslab/galaxy-agent-benchmark-run-traces)
 
-Status: early scaffolding. The working title, target journal, and article type are still open.
+Status: draft Brief Communication for Nature Methods, built from the 28 October 2026 results release.
+Open author items are marked as `TODO` comments in the manuscript source.
 
 ## Layout
 
 ```text
-manuscript/    paper source (Quarto): one file per section, plus references.bib
-figures/       one folder per figure: generating script, rendered output, source data
-analysis/      trace fetching and analysis code that feeds the paper
-data/          small derived tables only, including the results manifest
-supplement/    supplementary tables, notes, and figures
+manuscript/    paper source (Quarto): index.qmd renders brief-communication.qmd; references.bib
+figures/       figures generated from code; benchmark_results_summary/ holds the paper's
+               two main and seven supplementary figures, their source data and build records
+analysis/      scripts that fetch the data and build every table, figure and check
+data/          small derived tables, the results manifest, and a frozen copy of the
+               results website's data (data/site/)
+supplement/    supplementary notes
 .github/       issue templates, PR template, CI that builds a preview on every PR
 ```
+
+The earlier long-form draft (`abstract.qmd`, `introduction.qmd`, `results.qmd`, `discussion.qmd`, `methods.qmd` and `outline.md` in `manuscript/`) and the PLOS Computational Biology profile are kept for reference; they are not rendered.
 
 Large trace files are never committed. They are fetched from Hugging Face by `analysis/fetch_traces.py` into `traces/`, which is git-ignored.
 
@@ -31,6 +36,11 @@ quarto render manuscript          # HTML, DOCX and PDF into manuscript/_output/
 ```
 
 PDF output needs a LaTeX install (`quarto install tinytex`).
+
+### Rebuilding the figures and checking the numbers
+
+The figures, their source data, the results manifest and the supplementary figures PDF are rebuilt offline from pinned sources, and a verifier checks the artwork and the reported numbers.
+The commands and exact package versions are in [figures/benchmark_results_summary/README.md](figures/benchmark_results_summary/README.md#rebuild-and-verify).
 
 ### Journal profiles
 

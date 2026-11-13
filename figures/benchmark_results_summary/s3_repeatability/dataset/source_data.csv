@@ -1,0 +1,8 @@
+benchmark,condition,groups,single,majority,any_correct,all_wrong,split,zero,one,two,three,runs_per_condition,vote_correct,vote_incorrect,vote_abstained,vote_ungraded,single_pct,majority_pct,any_correct_pct,vote_correct_pct,vote_incorrect_pct,vote_abstained_pct,panel,task,transcript,strand,chromosome,interval_start,interval_end,bases,gc_bases,gc_fraction,reported_fraction,answers_checked,answers_matching
+BixBench,Galaxy,200,0.895,0.9,0.93,14,15,14,6,9,171,600,165,13,22,0,89.5,90,93,82.5,6.5,11,repeatability,,,,,,,,,,,,
+BixBench,custom code,200,0.883333333333,0.905,0.92,16,19,16,3,16,165,600,160,16,24,0,88.3333333333,90.5,92,80,8,12,repeatability,,,,,,,,,,,,
+CompBioBench,Galaxy,400,0.865833333333,0.875,0.925,30,51,30,20,31,319,1200,350,31,19,0,86.5833333333,87.5,92.5,87.5,7.75,4.75,repeatability,,,,,,,,,,,,
+CompBioBench,custom code,400,0.8825,0.8975,0.96,16,68,16,25,43,316,1200,359,31,10,0,88.25,89.75,96,89.75,7.75,2.5,repeatability,,,,,,,,,,,,
+IWC,Galaxy,40,0.791666666667,0.8,0.85,6,5,6,2,3,29,120,,,,,79.1666666667,80,85,,,,repeatability,,,,,,,,,,,,
+IWC,custom code,40,0.725,0.7,0.85,6,9,6,6,3,25,120,,,,,72.5,70,85,,,,repeatability,,,,,,,,,,,,
+CompBioBench,,,,,,,,,,,,,,,,,,,,,,,promoter,compute-gccontent-promoter-q1,ENST00000269305.9,-,chr17,7687391,7687990,600,292,0.486666666667,0.49,24,24

@@ -1,0 +1,1201 @@
+benchmark,task,model,condition,distinct_strings,selected,selected_meets_criterion
+BixBench,bix-11-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-11-q1,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-11-q1,GPT-5.5,Galaxy,3,False,
+BixBench,bix-11-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-11-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-11-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-11-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-11-q1,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-11-q2,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-11-q2,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-11-q2,GPT-5.5,Galaxy,3,False,
+BixBench,bix-11-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-11-q2,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-11-q2,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-11-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-11-q2,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-12-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-12-q2,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-12-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-12-q2,GPT-5.5,custom code,2,True,True
+BixBench,bix-12-q2,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-12-q2,GPT-5.6 Luna,custom code,3,False,
+BixBench,bix-12-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-12-q2,GPT-5.6 Sol,custom code,3,False,
+BixBench,bix-12-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-12-q4,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-12-q4,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-12-q4,GPT-5.5,custom code,2,True,True
+BixBench,bix-12-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-12-q4,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-12-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-12-q4,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-12-q5,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-12-q5,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-12-q5,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-12-q5,GPT-5.5,custom code,1,True,True
+BixBench,bix-12-q5,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-12-q5,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-12-q5,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-12-q5,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-12-q6,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-12-q6,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-12-q6,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-12-q6,GPT-5.5,custom code,2,True,True
+BixBench,bix-12-q6,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-12-q6,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-12-q6,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-12-q6,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-14-q1,DeepSeek V4 Pro,Galaxy,2,True,False
+BixBench,bix-14-q1,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-14-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-14-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-14-q1,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-14-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-14-q1,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-14-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-16-q1,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-16-q1,DeepSeek V4 Pro,custom code,2,True,False
+BixBench,bix-16-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-16-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-16-q1,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-16-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-16-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-16-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-16-q3,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-16-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-16-q3,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-16-q3,GPT-5.5,custom code,1,True,True
+BixBench,bix-16-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-16-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-16-q3,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-16-q3,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-16-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-16-q4,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-16-q4,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-16-q4,GPT-5.5,custom code,3,False,
+BixBench,bix-16-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-16-q4,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-16-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-16-q4,GPT-5.6 Sol,custom code,3,False,
+BixBench,bix-17-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-17-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-17-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-17-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-17-q2,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-17-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-17-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-17-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-18-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-18-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-18-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-18-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-18-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-18-q1,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-18-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-18-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-18-q3,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-18-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-18-q3,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-18-q3,GPT-5.5,custom code,1,True,True
+BixBench,bix-18-q3,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-18-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-18-q3,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-18-q3,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-20-q3,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-20-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-20-q3,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-20-q3,GPT-5.5,custom code,2,True,True
+BixBench,bix-20-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-20-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-20-q3,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-20-q3,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-22-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-22-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-22-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-22-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-22-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-22-q1,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-22-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-22-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-22-q4,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-22-q4,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-22-q4,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-22-q4,GPT-5.5,custom code,3,False,
+BixBench,bix-22-q4,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-22-q4,GPT-5.6 Luna,custom code,3,False,
+BixBench,bix-22-q4,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-22-q4,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-24-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-24-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-24-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-24-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-24-q2,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-24-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-24-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-24-q2,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-26-q3,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-26-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-26-q3,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-26-q3,GPT-5.5,custom code,1,True,True
+BixBench,bix-26-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-26-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-26-q3,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-26-q3,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-26-q5,DeepSeek V4 Pro,Galaxy,2,True,False
+BixBench,bix-26-q5,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-26-q5,GPT-5.5,Galaxy,1,True,False
+BixBench,bix-26-q5,GPT-5.5,custom code,2,True,False
+BixBench,bix-26-q5,GPT-5.6 Luna,Galaxy,1,True,False
+BixBench,bix-26-q5,GPT-5.6 Luna,custom code,1,True,False
+BixBench,bix-26-q5,GPT-5.6 Sol,Galaxy,1,True,False
+BixBench,bix-26-q5,GPT-5.6 Sol,custom code,1,True,False
+BixBench,bix-27-q5,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-27-q5,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-27-q5,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-27-q5,GPT-5.5,custom code,3,False,
+BixBench,bix-27-q5,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-27-q5,GPT-5.6 Luna,custom code,3,False,
+BixBench,bix-27-q5,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-27-q5,GPT-5.6 Sol,custom code,3,False,
+BixBench,bix-28-q3,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-28-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-28-q3,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-28-q3,GPT-5.5,custom code,2,True,True
+BixBench,bix-28-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-28-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-28-q3,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-28-q3,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-30-q3,DeepSeek V4 Pro,Galaxy,2,True,False
+BixBench,bix-30-q3,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-30-q3,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-30-q3,GPT-5.5,custom code,2,True,True
+BixBench,bix-30-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-30-q3,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-30-q3,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-30-q3,GPT-5.6 Sol,custom code,1,True,False
+BixBench,bix-31-q2,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-31-q2,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-31-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-31-q2,GPT-5.5,custom code,3,False,
+BixBench,bix-31-q2,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-31-q2,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-31-q2,GPT-5.6 Sol,Galaxy,3,False,
+BixBench,bix-31-q2,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-32-q2,DeepSeek V4 Pro,Galaxy,1,True,False
+BixBench,bix-32-q2,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-32-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-32-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-32-q2,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-32-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-32-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-32-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-34-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-34-q2,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-34-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-34-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-34-q2,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-34-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-34-q2,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-34-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-34-q5,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-34-q5,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-34-q5,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-34-q5,GPT-5.5,custom code,1,True,True
+BixBench,bix-34-q5,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-34-q5,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-34-q5,GPT-5.6 Sol,Galaxy,3,False,
+BixBench,bix-34-q5,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-35-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-35-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-35-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-35-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-35-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-35-q1,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-35-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-35-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-35-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-35-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-35-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-35-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-35-q2,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-35-q2,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-35-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-35-q2,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-37-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-37-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-37-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-37-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-37-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-37-q1,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-37-q1,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-37-q1,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-37-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-37-q4,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-37-q4,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-37-q4,GPT-5.5,custom code,1,True,True
+BixBench,bix-37-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-37-q4,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-37-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-37-q4,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-38-q1,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-38-q1,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-38-q1,GPT-5.5,Galaxy,3,False,
+BixBench,bix-38-q1,GPT-5.5,custom code,3,False,
+BixBench,bix-38-q1,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-38-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-38-q1,GPT-5.6 Sol,Galaxy,3,False,
+BixBench,bix-38-q1,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-41-q5,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-41-q5,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-41-q5,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-41-q5,GPT-5.5,custom code,1,True,True
+BixBench,bix-41-q5,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-41-q5,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-41-q5,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-41-q5,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-43-q2,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-43-q2,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-43-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-43-q2,GPT-5.5,custom code,3,False,
+BixBench,bix-43-q2,GPT-5.6 Luna,Galaxy,2,True,False
+BixBench,bix-43-q2,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-43-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-43-q2,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-43-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-43-q4,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-43-q4,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-43-q4,GPT-5.5,custom code,1,True,True
+BixBench,bix-43-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-43-q4,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-43-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-43-q4,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-45-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-45-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-45-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-45-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-45-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-45-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-45-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-45-q1,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-46-q4,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-46-q4,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-46-q4,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-46-q4,GPT-5.5,custom code,1,True,True
+BixBench,bix-46-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-46-q4,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-46-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-46-q4,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-47-q3,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-47-q3,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-47-q3,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-47-q3,GPT-5.5,custom code,1,True,True
+BixBench,bix-47-q3,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-47-q3,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-47-q3,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-47-q3,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-49-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-49-q4,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-49-q4,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-49-q4,GPT-5.5,custom code,1,True,True
+BixBench,bix-49-q4,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-49-q4,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-49-q4,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-49-q4,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-51-q2,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-51-q2,DeepSeek V4 Pro,custom code,2,True,True
+BixBench,bix-51-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-51-q2,GPT-5.5,custom code,2,True,True
+BixBench,bix-51-q2,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-51-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-51-q2,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-51-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-51-q8,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-51-q8,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-51-q8,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-51-q8,GPT-5.5,custom code,2,True,True
+BixBench,bix-51-q8,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-51-q8,GPT-5.6 Luna,custom code,3,False,
+BixBench,bix-51-q8,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-51-q8,GPT-5.6 Sol,custom code,3,False,
+BixBench,bix-52-q2,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-52-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-52-q2,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-52-q2,GPT-5.5,custom code,2,True,True
+BixBench,bix-52-q2,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-52-q2,GPT-5.6 Luna,custom code,3,False,
+BixBench,bix-52-q2,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-52-q2,GPT-5.6 Sol,custom code,3,False,
+BixBench,bix-52-q6,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-52-q6,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-52-q6,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-52-q6,GPT-5.5,custom code,1,True,True
+BixBench,bix-52-q6,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-52-q6,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-52-q6,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-52-q6,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-52-q7,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-52-q7,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-52-q7,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-52-q7,GPT-5.5,custom code,1,True,True
+BixBench,bix-52-q7,GPT-5.6 Luna,Galaxy,3,False,
+BixBench,bix-52-q7,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-52-q7,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-52-q7,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-53-q2,DeepSeek V4 Pro,Galaxy,2,True,True
+BixBench,bix-53-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-53-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-53-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-53-q2,GPT-5.6 Luna,Galaxy,2,True,True
+BixBench,bix-53-q2,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-53-q2,GPT-5.6 Sol,Galaxy,2,True,True
+BixBench,bix-53-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-53-q5,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-53-q5,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-53-q5,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-53-q5,GPT-5.5,custom code,1,True,True
+BixBench,bix-53-q5,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-53-q5,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-53-q5,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-53-q5,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-54-q7,DeepSeek V4 Pro,Galaxy,3,False,
+BixBench,bix-54-q7,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-54-q7,GPT-5.5,Galaxy,3,False,
+BixBench,bix-54-q7,GPT-5.5,custom code,3,False,
+BixBench,bix-54-q7,GPT-5.6 Luna,Galaxy,2,True,False
+BixBench,bix-54-q7,GPT-5.6 Luna,custom code,2,True,False
+BixBench,bix-54-q7,GPT-5.6 Sol,Galaxy,3,False,
+BixBench,bix-54-q7,GPT-5.6 Sol,custom code,2,True,False
+BixBench,bix-55-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-55-q1,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-55-q1,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-55-q1,GPT-5.5,custom code,1,True,True
+BixBench,bix-55-q1,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-55-q1,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-55-q1,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-55-q1,GPT-5.6 Sol,custom code,2,True,True
+BixBench,bix-6-q4,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-6-q4,DeepSeek V4 Pro,custom code,3,False,
+BixBench,bix-6-q4,GPT-5.5,Galaxy,2,True,True
+BixBench,bix-6-q4,GPT-5.5,custom code,2,True,True
+BixBench,bix-6-q4,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-6-q4,GPT-5.6 Luna,custom code,2,True,True
+BixBench,bix-6-q4,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-6-q4,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-61-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+BixBench,bix-61-q2,DeepSeek V4 Pro,custom code,1,True,True
+BixBench,bix-61-q2,GPT-5.5,Galaxy,1,True,True
+BixBench,bix-61-q2,GPT-5.5,custom code,1,True,True
+BixBench,bix-61-q2,GPT-5.6 Luna,Galaxy,1,True,True
+BixBench,bix-61-q2,GPT-5.6 Luna,custom code,1,True,True
+BixBench,bix-61-q2,GPT-5.6 Sol,Galaxy,1,True,True
+BixBench,bix-61-q2,GPT-5.6 Sol,custom code,1,True,True
+BixBench,bix-61-q5,DeepSeek V4 Pro,Galaxy,1,True,False
+BixBench,bix-61-q5,DeepSeek V4 Pro,custom code,1,True,False
+BixBench,bix-61-q5,GPT-5.5,Galaxy,1,True,False
+BixBench,bix-61-q5,GPT-5.5,custom code,1,True,False
+BixBench,bix-61-q5,GPT-5.6 Luna,Galaxy,1,True,False
+BixBench,bix-61-q5,GPT-5.6 Luna,custom code,1,True,False
+BixBench,bix-61-q5,GPT-5.6 Sol,Galaxy,1,True,False
+BixBench,bix-61-q5,GPT-5.6 Sol,custom code,1,True,False
+CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,Galaxy,2,True,False
+CompBioBench,1000G-retrieve-genotype-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,1000G-retrieve-genotype-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,afgr-1000g-intersect-atac-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,align-one-sequence-to-reference-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,annotate-variant-gene-impact-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,annotate-variant-regulatory-overlap-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,annotate-variant-regulatory-overlap-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.5,Galaxy,2,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.5,custom code,2,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Sol,Galaxy,2,True,False
+CompBioBench,annotate-variant-regulatory-overlap-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,atac-doublet-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,atac-doublet-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,atac-doublet-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,atac-doublet-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,atac-doublet-q1,GPT-5.6 Luna,Galaxy,3,False,
+CompBioBench,atac-doublet-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,atac-doublet-q1,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,atac-doublet-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,atac-tn5-shift-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,Galaxy,3,False,
+CompBioBench,atac-tn5-shift-q1,GPT-5.5,custom code,3,False,
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,atac-tn5-shift-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,bam-infer-read-length-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,bam-infer-read-length-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,bam-infer-read-length-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,bam-ops-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,bam-ops-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,bam-ops-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,bedtools-chromhmm-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,bedtools-chromhmm-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,bedtools-chromhmm-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,bedtools-ops-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,bedtools-ops-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,bedtools-ops-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,bigwig-density-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,bigwig-density-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,borzoi-basic-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,borzoi-basic-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,borzoi-rnaseq-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,borzoi-rnaseq-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,calculate-average-gene-expression-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,cell-proportions-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,cell-proportions-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,cell-proportions-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,characterize-response-q1,DeepSeek V4 Pro,Galaxy,1,True,False
+CompBioBench,characterize-response-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,characterize-response-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,characterize-response-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,characterize-response-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,characterize-response-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,characterize-response-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,characterize-response-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,chip-pioneer-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,chip-pioneer-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,chip-pioneer-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,chip-pioneer-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,chip-pioneer-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,chip-pioneer-q1,GPT-5.6 Luna,custom code,3,False,
+CompBioBench,chip-pioneer-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,chip-pioneer-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,compute-gc-content-interval-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,compute-gc-content-interval-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,compute-gc-content-interval-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,compute-gccontent-promoter-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,compute-hvg-jaccard-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,compute-nonoverlapping-exonic-length-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,conservation-lookup-q1,DeepSeek V4 Pro,custom code,3,False,
+CompBioBench,conservation-lookup-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,conservation-lookup-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,Galaxy,3,False,
+CompBioBench,conservation-lookup-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,conservation-lookup-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,Galaxy,2,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q2,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,contaminated-rna-q2,GPT-5.5,Galaxy,2,True,True
+CompBioBench,contaminated-rna-q2,GPT-5.5,custom code,3,False,
+CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,Galaxy,3,False,
+CompBioBench,contaminated-rna-q2,GPT-5.6 Luna,custom code,3,False,
+CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,contaminated-rna-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,contaminated-rna-q3,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,contaminated-rna-q3,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,contaminated-rna-q3,GPT-5.5,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q3,GPT-5.5,custom code,1,True,True
+CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,contaminated-rna-q3,GPT-5.6 Luna,custom code,1,True,False
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,contaminated-rna-q3,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,covid-patient-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,covid-patient-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,covid-patient-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,covid-patient-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,covid-patient-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,covid-patient-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,covid-patient-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,covid-patient-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,cryptic-exon-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,cryptic-exon-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,cryptic-exon-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,deg-simple-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,deg-simple-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,deg-simple-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,deg-simple-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,deg-simple-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,deg-simple-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,deg-simple-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,deg-simple-q2,GPT-5.6 Luna,Galaxy,2,True,True
+CompBioBench,deg-simple-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,deg-simple-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,deg-simple-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,deleterious-mutation-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,differential-composition-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,differential-composition-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,differential-composition-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,differential-composition-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,differential-composition-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,differential-composition-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,differential-composition-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,disease-samples-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,disease-samples-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,disease-samples-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,encode-atac-pipeline-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,Galaxy,2,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.5,custom code,2,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,Galaxy,1,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Sol,Galaxy,2,True,False
+CompBioBench,encode-atac-pipeline-q1,GPT-5.6 Sol,custom code,3,False,
+CompBioBench,enformer-basic-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,enformer-basic-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,enformer-basic-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,enformer-basic-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,enformer-basic-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,enformer-basic-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,enformer-basic-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,enformer-basic-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,enriched-motif-identification-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,enriched-motif-identification-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,enriched-motif-identification-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,ensembl-grab-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,ensembl-grab-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,ensembl-grab-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,ep-interactions-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,ep-interactions-q1,GPT-5.5,Galaxy,1,True,False
+CompBioBench,ep-interactions-q1,GPT-5.5,custom code,1,True,False
+CompBioBench,ep-interactions-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,ep-interactions-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,ep-interactions-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,ep-interactions-q1,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,exogenous-mix-reads-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,exogenous-mix-reads-q1,GPT-5.5,Galaxy,3,False,
+CompBioBench,exogenous-mix-reads-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,exogenous-mix-reads-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,exogenous-mix-reads-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,exogenous-mix-reads-q2,GPT-5.5,Galaxy,1,True,False
+CompBioBench,exogenous-mix-reads-q2,GPT-5.5,custom code,2,True,False
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,exogenous-mix-reads-q2,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,extract-rna-secondary-structure-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,find-amplification-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,find-amplification-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,find-amplification-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,find-deletion-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,find-deletion-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,find-deletion-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,finding-geo-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,finding-geo-q1,GPT-5.5,Galaxy,3,False,
+CompBioBench,finding-geo-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,finding-geo-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,finding-geo-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,finding-geo-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,finding-geo-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gene-expression-query-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gene-expression-query-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gene-fusion-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gene-fusion-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gene-fusion-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gene-fusion-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gene-fusion-q2,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,gene-fusion-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gene-fusion-q2,GPT-5.5,custom code,2,True,True
+CompBioBench,gene-fusion-q2,GPT-5.6 Luna,Galaxy,2,True,True
+CompBioBench,gene-fusion-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gene-fusion-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gene-fusion-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gene-info-grab-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gene-info-grab-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gene-info-grab-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gene-pair-ordering-fraction-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,genome-assembly-contiguity-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,genome-coords-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,genome-coords-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,genome-coords-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,genomic-state-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,genomic-state-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,genomic-state-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,genomic-state-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,genomic-state-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,genomic-state-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,genomic-state-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,genomic-state-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,geo-lookup-read-matrix-market-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gtf-5-utr-median-len-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,gwas-ancestry-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,gwas-ancestry-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,gwas-ancestry-q1,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,hic-differential-loop-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,hic-differential-loop-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,histone-chip-q1,DeepSeek V4 Pro,Galaxy,2,True,False
+CompBioBench,histone-chip-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,histone-chip-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,huggingface-entropy-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,huggingface-entropy-q1,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,identify-donor-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,identify-donor-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,identify-donor-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,identify-related-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,identify-related-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,identify-related-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,identify-related-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,identify-related-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,identify-related-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,identify-related-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,identify-related-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,lung-cancer-sc-q1,DeepSeek V4 Pro,Galaxy,2,True,False
+CompBioBench,lung-cancer-sc-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,Galaxy,2,True,False
+CompBioBench,lung-cancer-sc-q1,GPT-5.5,custom code,2,True,False
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,Galaxy,1,True,False
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Sol,Galaxy,1,True,False
+CompBioBench,lung-cancer-sc-q1,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,match-genotypes-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,match-genotypes-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,ml-model-track-overlap-q1,DeepSeek V4 Pro,custom code,3,False,
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,Galaxy,2,True,False
+CompBioBench,ml-model-track-overlap-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,Galaxy,1,True,False
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Sol,Galaxy,2,True,False
+CompBioBench,ml-model-track-overlap-q1,GPT-5.6 Sol,custom code,2,True,False
+CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,multiome-match-atac-rna-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,mystery-peak-set-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,mystery-peak-set-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,mystery-peak-set-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,odd-one-out-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,odd-one-out-q1,DeepSeek V4 Pro,custom code,3,False,
+CompBioBench,odd-one-out-q1,GPT-5.5,Galaxy,2,True,False
+CompBioBench,odd-one-out-q1,GPT-5.5,custom code,1,True,False
+CompBioBench,odd-one-out-q1,GPT-5.6 Luna,Galaxy,1,True,False
+CompBioBench,odd-one-out-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,odd-one-out-q1,GPT-5.6 Sol,Galaxy,2,True,False
+CompBioBench,odd-one-out-q1,GPT-5.6 Sol,custom code,1,True,False
+CompBioBench,orf-annot-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,orf-annot-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,orf-annot-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,overexpress-tf-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,overexpress-tf-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,overexpress-tf-q1,GPT-5.5,Galaxy,3,False,
+CompBioBench,overexpress-tf-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,overexpress-tf-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,overexpress-tf-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,overexpress-tf-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,overexpress-tf-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,pathogenic-variant-lookup-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,perturb-seq-align-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,perturb-seq-align-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,perturb-seq-effect-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,perturb-seq-effect-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,perturb-seq-effect-q1,GPT-5.5,custom code,2,True,True
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,perturb-seq-effect-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,phase-chain-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,phase-chain-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,phase-chain-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,phase-chain-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,phase-chain-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,phase-chain-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,phase-chain-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,pooled-infer-donors-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,pooled-infer-donors-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,promoter-sequence-retrieval-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,protein-shape-q1,DeepSeek V4 Pro,Galaxy,1,True,False
+CompBioBench,protein-shape-q1,DeepSeek V4 Pro,custom code,1,True,False
+CompBioBench,protein-shape-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,protein-shape-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,Galaxy,3,False,
+CompBioBench,protein-shape-q1,GPT-5.6 Luna,custom code,3,False,
+CompBioBench,protein-shape-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,protein-shape-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,read-paper-download-file-parse-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,read-proportions-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,read-proportions-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,read-proportions-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,retina-score-snps-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,retina-score-snps-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,reverse-encode-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,reverse-encode-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,reverse-encode-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,reverse-encode-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,reverse-encode-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,reverse-encode-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,reverse-encode-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,reverse-search-gwas-q1,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,reverse-search-gwas-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,reverse-search-gwas-q1,GPT-5.5,Galaxy,3,False,
+CompBioBench,reverse-search-gwas-q1,GPT-5.5,custom code,3,False,
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Luna,Galaxy,3,False,
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Sol,Galaxy,3,False,
+CompBioBench,reverse-search-gwas-q1,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,reverse-search-gwas-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,reverse-search-gwas-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,reverse-search-gwas-q2,GPT-5.5,custom code,2,True,False
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Luna,Galaxy,2,True,True
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,reverse-search-gwas-q2,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,saluki-setup-optimize-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,saluki-setup-optimize-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,sample-swap-atac-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,sample-swap-atac-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,sample-swap-atac-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q1,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,sample-swap-rna-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,sample-swap-rna-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,spatial-sim-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,spatial-sim-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,spatial-sim-q2,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,spatial-sim-q2,GPT-5.5,Galaxy,1,True,True
+CompBioBench,spatial-sim-q2,GPT-5.5,custom code,1,True,True
+CompBioBench,spatial-sim-q2,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,spatial-sim-q2,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,spatial-sim-q2,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,spatial-sim-q2,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,splice-pred-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,splice-pred-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,subtype-inflammation-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,subtype-inflammation-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,three-way-barnyard-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,three-way-barnyard-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,three-way-barnyard-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,Galaxy,3,False,
+CompBioBench,three-way-barnyard-q2,DeepSeek V4 Pro,custom code,2,True,True
+CompBioBench,three-way-barnyard-q2,GPT-5.5,Galaxy,2,True,True
+CompBioBench,three-way-barnyard-q2,GPT-5.5,custom code,2,True,True
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Luna,custom code,2,True,True
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,three-way-barnyard-q2,GPT-5.6 Sol,custom code,2,True,True
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,Galaxy,2,True,True
+CompBioBench,tissue-fibroblast-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,tissue-fibroblast-q1,GPT-5.5,Galaxy,2,True,True
+CompBioBench,tissue-fibroblast-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,Galaxy,2,True,False
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Luna,custom code,2,True,False
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,tissue-fibroblast-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,variant-coordinate-lookup-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,variant-status-q1,DeepSeek V4 Pro,Galaxy,1,True,False
+CompBioBench,variant-status-q1,DeepSeek V4 Pro,custom code,2,True,False
+CompBioBench,variant-status-q1,GPT-5.5,Galaxy,1,True,False
+CompBioBench,variant-status-q1,GPT-5.5,custom code,2,True,False
+CompBioBench,variant-status-q1,GPT-5.6 Luna,Galaxy,1,True,False
+CompBioBench,variant-status-q1,GPT-5.6 Luna,custom code,1,True,False
+CompBioBench,variant-status-q1,GPT-5.6 Sol,Galaxy,2,True,True
+CompBioBench,variant-status-q1,GPT-5.6 Sol,custom code,1,True,False
+CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,vcf-infer-ancestry-q1,GPT-5.6 Sol,custom code,1,True,True
+CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,Galaxy,1,True,True
+CompBioBench,vcf-infer-build-q1,DeepSeek V4 Pro,custom code,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.5,Galaxy,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.5,custom code,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Luna,Galaxy,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Luna,custom code,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Sol,Galaxy,1,True,True
+CompBioBench,vcf-infer-build-q1,GPT-5.6 Sol,custom code,1,True,True

@@ -1,0 +1,10 @@
+{
+  "history_id": "bbd44e69cb8906b526dd1079d9da7f53",
+  "dataset_id": "f9cad7b01a472135e36fdd5973541ade",
+  "name": "DESeq2 result file on dataset 12-15",
+  "hid": 16,
+  "data_state": "ok",
+  "creating_job": "bbd44e69cb8906b5c02fec6133bc0439",
+  "job_state": "ok",
+  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.8+galaxy4"
+}

@@ -1,6 +1,7 @@
 # Build output and caches
 manuscript/_output/
 .quarto/
+*.quarto_ipynb
 _freeze/
 __pycache__/
 .ipynb_checkpoints/
@@ -14,3 +15,9 @@ traces/
 .env
 .env.*
 *.token
+
+# Sources the authors hold but may not redistribute; their checksums are in
+# figures/benchmark_results_summary/sources_manifest.csv
+figures/benchmark_results_summary/sources/Rerun_Impact_20261028.pdf
+# Written by analysis/fetch_verified50_key.py from the gated Verified-50 deposit
+figures/benchmark_results_summary/sources/verified50_*

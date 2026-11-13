@@ -1,4 +1,22 @@
-# Outline: Nature Methods Brief Communication
+# Nature Methods Brief Communication
+
+## Current outline for the October 28 results
+
+The paper asks how to improve Galaxy for an external agent that must choose a tool, supply the right inputs, wait for a job and verify its result.
+The rendered draft is in [brief-communication.qmd](brief-communication.qmd).
+Its evidence, figures and revision record are in the [benchmark results summary](../figures/benchmark_results_summary/README.md).
+
+1. Introduce Galaxy histories as records of scientific work and as an interface through which an agent checks progress and outputs.
+2. Define Galaxy and custom code, the four paired Codex configurations and the three benchmark-specific endpoints.
+3. Show the paired design, pooled and model-specific scores, then the pooled difference with its interval where available (Fig. 1).
+4. Trace both execution policies from task to readout. Follow a Galaxy RNA-seq output back to its versioned tool and inputs, quantify installed and user-defined tool use, and compare the significant genes with the curated output (Supplementary Fig. 1).
+5. Connect the BixBench failure labels with single-run, majority-of-three and correct-once rates across all three benchmarks (Fig. 2a,b). Compare retrospective selection with actual votes and independently validate one promoter answer (Supplementary Fig. 3). The selected reruns, historical request audit and individual workflow scores appear in Supplementary Figs. 2, 4 and 6.
+6. Explain the token cost as more agent turns times more context per turn (Supplementary Fig. 7). Show token ratios across successive interface versions (Fig. 2c and Supplementary Fig. 6) and report job-status requests from the Figure 2 source data. Distinguish the BixBench optimization batch from October main-run accounting. Close with a prospective test using the same CLI, scoring rules and tasks.
+
+The original editorial plan below records the development of the draft. Its numerical examples predate the October integrity reruns and reference updates; use the current evidence package for publication.
+
+<details>
+<summary>Earlier editorial plan and open questions</summary>
 
 Working outline for a Brief Communication version of the paper.
 This file is not rendered into the manuscript.
@@ -254,3 +272,5 @@ Slots to fill with checked entries, never with unverified citations:
 - Whether the token-reduction runs appear in the main text, in the supplement, or not at all.
 - Which models are reported: the four paired configurations only, or also DeepSeek V4 Pro under Claude Code and GPT-6 Astra.
 - Whether IWC stays in the main text or moves to the supplement to save words.
+
+</details>

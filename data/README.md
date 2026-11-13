@@ -21,6 +21,8 @@ Small derived tables only. Raw traces stay on Hugging Face and are fetched by `a
 
 Each derived table needs a note on which script produced it.
 
+`results_manifest.csv` is written by `analysis/build_results_manifest.py` from the frozen copy in `data/site/`. It covers the 3,840 primary runs: four models, two conditions and three replicates of 50 BixBench-Verified-50, 100 CompBioBench and 10 IWC tasks. Fields the exports do not publish are blank, with the reason in `notes`: `trace_dataset_revision` for every run, run-specific trace paths for CompBioBench, and run dates and final answers for IWC. The benchmark and its endpoint lead each `notes` value. CompBioBench `correct` marks a match to the reconstructed item reference, a diagnostic; its official endpoint is the per-replicate submission score, also in `notes`. IWC `correct` is blank because its endpoint is the continuous agreement `acc`.
+
 ## Website data copy (`data/site/`)
 
 `data/site/` is a verbatim copy of the machine-readable results the benchmark results website publishes (https://goeckslab.github.io/galaxy-agent-benchmark/data/index.json), written by `analysis/fetch_site_data.py`.

@@ -1,0 +1,183 @@
+AI agents are increasingly used to analyze biological data, typically by writing and running their own code.
+Galaxy offers agents a different route: it records the tools, parameters and datasets that connect a biological question to its answer [@galaxy2026].
+An agent can use that record to identify what ran and to inspect an unexpected result.
+An interface that repeatedly returns the entire record can also make a simple analysis expensive.
+We used agents as virtual users of Galaxy to identify which operations needed clearer feedback and to measure the cost of successive interface changes.
+
+We gave agents the same tasks under two execution policies (Fig. 1a and Supplementary Fig. 1a).
+In Galaxy, the agent could search installed tools, inspect their schemas, submit and monitor jobs, and package custom operations as user-defined tools (UDTs).
+With custom code, the agent could install software and run its own analysis.
+Four model configurations in the Codex agent harness [@codex] attempted each task three times per policy.
+The 3,840 runs covered 50 BixBench-Verified-50 questions [@bixbench2025; @verified50], 100 CompBioBench questions [@compbio] and ten tasks derived from Intergalactic Workflow Commission (IWC) workflows [@iwc].
+The results analyzed here, released on 28 October 2026, include 77 selected replacement runs (Supplementary Fig. 2).
+
+On each benchmark's primary endpoint, agents were at least as accurate through Galaxy as with custom code (Fig. 1b–d).
+Accepted answers were 89.50% versus 88.33% on BixBench (537 versus 530 of 600; paired difference, 1.17 percentage points; 95% bootstrap interval, −1.5 to 4.2).
+Excluding seven questions with a historical primary specification or scorer flag left 496 of 516 answers accepted under each policy.
+Grading bix-45-q1, whose answer key was revised in October, by its earlier status gave 525 versus 526 (Supplementary Fig. 3, source data).
+Official points earned were 87.00% versus 86.75% on CompBioBench, whereas reconstructed per-question matches favored custom code (1,039 versus 1,059 of 1,200), so neither direction is established.
+Mean agreement with workflow outputs was 98.99% versus 95.34% on IWC (difference, 3.65 percentage points; interval, 0.8 to 7.3), mostly from three workflows (Supplementary Fig. 4).
+These comparisons describe the configurations evaluated, and a claim of equivalence would require a prespecified margin.
+
+![Experimental design and model performance across three benchmarks.
+**a**, Each model attempted every task three times per policy.
+**b**, Paired bars show the percentage of BixBench answers accepted (600 runs per policy), the percentage of official CompBioBench points earned (12 submissions of 100 answers per policy) and mean IWC workflow-output agreement (120 runs per policy), expressed as a percentage.
+**c**, Cells give each model’s score in Galaxy (G) and custom code (C).
+Darker cells indicate higher percentages.
+**d**, Diamonds show pooled Galaxy minus custom-code differences in percentage points.
+Whiskers span paired 95% percentile intervals from 200,000 resamples of 33 BixBench data capsules or ten IWC workflows.
+The open diamond marks the official CompBioBench difference, for which item-level grades were unavailable.](../figures/benchmark_results_summary/fig1_performance/output/fig1_performance.png){#fig-paired width=100% fig-alt="The paired design yielded 3,840 runs. Galaxy and custom code scored 89.50% and 88.33% on BixBench, 87.00% and 86.75% of official CompBioBench points, and 98.99% and 95.34% mean workflow-output agreement on IWC. The matrix gives percentages for all four models. Whiskers show the available paired 95% intervals."}
+
+Galaxy's execution records show what an agent did to obtain its answer.
+On CompBioBench, 394 Galaxy runs used only UDTs, 450 used both UDTs and installed tools, 352 used installed tools alone and four had no analysis job recorded (Supplementary Fig. 1b,c).
+A UDT can fill a tool gap, but its use alone cannot establish which installed tools would have sufficed.
+In an earlier BixBench campaign without UDTs, installed Galaxy tools alone solved 42 of 50 tasks in single runs (Supplementary Fig. 1, source data).
+In one yeast RNA-seq task, the agent supplied four prefiltered count tables to a versioned DESeq2 [@deseq2] wrapper.
+Its result and the raw curated workflow result each identified 13 genes at adjusted *P* < 0.05, with 12 shared (Supplementary Fig. 1d,e).
+The stored tables expose a difference that the two counts alone conceal.
+
+Most wrong answers traced to the task or its scoring, and few to Galaxy or to what the models knew.
+We grouped the primary audit label of each incorrect BixBench run into four causes (Fig. 2a).
+Task or scoring ambiguity accounted for 36 of 63 incorrect Galaxy runs and 48 of 70 incorrect custom-code runs.
+Missing validation by the agent accounted for 14 and 13 runs, respectively.
+Six Galaxy failures were attributed to the platform or the agent harness.
+Model knowledge accounted for one Galaxy run and four custom-code runs, and in all five cases the same model passed the same task under the same policy in another replicate.
+Four audits left the cause unresolved and seven runs await review.
+A correct answer was often available among repeated attempts.
+At least one of three answers passed in 93% (Galaxy) and 92% (custom code) of BixBench task–model groups, versus 89.5% and 88.3% for a single run (Fig. 2b).
+Recognizing that answer requires validation: a vote for a repeated answer string returned an accepted answer in only 165 of 200 Galaxy groups and 160 of 200 custom-code groups, and abstained in 22 and 24, respectively (Supplementary Fig. 3b).
+Failed requests point to specific interface changes.
+A separate historical audit of Galaxy requests recorded 1,121 failures to obtain a tool schema that needed the history context and 1,339 job errors returned without a diagnostic (Supplementary Fig. 5).
+These observations motivate carrying the active history into tool lookup and returning a job identifier together with an actionable error.
+
+Galaxy's token cost depended on the benchmark and fell as the interface improved.
+In the main runs, Galaxy used 4.07 times the tokens of custom code on BixBench, 2.48 times on CompBioBench and 0.96 times on IWC (Supplementary Fig. 6).
+Trace accounting of an earlier GPT-5.5 BixBench batch located the excess: Galaxy runs took 2.66 times as many agent turns, each carrying 2.20 times as much cached context, and issued 1,851 platform commands versus 154 (Supplementary Fig. 7).
+Prompt and skill revisions, followed by execution through Galaxy's Model Context Protocol (MCP) [@mcp] server, lowered the GPT-5.5 ratio from an estimated 20 to 2.81 (Fig. 2c).
+In a later GPT-5.6 Sol BixBench batch, the interface capped repeated output, supplied parameter templates and checked UDT definitions before submission, and agents then waited longer before rechecking a running job.
+The GPT-5.6 Sol ratio fell from 3.45 with MCP execution to 2.42 with compact replies and 1.53 with longer waits (Fig. 2c).
+Mean tokens per 50-task replicate were 122.4 million, 85.9 million and 54.3 million at these stages, respectively, versus 35.5 million for custom code.
+From compact replies to longer waits, mean wait calls per replicate fell from 481 to 78 and model requests from 1,799 to 1,332 (Fig. 2 source data).
+The final batch passed 137 of 150 runs under its published scoring rules.
+The model, CLI version and replicate coverage also changed between stages, so these comparisons are descriptive and the contribution of each change remains to be measured.
+
+![Answer selection, errors and the cost of Galaxy interactions.
+**a**, Primary audit labels for incorrect BixBench runs.
+Task or scoring ambiguity covers under-specified tasks, reference answers and scoring rules.
+Missing validation denotes an analysis or answer that the agent did not check.
+Platform or harness covers tool, job and submission problems, and model knowledge covers wrong biological or statistical concepts.
+Percentages use all incorrect runs in each policy, including four unresolved audits and seven runs awaiting review.
+**b**, Circles show single-run pass rates.
+Open triangles and squares show the percentage of task–model groups with at least two or at least one pass in three attempts, respectively.
+BixBench uses reviewed acceptance, CompBioBench uses reconstructed item matches and IWC requires ≥99% workflow-output agreement (200, 400 and 40 groups per policy, respectively).
+Both group rates require the benchmark grades, so they bound what answer selection could achieve.
+**c**, Galaxy-to-custom-code token ratios on BixBench across five development stages, on a logarithmic scale.
+The first two GPT-5.5 points are author estimates.
+The dotted segment joins the single-replicate estimate to the three-replicate measurement at the same stage.
+The shaded MCP stage uses the 12 October snapshot for all four models.
+The model and CLI version also changed between campaigns.](../figures/benchmark_results_summary/fig2_interface/output/fig2_interface.png){#fig-interface width=100% fig-alt="The audit attributes 36 Galaxy and 48 custom-code failures to task or scoring ambiguity, 14 and 13 to missing validation, 6 and none to the platform or harness, and one and four to model knowledge. Eleven failures have no assigned category. Six rows compare single-run, majority-of-three and correct-once rates. For Galaxy and custom code, respectively, at least one attempt met the criterion in 93% and 92% of BixBench groups, 92.5% and 96% of CompBioBench groups, and 85% of IWC groups under both policies. Galaxy-to-custom-code token ratios range from an estimated 20 times at baseline with GPT-5.5 to 1.53 times with longer waits for GPT-5.6 Sol."}
+
+Agents are useful virtual users of scientific software.
+Their job records show where an interface fails, and repeating the affected tasks after a change measures its effect on both interaction cost and scientific output.
+The next step is a prospective test on the same tasks with one CLI version and one set of scoring rules.
+It should establish whether agents recover from a failed job using the returned diagnostic and whether an output validator catches strand, version and identifier errors before an agent reports its answer.
+
+# Online Methods
+
+## Models and Galaxy interface
+
+All runs used the Codex command-line agent with the models gpt-5.5, gpt-5.6-sol, gpt-5.6-luna or deepseek-v4-pro.
+The results exports record Codex 0.146.0 for the GPT-5.6 Sol, GPT-5.6 Luna and DeepSeek V4 Pro BixBench runs, and high reasoning effort for every configuration except GPT-5.6 Luna on BixBench, which is recorded as maximum.
+The runs took place between July and October 2026.
+Within a benchmark, both policies received the same questions and input data, and reference answers were withheld from the agent.
+Galaxy runs executed their jobs on usegalaxy.org, and the source data link each run to its Galaxy history.
+In the BixBench main runs, agents reached Galaxy through an MCP server in which one call submits a job, waits for it, checks the resolved inputs and parameters and returns a compact result.
+Tool search queried the live server.
+On BixBench, both policies also received skill guidance for the task's domain where one was defined.
+<!-- TODO (authors): state the Codex version of the GPT-5.5 runs, how DeepSeek V4 Pro was served through Codex, the Galaxy and MCP server versions, the interface used for CompBioBench and IWC, run time limits, and where the prompts, skills and server code are available (the benchmark repository is private). -->
+
+## Run selection and endpoints
+
+We used the website snapshot dated 28 October 2026 and the accompanying report *Benchmark Reruns and Accuracy Changes*.
+We retained GPT-5.5, GPT-5.6 Sol, GPT-5.6 Luna and DeepSeek V4 Pro in the Codex harness where both conditions had three replicates of every task.
+The superseded Claude Code configuration, unpaired Astra submission, historical campaigns and IWC multi-step pilot were outside this design.
+Besides the 77 replacements in the report, the exports identify 78 BixBench Galaxy runs from recovery or repeat batches (72 GPT-5.6 Luna, 2 GPT-5.6 Sol and 4 DeepSeek V4 Pro) and 52 CompBioBench runs adopted as reruns before the report.
+The frozen sources do not record why these runs were repeated; the source data list every run's batch.
+<!-- TODO (authors): state why the recovery batches and earlier CompBioBench reruns replaced the original runs, and whether replacement depended on the original outcome. -->
+<!-- TODO (authors): confirm the GPT-5.6 Luna reasoning setting; BixBench records "max" and CompBioBench "high". -->
+
+Galaxy denotes assignment to the Galaxy policy, with execution evidence provided by the run-level history and route fields.
+The project data index, source checksums and page inventory identify each benchmark edition [@results].
+
+We used reviewed BixBench pass status and averaged the official CompBioBench score over complete 100-answer submissions.
+CompBioBench item matches use an evidence-based reference and serve only in agreement diagnostics.
+IWC measures continuous agreement with a task-specific evaluator on a 0–1 scale, which we multiply by 100 to report percentage agreement.
+The benchmark records workflow-step scores separately.
+Supplementary Fig. 4 resolves all IWC scores by task and links submaximal scores to published explanations.
+A small numerical difference can reflect rounding, a valid alternative method, or a substantive output difference.
+
+## Precision and repeatability
+
+We computed contrasts on the same tasks in both conditions, weighting each task equally and averaging the four prespecified models in pooled estimates.
+We resampled complete BixBench data capsules (33 clusters) or complete IWC workflows (ten clusters) with replacement, retaining all associated questions, replicates and model assignments in 200,000 draws.
+We report the 2.5th and 97.5th percentiles (seed 20261028), rounded to one decimal place so that Monte Carlo error from ten clusters does not affect the reported bounds.
+BixBench sensitivity analyses regraded all answers with their pre-review status, regraded only bix-45-q1 with its pre-October status, excluded bix-45-q1, or excluded seven questions with a historical specification or scorer flag.
+The ten-workflow interval describes this small task set.
+The official CompBioBench scores lack the per-item grades needed for the same bootstrap.
+Repeatability diagnostics counted reviewed passes, reference matches or IWC agreement of at least 99%, as appropriate.
+Two-of-three and any-of-three summaries use criterion outcomes and therefore describe potential selection performance.
+The exact answer vote selects a nonempty string returned in at least two attempts after stripping outer whitespace and folding case, then grades the selection against the recorded criterion (Supplementary Fig. 3b).
+
+## Auditing errors and recording provenance
+
+We joined replacements by benchmark, question, model, condition and replicate.
+We compared every replacement answer or peptide–protein F1 and every reported post-rerun aggregate to the corresponding public export.
+For installed PhyKIT [@phykit] versions yielding distinct accepted results, we reapplied the October relative tolerance independently to the submitted numerical values.
+For a CompBioBench promoter question, we used the GENCODE V49 transcript model [@gencode] from the UCSC Genome Browser [@ucsc] and independently counted bases in the strand-aware GRCh38 window (Supplementary Fig. 3c).
+For the yeast example, we compared gene IDs and adjusted *P* values from the agent’s Galaxy dataset with the raw differential-expression table in the curated history.
+The benchmark evaluator uses a prefiltered universe.
+These checks cover specific records and do not independently establish every biological answer.
+
+The historical BixBench cause ledger distinguishes trace-audited labels from labels inferred at the task level.
+We retained a label only for a currently failing run absent from the replacement list.
+For Fig. 2a, we grouped primary labels into four causes.
+Task or scoring ambiguity covers under-specified tasks or reference answers and scoring rules.
+Missing validation covers an analysis or answer that the agent did not check.
+Platform or harness covers tool, job and submission problems, and model knowledge covers an incorrect biological or statistical concept.
+We counted each labeled run once and computed percentages over all incorrect runs in its policy, including unresolved and unreviewed cases.
+We checked the other two replicates for the same task, model and policy separately from cause assignment.
+The historical counts of failed requests have requests as their unit and include recoverable events.
+No rate of scientific failure was inferred from those counts.
+
+## Token accounting
+
+Total tokens equal input plus output, counting cached tokens once within input.
+We summed public replicate totals, retained the number of runs with recorded usage and divided condition totals within a benchmark.
+We omitted one CompBioBench Galaxy run with missing usage from the token totals.
+The optimized BixBench runs form a separate dated batch and reuse the custom-code baseline.
+That batch used Codex 0.156.0, whereas the GPT-5.6 Sol main runs used 0.146.0.
+For the July 6 GPT-5.5 batch we used the provider usage totals and event-stream counts published with it.
+Agent turns are completed agent messages, an observable proxy for model calls, and command purposes follow the published rule set.
+The no-UDT BixBench campaign is reported as a published aggregate; its model is not stated on the source page.
+
+## Data availability
+
+Run-level scores, answers, Galaxy history links and token usage are published on the benchmark results website; we analyzed its 28 October 2026 deployment, copied with checksums to `data/site` in the manuscript repository [@results].
+Execution traces are in the Hugging Face dataset goeckslab/galaxy-agent-benchmark-run-traces.
+`data/results_manifest.csv` links each of the 3,840 primary runs to its score, answer, Galaxy history and, where published, trace path.
+Source data for every figure, the rerun report and a catalogue of 239 result pages and files with content hashes are provided under `figures/benchmark_results_summary`.
+<!-- TODO (authors): state the access conditions of the trace dataset, which is gated, and the redistribution terms of the rerun report. -->
+
+## Code availability
+
+Analysis, figure and verification code are available at https://github.com/goeckslab/agent-galaxy-benchmark-manuscript under the MIT license.
+A single offline command sequence rebuilds every table and figure from the pinned sources and checks the reported numbers.
+<!-- TODO (authors): add the Zenodo DOI of the release archived at submission. -->
+
+## AI assistance
+
+OpenAI Codex (GPT-6) assisted with data extraction, analysis programming, figure preparation and drafting this version.
+Claude Code (Claude Opus 5.5) independently recomputed the reported numbers, extended the page catalogue, analyses and figures, and revised the text.
+The checks above identify the computations performed and the remaining adjudication work.
+
+<!-- TODO (authors): add Author contributions from CONTRIBUTIONS.md and Acknowledgements, including funding. -->

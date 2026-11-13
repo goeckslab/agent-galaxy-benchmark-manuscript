@@ -1,0 +1,23 @@
+benchmark,model,assigned_Galaxy,assigned_custom_code,observed_Galaxy,observed_custom_code,total_tokens_Galaxy,total_tokens_custom_code,cached_input_tokens_Galaxy,cached_input_tokens_custom_code,output_tokens_Galaxy,output_tokens_custom_code,input_tokens_Galaxy,input_tokens_custom_code,ratio,missing_usage_Galaxy,galaxy_token_change_pct,panel,order,slug,stage,change,runs_per_task,galaxy_tokens_m,custom_code_tokens_m,token_unit,ratio_reported,galaxy_correct,galaxy_runs,source,evidence
+BixBench,DeepSeek V4 Pro,150,150,150,150,1072869278,325015118,1054263040,316314368,4648431,2571566,1068220847,322443552,3.30098268844,0,230.098268844,main_runs,,,,,,,,,,,,,
+BixBench,GPT-5.5,150,150,150,150,199944304,71212695,187006080,64973312,1612570,852066,198331734,70360629,2.80770590131,0,180.770590131,main_runs,,,,,,,,,,,,,
+BixBench,GPT-5.6 Luna,150,150,150,150,1142433873,181544990,1111977472,170887936,4227175,1732735,1138206698,179812255,6.29284164217,0,529.284164217,main_runs,,,,,,,,,,,,,
+BixBench,GPT-5.6 Sol,150,150,150,150,367243362,106541536,351323648,99542528,1618403,776545,365624959,105764991,3.44695013595,0,244.695013595,main_runs,,,,,,,,,,,,,
+BixBench,Pooled,600,600,600,600,2782490817,684314339,2704570240,651718144,12106579,5932912,2770384238,678381427,4.06610041383,0,306.610041383,main_runs,,,,,,,,,,,,,
+CompBioBench,DeepSeek V4 Pro,300,300,300,300,4184641454,2157149485,4114277120,2121850880,14688833,10361151,4169952621,2146788334,1.93989405143,0,93.9894051431,main_runs,,,,,,,,,,,,,
+CompBioBench,GPT-5.5,300,300,299,300,769084344,422576939,717592704,393237248,4912059,3135702,764172285,419441237,1.81998654688,1,81.9986546876,main_runs,,,,,,,,,,,,,
+CompBioBench,GPT-5.6 Luna,300,300,300,300,5237727403,1907571140,4947281664,1850625152,16203832,7214982,5221523571,1900356158,2.74575731052,0,174.575731052,main_runs,,,,,,,,,,,,,
+CompBioBench,GPT-5.6 Sol,300,300,300,300,2731896286,729211889,2663604992,700156288,5312796,2848347,2726583490,726363542,3.74636827404,0,274.636827404,main_runs,,,,,,,,,,,,,
+CompBioBench,Pooled,1200,1200,1199,1200,12923349487,5216509453,12442756480,5065869568,41117520,23560182,12882231967,5192949271,2.47739405122,1,147.739405122,main_runs,,,,,,,,,,,,,
+IWC,DeepSeek V4 Pro,30,30,30,30,226011174,234944787,220366464,231865344,1165130,1019263,224846044,233925524,0.961975691761,0,-3.80243082389,main_runs,,,,,,,,,,,,,
+IWC,GPT-5.5,30,30,30,30,83084916,215611650,78152832,211080576,506455,720882,82578461,214890768,0.38534520746,0,-61.465479254,main_runs,,,,,,,,,,,,,
+IWC,GPT-5.6 Luna,30,30,30,30,330608099,310271864,318834176,301789440,1245969,1284379,329362130,308987485,1.06554327788,0,6.55432778784,main_runs,,,,,,,,,,,,,
+IWC,GPT-5.6 Sol,30,30,30,30,196255650,111371868,190474752,107448832,606097,579007,195649553,110792861,1.76216537914,0,76.2165379142,main_runs,,,,,,,,,,,,,
+IWC,Pooled,120,120,120,120,835959839,872200169,807828224,852184192,3523651,3603531,832436188,868596638,0.95844952651,0,-4.155047349,main_runs,,,,,,,,,,,,,
+,GPT-5.5,,,,,,,,,,,,,20,,,historical_rounds,1,baseline,Baseline,no changes,1,,,,20,,,"Junhao Qiu, Slack, October 2026 (about 20x; one run per task per condition)",author estimate
+,GPT-5.5,,,,,,,,,,,,,8,,,historical_rounds,2,round1,Round 1,"prompts, skills",1,,,,8,,,"Junhao Qiu, Slack, October 2026 (about 8x; one run per task per condition)",author estimate
+,GPT-5.5,,,,,,,,,,,,,5.48098159509,,,historical_rounds,3,round1-rerun,Round 1,3 replicates,3,446.7,81.5,total over 150 runs,,,,"goeckslab/galaxy-agent-benchmark site/bixbench/july6/token-drivers/index.html (exact provider usage, Total)",reported token totals
+,GPT-5.5,,,,,,,,,,,,,2.80775172026,,,historical_rounds,4,round2,Round 2,MCP server,3,199.94,71.21,total over 150 runs,,137,150,"goeckslab/galaxy-agent-benchmark site/bixbench/tokens/index.html (Codex GPT-5.5 rows, Total)",reported token totals
+,GPT-5.6 Sol,,,,,,,,,,,,,3.4471979724,,,historical_rounds,5,round2-sol,Round 2,same interface,3,122.41,35.51,mean per 50-task run,,136,150,goeckslab/galaxy-agent-benchmark site/bixbench/token-optimization-oct2026/index.html (previous website Galaxy and Open-ended code); accuracy from site/bixbench/tokens/index.html,reported token totals
+,GPT-5.6 Sol,,,,,,,,,,,,,2.41988172346,,,historical_rounds,6,round3a,Round 3a,interface,1,85.93,35.51,mean per 50-task run,,,,"Junhao Qiu, Slack, October 2026 (one complete Galaxy replicate; custom-code baseline as row 5)",reported token totals
+,GPT-5.6 Sol,,,,,,,,,,,,,1.5305547733,,,historical_rounds,7,round3b,Round 3b,+ longer waits,3,54.35,35.51,mean per 50-task run,,137,150,goeckslab/galaxy-agent-benchmark site/bixbench/token-optimization-oct2026/index.html (final optimized Galaxy; 137/150 correct),reported token totals

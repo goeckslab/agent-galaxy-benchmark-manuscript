@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BixBench Token Drivers</title>
+  <link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+  <nav class="archive-return" aria-label="Archive navigation"><a class="button secondary" href="../../../index.html#bixbench">Return to current results</a><span>Jul 6 archive</span></nav>
+    <header class="top compact">
+      <a class="button secondary back" href="../tokens/index.html">Back to tokens usage</a>
+      <div>
+        <p class="eyebrow">BixBench July 6 Codex experiment</p>
+        <h1>Where the Tokens Go</h1>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Two kinds of measurement</h2>
+            <p>Provider usage records give exact billing classes. The event stream shows what the agent did, but it does not label how many input tokens belong to each command, skill, or tool result. This page keeps those measurements separate.</p>
+          </div>
+        </div>
+        <div class="contrast-grid">
+          <article class="contrast-panel">
+            <h3>Exact</h3>
+            <p>Total, cached input, uncached input, output, and reasoning output come directly from 150 usage records per condition.</p>
+          </article>
+          <article class="contrast-panel">
+            <h3>Observed, not billed</h3>
+            <p>Commands, messages, searches, and visible UTF-8 bytes come from the JSONL traces. Bytes are useful for comparing workload, but they are not token counts.</p>
+          </article>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><div><h2>Exact provider usage</h2><p>Galaxy-API code with skills versus Open-ended code with skills, 150 replicates each.</p></div></div>
+        <div class="table-wrap"><table class="driver-table">
+          <thead><tr><th>Class</th><th>Meaning</th><th>Galaxy</th><th>Open-ended code</th><th>Galaxy / Open-ended code</th></tr></thead>
+          <tbody>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td>input_tokens + output_tokens</td>
+          <td><strong>446.7M</strong><small>100.000% of Galaxy total</small></td>
+          <td><strong>81.5M</strong><small>100.000% of Open-ended code total</small></td>
+          <td>5.48x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Input</strong></td>
+          <td>All tokens supplied to the model</td>
+          <td><strong>443.4M</strong><small>99.251% of Galaxy total</small></td>
+          <td><strong>80.4M</strong><small>98.638% of Open-ended code total</small></td>
+          <td>5.51x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Cached input</strong></td>
+          <td>Previously seen input prefix reused on later model calls</td>
+          <td><strong>423.4M</strong><small>94.765% of Galaxy total</small></td>
+          <td><strong>72.4M</strong><small>88.760% of Open-ended code total</small></td>
+          <td>5.85x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Uncached input</strong></td>
+          <td>New input processed on a model call</td>
+          <td><strong>20.0M</strong><small>4.486% of Galaxy total</small></td>
+          <td><strong>8.1M</strong><small>9.878% of Open-ended code total</small></td>
+          <td>2.49x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Output</strong></td>
+          <td>Visible response plus reasoning output</td>
+          <td><strong>3.3M</strong><small>0.749% of Galaxy total</small></td>
+          <td><strong>1.1M</strong><small>1.362% of Open-ended code total</small></td>
+          <td>3.01x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Reasoning output</strong> <small>included in Output</small></td>
+          <td>A subset of output, not an additional charge</td>
+          <td><strong>813.1K</strong><small>0.182% of Galaxy total</small></td>
+          <td><strong>329.0K</strong><small>0.404% of Open-ended code total</small></td>
+          <td>2.47x</td>
+        </tr>
+        </tbody>
+        </table></div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><div><h2>Agent loop comparison</h2><p>Galaxy uses more model-call loops, and each loop carries a larger cached prefix. Initial prompts and cached tokens are model input. Narration and shell commands begin as model output, then become input on later calls. Command and search results are tool output that enters the next model input.</p></div></div>
+        <div class="loop-summary">
+          <article><span>Galaxy</span><strong>37.9</strong><small>loop steps per replicate</small></article>
+          <article><span>Open-ended code</span><strong>14.2</strong><small>loop steps per replicate</small></article>
+          <article><span>Difference</span><strong>+23.6</strong><small>Galaxy is 2.66x Open-ended code</small></article>
+        </div>
+        <p class="method-note">A loop step is one completed <code>agent_message</code> in the event stream. It is an observable proxy for model/tool iteration inside one Codex run, not the top-level <code>turn.completed</code> count.</p>
+        <div class="table-wrap"><table class="driver-table">
+          <thead><tr><th>Observed metric</th><th>Context role</th><th>Meaning</th><th>Galaxy</th><th>Open-ended code</th><th>Galaxy / Open-ended code</th></tr></thead>
+          <tbody>
+        <tr>
+          <td><strong>Agent loop steps</strong></td>
+          <td><span class="context-role output-replay">Model output → later input</span></td>
+          <td>Completed agent messages are used as the observable loop-step proxy; each can lead to another model call with prior context</td>
+          <td>5,678 total · 37.9 per replicate</td>
+          <td>2,131 total · 14.2 per replicate</td>
+          <td>2.66x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Shell commands</strong></td>
+          <td><span class="context-role output-replay">Model output → later input</span></td>
+          <td>Completed command executions recorded in the event stream</td>
+          <td>5,817 total · 38.8 per replicate</td>
+          <td>3,057 total · 20.4 per replicate</td>
+          <td>1.90x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Cached input per agent message</strong></td>
+          <td><span class="context-role input">Model input</span></td>
+          <td>Diagnostic ratio, not a provider billing field</td>
+          <td>74.6K</td>
+          <td>34.0K</td>
+          <td>2.20x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Initial prompt text</strong></td>
+          <td><span class="context-role input">Model input</span></td>
+          <td>Raw UTF-8 size before replay</td>
+          <td>1.44 MB</td>
+          <td>408.3 KB</td>
+          <td>3.53x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Agent narration</strong></td>
+          <td><span class="context-role output-replay">Model output → later input</span></td>
+          <td>Raw UTF-8 size of agent messages</td>
+          <td>1.15 MB</td>
+          <td>428.6 KB</td>
+          <td>2.68x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Shell command text</strong></td>
+          <td><span class="context-role output-replay">Model output → later input</span></td>
+          <td>Raw UTF-8 size of commands sent to the shell</td>
+          <td>5.80 MB</td>
+          <td>888.2 KB</td>
+          <td>6.53x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Shell command output</strong></td>
+          <td><span class="context-role tool-input">Tool output → model input</span></td>
+          <td>Raw UTF-8 size returned by commands</td>
+          <td>20.43 MB</td>
+          <td>12.91 MB</td>
+          <td>1.58x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Web searches</strong></td>
+          <td><span class="context-role tool-input">Tool output → model input</span></td>
+          <td>Search events; response bodies are not retained in these JSONL traces</td>
+          <td>281 total · 1.9 per replicate</td>
+          <td>15 total · 0.1 per replicate</td>
+          <td>18.73x</td>
+        </tr>
+        </tbody>
+        </table></div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><div><h2>Work categories</h2><p>Each command is assigned one primary purpose. Visible bytes combine command text and captured command output; they do not include repeated model-context processing.</p></div></div>
+        <div class="table-wrap"><table class="driver-table category-table">
+          <thead><tr><th>Primary purpose</th><th>Galaxy</th><th>Open-ended code</th><th>Visible-byte ratio</th></tr></thead>
+          <tbody>
+        <tr>
+          <td><strong>Skill reads</strong><small>Commands that read installed SKILL.md guidance.</small></td>
+          <td><strong>788 commands</strong><small>6.68 MB visible command + output text</small></td>
+          <td><strong>164 commands</strong><small>1.56 MB visible command + output text</small></td>
+          <td>4.27x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Platform/API operations</strong><small>History copy and inspection, tool discovery and schemas, client/source inspection, submission, polling, and output retrieval. Open-ended code matches are generic API/schema work, not Galaxy use.</small></td>
+          <td><strong>1,851 commands</strong><small>7.80 MB visible command + output text</small></td>
+          <td><strong>154 commands</strong><small>433.0 KB visible command + output text</small></td>
+          <td>18.02x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Payload, evidence, verification, and answer work</strong><small>Commands that construct payload or trace files, verify results, or extract the final answer.</small></td>
+          <td><strong>1,337 commands</strong><small>5.56 MB visible command + output text</small></td>
+          <td><strong>1,017 commands</strong><small>1.25 MB visible command + output text</small></td>
+          <td>4.44x</td>
+        </tr>
+
+        <tr>
+          <td><strong>Local input and task work</strong><small>Input staging, archive/table inspection, local scientific code, environment checks, and task metadata reads.</small></td>
+          <td><strong>957 commands</strong><small>3.53 MB visible command + output text</small></td>
+          <td><strong>1,558 commands</strong><small>10.31 MB visible command + output text</small></td>
+          <td>0.34x</td>
+        </tr>
+
+        <tr>
+          <td><strong>User-defined tool operations</strong><small>UDT planning, container checks, representation creation, registry calls, execution, and debugging.</small></td>
+          <td><strong>639 commands</strong><small>2.27 MB visible command + output text</small></td>
+          <td><strong>0 commands</strong><small>0 B visible command + output text</small></td>
+          <td>Galaxy only</td>
+        </tr>
+
+        <tr>
+          <td><strong>Other commands</strong><small>Commands that did not match one of the primary-purpose rules above.</small></td>
+          <td><strong>245 commands</strong><small>399.4 KB visible command + output text</small></td>
+          <td><strong>164 commands</strong><small>244.5 KB visible command + output text</small></td>
+          <td>1.63x</td>
+        </tr>
+        </tbody>
+        </table></div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><div><h2>What “unattributed residual” means</h2><p>It is a limitation of an attribution model, not a provider billing category.</p></div></div>
+        <div class="diagnosis">
+          <strong>Plain-language definition</strong>
+          <p>We tried estimating repeated context from visible bytes and later agent messages. After subtracting that estimate from exact usage, 33.962% of the Galaxy total remained unexplained. The same method overestimated Open-ended code and produced a negative remainder, proving that old tool output is sometimes truncated, compacted, or omitted. The residual is therefore not used as a cross-condition cost number.</p>
+        </div>
+        <div class="definition-grid">
+          <article><h3>Runtime instructions</h3><p>System and developer instructions can be supplied on model calls but are not present as ordinary JSONL messages.</p></article>
+          <article><h3>Tool definitions</h3><p>Shell and web tool schemas, argument descriptions, and protocol metadata can occupy context without appearing in command output.</p></article>
+          <article><h3>Message framing</h3><p>Roles, tool-call wrappers, IDs, and other request structure add tokens beyond visible text.</p></article>
+          <article><h3>Missing web bodies</h3><p>The traces record 281 Galaxy search events and 15 Open-ended code search events, but not the complete search-result bodies.</p></article>
+          <article><h3>Hidden or compacted state</h3><p>The runtime may retain, summarize, truncate, or omit prior context in ways the event stream does not expose.</p></article>
+          <article><h3>Estimation error</h3><p>UTF-8 bytes are not tokens, and multiplying text by later messages is only an approximation of context replay.</p></article>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><div><h2>Interpretation</h2><p>The reliable comparison is the exact usage and observed loop structure, not the residual estimate.</p></div></div>
+        <div class="analysis-grid token-notes">
+          <article><h3>More loops</h3><p>Galaxy recorded 2.66 times as many agent messages and 1.90 times as many shell commands.</p></article>
+          <article><h3>Larger loops</h3><p>Cached input per agent message was about 74.6K for Galaxy and 34.0K for Open-ended code, a 2.20x difference.</p></article>
+          <article><h3>Answer length is not the driver</h3><p>Output is less than 1% of total usage in both conditions. Cached input dominates.</p></article>
+          <article><h3>Optimization target</h3><p>Reduce model round trips and keep routine command results compact while preserving full failure diagnostics outside the normal success path.</p></article>
+        </div>
+      </section>
+    </main>
+    </body>
+</html>

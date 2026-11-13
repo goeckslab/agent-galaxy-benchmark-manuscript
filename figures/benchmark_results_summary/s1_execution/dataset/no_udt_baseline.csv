@@ -1,0 +1,2 @@
+campaign,condition,tasks,runs_per_task,accepted,model,source
+May 2026 · historical baseline,Galaxy without user-defined tools,50,1,42,not stated on the source page,sources/bixbench_index.html#no-udt-baseline

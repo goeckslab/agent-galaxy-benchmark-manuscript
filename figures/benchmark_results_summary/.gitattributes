@@ -1,0 +1,7 @@
+*.csv text eol=lf
+*.svg text eol=lf
+*.png binary
+*.pdf binary
+# Sources keep their published bytes so they match the SHA-256 values in sources_manifest.csv.
+# Keep this line last: a later matching line would override it.
+sources/* -text

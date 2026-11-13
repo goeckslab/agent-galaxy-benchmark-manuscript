@@ -1,0 +1,15 @@
+benchmark,selection,tasks_retained,runs_per_condition,galaxy,custom_code,difference
+BixBench,Historical primary specification/scorer flag,43,516,0.961240310078,0.961240310078,0
+BixBench,Pre-review grades (raw_status) for all questions,50,600,0.871666666667,0.868333333333,0.00333333333333
+BixBench,bix-45-q1 graded by its pre-October status (raw_status),50,600,0.875,0.876666666667,-0.00166666666667
+BixBench,Exclude bix-45-q1 (answer key revised in October),49,588,0.892857142857,0.880952380952,0.0119047619048
+IWC,Leave out wf_001_short_read_qc_trim,9,108,0.988870247206,0.948250911035,0.0406193361709
+IWC,Leave out wf_002_rnaseq_de_visualization,9,108,0.988810322204,0.948219428767,0.040590893437
+IWC,Leave out wf_003_host_contamination_removal,9,108,0.98875509795,0.94825772062,0.0404973773297
+IWC,Leave out wf_005_amplicon_dada2_pe_denoising,9,108,0.993355909259,0.970805288863,0.0225506203964
+IWC,Leave out wf_006_atacseq_chromatin_accessibility,9,108,0.98899530499,0.94929314773,0.0397021572601
+IWC,Leave out wf_007_vgp_mitogenome_assembly,9,108,0.989897995892,0.958549007216,0.0313489886761
+IWC,Leave out wf_008_amr_gene_detection,9,108,0.988752508257,0.94821817931,0.040534328947
+IWC,Leave out wf_009_clinicalmp_peptide_verification,9,108,0.993595022601,0.955950911918,0.0376441106831
+IWC,Leave out wf_010_pseudobulk_scrna_de,9,108,0.988987657696,0.958200839021,0.0307868186755
+IWC,Leave out wf_011_bioproject_metadata_sequence_retrieval,9,108,0.988752508257,0.94821817931,0.040534328947

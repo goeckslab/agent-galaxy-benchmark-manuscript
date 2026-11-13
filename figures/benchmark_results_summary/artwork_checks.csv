@@ -1,0 +1,10 @@
+figure,panels,width_mm,height_mm,min_type_pt,max_type_pt,embedded_truetype,pdf_raster_objects,svg_text_objects,png_rgb_width,png_rgb_height,png_dpi,legend_words
+fig1_performance,abcd,180.0,111.0,6.5,7.0,Arial-BoldMT | ArialMT,0,100,3188,1966,450,112
+fig2_interface,abc,180.0,132.0,6.5,7.0,Arial-BoldMT | ArialMT,0,80,3188,2338,450,194
+s1_execution,abcde,180.0,134.0,6.5,7.0,Arial-BoldMT | ArialMT,0,65,3188,2374,450,135
+s2_reruns,abcd,180.0,125.0,6.5,7.0,Arial-BoldMT | ArialMT,0,89,3188,2214,450,125
+s3_repeatability,abc,180.0,116.0,6.5,7.0,Arial-BoldMT | ArialMT,0,69,3188,2055,450,122
+s4_iwc_outputs,ab,180.0,105.0,6.5,7.0,Arial-BoldMT | ArialMT,0,85,3188,1860,450,95
+s5_request_failures,ab,180.0,135.0,6.5,7.0,Arial-BoldMT | ArialMT,0,102,3188,2391,450,88
+s6_token_usage,abcde,180.0,114.0,6.5,7.0,Arial-BoldMT | ArialMT,0,75,3188,2019,450,121
+s7_token_drivers,abcd,180.0,119.0,6.5,7.0,Arial-BoldMT | ArialMT,0,99,3188,2108,450,187

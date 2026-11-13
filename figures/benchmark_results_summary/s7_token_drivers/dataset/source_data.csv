@@ -1,0 +1,31 @@
+panel,metric,condition,value,share_pct,source,total,page_ratio,visible_bytes,skills,accepted,runs,accepted_pct
+token_classes,Total,Galaxy,446700000,100,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Total,custom code,81500000,100,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Cached input,Galaxy,423400000,94.765,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Cached input,custom code,72400000,88.76,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Uncached input,Galaxy,20000000,4.486,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Uncached input,custom code,8100000,9.878,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Output,Galaxy,3300000,0.749,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+token_classes,Output,custom code,1100000,1.362,sources/bixbench_july6_token-drivers_index.html,,,,,,,
+loops,Agent loop steps per run,Galaxy,37.9,,sources/bixbench_july6_token-drivers_index.html,5678,2.66,,,,,
+loops,Agent loop steps per run,custom code,14.2,,sources/bixbench_july6_token-drivers_index.html,2131,2.66,,,,,
+loops,Shell commands per run,Galaxy,38.8,,sources/bixbench_july6_token-drivers_index.html,5817,1.9,,,,,
+loops,Shell commands per run,custom code,20.4,,sources/bixbench_july6_token-drivers_index.html,3057,1.9,,,,,
+loops,Cached input per loop step,Galaxy,74600,,sources/bixbench_july6_token-drivers_index.html,,2.2,,,,,
+loops,Cached input per loop step,custom code,34000,,sources/bixbench_july6_token-drivers_index.html,,2.2,,,,,
+command_purpose,Skill reads,Galaxy,788,,sources/bixbench_july6_token-drivers_index.html,,,6680000,,,,
+command_purpose,Skill reads,custom code,164,,sources/bixbench_july6_token-drivers_index.html,,,1560000,,,,
+command_purpose,Platform/API operations,Galaxy,1851,,sources/bixbench_july6_token-drivers_index.html,,,7800000,,,,
+command_purpose,Platform/API operations,custom code,154,,sources/bixbench_july6_token-drivers_index.html,,,433000,,,,
+command_purpose,"Payload, evidence, verification, and answer work",Galaxy,1337,,sources/bixbench_july6_token-drivers_index.html,,,5560000,,,,
+command_purpose,"Payload, evidence, verification, and answer work",custom code,1017,,sources/bixbench_july6_token-drivers_index.html,,,1250000,,,,
+command_purpose,Local input and task work,Galaxy,957,,sources/bixbench_july6_token-drivers_index.html,,,3530000,,,,
+command_purpose,Local input and task work,custom code,1558,,sources/bixbench_july6_token-drivers_index.html,,,10310000,,,,
+command_purpose,User-defined tool operations,Galaxy,639,,sources/bixbench_july6_token-drivers_index.html,,,2270000,,,,
+command_purpose,User-defined tool operations,custom code,0,,sources/bixbench_july6_token-drivers_index.html,,,0,,,,
+command_purpose,Other commands,Galaxy,245,,sources/bixbench_july6_token-drivers_index.html,,,399400,,,,
+command_purpose,Other commands,custom code,164,,sources/bixbench_july6_token-drivers_index.html,,,244500,,,,
+skills,Total tokens,Galaxy,446700000,,sources/bixbench_july6_tokens_index.html; sources/bixbench_july6_index.html,,,,True,139,150,92.6666666667
+skills,Total tokens,Galaxy,502800000,,sources/bixbench_july6_tokens_index.html; sources/bixbench_july6_index.html,,,,False,126,150,84
+skills,Total tokens,custom code,81500000,,sources/bixbench_july6_tokens_index.html; sources/bixbench_july6_index.html,,,,True,135,150,90
+skills,Total tokens,custom code,68200000,,sources/bixbench_july6_tokens_index.html; sources/bixbench_july6_index.html,,,,False,122,150,81.3333333333

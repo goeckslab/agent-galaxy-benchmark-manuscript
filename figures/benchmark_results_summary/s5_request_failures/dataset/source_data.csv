@@ -1,0 +1,42 @@
+benchmark,failure_stage,failure_class,requests,class_share,class_pct,benchmark_failures,stage_failures
+BixBench,Job failed during execution,B1 UDT container missing dependency,12,0.00894187779434,0.894187779434,1342,369
+BixBench,Job failed during execution,B2 job error with no diagnostic,24,0.0178837555887,1.78837555887,1342,369
+BixBench,Job failed during execution,B3 tool runtime error (stderr),317,0.236214605067,23.6214605067,1342,369
+BixBench,Job failed during execution,B4 input format / compression / index,16,0.0119225037258,1.19225037258,1342,369
+BixBench,Other exception,X additional transport or tool exceptions (previously uncounted),75,0.0558867362146,5.58867362146,1342,78
+BixBench,Other exception,Z unclassified,3,0.00223546944858,0.223546944858,1342,78
+BixBench,Request rejected before a job ran,A1 tool-schema needs history context,483,0.359910581222,35.9910581222,1342,895
+BixBench,Request rejected before a job ran,A2 tool ID not found / guessed,49,0.0365126676602,3.65126676602,1342,895
+BixBench,Request rejected before a job ran,A3 nested-parameter key structure,79,0.0588673621461,5.88673621461,1342,895
+BixBench,Request rejected before a job ran,A4 parameter value / datatype validation,150,0.111773472429,11.1773472429,1342,895
+BixBench,Request rejected before a job ran,A5 ID handling (wrong/foreign/truncated IDs),98,0.0730253353204,7.30253353204,1342,895
+BixBench,Request rejected before a job ran,A6 UDT representation schema,9,0.00670640834575,0.670640834575,1342,895
+BixBench,Request rejected before a job ran,A7 upload / datatype registry,3,0.00223546944858,0.223546944858,1342,895
+BixBench,Request rejected before a job ran,A8 server / transport / rate-limit,24,0.0178837555887,1.78837555887,1342,895
+CompBioBench,Job failed during execution,B1 UDT container missing dependency,68,0.0126394052045,1.26394052045,5380,2650
+CompBioBench,Job failed during execution,B2 job error with no diagnostic,1242,0.230855018587,23.0855018587,5380,2650
+CompBioBench,Job failed during execution,B3 tool runtime error (stderr),1071,0.19907063197,19.907063197,5380,2650
+CompBioBench,Job failed during execution,B4 input format / compression / index,176,0.0327137546468,3.27137546468,5380,2650
+CompBioBench,Job failed during execution,B5 memory / resource,93,0.0172862453532,1.72862453532,5380,2650
+CompBioBench,Other exception,X additional transport or tool exceptions (previously uncounted),458,0.0851301115242,8.51301115242,5380,678
+CompBioBench,Other exception,Z unclassified,220,0.0408921933086,4.08921933086,5380,678
+CompBioBench,Request rejected before a job ran,A1 tool-schema needs history context,590,0.109665427509,10.9665427509,5380,2052
+CompBioBench,Request rejected before a job ran,A2 tool ID not found / guessed,316,0.0587360594796,5.87360594796,5380,2052
+CompBioBench,Request rejected before a job ran,A3 nested-parameter key structure,123,0.0228624535316,2.28624535316,5380,2052
+CompBioBench,Request rejected before a job ran,A4 parameter value / datatype validation,566,0.105204460967,10.5204460967,5380,2052
+CompBioBench,Request rejected before a job ran,A5 ID handling (wrong/foreign/truncated IDs),132,0.0245353159851,2.45353159851,5380,2052
+CompBioBench,Request rejected before a job ran,A6 UDT representation schema,117,0.0217472118959,2.17472118959,5380,2052
+CompBioBench,Request rejected before a job ran,A7 upload / datatype registry,91,0.0169144981413,1.69144981413,5380,2052
+CompBioBench,Request rejected before a job ran,A8 server / transport / rate-limit,117,0.0217472118959,2.17472118959,5380,2052
+IWC,Job failed during execution,B2 job error with no diagnostic,73,0.19414893617,19.414893617,376,162
+IWC,Job failed during execution,B3 tool runtime error (stderr),70,0.186170212766,18.6170212766,376,162
+IWC,Job failed during execution,B4 input format / compression / index,17,0.0452127659574,4.52127659574,376,162
+IWC,Job failed during execution,B5 memory / resource,2,0.00531914893617,0.531914893617,376,162
+IWC,Other exception,X additional transport or tool exceptions (previously uncounted),35,0.093085106383,9.3085106383,376,64
+IWC,Other exception,Z unclassified,29,0.0771276595745,7.71276595745,376,64
+IWC,Request rejected before a job ran,A1 tool-schema needs history context,48,0.127659574468,12.7659574468,376,150
+IWC,Request rejected before a job ran,A2 tool ID not found / guessed,19,0.0505319148936,5.05319148936,376,150
+IWC,Request rejected before a job ran,A3 nested-parameter key structure,14,0.0372340425532,3.72340425532,376,150
+IWC,Request rejected before a job ran,A4 parameter value / datatype validation,49,0.130319148936,13.0319148936,376,150
+IWC,Request rejected before a job ran,A5 ID handling (wrong/foreign/truncated IDs),12,0.031914893617,3.1914893617,376,150
+IWC,Request rejected before a job ran,A8 server / transport / rate-limit,8,0.0212765957447,2.12765957447,376,150

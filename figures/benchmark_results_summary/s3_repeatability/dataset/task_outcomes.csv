@@ -1,0 +1,321 @@
+benchmark,task,task_group,condition,sum,size,below_criterion
+BixBench,bix-11-q1,"['Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-11-q1,"['Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-11-q2,"['Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-11-q2,"['Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-12-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-12-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-12-q4,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-12-q4,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,11,12,1
+BixBench,bix-12-q5,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-12-q5,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-12-q6,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-12-q6,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,11,12,1
+BixBench,bix-14-q1,"Genomics,Genomic Variant Analysis",Galaxy,9,12,3
+BixBench,bix-14-q1,"Genomics,Genomic Variant Analysis",custom code,9,12,3
+BixBench,bix-16-q1,"Transcriptomics,Functional Genomics",Galaxy,9,12,3
+BixBench,bix-16-q1,"Transcriptomics,Functional Genomics",custom code,9,12,3
+BixBench,bix-16-q3,"Transcriptomics,Functional Genomics",Galaxy,12,12,0
+BixBench,bix-16-q3,"Transcriptomics,Functional Genomics",custom code,12,12,0
+BixBench,bix-16-q4,"Transcriptomics,Functional Genomics",Galaxy,12,12,0
+BixBench,bix-16-q4,"Transcriptomics,Functional Genomics",custom code,11,12,1
+BixBench,bix-17-q2,"Genomics,Genomic Variant Analysis",Galaxy,12,12,0
+BixBench,bix-17-q2,"Genomics,Genomic Variant Analysis",custom code,12,12,0
+BixBench,bix-18-q1,Imaging,Galaxy,12,12,0
+BixBench,bix-18-q1,Imaging,custom code,12,12,0
+BixBench,bix-18-q3,Imaging,Galaxy,12,12,0
+BixBench,bix-18-q3,Imaging,custom code,12,12,0
+BixBench,bix-20-q3,"Genomics,Genomic Variant Analysis",Galaxy,12,12,0
+BixBench,bix-20-q3,"Genomics,Genomic Variant Analysis",custom code,12,12,0
+BixBench,bix-22-q1,"Sequence Analysis,RNA-seq,Transcriptomics",Galaxy,12,12,0
+BixBench,bix-22-q1,"Sequence Analysis,RNA-seq,Transcriptomics",custom code,12,12,0
+BixBench,bix-22-q4,"Sequence Analysis,RNA-seq,Transcriptomics",Galaxy,12,12,0
+BixBench,bix-22-q4,"Sequence Analysis,RNA-seq,Transcriptomics",custom code,12,12,0
+BixBench,bix-24-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics,Sequence Analysis",Galaxy,11,12,1
+BixBench,bix-24-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics,Sequence Analysis",custom code,11,12,1
+BixBench,bix-26-q3,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",Galaxy,12,12,0
+BixBench,bix-26-q3,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",custom code,12,12,0
+BixBench,bix-26-q5,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",Galaxy,0,12,12
+BixBench,bix-26-q5,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",custom code,0,12,12
+BixBench,bix-27-q5,"RNA-seq,Transcriptomics,Machine Learning and Artificial Intelligence",Galaxy,11,12,1
+BixBench,bix-27-q5,"RNA-seq,Transcriptomics,Machine Learning and Artificial Intelligence",custom code,10,12,2
+BixBench,bix-28-q3,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,11,12,1
+BixBench,bix-28-q3,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-30-q3,"Transcriptomics,Differential Expression Analysis",Galaxy,10,12,2
+BixBench,bix-30-q3,"Transcriptomics,Differential Expression Analysis",custom code,4,12,8
+BixBench,bix-31-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics",Galaxy,10,12,2
+BixBench,bix-31-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics",custom code,11,12,1
+BixBench,bix-32-q2,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",Galaxy,9,12,3
+BixBench,bix-32-q2,"Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis",custom code,9,12,3
+BixBench,bix-34-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-34-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-34-q5,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-34-q5,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-35-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-35-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-35-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-35-q2,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-37-q1,"Differential Expression Analysis,RNA-seq,Proteomics",Galaxy,12,12,0
+BixBench,bix-37-q1,"Differential Expression Analysis,RNA-seq,Proteomics",custom code,12,12,0
+BixBench,bix-37-q4,"Differential Expression Analysis,RNA-seq,Proteomics",Galaxy,12,12,0
+BixBench,bix-37-q4,"Differential Expression Analysis,RNA-seq,Proteomics",custom code,12,12,0
+BixBench,bix-38-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-38-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,12,12,0
+BixBench,bix-41-q5,Imaging,Galaxy,12,12,0
+BixBench,bix-41-q5,Imaging,custom code,12,12,0
+BixBench,bix-43-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics",Galaxy,7,12,5
+BixBench,bix-43-q2,"RNA-seq,Differential Expression Analysis,Transcriptomics",custom code,5,12,7
+BixBench,bix-43-q4,"RNA-seq,Differential Expression Analysis,Transcriptomics",Galaxy,11,12,1
+BixBench,bix-43-q4,"RNA-seq,Differential Expression Analysis,Transcriptomics",custom code,10,12,2
+BixBench,bix-45-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']",Galaxy,12,12,0
+BixBench,bix-45-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']",custom code,12,12,0
+BixBench,bix-46-q4,"Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics",Galaxy,11,12,1
+BixBench,bix-46-q4,"Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics",custom code,12,12,0
+BixBench,bix-47-q3,"Genomics,Genomic Variant Analysis",Galaxy,12,12,0
+BixBench,bix-47-q3,"Genomics,Genomic Variant Analysis",custom code,12,12,0
+BixBench,bix-49-q4,"RNA-seq,Differential Expression Analysis,Transcriptomics",Galaxy,12,12,0
+BixBench,bix-49-q4,"RNA-seq,Differential Expression Analysis,Transcriptomics",custom code,12,12,0
+BixBench,bix-51-q2,Other,Galaxy,12,12,0
+BixBench,bix-51-q2,Other,custom code,12,12,0
+BixBench,bix-51-q8,Other,Galaxy,12,12,0
+BixBench,bix-51-q8,Other,custom code,12,12,0
+BixBench,bix-52-q2,Epigenomics,Galaxy,11,12,1
+BixBench,bix-52-q2,Epigenomics,custom code,12,12,0
+BixBench,bix-52-q6,Epigenomics,Galaxy,12,12,0
+BixBench,bix-52-q6,Epigenomics,custom code,12,12,0
+BixBench,bix-52-q7,Epigenomics,Galaxy,9,12,3
+BixBench,bix-52-q7,Epigenomics,custom code,12,12,0
+BixBench,bix-53-q2,"Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis",Galaxy,12,12,0
+BixBench,bix-53-q2,"Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis",custom code,12,12,0
+BixBench,bix-53-q5,"Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis",Galaxy,12,12,0
+BixBench,bix-53-q5,"Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis",custom code,12,12,0
+BixBench,bix-54-q7,Imaging,Galaxy,0,12,12
+BixBench,bix-54-q7,Imaging,custom code,1,12,11
+BixBench,bix-55-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",Galaxy,12,12,0
+BixBench,bix-55-q1,"['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']",custom code,10,12,2
+BixBench,bix-6-q4,Functional Genomics,Galaxy,12,12,0
+BixBench,bix-6-q4,Functional Genomics,custom code,12,12,0
+BixBench,bix-61-q2,"['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']",Galaxy,12,12,0
+BixBench,bix-61-q2,"['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']",custom code,12,12,0
+BixBench,bix-61-q5,"['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']",Galaxy,0,12,12
+BixBench,bix-61-q5,"['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']",custom code,0,12,12
+CompBioBench,1000G-retrieve-genotype-q1,Population Genetics,Galaxy,10,12,2
+CompBioBench,1000G-retrieve-genotype-q1,Population Genetics,custom code,12,12,0
+CompBioBench,1000G-retrieve-genotype-q2,Population Genetics,Galaxy,12,12,0
+CompBioBench,1000G-retrieve-genotype-q2,Population Genetics,custom code,12,12,0
+CompBioBench,afgr-1000g-intersect-atac-q1,Population Genetics,Galaxy,10,12,2
+CompBioBench,afgr-1000g-intersect-atac-q1,Population Genetics,custom code,9,12,3
+CompBioBench,align-one-sequence-to-reference-q1,Genomics,Galaxy,12,12,0
+CompBioBench,align-one-sequence-to-reference-q1,Genomics,custom code,10,12,2
+CompBioBench,annotate-variant-gene-impact-q1,Genomics,Galaxy,12,12,0
+CompBioBench,annotate-variant-gene-impact-q1,Genomics,custom code,12,12,0
+CompBioBench,annotate-variant-gene-impact-q2,Genomics,Galaxy,12,12,0
+CompBioBench,annotate-variant-gene-impact-q2,Genomics,custom code,12,12,0
+CompBioBench,annotate-variant-regulatory-overlap-q1,Epigenomics,Galaxy,7,12,5
+CompBioBench,annotate-variant-regulatory-overlap-q1,Epigenomics,custom code,8,12,4
+CompBioBench,atac-doublet-q1,Single-cell,Galaxy,9,12,3
+CompBioBench,atac-doublet-q1,Single-cell,custom code,11,12,1
+CompBioBench,atac-tn5-shift-q1,Epigenomics,Galaxy,10,12,2
+CompBioBench,atac-tn5-shift-q1,Epigenomics,custom code,8,12,4
+CompBioBench,bam-infer-read-length-q1,Genomics,Galaxy,12,12,0
+CompBioBench,bam-infer-read-length-q1,Genomics,custom code,12,12,0
+CompBioBench,bam-ops-q1,Genomics,Galaxy,12,12,0
+CompBioBench,bam-ops-q1,Genomics,custom code,12,12,0
+CompBioBench,bedtools-chromhmm-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,bedtools-chromhmm-q1,Epigenomics,custom code,12,12,0
+CompBioBench,bedtools-ops-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,bedtools-ops-q1,Epigenomics,custom code,11,12,1
+CompBioBench,bigwig-density-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,bigwig-density-q1,Epigenomics,custom code,12,12,0
+CompBioBench,borzoi-basic-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,borzoi-basic-q1,Machine Learning,custom code,12,12,0
+CompBioBench,borzoi-rnaseq-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,borzoi-rnaseq-q1,Machine Learning,custom code,10,12,2
+CompBioBench,calculate-average-gene-expression-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,calculate-average-gene-expression-q1,Single-cell,custom code,12,12,0
+CompBioBench,cell-proportions-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,cell-proportions-q1,Single-cell,custom code,12,12,0
+CompBioBench,characterize-response-q1,Transcriptomics,Galaxy,6,12,6
+CompBioBench,characterize-response-q1,Transcriptomics,custom code,9,12,3
+CompBioBench,chip-pioneer-q1,Epigenomics,Galaxy,9,12,3
+CompBioBench,chip-pioneer-q1,Epigenomics,custom code,10,12,2
+CompBioBench,compute-gc-content-interval-q1,Genomics,Galaxy,12,12,0
+CompBioBench,compute-gc-content-interval-q1,Genomics,custom code,12,12,0
+CompBioBench,compute-gccontent-promoter-q1,Genomics,Galaxy,12,12,0
+CompBioBench,compute-gccontent-promoter-q1,Genomics,custom code,12,12,0
+CompBioBench,compute-hvg-jaccard-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,compute-hvg-jaccard-q1,Single-cell,custom code,12,12,0
+CompBioBench,compute-nonoverlapping-exonic-length-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,compute-nonoverlapping-exonic-length-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,conservation-lookup-q1,Genomics,Galaxy,7,12,5
+CompBioBench,conservation-lookup-q1,Genomics,custom code,7,12,5
+CompBioBench,contaminated-rna-q1,Transcriptomics,Galaxy,11,12,1
+CompBioBench,contaminated-rna-q1,Transcriptomics,custom code,11,12,1
+CompBioBench,contaminated-rna-q2,Transcriptomics,Galaxy,8,12,4
+CompBioBench,contaminated-rna-q2,Transcriptomics,custom code,6,12,6
+CompBioBench,contaminated-rna-q3,Transcriptomics,Galaxy,10,12,2
+CompBioBench,contaminated-rna-q3,Transcriptomics,custom code,6,12,6
+CompBioBench,covid-patient-q1,Single-cell,Galaxy,7,12,5
+CompBioBench,covid-patient-q1,Single-cell,custom code,10,12,2
+CompBioBench,cryptic-exon-q1,Transcriptomics,Galaxy,10,12,2
+CompBioBench,cryptic-exon-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,deg-simple-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,deg-simple-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,deg-simple-q2,Transcriptomics,Galaxy,11,12,1
+CompBioBench,deg-simple-q2,Transcriptomics,custom code,12,12,0
+CompBioBench,deleterious-mutation-q1,Genomics,Galaxy,12,12,0
+CompBioBench,deleterious-mutation-q1,Genomics,custom code,12,12,0
+CompBioBench,deleterious-mutation-q2,Genomics,Galaxy,12,12,0
+CompBioBench,deleterious-mutation-q2,Genomics,custom code,12,12,0
+CompBioBench,differential-composition-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,differential-composition-q1,Single-cell,custom code,11,12,1
+CompBioBench,disease-samples-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,disease-samples-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,encode-atac-pipeline-q1,Epigenomics,Galaxy,0,12,12
+CompBioBench,encode-atac-pipeline-q1,Epigenomics,custom code,0,12,12
+CompBioBench,enformer-basic-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,enformer-basic-q1,Machine Learning,custom code,11,12,1
+CompBioBench,enriched-motif-identification-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,enriched-motif-identification-q1,Epigenomics,custom code,12,12,0
+CompBioBench,ensembl-grab-q1,Genomics,Galaxy,12,12,0
+CompBioBench,ensembl-grab-q1,Genomics,custom code,12,12,0
+CompBioBench,ep-interactions-q1,Epigenomics,Galaxy,9,12,3
+CompBioBench,ep-interactions-q1,Epigenomics,custom code,7,12,5
+CompBioBench,exogenous-mix-reads-q1,Transcriptomics,Galaxy,10,12,2
+CompBioBench,exogenous-mix-reads-q1,Transcriptomics,custom code,11,12,1
+CompBioBench,exogenous-mix-reads-q2,Transcriptomics,Galaxy,7,12,5
+CompBioBench,exogenous-mix-reads-q2,Transcriptomics,custom code,9,12,3
+CompBioBench,extract-rna-secondary-structure-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,extract-rna-secondary-structure-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,find-amplification-q1,Genomics,Galaxy,12,12,0
+CompBioBench,find-amplification-q1,Genomics,custom code,12,12,0
+CompBioBench,find-deletion-q1,Genomics,Galaxy,11,12,1
+CompBioBench,find-deletion-q1,Genomics,custom code,12,12,0
+CompBioBench,finding-geo-q1,Single-cell,Galaxy,7,12,5
+CompBioBench,finding-geo-q1,Single-cell,custom code,10,12,2
+CompBioBench,gene-expression-query-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,gene-expression-query-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,gene-fusion-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,gene-fusion-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,gene-fusion-q2,Transcriptomics,Galaxy,11,12,1
+CompBioBench,gene-fusion-q2,Transcriptomics,custom code,10,12,2
+CompBioBench,gene-info-grab-q1,Genomics,Galaxy,12,12,0
+CompBioBench,gene-info-grab-q1,Genomics,custom code,12,12,0
+CompBioBench,gene-pair-ordering-fraction-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,gene-pair-ordering-fraction-q1,Single-cell,custom code,11,12,1
+CompBioBench,genome-assembly-contiguity-q1,Genomics,Galaxy,12,12,0
+CompBioBench,genome-assembly-contiguity-q1,Genomics,custom code,12,12,0
+CompBioBench,genome-coords-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,genome-coords-q1,Epigenomics,custom code,12,12,0
+CompBioBench,genomic-state-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,genomic-state-q1,Epigenomics,custom code,11,12,1
+CompBioBench,geo-lookup-read-matrix-market-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,geo-lookup-read-matrix-market-q1,Single-cell,custom code,12,12,0
+CompBioBench,gtf-5-utr-median-len-q1,Transcriptomics,Galaxy,12,12,0
+CompBioBench,gtf-5-utr-median-len-q1,Transcriptomics,custom code,12,12,0
+CompBioBench,gwas-ancestry-q1,Population Genetics,Galaxy,11,12,1
+CompBioBench,gwas-ancestry-q1,Population Genetics,custom code,11,12,1
+CompBioBench,hic-differential-loop-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,hic-differential-loop-q1,Epigenomics,custom code,11,12,1
+CompBioBench,histone-chip-q1,Epigenomics,Galaxy,9,12,3
+CompBioBench,histone-chip-q1,Epigenomics,custom code,12,12,0
+CompBioBench,huggingface-entropy-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,huggingface-entropy-q1,Machine Learning,custom code,11,12,1
+CompBioBench,identify-donor-q1,Population Genetics,Galaxy,12,12,0
+CompBioBench,identify-donor-q1,Population Genetics,custom code,12,12,0
+CompBioBench,identify-related-q1,Population Genetics,Galaxy,12,12,0
+CompBioBench,identify-related-q1,Population Genetics,custom code,12,12,0
+CompBioBench,lung-cancer-sc-q1,Single-cell,Galaxy,2,12,10
+CompBioBench,lung-cancer-sc-q1,Single-cell,custom code,6,12,6
+CompBioBench,match-genotypes-q1,Population Genetics,Galaxy,12,12,0
+CompBioBench,match-genotypes-q1,Population Genetics,custom code,12,12,0
+CompBioBench,ml-model-track-overlap-q1,Epigenomics,Galaxy,1,12,11
+CompBioBench,ml-model-track-overlap-q1,Epigenomics,custom code,4,12,8
+CompBioBench,multiome-match-atac-rna-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,multiome-match-atac-rna-q1,Epigenomics,custom code,12,12,0
+CompBioBench,mystery-peak-set-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,mystery-peak-set-q1,Epigenomics,custom code,12,12,0
+CompBioBench,odd-one-out-q1,Epigenomics,Galaxy,1,12,11
+CompBioBench,odd-one-out-q1,Epigenomics,custom code,2,12,10
+CompBioBench,orf-annot-q1,Genomics,Galaxy,12,12,0
+CompBioBench,orf-annot-q1,Genomics,custom code,12,12,0
+CompBioBench,overexpress-tf-q1,Epigenomics,Galaxy,7,12,5
+CompBioBench,overexpress-tf-q1,Epigenomics,custom code,10,12,2
+CompBioBench,pathogenic-variant-lookup-q1,Genomics,Galaxy,12,12,0
+CompBioBench,pathogenic-variant-lookup-q1,Genomics,custom code,12,12,0
+CompBioBench,perturb-seq-align-q1,Single-cell,Galaxy,11,12,1
+CompBioBench,perturb-seq-align-q1,Single-cell,custom code,12,12,0
+CompBioBench,perturb-seq-effect-q1,Single-cell,Galaxy,11,12,1
+CompBioBench,perturb-seq-effect-q1,Single-cell,custom code,9,12,3
+CompBioBench,phase-chain-q1,Population Genetics,Galaxy,11,12,1
+CompBioBench,phase-chain-q1,Population Genetics,custom code,11,12,1
+CompBioBench,pooled-infer-donors-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,pooled-infer-donors-q1,Single-cell,custom code,12,12,0
+CompBioBench,promoter-sequence-retrieval-q1,Genomics,Galaxy,12,12,0
+CompBioBench,promoter-sequence-retrieval-q1,Genomics,custom code,12,12,0
+CompBioBench,protein-shape-q1,Structure,Galaxy,5,12,7
+CompBioBench,protein-shape-q1,Structure,custom code,7,12,5
+CompBioBench,read-paper-download-file-parse-q1,Epigenomics,Galaxy,12,12,0
+CompBioBench,read-paper-download-file-parse-q1,Epigenomics,custom code,12,12,0
+CompBioBench,read-proportions-q1,Genomics,Galaxy,11,12,1
+CompBioBench,read-proportions-q1,Genomics,custom code,12,12,0
+CompBioBench,retina-score-snps-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,retina-score-snps-q1,Machine Learning,custom code,11,12,1
+CompBioBench,reverse-encode-q1,Epigenomics,Galaxy,11,12,1
+CompBioBench,reverse-encode-q1,Epigenomics,custom code,12,12,0
+CompBioBench,reverse-search-gwas-q1,Population Genetics,Galaxy,1,12,11
+CompBioBench,reverse-search-gwas-q1,Population Genetics,custom code,3,12,9
+CompBioBench,reverse-search-gwas-q2,Population Genetics,Galaxy,11,12,1
+CompBioBench,reverse-search-gwas-q2,Population Genetics,custom code,9,12,3
+CompBioBench,saluki-setup-optimize-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,saluki-setup-optimize-q1,Machine Learning,custom code,10,12,2
+CompBioBench,sample-swap-atac-q1,Single-cell,Galaxy,11,12,1
+CompBioBench,sample-swap-atac-q1,Single-cell,custom code,12,12,0
+CompBioBench,sample-swap-atac-q2,Single-cell,Galaxy,12,12,0
+CompBioBench,sample-swap-atac-q2,Single-cell,custom code,12,12,0
+CompBioBench,sample-swap-rna-q1,Single-cell,Galaxy,11,12,1
+CompBioBench,sample-swap-rna-q1,Single-cell,custom code,11,12,1
+CompBioBench,sample-swap-rna-q2,Single-cell,Galaxy,12,12,0
+CompBioBench,sample-swap-rna-q2,Single-cell,custom code,12,12,0
+CompBioBench,spatial-sim-q1,Spatial,Galaxy,12,12,0
+CompBioBench,spatial-sim-q1,Spatial,custom code,12,12,0
+CompBioBench,spatial-sim-q2,Spatial,Galaxy,11,12,1
+CompBioBench,spatial-sim-q2,Spatial,custom code,12,12,0
+CompBioBench,splice-pred-q1,Machine Learning,Galaxy,12,12,0
+CompBioBench,splice-pred-q1,Machine Learning,custom code,12,12,0
+CompBioBench,subtype-inflammation-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,subtype-inflammation-q1,Single-cell,custom code,12,12,0
+CompBioBench,three-way-barnyard-q1,Single-cell,Galaxy,12,12,0
+CompBioBench,three-way-barnyard-q1,Single-cell,custom code,12,12,0
+CompBioBench,three-way-barnyard-q2,Single-cell,Galaxy,7,12,5
+CompBioBench,three-way-barnyard-q2,Single-cell,custom code,8,12,4
+CompBioBench,tissue-fibroblast-q1,Single-cell,Galaxy,6,12,6
+CompBioBench,tissue-fibroblast-q1,Single-cell,custom code,10,12,2
+CompBioBench,variant-coordinate-lookup-q1,Genomics,Galaxy,12,12,0
+CompBioBench,variant-coordinate-lookup-q1,Genomics,custom code,12,12,0
+CompBioBench,variant-status-q1,Transcriptomics,Galaxy,2,12,10
+CompBioBench,variant-status-q1,Transcriptomics,custom code,2,12,10
+CompBioBench,vcf-infer-ancestry-q1,Population Genetics,Galaxy,12,12,0
+CompBioBench,vcf-infer-ancestry-q1,Population Genetics,custom code,12,12,0
+CompBioBench,vcf-infer-build-q1,Population Genetics,Galaxy,12,12,0
+CompBioBench,vcf-infer-build-q1,Population Genetics,custom code,12,12,0
+IWC,wf_001_short_read_qc_trim,Short-read quality control and trimming (SRR1553606),Galaxy,12,12,0
+IWC,wf_001_short_read_qc_trim,Short-read quality control and trimming (SRR1553606),custom code,12,12,0
+IWC,wf_002_rnaseq_de_visualization,RNA-Seq Differential Expression Analysis,Galaxy,12,12,0
+IWC,wf_002_rnaseq_de_visualization,RNA-Seq Differential Expression Analysis,custom code,12,12,0
+IWC,wf_003_host_contamination_removal,Host-reference filtering of paired reads (SRR12665180),Galaxy,12,12,0
+IWC,wf_003_host_contamination_removal,Host-reference filtering of paired reads (SRR12665180),custom code,12,12,0
+IWC,wf_005_amplicon_dada2_pe_denoising,Paired-End Amplicon Denoising,Galaxy,3,12,9
+IWC,wf_005_amplicon_dada2_pe_denoising,Paired-End Amplicon Denoising,custom code,3,12,9
+IWC,wf_006_atacseq_chromatin_accessibility,ATAC-seq Chromatin Accessibility Profiling,Galaxy,12,12,0
+IWC,wf_006_atacseq_chromatin_accessibility,ATAC-seq Chromatin Accessibility Profiling,custom code,11,12,1
+IWC,wf_007_vgp_mitogenome_assembly,Mitochondrial genome assembly of Eutresis hypereia,Galaxy,7,12,5
+IWC,wf_007_vgp_mitogenome_assembly,Mitochondrial genome assembly of Eutresis hypereia,custom code,2,12,10
+IWC,wf_008_amr_gene_detection,Antimicrobial Resistance Determinant Detection,Galaxy,12,12,0
+IWC,wf_008_amr_gene_detection,Antimicrobial Resistance Determinant Detection,custom code,12,12,0
+IWC,wf_009_clinicalmp_peptide_verification,Clinical Metaproteomics Peptide Verification,Galaxy,2,12,10
+IWC,wf_009_clinicalmp_peptide_verification,Clinical Metaproteomics Peptide Verification,custom code,2,12,10
+IWC,wf_010_pseudobulk_scrna_de,Single-Cell Pseudobulk Aggregation,Galaxy,11,12,1
+IWC,wf_010_pseudobulk_scrna_de,Single-Cell Pseudobulk Aggregation,custom code,9,12,3
+IWC,wf_011_bioproject_metadata_sequence_retrieval,BioProject Metadata and Sequence Retrieval,Galaxy,12,12,0
+IWC,wf_011_bioproject_metadata_sequence_retrieval,BioProject Metadata and Sequence Retrieval,custom code,12,12,0

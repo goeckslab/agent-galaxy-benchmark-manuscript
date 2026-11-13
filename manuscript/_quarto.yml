@@ -5,9 +5,12 @@ project:
     - index.qmd
 
 bibliography: references.bib
+filters:
+  - figure-formats.lua
 
 format:
   html:
+    embed-resources: true
     toc: true
     toc-depth: 3
     number-sections: false
@@ -15,4 +18,11 @@ format:
     toc: false
   pdf:
     documentclass: article
+    papersize: a4
+    fig-pos: H
+    geometry:
+      - left=15mm
+      - right=15mm
+      - top=22mm
+      - bottom=24mm
     number-sections: false

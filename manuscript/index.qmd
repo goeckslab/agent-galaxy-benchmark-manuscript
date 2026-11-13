@@ -1,5 +1,9 @@
 ---
-title: "Workbench-mediated execution for reproducible AI agent analyses in bioinformatics"
+title: "Improving Galaxy’s interface for agents running biological analyses"
+abstract: |
+  External agents can run analyses in Galaxy, but each tool search, parameter check and job-status request consumes model context.
+  In 3,840 paired runs of 160 computational biology tasks with four models, accuracy through Galaxy was close to that of custom code (BixBench, 89.5% versus 88.3%).
+  Failure records identified interface gaps, and compact replies with longer waits reduced BixBench token use from 122.4 to 54.3 million per 50-task run.
 author:
   - name: Junhao Qiu
     affiliations:
@@ -39,7 +43,7 @@ keywords:
   - BixBench
   - CompBio Bench
   - IWC workflows
-date: today
+date: 2026-11-05
 ---
 
 <!-- REVIEW COMMENT from the Word draft (Jeremy Goecks, 2026-09-07), on the title:
@@ -49,25 +53,7 @@ I don't love this title:
 My suggestion would be something like "Agentic systems can use a computational workbench to accurately perform bioinformatics"
 -->
 
-# Abstract
-
-{{< include abstract.qmd >}}
-
-# Introduction
-
-{{< include introduction.qmd >}}
-
-# Results
-
-{{< include results.qmd >}}
-
-# Discussion
-
-{{< include discussion.qmd >}}
-
-# Online Methods
-
-{{< include methods.qmd >}}
+{{< include brief-communication.qmd >}}
 
 # Competing interests {.unnumbered}
 

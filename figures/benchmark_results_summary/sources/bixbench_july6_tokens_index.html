@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BixBench Tokens Usage</title>
+  <link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+  <nav class="archive-return" aria-label="Archive navigation"><a class="button secondary" href="../../../index.html#bixbench">Return to current results</a><span>Jul 6 archive</span></nav>
+    <header class="top compact">
+      <a class="button secondary back" href="../index.html">Back to dashboard</a>
+      <div>
+        <p class="eyebrow">BixBench July 6 Codex experiment</p>
+        <h1>Tokens Usage</h1>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Condition totals</h2>
+            <p>Total tokens are computed as input tokens plus output tokens from each replicate's usage record. Percent changes are relative to Galaxy-API code with skills.</p>
+          </div>
+        </div>
+        <div class="metrics token-metrics">
+        <article class="metric token-metric">
+          <span>Galaxy-API code with skills</span>
+          <strong>446.7M</strong>
+          <small>150 replicates · <span class="delta base">base</span> vs Galaxy-API code with skills</small>
+          <dl>
+            <div><dt>Input</dt><dd>443.4M <span class="delta base">base</span></dd></div>
+            <div><dt>Cached input</dt><dd>423.4M <span class="delta base">base</span></dd></div>
+            <div><dt>Uncached input</dt><dd>20.0M <span class="delta base">base</span></dd></div>
+            <div><dt>Output</dt><dd>3.3M <span class="delta base">base</span></dd></div>
+            <div><dt>Reasoning output</dt><dd>813.1K <span class="delta base">base</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="metric token-metric">
+          <span>Galaxy-API code without skills</span>
+          <strong>502.8M</strong>
+          <small>150 replicates · <span class="delta up">+12.6%</span> vs Galaxy-API code with skills</small>
+          <dl>
+            <div><dt>Input</dt><dd>499.6M <span class="delta up">+12.7%</span></dd></div>
+            <div><dt>Cached input</dt><dd>481.2M <span class="delta up">+13.7%</span></dd></div>
+            <div><dt>Uncached input</dt><dd>18.4M <span class="delta down">-8.4%</span></dd></div>
+            <div><dt>Output</dt><dd>3.3M <span class="delta down">-2.2%</span></dd></div>
+            <div><dt>Reasoning output</dt><dd>855.0K <span class="delta up">+5.1%</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="metric token-metric">
+          <span>Open-ended code with skills</span>
+          <strong>81.5M</strong>
+          <small>150 replicates · <span class="delta down">-81.8%</span> vs Galaxy-API code with skills</small>
+          <dl>
+            <div><dt>Input</dt><dd>80.4M <span class="delta down">-81.9%</span></dd></div>
+            <div><dt>Cached input</dt><dd>72.4M <span class="delta down">-82.9%</span></dd></div>
+            <div><dt>Uncached input</dt><dd>8.1M <span class="delta down">-59.8%</span></dd></div>
+            <div><dt>Output</dt><dd>1.1M <span class="delta down">-66.8%</span></dd></div>
+            <div><dt>Reasoning output</dt><dd>329.0K <span class="delta down">-59.5%</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="metric token-metric">
+          <span>Open-ended code without skills</span>
+          <strong>68.2M</strong>
+          <small>150 replicates · <span class="delta down">-84.7%</span> vs Galaxy-API code with skills</small>
+          <dl>
+            <div><dt>Input</dt><dd>67.3M <span class="delta down">-84.8%</span></dd></div>
+            <div><dt>Cached input</dt><dd>60.0M <span class="delta down">-85.8%</span></dd></div>
+            <div><dt>Uncached input</dt><dd>7.3M <span class="delta down">-63.7%</span></dd></div>
+            <div><dt>Output</dt><dd>941.0K <span class="delta down">-71.9%</span></dd></div>
+            <div><dt>Reasoning output</dt><dd>272.9K <span class="delta down">-66.4%</span></dd></div>
+          </dl>
+        </article>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Why token use differs</h2>
+            <p>The differences mostly come from platform context, not from answer length.</p>
+          </div>
+        </div>
+        <div class="analysis-grid token-notes">
+          <article>
+            <h3>Galaxy conditions are much larger than anycode</h3>
+            <p>Galaxy-API code includes Galaxy API interaction, history inspection, job/tool evidence, UDT or tool-selection context, and longer trace reasoning. Open-ended code does local file/code work and avoids that Galaxy evidence chain, so both anycode conditions use more than 80% fewer total tokens than Galaxy-API code with skills.</p>
+          </article>
+          <article>
+            <h3>Galaxy without skills is higher than the base</h3>
+            <p>Galaxy-API code without skills uses 12.3% more total tokens than Galaxy-API code with skills. Almost all of that increase is input context: cached input is 13.3% higher, while uncached input is 7.6% lower and output is essentially flat. The with-skills condition includes `galaxy-token-efficient-operations`, which tells the agent to save bulky Galaxy evidence to trace files and keep transcript output compact. Without that token-saving Galaxy skill, the agent repeats more Galaxy/tool/history context in the conversation.</p>
+          </article>
+          <article>
+            <h3>Open-ended code with skills is still far below the base</h3>
+            <p>Open-ended code with skills uses 81.4% fewer total tokens than the Galaxy base because it does not carry Galaxy histories, API schemas, or tool/job evidence. It is higher than anycode without skills because skills add setup guidance and domain checks, which increase input and reasoning tokens even without Galaxy.</p>
+          </article>
+          <article>
+            <h3>Open-ended code without skills is the smallest</h3>
+            <p>Open-ended code without skills has the lowest token usage: 84.4% below the Galaxy base. It has the shortest context stack: no Galaxy context and no skill instructions. That saves tokens, but the accuracy page shows it also has the lowest accuracy among the four conditions.</p>
+          </article>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Replicate-level usage</h2>
+            <p>Each replicate column is compared to the same replicate in Galaxy-API code with skills.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="tokens-table">
+            <thead>
+              <tr>
+                <th>Condition</th>
+                <th>Total</th>
+                <th>replicate 1</th>
+                <th>replicate 2</th>
+                <th>replicate 3</th>
+                <th>Cached input</th>
+                <th>Uncached input</th>
+                <th>Output</th>
+                <th>Reasoning output</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Galaxy-API code with skills</td>
+          <td><strong>446.7M</strong> <span class="delta base">base</span></td>
+
+            <td>
+              <strong>144.7M</strong>
+              <span class="delta base">base</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>142.8M</strong>
+              <span class="delta base">base</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>159.2M</strong>
+              <span class="delta base">base</span>
+              <small>50 items</small>
+            </td>
+
+          <td>423.4M <span class="delta base">base</span></td>
+          <td>20.0M <span class="delta base">base</span></td>
+          <td>3.3M <span class="delta base">base</span></td>
+          <td>813.1K <span class="delta base">base</span></td>
+        </tr>
+
+        <tr>
+          <td>Galaxy-API code without skills</td>
+          <td><strong>502.8M</strong> <span class="delta up">+12.6%</span></td>
+
+            <td>
+              <strong>177.0M</strong>
+              <span class="delta up">+22.3%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>179.3M</strong>
+              <span class="delta up">+25.5%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>146.6M</strong>
+              <span class="delta down">-7.9%</span>
+              <small>50 items</small>
+            </td>
+
+          <td>481.2M <span class="delta up">+13.7%</span></td>
+          <td>18.4M <span class="delta down">-8.4%</span></td>
+          <td>3.3M <span class="delta down">-2.2%</span></td>
+          <td>855.0K <span class="delta up">+5.1%</span></td>
+        </tr>
+
+        <tr>
+          <td>Open-ended code with skills</td>
+          <td><strong>81.5M</strong> <span class="delta down">-81.8%</span></td>
+
+            <td>
+              <strong>24.7M</strong>
+              <span class="delta down">-83.0%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>28.2M</strong>
+              <span class="delta down">-80.2%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>28.6M</strong>
+              <span class="delta down">-82.0%</span>
+              <small>50 items</small>
+            </td>
+
+          <td>72.4M <span class="delta down">-82.9%</span></td>
+          <td>8.1M <span class="delta down">-59.8%</span></td>
+          <td>1.1M <span class="delta down">-66.8%</span></td>
+          <td>329.0K <span class="delta down">-59.5%</span></td>
+        </tr>
+
+        <tr>
+          <td>Open-ended code without skills</td>
+          <td><strong>68.2M</strong> <span class="delta down">-84.7%</span></td>
+
+            <td>
+              <strong>23.4M</strong>
+              <span class="delta down">-83.8%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>21.1M</strong>
+              <span class="delta down">-85.2%</span>
+              <small>50 items</small>
+            </td>
+
+            <td>
+              <strong>23.7M</strong>
+              <span class="delta down">-85.1%</span>
+              <small>50 items</small>
+            </td>
+
+          <td>60.0M <span class="delta down">-85.8%</span></td>
+          <td>7.3M <span class="delta down">-63.7%</span></td>
+          <td>941.0K <span class="delta down">-71.9%</span></td>
+          <td>272.9K <span class="delta down">-66.4%</span></td>
+        </tr>
+        </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    </body>
+</html>

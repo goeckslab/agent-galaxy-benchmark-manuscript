@@ -1,0 +1,43 @@
+benchmark,model,condition,batch_class,runs
+BixBench,DeepSeek V4 Pro,Galaxy,October integrity rerun (report),16
+BixBench,DeepSeek V4 Pro,Galaxy,original or primary batch,130
+BixBench,DeepSeek V4 Pro,Galaxy,recovery or repeat run,4
+BixBench,DeepSeek V4 Pro,custom code,October integrity rerun (report),3
+BixBench,DeepSeek V4 Pro,custom code,original or primary batch,147
+BixBench,GPT-5.5,Galaxy,original or primary batch,150
+BixBench,GPT-5.5,custom code,original or primary batch,150
+BixBench,GPT-5.6 Luna,Galaxy,original or primary batch,78
+BixBench,GPT-5.6 Luna,Galaxy,recovery or repeat run,72
+BixBench,GPT-5.6 Luna,custom code,original or primary batch,150
+BixBench,GPT-5.6 Sol,Galaxy,original or primary batch,148
+BixBench,GPT-5.6 Sol,Galaxy,recovery or repeat run,2
+BixBench,GPT-5.6 Sol,custom code,original or primary batch,150
+CompBioBench,DeepSeek V4 Pro,Galaxy,October integrity rerun (report),20
+CompBioBench,DeepSeek V4 Pro,Galaxy,earlier adopted rerun (not in report),10
+CompBioBench,DeepSeek V4 Pro,Galaxy,original or primary batch,270
+CompBioBench,DeepSeek V4 Pro,custom code,October integrity rerun (report),17
+CompBioBench,DeepSeek V4 Pro,custom code,original or primary batch,283
+CompBioBench,GPT-5.5,Galaxy,October integrity rerun (report),1
+CompBioBench,GPT-5.5,Galaxy,earlier adopted rerun (not in report),34
+CompBioBench,GPT-5.5,Galaxy,original or primary batch,265
+CompBioBench,GPT-5.5,custom code,original or primary batch,300
+CompBioBench,GPT-5.6 Luna,Galaxy,October integrity rerun (report),7
+CompBioBench,GPT-5.6 Luna,Galaxy,earlier adopted rerun (not in report),6
+CompBioBench,GPT-5.6 Luna,Galaxy,original or primary batch,287
+CompBioBench,GPT-5.6 Luna,custom code,October integrity rerun (report),8
+CompBioBench,GPT-5.6 Luna,custom code,earlier adopted rerun (not in report),1
+CompBioBench,GPT-5.6 Luna,custom code,original or primary batch,291
+CompBioBench,GPT-5.6 Sol,Galaxy,earlier adopted rerun (not in report),1
+CompBioBench,GPT-5.6 Sol,Galaxy,original or primary batch,299
+CompBioBench,GPT-5.6 Sol,custom code,October integrity rerun (report),2
+CompBioBench,GPT-5.6 Sol,custom code,original or primary batch,298
+IWC,DeepSeek V4 Pro,Galaxy,October integrity rerun (report),1
+IWC,DeepSeek V4 Pro,Galaxy,original or primary batch,29
+IWC,DeepSeek V4 Pro,custom code,October integrity rerun (report),2
+IWC,DeepSeek V4 Pro,custom code,original or primary batch,28
+IWC,GPT-5.5,Galaxy,original or primary batch,30
+IWC,GPT-5.5,custom code,original or primary batch,30
+IWC,GPT-5.6 Luna,Galaxy,original or primary batch,30
+IWC,GPT-5.6 Luna,custom code,original or primary batch,30
+IWC,GPT-5.6 Sol,Galaxy,original or primary batch,30
+IWC,GPT-5.6 Sol,custom code,original or primary batch,30

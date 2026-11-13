@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IWC score explanations</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link rel="stylesheet" href="../../assets/iwc.css?v=7fdd31a5">
+</head>
+<body>
+
+<header class="top current-top">
+  <div class="current-title-row"><div><p class="eyebrow">Results</p><h1>IWC score explanations</h1></div></div>
+  <div class="current-nav-row"><nav class="benchmark-tabs" aria-label="Benchmarks">
+    <a class="active" aria-current="page" href="../../iwc/index.html">IWC</a>
+    <a href="../../index.html#bixbench">BixBench-50</a>
+    <a href="../../compbiobench/index.html">CompBioBench</a>
+  </nav></div>
+</header>
+<main class="iwc-main">
+  <nav class="item-return"><a class="button secondary" href="../index.html">&larr; Back to IWC results</a></nav>
+  <section class="intro-band iwc-intro"><div><h2>Why some results scored below 1.000</h2><p>Each note explains the measured difference from the reference and gives the scoring evidence. Some differences come from allowed methods or numerical precision; others identify genuine problems in the submitted output.</p></div><div class="summary-facts"><span><b>98</b> score explanations</span><span><b>8</b> items</span><span><b>142</b> full-score results</span></div></section>
+  <nav class="analysis-index" aria-label="Affected items"><a href="#wf_001_short_read_qc_trim">001</a><a href="#wf_002_rnaseq_de_visualization">002</a><a href="#wf_003_host_contamination_removal">003</a><a href="#wf_005_amplicon_dada2_pe_denoising">005</a><a href="#wf_006_atacseq_chromatin_accessibility">006</a><a href="#wf_007_vgp_mitogenome_assembly">007</a><a href="#wf_009_clinicalmp_peptide_verification">009</a><a href="#wf_010_pseudobulk_scrna_de">010</a></nav>
+  <section class="panel" id="wf_001_short_read_qc_trim">
+  <div class="section-head"><div><p class="eyebrow">5 results below 1.000</p><h2>wf_001_short_read_qc_trim · Short-read quality control and trimming (SRR1553606)</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R2</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Adapter-detection setting</strong>
+    <span>A separate paired-end adapter autodetection option was enabled even though the task required mate-overlap-only adapter detection. That extra decision path changed both which pairs survived and which reads were trimmed.</span>
+    <span><b>Evidence.</b> Among 377,961 input pairs, the output had 63 extra and 561 missing retained-pair IDs. Its trimming/removal decisions had 1,664 extra and 63 missing pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_001_short_read_qc_trim/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R3</strong><small>acc</small></div><b>0.998</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Adapter-detection setting</strong>
+    <span>A separate paired-end adapter autodetection option was enabled even though the task required mate-overlap-only adapter detection. That extra decision path changed both which pairs survived and which reads were trimmed.</span>
+    <span><b>Evidence.</b> Among 377,961 input pairs, the output had 93 extra and 1 missing retained-pair ID. Its trimming/removal decisions had 1,082 extra and 93 missing pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_001_short_read_qc_trim/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R3</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Adapter-detection setting</strong>
+    <span>The run used fastp&#x27;s mate-overlap adapter trimming together with a separate pair-filtering step. That combination changed a small fraction of the retained pairs and trimming decisions relative to the reference.</span>
+    <span><b>Evidence.</b> Among 377,961 input pairs, the output had 561 missing retained-pair IDs and no additional IDs. Its trimming/removal decisions had 1,664 additional and 63 missing pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_001_short_read_qc_trim/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R2</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Adapter-detection setting</strong>
+    <span>A separate paired-end adapter autodetection option was enabled even though the task required mate-overlap-only adapter detection. That extra decision path changed both which pairs survived and which reads were trimmed.</span>
+    <span><b>Evidence.</b> Among 377,961 input pairs, the output had 63 extra and 561 missing retained-pair IDs. Its trimming/removal decisions had 1,664 extra and 63 missing pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_001_short_read_qc_trim/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R3</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Adapter-detection setting</strong>
+    <span>A separate paired-end adapter autodetection option was enabled even though the task required mate-overlap-only adapter detection. That extra decision path changed both which pairs survived and which reads were trimmed.</span>
+    <span><b>Evidence.</b> Among 377,961 input pairs, the output had 63 extra and 561 missing retained-pair IDs. Its trimming/removal decisions had 1,664 extra and 63 missing pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_001_short_read_qc_trim/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_002_rnaseq_de_visualization">
+  <div class="section-head"><div><p class="eyebrow">6 results below 1.000</p><h2>wf_002_rnaseq_de_visualization · RNA-Seq Differential Expression Analysis</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R1</strong><small>acc</small></div><b>0.999966</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>DESeq2 implementation difference</strong>
+    <span>The Python DESeq2 implementation reproduced the complete gene set and every effect direction, but its numerical fitting made one borderline significance decision differently. The remaining deficit comes from small p-value and ranking differences, not gene filtering.</span>
+    <span><b>Evidence.</b> All 2,526 genes matched, with 12 significant calls versus 13; p-value evidence was 0.999861, magnitude concordance 0.999996, and rank similarity 0.999973.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.999966</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>DESeq2 implementation difference</strong>
+    <span>The Python DESeq2 implementation reproduced the complete gene set and every effect direction, but its numerical fitting made one borderline significance decision differently. The remaining deficit comes from small p-value and ranking differences, not gene filtering.</span>
+    <span><b>Evidence.</b> All 2,526 genes matched, with 12 significant calls versus 13; p-value evidence was 0.999861, magnitude concordance 0.999996, and rank similarity 0.999973.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R3</strong><small>acc</small></div><b>1.000000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Floating-point precision</strong>
+    <span>The DESeq2 result is scientifically identical to the benchmark target. The value below 1.000 comes only from floating-point serialization of otherwise matching statistics.</span>
+    <span><b>Evidence.</b> All 2,526 genes and all 13 significant calls matched; direction, coverage, and rank components are 1.000000, while p-value evidence is 0.999999996.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.994</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Differential-expression method</strong>
+    <span>The edgeR model estimated dispersion and significance differently from the DESeq2 benchmark target. Gene coverage and effect direction are complete, so the deficit is statistical-method disagreement rather than a missing or filtered output.</span>
+    <span><b>Evidence.</b> All 2,526 genes and their effect directions matched, but edgeR called 37 significant genes versus 13; p-value evidence similarity was 0.981049 and rank similarity was 0.991610.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R2</strong><small>acc</small></div><b>0.999966</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>DESeq2 implementation difference</strong>
+    <span>The Python DESeq2 implementation reproduced the complete gene set and every effect direction, but its numerical fitting made one borderline significance decision differently. The remaining deficit comes from small p-value and ranking differences, not gene filtering.</span>
+    <span><b>Evidence.</b> All 2,526 genes matched, with 12 significant calls versus 13; p-value evidence was 0.999861, magnitude concordance 0.999996, and rank similarity 0.999973.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R3</strong><small>acc</small></div><b>0.999967</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>DESeq2 implementation difference</strong>
+    <span>The Python DESeq2 implementation reproduced the complete gene set and every effect direction, but its numerical fitting made one borderline significance decision differently. The remaining deficit comes from small p-value and ranking differences, not gene filtering.</span>
+    <span><b>Evidence.</b> All 2,526 genes matched, with 12 significant calls versus 13; p-value evidence was 0.999866, magnitude concordance 0.999996, and rank similarity 0.999974.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_002_rnaseq_de_visualization/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_003_host_contamination_removal">
+  <div class="section-head"><div><p class="eyebrow">3 results below 1.000</p><h2>wf_003_host_contamination_removal · Host-reference filtering of paired reads (SRR12665180)</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Borderline pair classification</strong>
+    <span>Minimap2 made a slightly different set of primary proper-pair decisions at ambiguous alignment boundaries. The retained files are complete; the deficit comes from those pair-classification differences.</span>
+    <span><b>Evidence.</b> This minimap2 output reached acc 0.995730 under the specified short-read preset and synchronized-pair filtering.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_003_host_contamination_removal/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.999900</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Borderline pair classification</strong>
+    <span>BWA-MEM retained three more pairs than the BWA-MEM benchmark target. The difference is confined to borderline proper-pair classifications rather than trimming, sequence modification, or unsynchronized mates.</span>
+    <span><b>Evidence.</b> The output retained 20,899 pairs versus 20,896 in the target and reached acc 0.999900.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_003_host_contamination_removal/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R1</strong><small>acc</small></div><b>0.999820</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Borderline pair classification</strong>
+    <span>BWA-MEM classified a small number of ambiguous alignments differently at the proper-pair boundary. The output files stayed synchronized and unmodified; only the retained-versus-removed decision changed.</span>
+    <span><b>Evidence.</b> The output retained 20,897 pairs versus 20,896; 20,891 retained IDs matched. Of the removed-pair set, 57,188 of 57,194 target decisions matched.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_003_host_contamination_removal/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_005_amplicon_dada2_pe_denoising">
+  <div class="section-head"><div><p class="eyebrow">18 results below 1.000</p><h2>wf_005_amplicon_dada2_pe_denoising · Paired-End Amplicon Denoising</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R1</strong><small>acc</small></div><b>0.000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sample identifiers</strong>
+    <span>All 17 sample names were converted to lowercase. Sample identifiers are case-sensitive, so the submitted table no longer contained the required columns even though an abundance table was produced.</span>
+    <span><b>Evidence.</b> Column validation stopped before abundance scoring because none of the renamed sample columns exactly matched the supplied identifiers.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.900</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 301 ASVs versus 315, with 267 shared: 34 additional and 48 missing. It retained 202,756 total counts versus 223,938; ASV-detection F1 was 0.866883 and abundance F1 was 0.935017.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sample identifiers</strong>
+    <span>All 17 sample names were converted to lowercase. Sample identifiers are case-sensitive, so the submitted table no longer contained the required columns even though an abundance table was produced.</span>
+    <span><b>Evidence.</b> Column validation stopped before abundance scoring because none of the renamed sample columns exactly matched the supplied identifiers.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R1</strong><small>acc</small></div><b>0.918</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 306 ASVs versus 315, with 276 shared: 30 additional and 39 missing. It retained 203,504 total counts versus 223,938; ASV-detection F1 was 0.888889 and abundance F1 was 0.948924.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R2</strong><small>acc</small></div><b>0.918</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 306 ASVs versus 315, with 276 shared: 30 additional and 39 missing. It retained 203,504 total counts versus 223,938; ASV-detection F1 was 0.888889 and abundance F1 was 0.948924.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R3</strong><small>acc</small></div><b>0.956</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 300 shared: 30 additional and 15 missing. It retained 217,621 total counts versus 223,938; ASV-detection F1 was 0.930233 and abundance F1 was 0.981590.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R1</strong><small>acc</small></div><b>0.951</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 333 ASVs versus 315, with 301 shared: 32 additional and 14 missing. It retained 214,563 total counts versus 223,938; ASV-detection F1 was 0.929012 and abundance F1 was 0.974520.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R2</strong><small>acc</small></div><b>0.951</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Missing chimera removal</strong>
+    <span>This workflow does not include a de novo chimera-removal step. The resulting table retained additional ASVs while filtering and merging removed part of the target abundance.</span>
+    <span><b>Evidence.</b> The output contained 333 ASVs versus 315, with 301 shared: 32 additional and 14 missing. It retained 214,563 total counts versus 223,938; ASV-detection F1 was 0.929012 and abundance F1 was 0.974520.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R3</strong><small>acc</small></div><b>0.949</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 297 shared: 33 additional and 18 missing. It retained 217,813 total counts versus 223,938; ASV-detection F1 was 0.920930 and abundance F1 was 0.977691.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R1</strong><small>acc</small></div><b>0.956</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 300 shared: 30 additional and 15 missing. It retained 217,621 total counts versus 223,938; ASV-detection F1 was 0.930233 and abundance F1 was 0.981590.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R2</strong><small>acc</small></div><b>0.956</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging removed more reads than the benchmark settings. The lower read depth changed the denoising boundary, removing some target ASVs and producing some alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 300 shared: 30 additional and 15 missing. It retained 217,621 total counts versus 223,938; ASV-detection F1 was 0.930233 and abundance F1 was 0.981590.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R3</strong><small>acc</small></div><b>0.951</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, denoising, paired-read merging, and chimera removal retained fewer reads than the benchmark output. The changed read depth and denoising boundary removed some target ASVs and produced some alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 334 ASVs versus 315, with 301 shared: 33 additional and 14 missing. It retained 214,614 total counts versus 223,938; ASV-detection F1 was 0.927581 and abundance F1 was 0.974407.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R1</strong><small>acc</small></div><b>0.955</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 331 ASVs versus 315, with 300 shared: 31 additional and 15 missing. It retained 217,670 total counts versus 223,938; ASV-detection F1 was 0.928793 and abundance F1 was 0.981481.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R3</strong><small>acc</small></div><b>0.918</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 306 ASVs versus 315, with 276 shared: 30 additional and 39 missing. It retained 203,487 total counts versus 223,938; ASV-detection F1 was 0.888889 and abundance F1 was 0.948882.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.937</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Different ASV set after denoising</strong>
+    <span>The Galaxy DADA2 run retained fewer reads and produced a different ASV set from the benchmark output. Most target ASVs remained, but both missing and alternative sequences lowered the detection and abundance scores.</span>
+    <span><b>Evidence.</b> The output contained 320 ASVs versus 315, with 290 shared: 30 additional and 25 missing. It retained 209,449 total counts versus 223,938; ASV-detection F1 was 0.913386 and abundance F1 was 0.962175.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R2</strong><small>acc</small></div><b>0.956</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging removed more reads than the benchmark settings. The lower read depth changed the denoising boundary, removing some target ASVs and producing some alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 300 shared: 30 additional and 15 missing. It retained 217,621 total counts versus 223,938; ASV-detection F1 was 0.930233 and abundance F1 was 0.981590.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R3</strong><small>acc</small></div><b>0.956</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-aggressive read filtering</strong>
+    <span>QIIME2 DADA2 filtering, truncation, and paired-read merging were more aggressive than the benchmark settings. The resulting depth loss changed the denoising boundary, removing target ASVs while also creating a smaller set of alternative ASVs.</span>
+    <span><b>Evidence.</b> The output contained 330 ASVs versus 315, with 300 shared: 30 additional and 15 missing. It retained 217,621 total counts versus 223,938; ASV-detection F1 was 0.930233 and abundance F1 was 0.981590.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R1</strong><small>acc</small></div><b>0.935</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Denoising decision boundary</strong>
+    <span>Total recovered abundance is close to the benchmark target, but the ASV identities differ. The root cause is the combined denoising, paired-read merging, and chimera decision boundary rather than broad read loss.</span>
+    <span><b>Evidence.</b> The output contained 300 ASVs versus 315, with 277 shared: 23 additional and 38 missing. It retained 224,084 total counts versus 223,938; ASV-detection F1 was 0.900813 and abundance F1 was 0.970988.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_005_amplicon_dada2_pe_denoising/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_006_atacseq_chromatin_accessibility">
+  <div class="section-head"><div><p class="eyebrow">13 results below 1.000</p><h2>wf_006_atacseq_chromatin_accessibility · ATAC-seq Chromatin Accessibility Profiling</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.991</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Peak-boundary variation</strong>
+    <span>This Bowtie2 + MACS3 BED differs slightly from the method-specific target in peak boundaries and summit segmentation. Reciprocal-overlap matching penalizes those interval-level differences even when the accessible regions largely agree.</span>
+    <span><b>Evidence.</b> The complete interval set reached acc 0.991415; the residual is confined to peak representation.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.992</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Peak-boundary variation</strong>
+    <span>This Bowtie2 + MACS3 BED differs slightly from the method-specific target in peak boundaries and summit segmentation. Reciprocal-overlap matching penalizes those interval-level differences even when the accessible regions largely agree.</span>
+    <span><b>Evidence.</b> The complete interval set reached acc 0.992498; the residual is confined to peak representation.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R3</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Peak-boundary variation</strong>
+    <span>This Bowtie2 + Genrich result differs slightly from the Genrich target in interval boundaries and count. The deficit reflects method-level peak representation rather than a missing output.</span>
+    <span><b>Evidence.</b> The complete interval set reached acc 0.995564 under one-to-one reciprocal-overlap matching.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R1</strong><small>acc</small></div><b>0.923</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Extra summit splitting</strong>
+    <span>The MACS3 result split enriched regions into additional summit-centered records relative to the standard Bowtie2 + MACS3 target. Because matching is one-to-one, several submitted subpeaks cannot all match the same target interval.</span>
+    <span><b>Evidence.</b> The interval set reached acc 0.922735; the loss is concentrated in peak segmentation rather than a missing BED file.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R2</strong><small>acc</small></div><b>0.993</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>Bowtie2 and MACS3 produced almost the same peak set as the registered Bowtie2 + MACS3 result. A small number of intervals were added, omitted, or shifted enough to miss reciprocal-overlap matching.</span>
+    <span><b>Evidence.</b> The output reported 33,797 peaks versus 33,493; 33,420 matched. Precision was 0.988845 and recall was 0.997820.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R3</strong><small>acc</small></div><b>0.994</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE no-model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 33,795 peaks versus 33,488; 33,449 matched. Precision was 0.989762 and recall was 0.998835.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R1</strong><small>acc</small></div><b>0.996</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE no-model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 33,462 peaks versus 33,488; 33,333 matched. Precision was 0.996145 and recall was 0.995371.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R3</strong><small>acc</small></div><b>0.995</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE no-model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 33,535 peaks versus 33,488; 33,343 matched. Precision was 0.994275 and recall was 0.995670.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R3</strong><small>acc</small></div><b>0.999507</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>Bowtie2 and MACS3 produced almost the same peak set as the registered Bowtie2 + MACS3 result. A small number of intervals were added, omitted, or shifted enough to miss reciprocal-overlap matching.</span>
+    <span><b>Evidence.</b> The output reported 33,504 peaks versus 33,493; 33,482 matched. Precision was 0.999343 and recall was 0.999672.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.994</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 38,549 peaks versus 38,779; 38,434 matched. Precision was 0.997017 and recall was 0.991103.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R3</strong><small>acc</small></div><b>0.994</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 38,549 peaks versus 38,779; 38,434 matched. Precision was 0.997017 and recall was 0.991103.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R2</strong><small>acc</small></div><b>0.990</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE no-model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with small differences in interval boundaries and count.</span>
+    <span><b>Evidence.</b> The output reported 33,873 peaks versus 33,488; 33,349 matched. Precision was 0.984530 and recall was 0.995849.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R1</strong><small>acc</small></div><b>0.999</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Minor peak-boundary differences</strong>
+    <span>This result follows the calibrated MACS2 BAMPE model protocol. Its peak set is nearly identical to that protocol&#x27;s reference, with only a few interval differences.</span>
+    <span><b>Evidence.</b> The output reported 38,769 peaks versus 38,779; 38,750 matched. Precision was 0.999510 and recall was 0.999252.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_006_atacseq_chromatin_accessibility/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_007_vgp_mitogenome_assembly">
+  <div class="section-head"><div><p class="eyebrow">17 results below 1.000</p><h2>wf_007_vgp_mitogenome_assembly · Mitochondrial genome assembly of Eutresis hypereia</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R1</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,041 matching fragment occurrences; 15,206 in the submitted assembly and 15,206 in the reference. Precision=0.989149, recall=0.989149.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Unmatched mitochondrial sequence</strong>
+    <span>The submitted sequence shares no 31-base DNA fragments with the reference mitochondrial assembly.</span>
+    <span><b>Evidence.</b> 0 matching fragment occurrences; 16,556 in the submitted assembly and 15,206 in the reference. Precision=0.000000, recall=0.000000.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R1</strong><small>acc</small></div><b>0.924</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 14,046 matching fragment occurrences; 15,187 in the submitted assembly and 15,206 in the reference. Precision=0.924870, recall=0.923714.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R2</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,034 matching fragment occurrences; 15,209 in the submitted assembly and 15,206 in the reference. Precision=0.988494, recall=0.988689.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R1</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R2</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R3</strong><small>acc</small></div><b>0.990</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,056 matching fragment occurrences; 15,209 in the submitted assembly and 15,206 in the reference. Precision=0.989940, recall=0.990135.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R1</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R2</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R3</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,034 matching fragment occurrences; 15,209 in the submitted assembly and 15,206 in the reference. Precision=0.988494, recall=0.988689.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R3</strong><small>acc</small></div><b>0.986</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 14,996 matching fragment occurrences; 15,205 in the submitted assembly and 15,206 in the reference. Precision=0.986255, recall=0.986190.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R1</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R2</strong><small>acc</small></div><b>0.991</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,070 matching fragment occurrences; 15,213 in the submitted assembly and 15,206 in the reference. Precision=0.990600, recall=0.991056.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R3</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,045 matching fragment occurrences; 15,210 in the submitted assembly and 15,206 in the reference. Precision=0.989152, recall=0.989412.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R2</strong><small>acc</small></div><b>0.989</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Sequence differences from the reference</strong>
+    <span>The submitted assembly and the reference have different 31-base DNA fragment content; this directly reduces the original F1 score.</span>
+    <span><b>Evidence.</b> 15,034 matching fragment occurrences; 15,209 in the submitted assembly and 15,206 in the reference. Precision=0.988494, recall=0.988689.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_007_vgp_mitogenome_assembly/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_009_clinicalmp_peptide_verification">
+  <div class="section-head"><div><p class="eyebrow">20 results below 1.000</p><h2>wf_009_clinicalmp_peptide_verification · Clinical Metaproteomics Peptide Verification</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R1</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.840</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 137 of 139 target peptide-protein pairs but added 50; it reported 46 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.852</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 138 of 139 target peptide-protein pairs but added 47; it reported 44 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R1</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R2</strong><small>acc</small></div><b>0.908</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 138 of 139 target peptide-protein pairs but added 27; it reported 26 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R3</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R2</strong><small>acc</small></div><b>0.949</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 15; it reported 15 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R3</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R1</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R2</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R3</strong><small>acc</small></div><b>0.908</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so the main loss comes from extra results rather than missing target pairs.</span>
+    <span><b>Evidence.</b> The output recovered 138 of 139 target peptide-protein pairs and added 27, for 165 submitted pairs versus 139 in the target. Precision was 0.836364 and recall was 0.992806.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R1</strong><small>acc</small></div><b>0.914</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 26; it reported 26 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R2</strong><small>acc</small></div><b>0.964</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Peptide-pair substitution</strong>
+    <span>The total peptide and pair counts are correct, but a small set of accepted peptide-protein pairs was substituted. This points to peptide acceptance or protein-assignment decisions, not missing rows overall.</span>
+    <span><b>Evidence.</b> The output had 139 pairs and 134 peptides, matching the target totals, but 5 pairs were additional and 5 target pairs were absent.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R3</strong><small>acc</small></div><b>0.796</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-restrictive peptide validation</strong>
+    <span>The verification and assignment criteria rejected too many target peptide-protein pairs while also accepting some alternatives. Recall loss is larger than the precision loss.</span>
+    <span><b>Evidence.</b> The output matched 109 of 139 target pairs, with 30 missing and 26 additional; it reported 129 peptides versus 134.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 5; it reported 5 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R2</strong><small>acc</small></div><b>0.868</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set and also missed several target pairs. Extra accepted pairs account for most of the score difference.</span>
+    <span><b>Evidence.</b> The output recovered 131 of 139 target peptide-protein pairs and added 32, for 163 submitted pairs. Precision was 0.803681 and recall was 0.942446.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R3</strong><small>acc</small></div><b>0.900</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Over-permissive peptide validation</strong>
+    <span>The verification criterion accepted additional peptide sequences beyond the target set. Protein assignment was then propagated for those extra accepted peptides, so precision—not recovery of target pairs—is the main loss.</span>
+    <span><b>Evidence.</b> The output recovered 139 of 139 target peptide-protein pairs but added 31; it reported 31 more distinct peptides than the target.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R1</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Additional peptide–protein pairs</strong>
+    <span>All reference peptide–protein pairs were recovered; additional pairs reduced precision.</span>
+    <span><b>Evidence.</b> 139 matched pairs out of 144 submitted and 139 reference pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R2</strong><small>acc</small></div><b>0.903</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Additional peptide–protein pairs</strong>
+    <span>All reference peptide–protein pairs were recovered; additional pairs reduced precision.</span>
+    <span><b>Evidence.</b> 139 matched pairs out of 169 submitted and 139 reference pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R2</strong><small>acc</small></div><b>0.982</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Additional peptide–protein pairs</strong>
+    <span>All reference peptide–protein pairs were recovered; additional pairs reduced precision.</span>
+    <span><b>Evidence.</b> 139 matched pairs out of 144 submitted and 139 reference pairs.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_009_clinicalmp_peptide_verification/index.html#error-analysis">Open item</a>
+</article></div>
+</section><section class="panel" id="wf_010_pseudobulk_scrna_de">
+  <div class="section-head"><div><p class="eyebrow">16 results below 1.000</p><h2>wf_010_pseudobulk_scrna_de · Single-Cell Pseudobulk Aggregation</h2><p>Each note explains only the displayed result and its score.</p></div></div>
+  <div class="iwc-item-grid"><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R1</strong><small>acc</small></div><b>0.999712</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999424.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R2</strong><small>acc</small></div><b>0.948</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Generic negative-binomial model</strong>
+    <span>The task accepts a standard count-based negative-binomial method. This result used a generic model rather than edgeR or DESeq2; its pseudobulk matrix is exact, but its fitted statistics agree less closely with the calibrated methods.</span>
+    <span><b>Evidence.</b> All 1,429 genes were present. The model called 0 significant genes versus 49 in the edgeR comparison; the differential-expression component scored 0.897779.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Open-ended code · R3</strong><small>acc</small></div><b>0.979</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>DESeq2 normalization choice</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This PyDESeq2 analysis used the poscounts size-factor option, which changes normalization and fitted statistics relative to the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 72 significant genes versus 68; magnitude concordance was 0.962048, rank similarity 0.955534, and p-value evidence 0.876477.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.5 · Galaxy-API code · R2</strong><small>acc</small></div><b>0.977</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>edgeR fitting variation</strong>
+    <span>The pseudobulk matrix and complete gene set are correct. The recorded Galaxy edgeR analysis produced different fitted statistics from the calibrated edgeR output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 73 significant genes versus 49; magnitude concordance was 0.962383, rank similarity 0.971237, and p-value evidence 0.846298.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R1</strong><small>acc</small></div><b>0.998</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>edgeR fitting variation</strong>
+    <span>The pseudobulk matrix and complete gene set are correct. This edgeR analysis produced slightly different fitted statistics from the calibrated Galaxy edgeR output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 76 significant genes versus 49; the differential-expression component scored 0.995519.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R2</strong><small>acc</small></div><b>0.999712</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999424.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Open-ended code · R3</strong><small>acc</small></div><b>0.999710</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999420.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R1</strong><small>acc</small></div><b>0.998</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>edgeR fitting variation</strong>
+    <span>The pseudobulk matrix and complete gene set are correct. This edgeR analysis produced slightly different fitted statistics from the calibrated Galaxy edgeR output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 73 significant genes versus 49; the differential-expression component scored 0.995550.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Sol · Galaxy-API code · R3</strong><small>acc</small></div><b>1.000000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Floating-point precision</strong>
+    <span>The pseudobulk matrix and DESeq2 statistics match the calibrated DESeq2 reference; the tiny difference from 1.000 comes only from numeric serialization.</span>
+    <span><b>Evidence.</b> All 1,429 genes and all 68 significant calls matched; the differential-expression component scored 0.999999999178.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R1</strong><small>acc</small></div><b>0.999710</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999420.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Open-ended code · R2</strong><small>acc</small></div><b>0.999708</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999417.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>GPT-5.6 Luna · Galaxy-API code · R1</strong><small>acc</small></div><b>1.000000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Floating-point precision</strong>
+    <span>The pseudobulk matrix and edgeR statistics match the benchmark target; the tiny difference from 1.000 comes only from numeric serialization.</span>
+    <span><b>Evidence.</b> All 1,429 genes and all 49 significant calls matched; the differential-expression component scored 0.999999999172.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R1</strong><small>acc</small></div><b>0.999710</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999421.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R2</strong><small>acc</small></div><b>0.999712</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>PyDESeq2 implementation variation</strong>
+    <span>The pseudobulk matrix is exact and the complete differential-expression table is valid. This result used PyDESeq2; its fitted values differ only slightly from the calibrated Galaxy/R DESeq2 output.</span>
+    <span><b>Evidence.</b> All 1,429 genes and their effect directions matched. It called 62 significant genes versus 68; the differential-expression component scored 0.999423.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Open-ended code · R3</strong><small>acc</small></div><b>0.000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Invalid multiple-testing correction</strong>
+    <span>The submitted fdr values were not the Benjamini-Hochberg adjustment of the submitted p-values, which the task explicitly required.</span>
+    <span><b>Evidence.</b> The largest difference from the correct Benjamini-Hochberg values was 0.00342, above the allowed tolerance of 0.000001.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article><article class="iwc-run-card available">
+  <div class="iwc-run-head"><div><strong>Codex + DeepSeek V4 Pro · Galaxy-API code · R1</strong><small>acc</small></div><b>1.000000</b></div>
+  <section class="run-error-details">
+  <h4>Score explanation</h4>
+  <div class="condition-causes"><div class="condition-cause">
+    <strong>Floating-point precision</strong>
+    <span>The pseudobulk matrix and edgeR statistics match the benchmark target; the tiny difference from 1.000 comes only from numeric serialization.</span>
+    <span><b>Evidence.</b> All 1,429 genes and all 49 significant calls matched; the differential-expression component scored 0.999999999172.</span>
+  </div></div>
+</section>
+  <a class="history-link" href="../wf_010_pseudobulk_scrna_de/index.html#error-analysis">Open item</a>
+</article></div>
+</section>
+</main></body>
+</html>
