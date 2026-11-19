@@ -45,6 +45,7 @@ Without that test the paper can say that every Galaxy run leaves a standard reco
 | 17 November revision | The inspection-study paragraph leaves the main text; the study is recommended before submission as the only test of whether the record helps people find mistakes | Argument, claim table, Work before submission |
 | Data check, 18 November | BixBench token ratios per model now come from the release (`bixbench_tokens_by_model.csv`): DeepSeek V4 Pro 3.30, not the 3.67 of the 12 October token pages, and pooled 4.07, not 4.23 | P8, token tables |
 | Authors' request, 18 November | P1 to P9 rewritten for readability, numbers unchanged: each number names its condition (Galaxy or custom code), benchmark and denominator; elliptical lists and three-idea sentences split; each reference sits beside the claim it supports; the 1,251 lookups are stated for all Galaxy runs, not only successful ones; "successful" defined as ending with a correct answer; the P8 title no longer credits the token reduction to engineering alone | Paragraph outline, "Words and panels" |
+| Authors' description of the server, 18 November | Why the server was built (round trips and long replies, measured in the July batch), its five design principles and nine tools, and the difference from Galaxy-MCP, each checked against the code where possible; the final server's features are kept apart from the version the main runs used; wording rules for "subset", "no polling" and contributions back to Galaxy-MCP | P3, P8, "The MCP server and how it differs from Galaxy-MCP", claim table, Fig. 1a, Work before submission |
 
 ## Paragraph outline
 
@@ -92,7 +93,8 @@ If the inspection study is run, its result replaces "and left an inspectable rec
   Galaxy-MCP, a community server for the Model Context Protocol (MCP) [mcp], exposes Galaxy's operations to AI clients; the Galaxy 2026 update names it as future work and does not evaluate agents that use it [**galaxy2026**].
   Exposing operations may not be enough, because how an agent's interface is designed changes what the agent achieves [**yang2024sweagent**].
 - What we did and why: We therefore engineered our own MCP server and skills for running analyses in Galaxy, separate from Galaxy-MCP.
-  Every step, whether it uses an installed Galaxy tool or the agent's own code packaged as a user-defined tool, follows one pattern: find the tool and read its parameters, submit the job and wait for it, check the parameter values Galaxy resolved, and open the history.
+  We built it because agents working through the Galaxy API used far more tokens than agents writing their own code (5.48 times on BixBench in the last batch before the server), and their traces showed two causes: many more round trips to the model, such as polling jobs and resubmitting after guessing a tool's schema, and long API replies that stayed in the context (P8).
+  Every step, whether it uses an installed Galaxy tool or the agent's own code packaged as a user-defined tool, follows one pattern: find the tool and read only the parameters it needs, submit the job once and wait for it, check the parameter values Galaxy resolved, and open the history.
   Four models (GPT-5.5, GPT-5.6 Sol, GPT-5.6 Luna and DeepSeek V4 Pro, all in the Codex CLI) ran each task three times in Galaxy and three times with custom code, on BixBench-Verified-50 (50 questions), CompBioBench (100 questions) and ten multi-step analyses built from IWC workflows, which GPT-5.5 did not run: 160 tasks and 3,780 runs in all (Fig. 1a).
   We asked whether working through Galaxy keeps accuracy (Q1), helps on long analyses (Q2), and makes agents' variability (Q3), errors (Q4) and cost (Q5) visible enough to judge when an answer can be trusted.
 
@@ -149,10 +151,11 @@ If the inspection study is run, its result replaces "and left an inspectable rec
   On BixBench, token use did not signal whether a Galaxy answer was right: the median incorrect run used 1.85 million tokens and the median correct run 2.15 million, although a few incorrect runs used far more, so the mean was 9.0 million for incorrect runs against 4.1 million for correct ones.
 - Engineering (Fig. 2d): The main runs did not use the later interface changes, which were run only on BixBench with GPT-5.6 Sol.
   Across successive BixBench batches, the ratio fell with GPT-5.5 from 5.48 (prompts and skills) to 2.81 (MCP execution), and with GPT-5.6 Sol from 3.45 (MCP execution) to 2.42 (compact replies) and 1.53 (longer waits), with 137 of 150 Galaxy answers accepted in the last batch.
+  The MCP-execution stage replaced polling and resubmission with run calls that submit once and wait for the job; the compact-reply stage returned a short list of candidate tools, showed only the schema fields asked for with a fill-in template using the real parameter paths, and checked user-defined tool definitions before creating them; the last stage let run calls wait longer before returning ("The MCP server and how it differs from Galaxy-MCP").
   The CLI version, replicate coverage and scoring also changed between batches, so no reduction is credited to a single change; the earlier estimates of about 20 and 8 times have no deposited run records.
   Other MCP work reports similar overheads from tool definitions and intermediate results passing through the model, and large savings from reducing them [**anthropic2025codeexec**; luo2025mcpuniverse; gan2025ragmcp].
-- Where the tokens go: Most Galaxy tokens went to re-reading context: in a July BixBench batch, before MCP execution, cached input made up 94.8% of Galaxy tokens, and Galaxy runs took 2.66 times as many agent turns as custom-code runs, each carrying 2.2 times as much cached context.
-  Waiting for Galaxy jobs added turns: in the GPT-5.6 Sol batches, longer waits cut the mean number of wait calls per replicate from 481 to 78.
+- Where the tokens go: Most Galaxy tokens went to re-reading context: in a July BixBench batch, before MCP execution, cached input made up 94.8% of Galaxy tokens, and Galaxy runs took 2.66 times as many agent turns as custom-code runs, each carrying 2.2 times as much cached context, which are the two causes the server was built to cut (P3).
+  Waiting for Galaxy jobs still added turns when a job outlasted a run call's wait: in the GPT-5.6 Sol batches, longer waits cut the mean number of wait calls per replicate from 481 to 78.
   Agents should therefore be compared on cost as well as accuracy [**kapoor2025agents**].
 
 ### P9. Paired with Galaxy, agents' analyses become inspectable and open to oversight
@@ -173,14 +176,14 @@ Counted as whitespace-separated words in the bullets, excluding drafting labels 
 |---|---|---|---|---|---|
 | P1 | 182 | 70 | 100 | | |
 | P2 | 164 | 65 | 90 | | |
-| P3 | 257 | 90 | 130 | 1a | 1 |
+| P3 | 326 | 90 | 130 | 1a | 1 |
 | P4 | 187 | 65 | 95 | 1b | 3, 4 |
 | P5 | 278 | 80 | 120 | 1c | 7 |
 | P6 | 325 | 80 | 120 | 2a, 2b | 5, 6 |
 | P7 | 327 | 75 | 115 | 2c | 2 |
-| P8 | 300 | 70 | 110 | 2d | 8 |
+| P8 | 392 | 70 | 110 | 2d | 8 |
 | P9 | 212 | 50 | 80 | | |
-| **Total** | **2,232** | **645** | **960** | | |
+| **Total** | **2,393** | **645** | **960** | | |
 
 ## How each point is worded so that the results support it
 
@@ -208,6 +211,11 @@ The rules set by the reviews of 17 November still apply: "broadly similar" or "c
 | Accurate, verifiable and reproducible research (closing) | "Accurate": close scores; "verifiable": history links checked; "reproducible": only after archiving the histories and rerunning a sample without an agent | As in the rows above; histories and UDT code not yet archived |
 | Workbench plus agent gives a standardized analysis | Every Galaxy run is recorded as a history of datasets and jobs in one format; custom code is not claimed to be uncheckable, since scripts and logs can preserve evidence | Custom-code event logs were used for the audit and the taxonomy |
 | Reviewing agent outputs costs the time the agent saved (P1) | Supported only by external evidence; not measured here | becker2025, stackoverflow2025, wiley2025 |
+| Agents working through the Galaxy API used far more tokens; the traces showed many round trips and long replies kept in context (why the server was built) | Supported for the last batch before the server: 5.48 times custom code on BixBench, with 2.66 times the agent turns and 2.2 times the cached context per turn; the earlier "about 20 times" has no run records | `token_optimization_ratios.csv`; July 6 batch in `s7_token_drivers/dataset/source_data.csv` |
+| "Ours is basically a subset of galaxy-mcp" | "Covers a subset of Galaxy-MCP's operations and changes how they behave in an agent loop": run calls wait for the job, resolved parameters are compared, replies are short and full records go to files | Code reading, 17 and 18 November; Galaxy-MCP v1.9.0 to v1.12.0 ("The MCP server and how it differs from Galaxy-MCP") |
+| "One call per job, so the agent doesn't poll or resubmit" | A run call submits once and waits for the job up to a time limit; a separate wait tool follows longer jobs without resubmitting; agents still made wait calls | `wait_for_galaxy_jobs` in the code; wait calls per replicate 481, then 78 (GPT-5.6 Sol batches) |
+| Short replies, no repeats and records in files describe the benchmarked server | Only for the later BixBench batches: compact replies entered after the main runs, so P4 to P7 used the MCP-execution stage | Stage names in the token development series; the version used for each benchmark is not yet recorded |
+| "We contribute what we learn back to galaxy-mcp as PRs" | Name only merged pull requests, by number, that carry a lesson from this server; the merged ones found on 18 November add a transport and display cards, not waiting or short replies | github.com/galaxyproject/galaxy-mcp pull requests #196, #206 (merged), #226, #227, #230, #233 (open), read 18 November |
 
 ## Numbers behind P4 to P8
 
@@ -430,7 +438,7 @@ Two figures, as the format allows; each panel is redrawn from code with its `sou
 
 | Figure | Panel | Shows | Supports | From slide |
 |---|---|---|---|---|
-| 1. Design, accuracy and the workbench on long analyses | a | The design (four models, three on the multi-step tasks; two conditions; three benchmarks; three replicates; 3,780 runs) and the division of labour: the agent plans, the MCP server and skills connect it to Galaxy, Galaxy executes and records, a person reads the history | P3 | 1, redrawn |
+| 1. Design, accuracy and the workbench on long analyses | a | The design (four models, three on the multi-step tasks; two conditions; three benchmarks; three replicates; 3,780 runs) and the division of labour: the agent plans, the MCP server and skills connect it to Galaxy, Galaxy executes and records, a person reads the history; the server's nine tools in three groups (find and set up a tool, run, check data) | P3 | 1, redrawn |
 | 1 | b | Accuracy by benchmark and model, Galaxy and custom code, with the pooled differences and 95% intervals; CompBioBench official without an interval; multi-step results passed and complete runs | P4, P5 | 3 and 4, with release numbers and multi-step tasks |
 | 1 | c | The imaging task run by run: stages passed, score out of 9 and hours, for the nine Galaxy and nine custom-code runs | P5 | 7, adding custom code |
 | 2. Variability, record, errors and cost | a | Single attempt, at least two passed and at least one passed per benchmark and condition | P6 | 5, with release numbers |
@@ -454,7 +462,7 @@ A Brief Communication allows 1,200 words including abstract, references and figu
 | Display items | 2 figures or tables, 3 at discretion | 2 figures, 3 and 4 panels | Same |
 | Online Methods | Required, with subheadings; outside the count | Implementation, the interface's features against Galaxy-MCP, scoring, statistics, the audit and the rule-violation screen, disclosures | Same |
 
-Nine paragraphs at about 70 words each is tight; the bullets as written run to 2,232 words.
+Nine paragraphs at about 70 words each is tight; the bullets as written run to 2,393 words.
 To reach the standard version:
 
 1. Merge P1 and P2 into one introduction paragraph of about 120 words, keeping the survey numbers and one sentence on plan versus execution (saves about 15 words and one paragraph break).
@@ -490,6 +498,69 @@ The repository holds two sets of ten IWC tasks; on 18 November the authors confi
 | Galaxy versus custom code | 99.0% versus 95.3% mean output agreement; 79.2% versus 72.5% of runs at ≥ 0.99 | 67.5% versus 58.7% of required results passed; 24.4% versus 23.3% of runs with every result passed |
 | Role in the paper | Supplementary Information | The third benchmark: abstract, P3 to P8 |
 
+## The MCP server and how it differs from Galaxy-MCP
+
+Source for P3, P8, Fig. 1a and the Methods section on implementation.
+It combines the authors' description of 18 November with checks of the local copy of the server code (`Galaxy_benchmark/token_improvment/hf_batch/protocol/`, outside this repository) and of the public Galaxy-MCP repository, both on 18 November.
+It describes the final version of the server; which features each benchmark's main runs had is still open (see "Work before submission").
+
+### Why it was built
+
+Agents working through the Galaxy API with prompts and skills used 5.48 times the tokens of custom code on BixBench (July 6 batch, the last before the server).
+The authors' reading of the traces found two causes, and the same batch measures both (P8):
+
+- many more model round trips (polling running jobs, retrying payloads after guessing the schema, re-checking jobs that had already finished): Galaxy runs took 2.66 times as many agent turns;
+- long API replies (tool lists, full schemas, job details) that stay in the context and are resent with every later call: each Galaxy turn carried 2.2 times as much cached context.
+
+### What it does
+
+| Principle | What the server does | Checked in the code on 18 November |
+|---|---|---|
+| One call per job | Checks the inputs, submits once and waits for the job to finish, up to a time limit, then returns the outputs or the error; a separate wait tool follows jobs that outlast that limit without resubmitting | Yes: `run_galaxy_tool_and_wait` ("Submit and block; use this instead of BioBlend run_tool() plus polling"); `wait_for_galaxy_jobs` ("Block on existing jobs until terminal state without resubmission"); both waits take a time limit |
+| Short replies | Tool search returns a short list of candidates; a tool schema shows only the fields and conditional branch the agent asked for, with a fill-in template that uses the real parameter paths; history listings and dataset previews are capped; a finished run returns the job state, check results, output IDs and small text outputs | Not checked line by line |
+| No repeats | Outputs, unchanged results and schemas already shown in the session are shortened | Yes: unchanged repeat replies are abbreviated unless the agent asks to reread |
+| Full records outside the conversation | The complete request, reply and job record go to a file, and the reply points to it; the agent reads only what it needs | Yes: each call writes its request and summary to an evidence directory; which of these files the scoring uses is not documented in this repository |
+| Fewer failed submissions | Equivalent parameter formats are not flagged as mismatches; user-defined tool definitions are checked before the tool is created | Yes: numeric parameter values are compared as values; the user-defined tool's definition is validated before creation |
+
+The nine tools, in three groups:
+
+| Group | Tool | What it does |
+|---|---|---|
+| Find and set up a tool | `search_galaxy_tools` | Top matches among installed tools (current versions) by package, tool family, operation or metric |
+| | `inspect_galaxy_tool` | The tool's live input schema, limited to the fields and branch the agent asks for |
+| Run | `run_galaxy_tool_and_wait` | Check inputs, submit once, wait, return the outputs or the error |
+| | `run_galaxy_udt_and_wait` | Create and run a user-defined tool (a command in a container), then wait |
+| | `wait_for_galaxy_jobs` | Keep waiting on jobs already submitted, without resubmitting |
+| | `stage_workspace_file` | Upload a local file and wait until it is ready |
+| Check data | `inspect_galaxy_history` | Datasets in the history, filtered by name or type |
+| | `peek_galaxy_dataset` | Preview and column information for one dataset |
+| | `inspect_archive_inventory` | Files inside an archive |
+
+In the local copy, eight tools are served by `galaxy-execute` and `wait_for_galaxy_jobs` by a separate wait server; a blocking variant serves six, without staging, peeking or waiting.
+Not every benchmark exposed every tool: the multi-step and IWC workflow tasks had no user-defined-tool tool, and only CompBioBench had the dataset-peek tool (`error_taxonomy.md`, "Caveats").
+By the stage names of the token development series (P8), run calls that wait were in place from the MCP-execution stage, which the main runs used; compact replies, parameter templates and user-defined-tool checks entered after the main runs (ratio 2.42), and longer waits last (1.53).
+So the main runs did not have the short replies, and the paper must not describe the final server as the one behind P4 to P7.
+When repeat shortening, record files and the parameter-equivalence rule entered is not recorded in this repository.
+
+### Difference from Galaxy-MCP
+
+| | Galaxy-MCP | Our server |
+|---|---|---|
+| Scope | General purpose, covering most of the Galaxy API (about 49 tools in the versions read on 17 November): histories, uploads, collections, tools, user-defined tools, jobs, workflows (including IWC) and pages | Finding, running and checking tools on the data in one history (nine tools) |
+| Running a tool | `run_tool` returns as soon as the job is submitted, and the agent checks the status afterwards | Returns when the job has finished, with its outputs or error |
+| Parameters | Dataset-versus-collection preflight only; no comparison of the parameters Galaxy resolved (v1.9.0 to v1.12.0) | Compares the parameters Galaxy resolved with those requested |
+| Replies | Full API replies | Short replies, repeats shortened, full records saved to files |
+| Code | BioBlend | BioBlend; imports nothing from Galaxy-MCP and shares no operation names with it |
+
+How to say it in the paper:
+
+- "Our server covers a subset of Galaxy-MCP's operations and changes how they behave in an agent loop", not "ours is a subset of Galaxy-MCP": the journal requires novelty, and a reviewer will read "subset" as no contribution.
+- "A run call submits once and waits for the job", not "the agent never polls": agents still made wait calls for long jobs (481, then 78 per replicate in the GPT-5.6 Sol batches).
+- Contributions back to Galaxy-MCP: the authors' note says lessons go back to Galaxy-MCP as pull requests.
+  On 18 November the merged pull requests from accounts that appear to be the lab's add a Streamable HTTP transport (#196, merged 28 October) and MCP Apps cards for histories and datasets (#206, merged 18 November); open ones add a per-session history scope (#233), which may address the 1,251 tool lookups without a usable history in P7, extraction of a workflow from a history (#226) and checks before running user-defined tools (#227, #230).
+  None of the merged ones carries waiting for jobs or short replies; cite only merged pull requests, by number, after the authors confirm the accounts.
+- How the server relates to agentic-plugins, which installs Galaxy-MCP with Galaxy skills in agent harnesses, is still the authors' decision.
+
 ## Work before submission
 
 ### Required for submission
@@ -502,8 +573,10 @@ The repository holds two sets of ten IWC tasks; on 18 November the authors confi
   If they are the official item grades, use them for P6 and for a paired interval on the official score, and drop the reconstructed key to a diagnostic.
 - [ ] Count execution errors per model (extend `analysis/error_taxonomy.py` to group by model) to answer "do models hit the same challenges" for all three benchmarks, not only from the multi-step task pages.
 - [ ] Check the bix-52-q7 history of the 539 run before Fig. 2b mentions it.
-- [ ] Name the exact version (release or commit) of the server, skills and prompts benchmarked on each benchmark, and the Galaxy release on usegalaxy.org during the runs.
-- [ ] Release the server, skills and prompts under an open licence with a DOI, and state how they relate to Galaxy-MCP and agentic-plugins; finish the feature comparison started on 17 November (Galaxy-MCP v1.9.0 to v1.12.0 submit and return without waiting or comparing resolved parameters; our server imports nothing from it).
+- [ ] Name the exact version (release or commit) of the server, skills and prompts benchmarked on each benchmark, which of the nine tools each benchmark exposed, and the Galaxy release on usegalaxy.org during the runs.
+  Record the batch at which each feature in "The MCP server and how it differs from Galaxy-MCP" entered, so that Methods describes the server the main runs used and the later changes separately.
+- [ ] Release the server, skills and prompts under an open licence with a DOI, and state how they relate to Galaxy-MCP and agentic-plugins; finish the feature comparison started on 17 November (Galaxy-MCP v1.9.0 to v1.12.0 submit and return without waiting or comparing resolved parameters; our server imports nothing from it) and pin it to the Galaxy-MCP version current at submission.
+- [ ] List the pull requests to Galaxy-MCP that carry lessons from this server, confirm their authors, and cite only merged ones.
 - [ ] Claim "reproducible" only if a sample of histories is rerun without an agent; archive the histories and each UDT's code with a DOI before claiming durable access.
 - [ ] Freeze one results release and regenerate every number from it; integrate the multi-step tasks into `data/results_manifest.csv`, the manuscript, the figure build and the source-data inventories (the package still describes the 3,840-run design).
 - [ ] Commit the verification scripts and tables (`analysis/verify_outline_claims.py`, `analysis/check_bixbench_header.py`, the error-taxonomy scripts, `data/outline_verification/`, `data/error_taxonomy/`).
@@ -565,3 +638,4 @@ A script that reproduces a count does not validate the classification behind it.
 | Slide numbers | `Galaxy_benchmark/result_evaluation/figures/scored_runs.csv` (outside this repository; recomputed on 18 November); `data/token_ratios_main_runs.csv`, `data/site_token_totals.csv` (12 October token pages); slide 2: no source found |
 | Cancer terms in task text | Search of the question text in `data/site/` on 18 November; no script |
 | External numbers | "References checked for this outline" |
+| Server design, tools and the comparison with Galaxy-MCP | Authors' description, 18 November; local code copy `Galaxy_benchmark/token_improvment/hf_batch/protocol/` (`galaxy_execute_mcp.py`, `galaxy_wait_mcp.py`, `galaxy_execute_mcp_blocking.py`; outside this repository); github.com/galaxyproject/galaxy-mcp pull requests, read 18 November |
