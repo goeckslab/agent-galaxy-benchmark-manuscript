@@ -1,0 +1,10 @@
+benchmark,endpoint,model,galaxy,custom_code,difference,lower_95,upper_95,runs_per_condition,resampling_units,interval_basis
+BixBench,reviewed acceptance,GPT-5.5,93.3333333333,92,1.33333333333,0,3.47222222222,150,33,paired dataset-cluster bootstrap
+BixBench,reviewed acceptance,GPT-5.6 Sol,92.6666666667,89.3333333333,3.33333333333,-1.33333333333,9.52380952381,150,33,paired dataset-cluster bootstrap
+BixBench,reviewed acceptance,GPT-5.6 Luna,88.6666666667,89.3333333333,-0.666666666667,-6.53594771242,4.66666666667,150,33,paired dataset-cluster bootstrap
+BixBench,reviewed acceptance,DeepSeek V4 Pro,83.3333333333,82.6666666667,0.666666666667,-2.89855072464,4.08163265306,150,33,paired dataset-cluster bootstrap
+BixBench,reviewed acceptance,Pooled,89.5,88.3333333333,1.16666666667,-1.48148148148,4.24836601307,600,33,paired dataset-cluster bootstrap
+CompBioBench,official points,Pooled,87,86.75,0.25,,,1200,,no official item-level paired interval; 12 submissions per condition
+CompBioBench,reconstructed key; diagnostic,Pooled,86.5833333333,88.25,-1.66666666667,-3.83333333333,0.5,1200,100,paired item bootstrap; official grades unavailable
+IWC multi-step,acc,Pooled,67.4845679012,58.725308642,8.75925925926,-6.09259259259,27.1388888889,90,10,paired task bootstrap; equal task and model weights
+IWC multi-step,all_pass,Pooled,24.4444444444,23.3333333333,1.11111111111,-16.6666666667,21.1111111111,90,10,paired task bootstrap; equal task and model weights

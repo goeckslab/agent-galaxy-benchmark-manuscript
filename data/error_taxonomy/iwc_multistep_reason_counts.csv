@@ -1,0 +1,461 @@
+table,row,column,n
+T0 totals,runs,Galaxy,90
+T0 totals,runs,custom code,90
+T0 totals,scored results,Galaxy,783
+T0 totals,scored results,custom code,783
+T0 totals,failed results,Galaxy,253
+T0 totals,failed results,custom code,320
+T0 totals,"failed, score below 0.80",Galaxy,215
+T0 totals,"failed, score below 0.80",custom code,295
+T0 totals,"failed, score 0.80 or above",Galaxy,38
+T0 totals,"failed, score 0.80 or above",custom code,25
+T0 totals,"failed, score exactly 0",Galaxy,119
+T0 totals,"failed, score exactly 0",custom code,175
+T1 kinds,content,Galaxy: failed results with this reason,215
+T1 kinds,content,custom code: failed results with this reason,295
+T1 kinds,content,Galaxy: reason entries,215
+T1 kinds,content,custom code: reason entries,295
+T1 kinds,member,Galaxy: failed results with this reason,76
+T1 kinds,member,custom code: failed results with this reason,125
+T1 kinds,member,Galaxy: reason entries,76
+T1 kinds,member,custom code: reason entries,125
+T1 kinds,check,Galaxy: failed results with this reason,20
+T1 kinds,check,custom code: failed results with this reason,29
+T1 kinds,check,Galaxy: reason entries,20
+T1 kinds,check,custom code: reason entries,29
+T1 kinds,list,Galaxy: failed results with this reason,0
+T1 kinds,list,custom code: failed results with this reason,1
+T1 kinds,list,Galaxy: reason entries,0
+T1 kinds,list,custom code: reason entries,1
+T1 kinds,instruction,Galaxy: failed results with this reason,38
+T1 kinds,instruction,custom code: failed results with this reason,5
+T1 kinds,instruction,Galaxy: reason entries,325
+T1 kinds,instruction,custom code: reason entries,28
+T1 kinds,format,Galaxy: failed results with this reason,18
+T1 kinds,format,custom code: failed results with this reason,9
+T1 kinds,format,Galaxy: reason entries,77
+T1 kinds,format,custom code: reason entries,11
+T1 kinds,method,Galaxy: failed results with this reason,22
+T1 kinds,method,custom code: failed results with this reason,16
+T1 kinds,method,Galaxy: reason entries,22
+T1 kinds,method,custom code: reason entries,16
+T1b kind combinations,content,Galaxy,108
+T1b kind combinations,content,custom code,148
+T1b kind combinations,content,both,256
+T1b kind combinations,content;member,Galaxy,51
+T1b kind combinations,content;member,custom code,110
+T1b kind combinations,content;member,both,161
+T1b kind combinations,method,Galaxy,22
+T1b kind combinations,method,custom code,16
+T1b kind combinations,method,both,38
+T1b kind combinations,content;check,Galaxy,10
+T1b kind combinations,content;check,custom code,17
+T1b kind combinations,content;check,both,27
+T1b kind combinations,content;member;check,Galaxy,10
+T1b kind combinations,content;member;check,custom code,11
+T1b kind combinations,content;member;check,both,21
+T1b kind combinations,content;format,Galaxy,9
+T1b kind combinations,content;format,custom code,7
+T1b kind combinations,content;format,both,16
+T1b kind combinations,instruction,Galaxy,14
+T1b kind combinations,instruction,custom code,1
+T1b kind combinations,instruction,both,15
+T1b kind combinations,content;instruction,Galaxy,12
+T1b kind combinations,content;instruction,custom code,2
+T1b kind combinations,content;instruction,both,14
+T1b kind combinations,content;member;instruction,Galaxy,7
+T1b kind combinations,content;member;instruction,custom code,0
+T1b kind combinations,content;member;instruction,both,7
+T1b kind combinations,member,Galaxy,1
+T1b kind combinations,member,custom code,4
+T1b kind combinations,member,both,5
+T1b kind combinations,content;member;format,Galaxy,4
+T1b kind combinations,content;member;format,custom code,0
+T1b kind combinations,content;member;format,both,4
+T1b kind combinations,content;member;instruction;format,Galaxy,3
+T1b kind combinations,content;member;instruction;format,custom code,0
+T1b kind combinations,content;member;instruction;format,both,3
+T1b kind combinations,instruction;format,Galaxy,1
+T1b kind combinations,instruction;format,custom code,2
+T1b kind combinations,instruction;format,both,3
+T1b kind combinations,check,Galaxy,0
+T1b kind combinations,check,custom code,1
+T1b kind combinations,check,both,1
+T1b kind combinations,content;instruction;format,Galaxy,1
+T1b kind combinations,content;instruction;format,custom code,0
+T1b kind combinations,content;instruction;format,both,1
+T1b kind combinations,list,Galaxy,0
+T1b kind combinations,list,custom code,1
+T1b kind combinations,list,both,1
+T2 primary by condition,1 Required file missing,Galaxy,12
+T2 primary by condition,1 Required file missing,custom code,1
+T2 primary by condition,2 Output format or naming,Galaxy,17
+T2 primary by condition,2 Output format or naming,custom code,9
+T2 primary by condition,3 Other output instruction not followed,Galaxy,22
+T2 primary by condition,3 Other output instruction not followed,custom code,2
+T2 primary by condition,4 Required content missing or unreadable,Galaxy,32
+T2 primary by condition,4 Required content missing or unreadable,custom code,90
+T2 primary by condition,5 Stated method or setting not followed,Galaxy,22
+T2 primary by condition,5 Stated method or setting not followed,custom code,16
+T2 primary by condition,6 Content below the pass mark,Galaxy,147
+T2 primary by condition,6 Content below the pass mark,custom code,196
+T2 primary by condition,"7 Only a member, check or gene-list minimum missed",Galaxy,1
+T2 primary by condition,"7 Only a member, check or gene-list minimum missed",custom code,6
+T2 primary by condition,Total,Galaxy,253
+T2 primary by condition,Total,custom code,320
+T2a alt-order primary by condition,A1 Required file or content missing or unreadable,Galaxy,67
+T2a alt-order primary by condition,A1 Required file or content missing or unreadable,custom code,93
+T2a alt-order primary by condition,A2 Output format or naming,Galaxy,2
+T2a alt-order primary by condition,A2 Output format or naming,custom code,8
+T2a alt-order primary by condition,A3 Instruction or method not followed,Galaxy,36
+T2a alt-order primary by condition,A3 Instruction or method not followed,custom code,17
+T2a alt-order primary by condition,"A4 Content below the pass mark (incl. member, check, list)",Galaxy,148
+T2a alt-order primary by condition,"A4 Content below the pass mark (incl. member, check, list)",custom code,202
+T2a alt-order primary by condition,Total,Galaxy,253
+T2a alt-order primary by condition,Total,custom code,320
+T3 primary by task and condition,task-01 / Galaxy,1,1
+T3 primary by task and condition,task-01 / Galaxy,2,0
+T3 primary by task and condition,task-01 / Galaxy,3,0
+T3 primary by task and condition,task-01 / Galaxy,4,1
+T3 primary by task and condition,task-01 / Galaxy,5,0
+T3 primary by task and condition,task-01 / Galaxy,6,21
+T3 primary by task and condition,task-01 / Galaxy,7,0
+T3 primary by task and condition,task-01 / Galaxy,failed,23
+T3 primary by task and condition,task-01 / Galaxy,scored,72
+T3 primary by task and condition,task-01 / custom code,1,0
+T3 primary by task and condition,task-01 / custom code,2,0
+T3 primary by task and condition,task-01 / custom code,3,0
+T3 primary by task and condition,task-01 / custom code,4,10
+T3 primary by task and condition,task-01 / custom code,5,0
+T3 primary by task and condition,task-01 / custom code,6,21
+T3 primary by task and condition,task-01 / custom code,7,0
+T3 primary by task and condition,task-01 / custom code,failed,31
+T3 primary by task and condition,task-01 / custom code,scored,72
+T3 primary by task and condition,task-02 / Galaxy,1,0
+T3 primary by task and condition,task-02 / Galaxy,2,0
+T3 primary by task and condition,task-02 / Galaxy,3,0
+T3 primary by task and condition,task-02 / Galaxy,4,5
+T3 primary by task and condition,task-02 / Galaxy,5,4
+T3 primary by task and condition,task-02 / Galaxy,6,11
+T3 primary by task and condition,task-02 / Galaxy,7,0
+T3 primary by task and condition,task-02 / Galaxy,failed,20
+T3 primary by task and condition,task-02 / Galaxy,scored,72
+T3 primary by task and condition,task-02 / custom code,1,0
+T3 primary by task and condition,task-02 / custom code,2,0
+T3 primary by task and condition,task-02 / custom code,3,0
+T3 primary by task and condition,task-02 / custom code,4,6
+T3 primary by task and condition,task-02 / custom code,5,1
+T3 primary by task and condition,task-02 / custom code,6,6
+T3 primary by task and condition,task-02 / custom code,7,0
+T3 primary by task and condition,task-02 / custom code,failed,13
+T3 primary by task and condition,task-02 / custom code,scored,72
+T3 primary by task and condition,task-03 / Galaxy,1,6
+T3 primary by task and condition,task-03 / Galaxy,2,3
+T3 primary by task and condition,task-03 / Galaxy,3,0
+T3 primary by task and condition,task-03 / Galaxy,4,6
+T3 primary by task and condition,task-03 / Galaxy,5,0
+T3 primary by task and condition,task-03 / Galaxy,6,13
+T3 primary by task and condition,task-03 / Galaxy,7,1
+T3 primary by task and condition,task-03 / Galaxy,failed,29
+T3 primary by task and condition,task-03 / Galaxy,scored,72
+T3 primary by task and condition,task-03 / custom code,1,0
+T3 primary by task and condition,task-03 / custom code,2,0
+T3 primary by task and condition,task-03 / custom code,3,0
+T3 primary by task and condition,task-03 / custom code,4,7
+T3 primary by task and condition,task-03 / custom code,5,0
+T3 primary by task and condition,task-03 / custom code,6,0
+T3 primary by task and condition,task-03 / custom code,7,0
+T3 primary by task and condition,task-03 / custom code,failed,7
+T3 primary by task and condition,task-03 / custom code,scored,72
+T3 primary by task and condition,task-04 / Galaxy,1,2
+T3 primary by task and condition,task-04 / Galaxy,2,6
+T3 primary by task and condition,task-04 / Galaxy,3,6
+T3 primary by task and condition,task-04 / Galaxy,4,1
+T3 primary by task and condition,task-04 / Galaxy,5,5
+T3 primary by task and condition,task-04 / Galaxy,6,15
+T3 primary by task and condition,task-04 / Galaxy,7,0
+T3 primary by task and condition,task-04 / Galaxy,failed,35
+T3 primary by task and condition,task-04 / Galaxy,scored,90
+T3 primary by task and condition,task-04 / custom code,1,0
+T3 primary by task and condition,task-04 / custom code,2,2
+T3 primary by task and condition,task-04 / custom code,3,1
+T3 primary by task and condition,task-04 / custom code,4,4
+T3 primary by task and condition,task-04 / custom code,5,7
+T3 primary by task and condition,task-04 / custom code,6,22
+T3 primary by task and condition,task-04 / custom code,7,2
+T3 primary by task and condition,task-04 / custom code,failed,38
+T3 primary by task and condition,task-04 / custom code,scored,90
+T3 primary by task and condition,task-05 / Galaxy,1,0
+T3 primary by task and condition,task-05 / Galaxy,2,3
+T3 primary by task and condition,task-05 / Galaxy,3,1
+T3 primary by task and condition,task-05 / Galaxy,4,3
+T3 primary by task and condition,task-05 / Galaxy,5,1
+T3 primary by task and condition,task-05 / Galaxy,6,24
+T3 primary by task and condition,task-05 / Galaxy,7,0
+T3 primary by task and condition,task-05 / Galaxy,failed,32
+T3 primary by task and condition,task-05 / Galaxy,scored,108
+T3 primary by task and condition,task-05 / custom code,1,0
+T3 primary by task and condition,task-05 / custom code,2,1
+T3 primary by task and condition,task-05 / custom code,3,0
+T3 primary by task and condition,task-05 / custom code,4,2
+T3 primary by task and condition,task-05 / custom code,5,1
+T3 primary by task and condition,task-05 / custom code,6,17
+T3 primary by task and condition,task-05 / custom code,7,0
+T3 primary by task and condition,task-05 / custom code,failed,21
+T3 primary by task and condition,task-05 / custom code,scored,108
+T3 primary by task and condition,task-06 / Galaxy,1,0
+T3 primary by task and condition,task-06 / Galaxy,2,1
+T3 primary by task and condition,task-06 / Galaxy,3,0
+T3 primary by task and condition,task-06 / Galaxy,4,0
+T3 primary by task and condition,task-06 / Galaxy,5,1
+T3 primary by task and condition,task-06 / Galaxy,6,17
+T3 primary by task and condition,task-06 / Galaxy,7,0
+T3 primary by task and condition,task-06 / Galaxy,failed,19
+T3 primary by task and condition,task-06 / Galaxy,scored,72
+T3 primary by task and condition,task-06 / custom code,1,0
+T3 primary by task and condition,task-06 / custom code,2,0
+T3 primary by task and condition,task-06 / custom code,3,0
+T3 primary by task and condition,task-06 / custom code,4,3
+T3 primary by task and condition,task-06 / custom code,5,0
+T3 primary by task and condition,task-06 / custom code,6,17
+T3 primary by task and condition,task-06 / custom code,7,2
+T3 primary by task and condition,task-06 / custom code,failed,22
+T3 primary by task and condition,task-06 / custom code,scored,72
+T3 primary by task and condition,task-07 / Galaxy,1,0
+T3 primary by task and condition,task-07 / Galaxy,2,0
+T3 primary by task and condition,task-07 / Galaxy,3,0
+T3 primary by task and condition,task-07 / Galaxy,4,0
+T3 primary by task and condition,task-07 / Galaxy,5,3
+T3 primary by task and condition,task-07 / Galaxy,6,16
+T3 primary by task and condition,task-07 / Galaxy,7,0
+T3 primary by task and condition,task-07 / Galaxy,failed,19
+T3 primary by task and condition,task-07 / Galaxy,scored,72
+T3 primary by task and condition,task-07 / custom code,1,0
+T3 primary by task and condition,task-07 / custom code,2,0
+T3 primary by task and condition,task-07 / custom code,3,0
+T3 primary by task and condition,task-07 / custom code,4,18
+T3 primary by task and condition,task-07 / custom code,5,1
+T3 primary by task and condition,task-07 / custom code,6,16
+T3 primary by task and condition,task-07 / custom code,7,0
+T3 primary by task and condition,task-07 / custom code,failed,35
+T3 primary by task and condition,task-07 / custom code,scored,72
+T3 primary by task and condition,task-08 / Galaxy,1,0
+T3 primary by task and condition,task-08 / Galaxy,2,0
+T3 primary by task and condition,task-08 / Galaxy,3,0
+T3 primary by task and condition,task-08 / Galaxy,4,1
+T3 primary by task and condition,task-08 / Galaxy,5,8
+T3 primary by task and condition,task-08 / Galaxy,6,17
+T3 primary by task and condition,task-08 / Galaxy,7,0
+T3 primary by task and condition,task-08 / Galaxy,failed,26
+T3 primary by task and condition,task-08 / Galaxy,scored,72
+T3 primary by task and condition,task-08 / custom code,1,0
+T3 primary by task and condition,task-08 / custom code,2,0
+T3 primary by task and condition,task-08 / custom code,3,0
+T3 primary by task and condition,task-08 / custom code,4,12
+T3 primary by task and condition,task-08 / custom code,5,6
+T3 primary by task and condition,task-08 / custom code,6,18
+T3 primary by task and condition,task-08 / custom code,7,0
+T3 primary by task and condition,task-08 / custom code,failed,36
+T3 primary by task and condition,task-08 / custom code,scored,72
+T3 primary by task and condition,task-09 / Galaxy,1,0
+T3 primary by task and condition,task-09 / Galaxy,2,1
+T3 primary by task and condition,task-09 / Galaxy,3,0
+T3 primary by task and condition,task-09 / Galaxy,4,3
+T3 primary by task and condition,task-09 / Galaxy,5,0
+T3 primary by task and condition,task-09 / Galaxy,6,7
+T3 primary by task and condition,task-09 / Galaxy,7,0
+T3 primary by task and condition,task-09 / Galaxy,failed,11
+T3 primary by task and condition,task-09 / Galaxy,scored,81
+T3 primary by task and condition,task-09 / custom code,1,1
+T3 primary by task and condition,task-09 / custom code,2,0
+T3 primary by task and condition,task-09 / custom code,3,0
+T3 primary by task and condition,task-09 / custom code,4,28
+T3 primary by task and condition,task-09 / custom code,5,0
+T3 primary by task and condition,task-09 / custom code,6,43
+T3 primary by task and condition,task-09 / custom code,7,2
+T3 primary by task and condition,task-09 / custom code,failed,74
+T3 primary by task and condition,task-09 / custom code,scored,81
+T3 primary by task and condition,task-10 / Galaxy,1,3
+T3 primary by task and condition,task-10 / Galaxy,2,3
+T3 primary by task and condition,task-10 / Galaxy,3,15
+T3 primary by task and condition,task-10 / Galaxy,4,12
+T3 primary by task and condition,task-10 / Galaxy,5,0
+T3 primary by task and condition,task-10 / Galaxy,6,6
+T3 primary by task and condition,task-10 / Galaxy,7,0
+T3 primary by task and condition,task-10 / Galaxy,failed,39
+T3 primary by task and condition,task-10 / Galaxy,scored,72
+T3 primary by task and condition,task-10 / custom code,1,0
+T3 primary by task and condition,task-10 / custom code,2,6
+T3 primary by task and condition,task-10 / custom code,3,1
+T3 primary by task and condition,task-10 / custom code,4,0
+T3 primary by task and condition,task-10 / custom code,5,0
+T3 primary by task and condition,task-10 / custom code,6,36
+T3 primary by task and condition,task-10 / custom code,7,0
+T3 primary by task and condition,task-10 / custom code,failed,43
+T3 primary by task and condition,task-10 / custom code,scored,72
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,1,6
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,2,9
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,3,9
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,4,21
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,5,12
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,6,74
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,7,1
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,failed,132
+T4 primary by model and condition,GPT-5.6 Luna / Galaxy,scored,261
+T4 primary by model and condition,GPT-5.6 Luna / custom code,1,0
+T4 primary by model and condition,GPT-5.6 Luna / custom code,2,0
+T4 primary by model and condition,GPT-5.6 Luna / custom code,3,1
+T4 primary by model and condition,GPT-5.6 Luna / custom code,4,61
+T4 primary by model and condition,GPT-5.6 Luna / custom code,5,7
+T4 primary by model and condition,GPT-5.6 Luna / custom code,6,98
+T4 primary by model and condition,GPT-5.6 Luna / custom code,7,3
+T4 primary by model and condition,GPT-5.6 Luna / custom code,failed,170
+T4 primary by model and condition,GPT-5.6 Luna / custom code,scored,261
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,1,0
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,2,2
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,3,6
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,4,4
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,5,0
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,6,13
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,7,0
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,failed,25
+T4 primary by model and condition,GPT-5.6 Sol / Galaxy,scored,261
+T4 primary by model and condition,GPT-5.6 Sol / custom code,1,0
+T4 primary by model and condition,GPT-5.6 Sol / custom code,2,0
+T4 primary by model and condition,GPT-5.6 Sol / custom code,3,0
+T4 primary by model and condition,GPT-5.6 Sol / custom code,4,5
+T4 primary by model and condition,GPT-5.6 Sol / custom code,5,3
+T4 primary by model and condition,GPT-5.6 Sol / custom code,6,23
+T4 primary by model and condition,GPT-5.6 Sol / custom code,7,2
+T4 primary by model and condition,GPT-5.6 Sol / custom code,failed,33
+T4 primary by model and condition,GPT-5.6 Sol / custom code,scored,261
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,1,6
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,2,6
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,3,7
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,4,7
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,5,10
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,6,60
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,7,0
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,failed,96
+T4 primary by model and condition,DeepSeek V4 Pro / Galaxy,scored,261
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,1,1
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,2,9
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,3,1
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,4,24
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,5,6
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,6,75
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,7,1
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,failed,117
+T4 primary by model and condition,DeepSeek V4 Pro / custom code,scored,261
+T5 symptom category,Execution environment / Output delivered in the wrong format or under the wrong name,Galaxy,39
+T5 symptom category,Execution environment / Output delivered in the wrong format or under the wrong name,custom code,11
+T5 symptom category,Execution environment / Required output missing or unreadable,Galaxy,44
+T5 symptom category,Execution environment / Required output missing or unreadable,custom code,91
+T5 symptom category,Knowledge / Task instruction misread,Galaxy,9
+T5 symptom category,Knowledge / Task instruction misread,custom code,5
+T5 symptom category,Knowledge / Wrong parameter or threshold,Galaxy,13
+T5 symptom category,Knowledge / Wrong parameter or threshold,custom code,11
+T5 symptom category,Unclear / Content differs from the reference; cause not in the scorer record,Galaxy,148
+T5 symptom category,Unclear / Content differs from the reference; cause not in the scorer record,custom code,202
+T5 symptom category,Total / ,Galaxy,253
+T5 symptom category,Total / ,custom code,320
+T6 method reasons,task-02 / The track is not the 50-bp mean per-base pileup times the delivered factor (uncovered bases = 0) on chr19,Galaxy,4
+T6 method reasons,task-02 / The track is not the 50-bp mean per-base pileup times the delivered factor (uncovered bases = 0) on chr19,custom code,0
+T6 method reasons,task-02 / Windows or their union differ from summit ±500 bp clipped to the chromosome and merged when overlapping or book-ended,Galaxy,0
+T6 method reasons,task-02 / Windows or their union differ from summit ±500 bp clipped to the chromosome and merged when overlapping or book-ended,custom code,1
+T6 method reasons,task-04 / GO background or up/down selection differs from the stated rule applied to the delivered fits,Galaxy,2
+T6 method reasons,task-04 / GO background or up/down selection differs from the stated rule applied to the delivered fits,custom code,0
+T6 method reasons,"task-04 / More fragments are assigned than the library has read pairs (2,000,000), which is impossible when each fragment is counted at most once",Galaxy,0
+T6 method reasons,"task-04 / More fragments are assigned than the library has read pairs (2,000,000), which is impossible when each fragment is counted at most once",custom code,2
+T6 method reasons,task-04 / Recorded STAR settings contradict the task (outFilterMismatchNoverReadLmax 1.0),Galaxy,0
+T6 method reasons,task-04 / Recorded STAR settings contradict the task (outFilterMismatchNoverReadLmax 1.0),custom code,4
+T6 method reasons,task-04 / Recorded STAR settings contradict the task (outFilterType Normal),Galaxy,3
+T6 method reasons,task-04 / Recorded STAR settings contradict the task (outFilterType Normal),custom code,1
+T6 method reasons,task-05 / Marker effects differ from the stated log-scale-mean formula on the delivered expression and partition.,Galaxy,0
+T6 method reasons,task-05 / Marker effects differ from the stated log-scale-mean formula on the delivered expression and partition.,custom code,1
+T6 method reasons,task-05 / Per-cell QC values differ from those computed on the retained gene domain of result 01.,Galaxy,1
+T6 method reasons,task-05 / Per-cell QC values differ from those computed on the retained gene domain of result 01.,custom code,0
+T6 method reasons,task-06 / The consensus differs from the unique intervals of candidates whose summit lies in a segment supported by both libraries.,Galaxy,1
+T6 method reasons,task-06 / The consensus differs from the unique intervals of candidates whose summit lies in a segment supported by both libraries.,custom code,0
+T6 method reasons,task-07 / Delivered target leading-hit q-values do not follow the stated D/T rule on the main score the delivered search output declares.,Galaxy,0
+T6 method reasons,task-07 / Delivered target leading-hit q-values do not follow the stated D/T rule on the main score the delivered search output declares.,custom code,1
+T6 method reasons,"task-07 / Peptides carry RIA cluster groups other than 0, so incorporation estimates were clustered by relative isotope abundance.",Galaxy,3
+T6 method reasons,"task-07 / Peptides carry RIA cluster groups other than 0, so incorporation estimates were clustered by relative isotope abundance.",custom code,0
+T6 method reasons,"task-08 / Pairwise contrasts differ from differing nonmissing genotypes with QUAL≥30 and DP≥10/GQ≥20 in both samples of the delivered normalized calls, with all four sample columns",Galaxy,1
+T6 method reasons,"task-08 / Pairwise contrasts differ from differing nonmissing genotypes with QUAL≥30 and DP≥10/GQ≥20 in both samples of the delivered normalized calls, with all four sample columns",custom code,0
+T6 method reasons,task-08 / Supplementary alignments are not soft-clipped with their own MAPQ,Galaxy,4
+T6 method reasons,task-08 / Supplementary alignments are not soft-clipped with their own MAPQ,custom code,5
+T6 method reasons,task-08 / fastp trimmed with adapter sequences (detected or supplied) rather than overlap only,Galaxy,3
+T6 method reasons,task-08 / fastp trimmed with adapter sequences (detected or supplied) rather than overlap only,custom code,1
+T7 instruction and format statements,format / A field explicitly specified as 0/1 uses another encoding.,Galaxy,2
+T7 instruction and format statements,format / A field explicitly specified as 0/1 uses another encoding.,custom code,0
+T7 instruction and format statements,format / Content container differs from the declared text format.,Galaxy,1
+T7 instruction and format statements,format / Content container differs from the declared text format.,custom code,0
+T7 instruction and format statements,format / Missing intensity cells must use NA.,Galaxy,0
+T7 instruction and format statements,format / Missing intensity cells must use NA.,custom code,6
+T7 instruction and format statements,format / Missingness fields differ from the supplied class domain.,Galaxy,1
+T7 instruction and format statements,format / Missingness fields differ from the supplied class domain.,custom code,0
+T7 instruction and format statements,format / Named columns/order differ from the required table.,Galaxy,11
+T7 instruction and format statements,format / Named columns/order differ from the required table.,custom code,2
+T7 instruction and format statements,format / Named fields are repeated.,Galaxy,3
+T7 instruction and format statements,format / Named fields are repeated.,custom code,0
+T7 instruction and format statements,"format / Named stored field is missing (raw/X, raw/var)",Galaxy,4
+T7 instruction and format statements,"format / Named stored field is missing (raw/X, raw/var)",custom code,1
+T7 instruction and format statements,format / Unresolved isotope fields must use NA.,Galaxy,1
+T7 instruction and format statements,format / Unresolved isotope fields must use NA.,custom code,0
+T7 instruction and format statements,instruction / A marker group does not retain the submitted raw/var gene domain.,Galaxy,1
+T7 instruction and format statements,instruction / A marker group does not retain the submitted raw/var gene domain.,custom code,0
+T7 instruction and format statements,instruction / A row does not contain the stated field domain.,Galaxy,4
+T7 instruction and format statements,instruction / A row does not contain the stated field domain.,custom code,0
+T7 instruction and format statements,instruction / An explicit peak_id does not uniquely identify its stored row.,Galaxy,0
+T7 instruction and format statements,instruction / An explicit peak_id does not uniquely identify its stored row.,custom code,1
+T7 instruction and format statements,instruction / DE rows differ from the submitted fixed E labels/domain.,Galaxy,2
+T7 instruction and format statements,instruction / DE rows differ from the submitted fixed E labels/domain.,custom code,1
+T7 instruction and format statements,instruction / Membership identifiers do not literally match the submitted peak identifiers,Galaxy,6
+T7 instruction and format statements,instruction / Membership identifiers do not literally match the submitted peak identifiers,custom code,0
+T7 instruction and format statements,instruction / Membership identifiers do not match the submitted peak table.,Galaxy,3
+T7 instruction and format statements,instruction / Membership identifiers do not match the submitted peak table.,custom code,0
+T7 instruction and format statements,"instruction / Required collection members are missing, repeated or outside the fixed input domain.",Galaxy,4
+T7 instruction and format statements,"instruction / Required collection members are missing, repeated or outside the fixed input domain.",custom code,0
+T7 instruction and format statements,instruction / Required file is missing,Galaxy,12
+T7 instruction and format statements,instruction / Required file is missing,custom code,1
+T7 instruction and format statements,instruction / The required eligible (0/1) column is missing from this table; membership in another table does not replace it.,Galaxy,5
+T7 instruction and format statements,instruction / The required eligible (0/1) column is missing from this table; membership in another table does not replace it.,custom code,2
+T7 instruction and format statements,instruction / Undetected or unfillable intensity cells were written as 0 instead of NA.,Galaxy,2
+T7 instruction and format statements,instruction / Undetected or unfillable intensity cells were written as 0 instead of NA.,custom code,0
+T8 checks listed,check / Alignment records,Galaxy,7
+T8 checks listed,check / Alignment records,custom code,7
+T8 checks listed,check / Matching records (F1),Galaxy,9
+T8 checks listed,check / Matching records (F1),custom code,10
+T8 checks listed,check / Numerical agreement (CCC),Galaxy,8
+T8 checks listed,check / Numerical agreement (CCC),custom code,14
+T8 checks listed,"check / Present, finite data cells (F1)",Galaxy,4
+T8 checks listed,"check / Present, finite data cells (F1)",custom code,1
+T8 checks listed,check / Required fields,Galaxy,4
+T8 checks listed,check / Required fields,custom code,2
+T8 checks listed,content / Accounting,Galaxy,0
+T8 checks listed,content / Accounting,custom code,2
+T8 checks listed,content / Alignment records,Galaxy,13
+T8 checks listed,content / Alignment records,custom code,22
+T8 checks listed,content / Category agreement (F1),Galaxy,47
+T8 checks listed,content / Category agreement (F1),custom code,48
+T8 checks listed,content / Genes f1,Galaxy,10
+T8 checks listed,content / Genes f1,custom code,4
+T8 checks listed,content / Image agreement,Galaxy,0
+T8 checks listed,content / Image agreement,custom code,23
+T8 checks listed,content / Matching records (F1),Galaxy,109
+T8 checks listed,content / Matching records (F1),custom code,141
+T8 checks listed,content / Numerical agreement (CCC),Galaxy,102
+T8 checks listed,content / Numerical agreement (CCC),custom code,153
+T8 checks listed,content / Occupied base f1,Galaxy,7
+T8 checks listed,content / Occupied base f1,custom code,8
+T8 checks listed,"content / Present, finite data cells (F1)",Galaxy,97
+T8 checks listed,"content / Present, finite data cells (F1)",custom code,117
+T8 checks listed,content / Required content missing or unreadable,Galaxy,67
+T8 checks listed,content / Required content missing or unreadable,custom code,99
+T8 checks listed,content / Required fields,Galaxy,28
+T8 checks listed,content / Required fields,custom code,39
+T8 checks listed,content / Summary statistics within tolerance,Galaxy,24
+T8 checks listed,content / Summary statistics within tolerance,custom code,34
+T8 checks listed,content / Within 5pct,Galaxy,9
+T8 checks listed,content / Within 5pct,custom code,4

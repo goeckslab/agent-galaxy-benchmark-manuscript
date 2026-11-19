@@ -1,0 +1,33 @@
+condition,outcome,subcategory,events,runs_with_event,runs_with_log,share_pct
+Galaxy,correct,Agent's own code failed,1956,625,1587,39.3824826717
+Galaxy,correct,Analysis tool failed,927,332,1587,20.9199747952
+Galaxy,correct,Compute limit reached,209,102,1587,6.42722117202
+Galaxy,correct,Data or file handling,1117,609,1587,38.3742911153
+Galaxy,correct,Interface or API request rejected,2172,740,1587,46.6288594833
+Galaxy,correct,Parameters rejected,3590,882,1587,55.5765595463
+Galaxy,correct,"Platform, network or sandbox",540,226,1587,14.2407057341
+Galaxy,correct,Software not available,476,331,1587,20.8569628229
+Galaxy,incorrect,Agent's own code failed,434,105,291,36.0824742268
+Galaxy,incorrect,Analysis tool failed,695,115,291,39.5189003436
+Galaxy,incorrect,Compute limit reached,67,35,291,12.0274914089
+Galaxy,incorrect,Data or file handling,396,145,291,49.8281786942
+Galaxy,incorrect,Interface or API request rejected,782,183,291,62.8865979381
+Galaxy,incorrect,Parameters rejected,904,167,291,57.3883161512
+Galaxy,incorrect,"Platform, network or sandbox",645,100,291,34.3642611684
+Galaxy,incorrect,Software not available,200,100,291,34.3642611684
+custom code,correct,Agent's own code failed,283,208,1610,12.9192546584
+custom code,correct,Analysis tool failed,87,70,1610,4.34782608696
+custom code,correct,Compute limit reached,463,268,1610,16.6459627329
+custom code,correct,Data or file handling,993,526,1610,32.6708074534
+custom code,correct,Interface or API request rejected,231,153,1610,9.50310559006
+custom code,correct,Parameters rejected,72,70,1610,4.34782608696
+custom code,correct,"Platform, network or sandbox",392,244,1610,15.1552795031
+custom code,correct,Software not available,1235,755,1610,46.8944099379
+custom code,incorrect,Agent's own code failed,148,88,280,31.4285714286
+custom code,incorrect,Analysis tool failed,17,13,280,4.64285714286
+custom code,incorrect,Compute limit reached,212,83,280,29.6428571429
+custom code,incorrect,Data or file handling,447,170,280,60.7142857143
+custom code,incorrect,Interface or API request rejected,120,60,280,21.4285714286
+custom code,incorrect,Parameters rejected,29,24,280,8.57142857143
+custom code,incorrect,"Platform, network or sandbox",86,60,280,21.4285714286
+custom code,incorrect,Software not available,426,173,280,61.7857142857

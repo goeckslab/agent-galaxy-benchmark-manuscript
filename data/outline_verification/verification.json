@@ -1,0 +1,33 @@
+{
+  "cohort_runs": 3780,
+  "tasks": 160,
+  "galaxy_histories": 1890,
+  "multistep_trials": 16,
+  "multistep_complete_runs": {
+    "Galaxy": 22,
+    "custom code": 21
+  },
+  "source_reconciliation": "frozen result exports and audit tables; labels not independently adjudicated",
+  "branch_crosscheck": {
+    "ref": "iwc-multistep-snapshots",
+    "commit": "f63c966d947c6cec84af550b8cf692bb2e9362cb",
+    "results_equal": true,
+    "intervals_equal": true
+  },
+  "independent_spot_checks": {
+    "promoter_bases": 600,
+    "promoter_gc_bases": 292,
+    "promoter_fraction": 0.4866666666666667,
+    "run_significant_genes": 13,
+    "reference_significant_genes": 13,
+    "shared_significant_genes": 12,
+    "phykit_answers_regraded": 24
+  },
+  "bootstrap": {
+    "draws": 200000,
+    "seed": 20261028,
+    "paired": true
+  },
+  "tool": "Codex",
+  "model": "GPT-6 (session identity; exact backend variant not exposed)"
+}

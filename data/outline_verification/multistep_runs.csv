@@ -1,0 +1,181 @@
+benchmark,model,condition,replicate,task,acc,passed,denominator,trial_run,all_pass,minutes,tokens,history,title
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-01,0.75,6,8,True,0,271.8,15758762,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5924cebfdc81e9f83,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-01,0.375,3,8,False,0,238.7,13865072,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53a578bfbb2687b4b,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-01,0.625,5,8,False,0,280.4,15444665,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5ba0d03f9d70f4629,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-01,0.25,2,8,True,0,316.5,96235770,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-01,0.125,1,8,False,0,155.1,34067168,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-01,0.125,1,8,False,0,303.1,28718231,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-01,1,8,8,False,1,139.4,10995390,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a620f623f31b368a,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-01,1,8,8,False,1,216.6,8259096,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b59681d6ee26ab105a,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-01,1,8,8,False,1,158,12555677,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b586f8ae57d5c9af2c,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-01,1,8,8,False,1,147.5,14279821,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-01,1,8,8,False,1,150.9,18536762,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-01,1,8,8,False,1,144.2,9338956,,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-01,0.375,3,8,False,0,158.2,11638630,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b55db1d85a7ff61c01,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-01,0.625,5,8,False,0,200.1,10187052,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b508a54d0b402ca1c7,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-01,0.375,3,8,False,0,297.6,19379395,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a3fbdf57d2b124b5,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-01,0.625,5,8,False,0,168.7,31624355,,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-01,0.875,7,8,False,0,152.4,37246783,,Genome profiling and HiFi assembly
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-01,0.125,1,8,False,0,195.2,25728675,,Genome profiling and HiFi assembly
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-02,0.625,5,8,True,0,189.2,23809953,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5445d0f8b95e7078f,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-02,0.875,7,8,False,0,189,13570980,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5ba0625cf54e45be9,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-02,0.625,5,8,False,0,155,12569750,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5e5b0af7cd680bed5,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-02,0.625,5,8,True,0,125.2,25915965,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-02,0.625,5,8,False,0,127.9,11513352,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-02,0.75,6,8,False,0,147.3,5556125,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-02,1,8,8,False,1,237,10328668,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b59d13714915d6f7df,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-02,0.875,7,8,False,0,200.7,16986335,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b58f3e9cbd1ecaab80,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-02,0.875,7,8,False,0,181,10190279,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b569c97c757c4d4b69,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-02,0.875,7,8,False,0,125.8,8848215,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-02,1,8,8,False,1,155.9,5767397,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-02,1,8,8,False,1,127,3522043,,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-02,0.625,5,8,False,0,209.7,18747380,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b51995bde36b945d14,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-02,0.5,4,8,False,0,209.1,17539127,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53adcdf5677eb6f75,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-02,0.5,4,8,False,0,200.8,16829577,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5854604f7e31a395a,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-02,0.75,6,8,False,0,133,16967472,,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-02,0.875,7,8,False,0,135.5,13806483,,ATAC-seq peaks and normalized signal
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-02,0.875,7,8,False,0,139.7,9854472,,ATAC-seq peaks and normalized signal
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-03,0.125,1,8,False,0,489.8,34334648,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b525f17652ff9e2be2,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-03,0.75,6,8,False,0,549.2,26690422,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b52488f7d1b000158f,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-03,0,0,8,False,0,1284.1,44344933,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b55dc2ebe5810f76fd,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-03,1,8,8,False,1,87.9,4597482,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-03,1,8,8,False,1,137.5,10861721,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-03,0.875,7,8,False,0,84.6,3478933,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-03,1,8,8,False,1,563.9,14348399,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b580bd7702929036b7,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-03,0.875,7,8,False,0,604.9,24230081,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5f5b9233bcb862c8d,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-03,0.25,2,8,False,0,484.6,15619589,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b502f680afe922eeca,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-03,1,8,8,False,1,85.7,4967881,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-03,1,8,8,False,1,68.8,12761296,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-03,1,8,8,False,1,87.5,6138084,,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-03,0.875,7,8,False,0,149.6,19592604,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b507f7c8e9db4e5123,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-03,0.875,7,8,False,0,205.9,22591201,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5d1b9b11e3887db01,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-03,0.625,5,8,False,0,160.9,35394265,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b51adb1e5f509fd200,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-03,0.625,5,8,False,0,87.7,8541416,,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-03,0.75,6,8,False,0,110,6280102,,16S amplicon sequence variants and taxonomy
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-03,0.875,7,8,False,0,99.7,3428902,,16S amplicon sequence variants and taxonomy
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-04,0.1,1,10,True,0,434.3,23194168,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5392512adc367e07f,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-04,0.1,1,10,False,0,394.6,39782519,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5db226ca0fa9c56b2,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-04,0.7,7,10,False,0,310.1,22097485,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b580c8aaec167b0402,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-04,0.2,2,10,True,0,95.7,3725251,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-04,0,0,10,False,0,193.7,32878768,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-04,0.8,8,10,False,0,152.5,12921644,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-04,1,10,10,False,1,292.3,20374693,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b52806f07b2191a3ae,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-04,0.8,8,10,False,0,228.2,12932466,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b56d6c6f30c250e749,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-04,1,10,10,False,1,247.3,14447848,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5c2bb0ab6610db39a,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-04,0.8,8,10,False,0,73.2,8930533,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-04,0.8,8,10,False,0,74.2,2571957,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-04,0.8,8,10,False,0,70.2,4115941,,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-04,0.6,6,10,False,0,413.1,34158459,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b50c0410b2d239ace4,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-04,0.7,7,10,False,0,279.3,26821134,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53e52234949298b2d,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-04,0.5,5,10,False,0,285.1,22229146,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b57ce66c6836869fc1,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-04,0.6,6,10,False,0,89.4,6594335,,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-04,0.5,5,10,False,0,84,7725601,,Paired RNA-seq effects and donor robustness
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-04,0.7,7,10,False,0,89.7,11483349,,Paired RNA-seq effects and donor robustness
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-05,0.333333333333,4,12,True,0,53,15391863,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b51513054f5f905f17,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-05,0.25,3,12,False,0,84.7,21175136,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b58a7292b40e5552cc,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-05,1,12,12,False,1,46,14417019,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5ba622c167406cf54,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-05,0.583333333333,7,12,True,0,8.4,1299506,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-05,0.5,6,12,False,0,8.5,1307275,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-05,0.833333333333,10,12,False,0,19.2,1231864,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-05,0.916666666667,11,12,False,0,50,9751288,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5de609bc195fb84eb,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-05,1,12,12,False,1,43.9,10416025,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a4089a835e38f56c,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-05,1,12,12,False,1,102.7,8949370,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5db56d8ee9e2bcd4a,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-05,0.916666666667,11,12,False,0,8.1,3009313,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-05,1,12,12,False,1,7.8,1138293,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-05,0.916666666667,11,12,False,0,5.7,866227,,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-05,0.333333333333,4,12,False,0,68.6,6741184,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b584118a4782e7b852,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-05,0.75,9,12,False,0,54.7,10679265,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5baae144c1816292d,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-05,0.75,9,12,False,0,85.1,20304006,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b513d99213cb57f1bd,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-05,0.75,9,12,False,0,15,3848333,,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-05,0.916666666667,11,12,False,0,16.3,4774141,,Single-cell populations and marker genes
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-05,0.833333333333,10,12,False,0,26.9,9736748,,Single-cell populations and marker genes
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-06,0.625,5,8,True,0,457.5,28783620,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b510035c777f6d905b,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-06,0.125,1,8,False,0,558.4,25492145,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b51ee3ebbc835c3eb3,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-06,0.75,6,8,False,0,560.3,28803936,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b57284ac479fe3e86e,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-06,0.375,3,8,True,0,174.9,17457999,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-06,0.25,2,8,False,0,185,53299548,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-06,0,0,8,False,0,163.7,47076019,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-06,1,8,8,False,1,478,13917226,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5f6ab6a9f24327d80,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-06,1,8,8,False,1,281,20059228,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a59e11e92fc0d278,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-06,1,8,8,False,1,512.8,26514987,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5164ae4164bd252cc,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-06,1,8,8,False,1,157.1,5707210,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-06,0.875,7,8,False,0,161.7,17652973,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-06,1,8,8,False,1,164,30866272,,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-06,0.625,5,8,False,0,416,38865498,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5408aad8bff1d9a11,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-06,1,8,8,False,1,326.7,35311908,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b54d430cd121f2276c,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-06,0.5,4,8,False,0,525.6,26017544,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a235a5e2bde263cd,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-06,0.875,7,8,False,0,160.8,11856240,,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-06,1,8,8,False,1,153.2,10491148,,Replicate-supported CUT&RUN consensus
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-06,0.875,7,8,False,0,170.8,8349640,,Replicate-supported CUT&RUN consensus
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-07,0.625,5,8,True,0,22.5,2708093,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5fb91b726c8e4df7f,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-07,0.625,5,8,False,0,39.9,2716843,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5e67412c756363e3f,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-07,0.875,7,8,False,0,23.9,2399846,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b55e39addaf6f3107b,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-07,0.125,1,8,True,0,61.2,12966309,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-07,0.125,1,8,False,0,44.9,12685313,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-07,0.125,1,8,False,0,71.8,12617215,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-07,0.875,7,8,False,0,24.6,3767529,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b534c1141982c130a8,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-07,0.875,7,8,False,0,20,3287690,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b560b2d055b4c2d2c2,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-07,0.875,7,8,False,0,35.4,2816533,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b582399e0ae1745664,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-07,1,8,8,False,1,46.5,6818079,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-07,1,8,8,False,1,15.7,4025278,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-07,1,8,8,False,1,14.5,8368940,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-07,0.75,6,8,False,0,28.4,15083100,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b50dde0fb7aa9363e6,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-07,0.5,4,8,False,0,26.3,7585718,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b57588713205a12e0c,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-07,0.625,5,8,False,0,22.3,4706558,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b54ebab1950b016652,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-07,0.5,4,8,False,0,29,9575120,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-07,0.5,4,8,False,0,34.1,12449632,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-07,0.25,2,8,False,0,36.6,10117753,,Carbon-isotope incorporation in a metaproteome
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-08,0.125,1,8,False,0,76,7188324,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5fec715bcd5c2c90f,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-08,0.25,2,8,False,0,90.1,14172696,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b56cf65d1dc2afc4fd,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-08,0.125,1,8,False,0,92.4,18450920,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5f1905ff4b9d1febe,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-08,0.125,1,8,False,0,80.3,4815501,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-08,0.125,1,8,False,0,76.1,9464578,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-08,0.25,2,8,False,0,65.2,24037783,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-08,0.875,7,8,False,0,95.2,10578676,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5be3187078e738e68,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-08,1,8,8,False,1,83.5,7849665,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b58d6c7ec3ef30f18e,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-08,0.875,7,8,False,0,98.3,11722633,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5fef60c23e2657631,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-08,1,8,8,False,1,36.4,5541710,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-08,1,8,8,False,1,46.8,7277686,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-08,0.75,6,8,False,0,31.8,6248084,,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-08,1,8,8,False,1,101.8,26877818,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5801afe61df6f3598,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-08,0.625,5,8,False,0,98.2,20502701,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b509cdfd2c073c24da,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-08,0.875,7,8,False,0,111.3,14023314,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b52e056c9e2b97ec97,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-08,0.375,3,8,False,0,40.9,17957694,,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-08,0.125,1,8,False,0,41,5749346,,Small-variant differences among haploid yeast strains
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-08,0.75,6,8,False,0,50.6,9512625,,Small-variant differences among haploid yeast strains
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-09,1,9,9,True,1,662.6,8827425,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5607bfe788c46083b,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-09,0.555555555556,5,9,False,0,851.9,28985588,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5b6fc26ff359ce724,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-09,0.555555555556,5,9,False,0,1260.1,50294581,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b57fbcf609ac4f9eb8,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-09,0,0,9,True,0,37.9,11968498,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-09,0,0,9,False,0,10.7,3478122,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-09,0,0,9,False,0,10.4,2990307,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-09,1,9,9,False,1,641.4,9146001,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5b3d5a4c2e4ae0e16,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-09,1,9,9,False,1,599.2,14771461,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5a2b9222f0c46c6cb,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-09,1,9,9,False,1,623,5165013,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5b6ad41dc99a2d2f0,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-09,0,0,9,False,0,30.5,15397608,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-09,0.333333333333,3,9,False,0,22.7,12288435,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-09,0.444444444444,4,9,False,0,18.9,13969740,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-09,1,9,9,False,1,393.7,18518805,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5e0d49e767916eeca,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-09,1,9,9,False,1,607.5,7091373,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5d34390a06f262805,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-09,0.666666666667,6,9,False,0,357.8,18409483,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5f36a7540164e17a9,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-09,0,0,9,False,0,26.5,6803986,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-09,0,0,9,False,0,36.8,19666279,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-09,0,0,9,False,0,16.4,8619776,,Multiplex tissue imaging and cell neighborhoods
+IWC multi-step,GPT-5.6 Luna,Galaxy,1,task-10,0.625,5,8,True,0,384.7,28596158,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b572f9912e4df2f35e,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Luna,Galaxy,2,task-10,0.375,3,8,False,0,137.9,12553449,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53f3c63fafbdb850c,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Luna,Galaxy,3,task-10,0.375,3,8,False,0,300.8,24199592,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5972855f971c43e52,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Luna,custom code,1,task-10,0.125,1,8,True,0,34.3,2242579,,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Luna,custom code,2,task-10,0.125,1,8,False,0,19.3,2543318,,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Luna,custom code,3,task-10,0.125,1,8,False,0,51,8547723,,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,Galaxy,1,task-10,0.75,6,8,False,0,280.8,11395313,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b55955c1c5b0837b83,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,Galaxy,2,task-10,0.75,6,8,False,0,345.8,5819736,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5ada4dc89473227db,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,Galaxy,3,task-10,0.5,4,8,False,0,459.8,17593632,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5daafac8c4d6db530,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,custom code,1,task-10,1,8,8,False,1,19.5,1716869,,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,custom code,2,task-10,0.875,7,8,False,0,35.6,2892788,,LC-MS features and ion relationships
+IWC multi-step,GPT-5.6 Sol,custom code,3,task-10,1,8,8,False,1,21.9,4590873,,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,Galaxy,1,task-10,0.375,3,8,False,0,267.5,28445348,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5d7d97bb5b88c0c4a,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,Galaxy,2,task-10,0.25,2,8,False,0,558.9,32618164,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b54a71dcca2ac964ea,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,Galaxy,3,task-10,0.125,1,8,False,0,364.5,69840003,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53f563809203fb599,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,custom code,1,task-10,0.125,1,8,False,0,70.8,11289218,,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,custom code,2,task-10,0.125,1,8,False,0,116.8,7535875,,LC-MS features and ion relationships
+IWC multi-step,DeepSeek V4 Pro,custom code,3,task-10,0.125,1,8,False,0,105.3,19493424,,LC-MS features and ion relationships

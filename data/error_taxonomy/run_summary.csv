@@ -1,0 +1,17 @@
+benchmark,condition,outcome,runs,runs_with_log,shell_commands,galaxy_calls,runs_with_error,errors,runs_with_error_without_resolution_check,errors_without_resolution_check
+BixBench-Verified-50,Galaxy,correct,537,537,13750,13354,481,3180,444,2052
+BixBench-Verified-50,Galaxy,incorrect,63,63,2693,1196,57,407,56,318
+BixBench-Verified-50,custom code,correct,530,530,9594,0,402,1061,402,1061
+BixBench-Verified-50,custom code,incorrect,70,70,1668,0,55,216,55,216
+CompBioBench,Galaxy,correct,1039,1028,34250,37300,889,7425,858,5839
+CompBioBench,Galaxy,incorrect,161,160,11714,8859,148,1900,145,1570
+CompBioBench,custom code,correct,1059,1059,31447,0,747,2601,747,2601
+CompBioBench,custom code,incorrect,141,141,10609,0,124,738,124,738
+IWC,Galaxy,correct,95,95,3929,2918,95,664,89,489
+IWC,Galaxy,incorrect,25,25,1263,884,25,247,25,183
+IWC,custom code,correct,87,87,5251,0,79,332,79,332
+IWC,custom code,incorrect,33,33,2229,0,33,199,33,199
+IWC multi-step,Galaxy,correct,22,22,417,3219,21,382,21,364
+IWC multi-step,Galaxy,incorrect,68,68,2603,12286,68,1816,68,1669
+IWC multi-step,custom code,correct,21,21,1158,0,20,94,20,94
+IWC multi-step,custom code,incorrect,69,69,5586,0,69,531,69,531

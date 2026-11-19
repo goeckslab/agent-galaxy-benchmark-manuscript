@@ -1,0 +1,21 @@
+task,title,condition,acc,all_pass,minutes
+task-01,Genome profiling and HiFi assembly,Galaxy,0.680555555556,0.333333333333,217.866666667
+task-01,Genome profiling and HiFi assembly,custom code,0.569444444444,0.333333333333,192.622222222
+task-02,ATAC-seq peaks and normalized signal,Galaxy,0.722222222222,0.111111111111,196.833333333
+task-02,ATAC-seq peaks and normalized signal,custom code,0.819444444444,0.222222222222,135.255555556
+task-03,16S amplicon sequence variants and taxonomy,Galaxy,0.597222222222,0.111111111111,499.211111111
+task-03,16S amplicon sequence variants and taxonomy,custom code,0.902777777778,0.555555555556,94.3777777778
+task-04,Paired RNA-seq effects and donor robustness,Galaxy,0.611111111111,0.222222222222,320.477777778
+task-04,Paired RNA-seq effects and donor robustness,custom code,0.577777777778,0,102.511111111
+task-05,Single-cell populations and marker genes,Galaxy,0.703703703704,0.333333333333,65.4111111111
+task-05,Single-cell populations and marker genes,custom code,0.805555555556,0.111111111111,12.8777777778
+task-06,Replicate-supported CUT&RUN consensus,Galaxy,0.736111111111,0.444444444444,457.366666667
+task-06,Replicate-supported CUT&RUN consensus,custom code,0.694444444444,0.333333333333,165.688888889
+task-07,Carbon-isotope incorporation in a metaproteome,Galaxy,0.736111111111,0,27.0333333333
+task-07,Carbon-isotope incorporation in a metaproteome,custom code,0.513888888889,0.333333333333,39.3666666667
+task-08,Small-variant differences among haploid yeast strains,Galaxy,0.638888888889,0.222222222222,94.0888888889
+task-08,Small-variant differences among haploid yeast strains,custom code,0.5,0.222222222222,52.1222222222
+task-09,Multiplex tissue imaging and cell neighborhoods,Galaxy,0.864197530864,0.666666666667,666.355555556
+task-09,Multiplex tissue imaging and cell neighborhoods,custom code,0.0864197530864,0,23.4222222222
+task-10,LC-MS features and ion relationships,Galaxy,0.458333333333,0,344.522222222
+task-10,LC-MS features and ion relationships,custom code,0.402777777778,0.222222222222,52.7222222222

@@ -1,0 +1,15 @@
+classification,audit_status,failure_category,condition,runs
+EVALUATOR,Classified,Task or scoring ambiguity,Galaxy,2
+EVALUATOR,Classified,Task or scoring ambiguity,custom code,5
+HARNESS,Classified,Platform or harness,Galaxy,3
+KNOWLEDGE,Classified,Model knowledge,Galaxy,1
+KNOWLEDGE,Classified,Model knowledge,custom code,4
+PLATFORM,Classified,Platform or harness,Galaxy,3
+RIGOR,Classified,Missing validation,Galaxy,14
+RIGOR,Classified,Missing validation,custom code,13
+RIGOR,Unresolved audit,,Galaxy,1
+RIGOR,Unresolved audit,,custom code,3
+SPEC,Classified,Task or scoring ambiguity,Galaxy,34
+SPEC,Classified,Task or scoring ambiguity,custom code,43
+UNREVIEWED,Awaiting review,,Galaxy,5
+UNREVIEWED,Awaiting review,,custom code,2

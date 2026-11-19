@@ -1,0 +1,9 @@
+benchmark,condition,assigned,observed,total_tokens,median_minutes,galaxy_custom_ratio
+BixBench,Galaxy,600,600,2782490817,,4.06610041383
+BixBench,custom code,600,600,684314339,,4.06610041383
+CompBioBench,Galaxy,1200,1199,12923349487,,2.47739405122
+CompBioBench,custom code,1200,1200,5216509453,,2.47739405122
+IWC,Galaxy,120,120,835959839,,0.95844952651
+IWC,custom code,120,120,872200169,,0.95844952651
+IWC multi-step,Galaxy,90,90,1642140878,232.6,1.47176356158
+IWC multi-step,custom code,90,90,1115764054,75.15,1.47176356158

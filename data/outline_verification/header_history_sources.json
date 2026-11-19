@@ -1,0 +1,94 @@
+{
+  "retrieved_utc": "2026-11-17T14:25:08.935860+00:00",
+  "question": "How many individual methylation measurements (rows) are removed when filtering out measurements that do not show >90% or <10% methylation in the Zebra Finch dataset?",
+  "accepted_answer": 19159,
+  "independent_rule": "Count input measurements with 10 <= MethylationPercentage <= 90, excluding header",
+  "script_sha256": "b6096fa66680c0b0425af28ae3ac3215d8ba51b00e056c7634aebcefb9dc8e1a",
+  "sources": [
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents",
+      "sha256": "430a7871c4d7458c42c1a8bcea39b7ecb402bf468571bd9f8c096f5026344047",
+      "bytes": 4402
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a472135d8290a9d7da824f8",
+      "sha256": "4d8738765b6d49fb000b81312145ddc63608d5f9b60d3b19c190c1eb3d59e5c4",
+      "bytes": 2712
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a472135d8290a9d7da824f8/download",
+      "sha256": "df356c72136c61018f8461941898ffe604f95f3b75c0ce1de4bf90d80c164c15",
+      "bytes": 1229273
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a47213560ae7ad5a07906f9",
+      "sha256": "60564d168851d626974002bd7392abb2c003804441d224a54cda62ba3b67cac1",
+      "bytes": 2804
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a47213560ae7ad5a07906f9/download",
+      "sha256": "37d721904fffe942031dbb7b6167a38eaefdab62d54f1cd9faee0809f3b76275",
+      "bytes": 1199453
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a4721353920cadc1a43d46d",
+      "sha256": "038d8cae024a5d95f4127887ddf1226e48c33eb6c9bb1210c16f7ccb1c30267c",
+      "bytes": 1764
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b52850c4092faf0ea1/contents/f9cad7b01a4721353920cadc1a43d46d/download",
+      "sha256": "3b3a3a15317d3127dec4393b96034cd3b6d0dc90dcbd33cff07014c05426837c",
+      "bytes": 13
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b53d37bf5c5e59958e/contents",
+      "sha256": "24a8ac57879a3c5ddc4d1c60b6296451c5a3d8e5982b21592bb26cd49142f6e1",
+      "bytes": 8223
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b53d37bf5c5e59958e/contents/f9cad7b01a4721351c61bc2bb19acc27",
+      "sha256": "0078bc6938e123de1ca2ae235e7e2f034ce23e967b9987ae87992147b8057655",
+      "bytes": 2727
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b53d37bf5c5e59958e/contents/f9cad7b01a4721351c61bc2bb19acc27/download",
+      "sha256": "df356c72136c61018f8461941898ffe604f95f3b75c0ce1de4bf90d80c164c15",
+      "bytes": 1229273
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents",
+      "sha256": "3f4731b7999a59ef4349c09d16723a57c43d066a6501d1630c26578a928ddf41",
+      "bytes": 4417
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a4721355adf8b6384df15d3",
+      "sha256": "7e1097f7e8409c1ebb804aaf852a83905544e9e7a75836e68b7736bf9e536f2e",
+      "bytes": 2727
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a4721355adf8b6384df15d3/download",
+      "sha256": "df356c72136c61018f8461941898ffe604f95f3b75c0ce1de4bf90d80c164c15",
+      "bytes": 1229273
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a4721354cfe652224de3f38",
+      "sha256": "161705bb60a8da3114aff21dc15b44e53faa99a5430891f7412633a39a6eafbd",
+      "bytes": 2800
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a4721354cfe652224de3f38/download",
+      "sha256": "37d721904fffe942031dbb7b6167a38eaefdab62d54f1cd9faee0809f3b76275",
+      "bytes": 1199453
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a472135ea9bd8ee290faf48",
+      "sha256": "175b0e85a0a3ab8dbabe097bc48f390fb87ef18c33d74dca5d44b079e27c4ab4",
+      "bytes": 1764
+    },
+    {
+      "url": "https://usegalaxy.org/api/histories/bbd44e69cb8906b50b28d066f630b138/contents/f9cad7b01a472135ea9bd8ee290faf48/download",
+      "sha256": "3b3a3a15317d3127dec4393b96034cd3b6d0dc90dcbd33cff07014c05426837c",
+      "bytes": 13
+    }
+  ]
+}

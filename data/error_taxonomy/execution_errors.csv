@@ -1,0 +1,537 @@
+benchmark,condition,outcome,source,severity,category,subcategory,galaxy_stage,error_type,events,runs_with_event
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Software not available,,Program not installed,109,96
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Software not available,,Package or module missing,50,37
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,10,6
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,91,51
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Data or file handling,,File or path not found,137,117
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,9,6
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,12,8
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Software not available,,Program crashed,0,0
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,9,9
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,91,71
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,158,124
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,10,4
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,93,74
+BixBench-Verified-50,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,10,8
+BixBench-Verified-50,Galaxy,correct,shell,not an error,,,,Not an error,22,21
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,456,192
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,47,25
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,60,52
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,153,54
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),1128,309
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",83,44
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,17,17
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,25,13
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,56,23
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",16,9
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,9,6
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,180,87
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,118,76
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,25,19
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,11,10
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",6,5
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,1,1
+BixBench-Verified-50,Galaxy,correct,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,215,131
+BixBench-Verified-50,Galaxy,correct,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,44,40
+BixBench-Verified-50,Galaxy,correct,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+BixBench-Verified-50,Galaxy,correct,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program not installed,18,13
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,27,14
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,2,2
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,35,13
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,22,20
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,6,3
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,2,2
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program crashed,1,1
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,1,1
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,28,13
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,25,17
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,17,7
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,12,10
+BixBench-Verified-50,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,3,3
+BixBench-Verified-50,Galaxy,incorrect,shell,not an error,,,,Not an error,8,6
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,39,20
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,3,3
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,3,2
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,11,3
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),89,21
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",17,10
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,1,1
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,3,1
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,6,4
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",1,1
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,19,6
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,10,7
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,2,1
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",4,3
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,28,16
+BixBench-Verified-50,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,2,2
+BixBench-Verified-50,Galaxy,incorrect,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+BixBench-Verified-50,Galaxy,incorrect,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Software not available,,Program not installed,136,108
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Software not available,,Package or module missing,321,227
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Software not available,,Package installation failed,22,20
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,7,5
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Data or file handling,,File or path not found,111,104
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,113,85
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,15,14
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,23,19
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Software not available,,Program crashed,0,0
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,31,27
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,171,121
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,63,47
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,4,4
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,10,10
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,12,7
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,11,10
+BixBench-Verified-50,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,11,11
+BixBench-Verified-50,custom code,correct,shell,not an error,,,,Not an error,40,35
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Software not available,,Program not installed,30,23
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,63,29
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,4,4
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,6,5
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,21,20
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,14,11
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,1,1
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,7,2
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Software not available,,Program crashed,0,0
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,6,5
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,42,26
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,19,13
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,0,0
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,3,3
+BixBench-Verified-50,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,0,0
+BixBench-Verified-50,custom code,incorrect,shell,not an error,,,,Not an error,5,4
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Software not available,,Program not installed,157,124
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Software not available,,Package or module missing,42,29
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Software not available,,Package installation failed,12,10
+CompBioBench,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,249,115
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,128,78
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Data or file handling,,File or path not found,266,208
+CompBioBench,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,36,31
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,81,52
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,6,4
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Software not available,,Program crashed,0,0
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,30,22
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,337,177
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,86,70
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,4,3
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,5,3
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,1,1
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,60,54
+CompBioBench,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,24,21
+CompBioBench,Galaxy,correct,shell,not an error,,,,Not an error,127,85
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,456,243
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,267,121
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,94,78
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,516,233
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),1586,478
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",121,87
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,287,104
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,99,60
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,64,45
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,82,60
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",59,39
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,32,10
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,505,207
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,374,204
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,75,47
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,908,225
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,93,65
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",120,72
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",110,44
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,1,1
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,11,10
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,39,15
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,2,2
+CompBioBench,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+CompBioBench,Galaxy,correct,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,403,151
+CompBioBench,Galaxy,correct,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,67,47
+CompBioBench,Galaxy,correct,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,201,118
+CompBioBench,Galaxy,correct,galaxy,warning,,,Warning,Dataset is outside the stated history,15,5
+CompBioBench,Galaxy,correct,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),59,19
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program not installed,83,45
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,20,8
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,110,36
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,19,16
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,66,48
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,19,14
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,41,18
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,6,4
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program crashed,0,0
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,11,7
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,126,48
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,20,12
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,8,1
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,15,9
+CompBioBench,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,13,6
+CompBioBench,Galaxy,incorrect,shell,not an error,,,,Not an error,53,25
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,114,47
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,59,25
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,18,13
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,94,41
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),330,76
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",35,18
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,26,18
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,27,12
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,60,15
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,18,14
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",7,4
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,20,5
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,126,43
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,145,43
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,13,7
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,195,40
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,5,4
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",33,9
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",11,6
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,2,2
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,2,2
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,3,2
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,0,0
+CompBioBench,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+CompBioBench,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,141,31
+CompBioBench,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,10,8
+CompBioBench,Galaxy,incorrect,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,74,34
+CompBioBench,Galaxy,incorrect,galaxy,warning,,,Warning,Dataset is outside the stated history,8,3
+CompBioBench,Galaxy,incorrect,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),24,10
+CompBioBench,custom code,correct,shell,error,Execution environment,Software not available,,Program not installed,382,346
+CompBioBench,custom code,correct,shell,error,Execution environment,Software not available,,Package or module missing,150,87
+CompBioBench,custom code,correct,shell,error,Execution environment,Software not available,,Package installation failed,63,49
+CompBioBench,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,241,139
+CompBioBench,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+CompBioBench,custom code,correct,shell,error,Execution environment,Data or file handling,,File or path not found,206,125
+CompBioBench,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,18,10
+CompBioBench,custom code,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,422,234
+CompBioBench,custom code,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,2,2
+CompBioBench,custom code,correct,shell,error,Execution environment,Software not available,,Program crashed,124,55
+CompBioBench,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,70,63
+CompBioBench,custom code,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,492,260
+CompBioBench,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,163,102
+CompBioBench,custom code,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,66,65
+CompBioBench,custom code,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,72,55
+CompBioBench,custom code,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,12,10
+CompBioBench,custom code,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,69,50
+CompBioBench,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,49,41
+CompBioBench,custom code,correct,shell,not an error,,,,Not an error,124,79
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Software not available,,Program not installed,83,56
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,44,20
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,25,12
+CompBioBench,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,48,32
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,95,38
+CompBioBench,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,6,3
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,119,54
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,2,2
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Software not available,,Program crashed,23,11
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,17,13
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,147,59
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,45,24
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,20,17
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,9,7
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,2,2
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,27,20
+CompBioBench,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,26,15
+CompBioBench,custom code,incorrect,shell,not an error,,,,Not an error,60,26
+IWC,Galaxy,correct,shell,error,Execution environment,Software not available,,Program not installed,89,52
+IWC,Galaxy,correct,shell,error,Execution environment,Software not available,,Package or module missing,0,0
+IWC,Galaxy,correct,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+IWC,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,1,1
+IWC,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,6,5
+IWC,Galaxy,correct,shell,error,Execution environment,Data or file handling,,File or path not found,17,14
+IWC,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,1,1
+IWC,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,4,4
+IWC,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+IWC,Galaxy,correct,shell,error,Execution environment,Software not available,,Program crashed,1,1
+IWC,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,6,6
+IWC,Galaxy,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,41,21
+IWC,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,10,8
+IWC,Galaxy,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,0,0
+IWC,Galaxy,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+IWC,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,2,2
+IWC,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,7,6
+IWC,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,2,2
+IWC,Galaxy,correct,shell,not an error,,,,Not an error,16,12
+IWC,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,47,20
+IWC,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,11,7
+IWC,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,3,3
+IWC,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,29,16
+IWC,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),175,86
+IWC,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",27,18
+IWC,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,6,6
+IWC,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,14,8
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",2,1
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,9,8
+IWC,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,65,24
+IWC,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,67,37
+IWC,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",4,2
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,0,0
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,18,12
+IWC,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+IWC,Galaxy,correct,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,88,59
+IWC,Galaxy,correct,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,1,1
+IWC,Galaxy,correct,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+IWC,Galaxy,correct,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+IWC,Galaxy,correct,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program not installed,42,17
+IWC,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,1,1
+IWC,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,2,2
+IWC,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,7,6
+IWC,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,5,3
+IWC,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program crashed,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,3,2
+IWC,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,7,6
+IWC,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,0,0
+IWC,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,2,2
+IWC,Galaxy,incorrect,shell,not an error,,,,Not an error,11,7
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,3,2
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,8,5
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,1,1
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,32,11
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),64,19
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",1,1
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,16,6
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,12,6
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,30,12
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,10,5
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",1,1
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,0,0
+IWC,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+IWC,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,11,6
+IWC,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,12,5
+IWC,Galaxy,incorrect,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+IWC,Galaxy,incorrect,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+IWC,Galaxy,incorrect,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+IWC,custom code,correct,shell,error,Execution environment,Software not available,,Program not installed,93,53
+IWC,custom code,correct,shell,error,Execution environment,Software not available,,Package or module missing,10,9
+IWC,custom code,correct,shell,error,Execution environment,Software not available,,Package installation failed,9,7
+IWC,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,9,9
+IWC,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+IWC,custom code,correct,shell,error,Execution environment,Data or file handling,,File or path not found,16,15
+IWC,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,25,25
+IWC,custom code,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,46,18
+IWC,custom code,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,20,11
+IWC,custom code,correct,shell,error,Execution environment,Software not available,,Program crashed,1,1
+IWC,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,8,6
+IWC,custom code,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,25,17
+IWC,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,9,7
+IWC,custom code,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,2,2
+IWC,custom code,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,8,6
+IWC,custom code,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,7,5
+IWC,custom code,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,29,16
+IWC,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,15,8
+IWC,custom code,correct,shell,not an error,,,,Not an error,28,12
+IWC,custom code,incorrect,shell,error,Execution environment,Software not available,,Program not installed,50,25
+IWC,custom code,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,5,4
+IWC,custom code,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,7,5
+IWC,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,2,2
+IWC,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+IWC,custom code,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,23,13
+IWC,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,8,8
+IWC,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,19,10
+IWC,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,16,11
+IWC,custom code,incorrect,shell,error,Execution environment,Software not available,,Program crashed,7,2
+IWC,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,11,9
+IWC,custom code,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,20,10
+IWC,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,7,5
+IWC,custom code,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,2,2
+IWC,custom code,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,3,3
+IWC,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,3,2
+IWC,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,15,9
+IWC,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,1,1
+IWC,custom code,incorrect,shell,not an error,,,,Not an error,14,9
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Software not available,,Program not installed,2,2
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Software not available,,Package or module missing,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Data or file handling,,File or path not found,1,1
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Software not available,,Program crashed,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,3,3
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,0,0
+IWC multi-step,Galaxy,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,0,0
+IWC multi-step,Galaxy,correct,shell,not an error,,,,Not an error,5,4
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,32,6
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,1,1
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,2,2
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,19,13
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),18,5
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",5,1
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,1,1
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,14,3
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,2,2
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,137,15
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,25,2
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",9,4
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,8,3
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,103,15
+IWC multi-step,Galaxy,correct,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+IWC multi-step,Galaxy,correct,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,7,2
+IWC multi-step,Galaxy,correct,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,2,1
+IWC multi-step,Galaxy,correct,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+IWC multi-step,Galaxy,correct,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+IWC multi-step,Galaxy,correct,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program not installed,38,24
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,8,3
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,17,12
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,3,3
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,6,5
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Software not available,,Program crashed,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,2,2
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,21,11
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,10,4
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,0,0
+IWC multi-step,Galaxy,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,0,0
+IWC multi-step,Galaxy,incorrect,shell,not an error,,,,Not an error,8,5
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool lookup failed for lack of history context,154,37
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Tool ID not found,81,20
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: nested-key structure,5,4
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameter rejected: value or datatype,182,46
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Parameters rejected,Request rejected before a job ran,Parameters did not resolve as requested (not submitted),147,31
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,"Dataset, history or job ID problem",23,13
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Request rejected before a job ran,UDT definition rejected,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Request rejected before a job ran,Upload or staging failed,1,1
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Interface rejected the call arguments,19,12
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Interface or API request rejected,Request rejected before a job ran,Archive inspection rejected,37,17
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,"Server, transport or rate-limit problem",5,3
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Server or transport,MCP call failed or timed out,7,5
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Tool runtime error with diagnostic,319,57
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT script runtime error with diagnostic,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Analysis tool failed,Job failed,Job failed before execution or without diagnostic,216,13
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Agent's own code failed,Job failed,UDT job failed before its command ran,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Software not available,Job failed,Missing software dependency in job,8,5
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,Job failed,"Input format, compression or index problem",17,7
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Compute limit reached,Job failed,"Job hit memory, disk or time limit",1,1
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job paused,2,1
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Job failed,Job deleted or cancelled,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,Data or file handling,"Job finished, output failed",Output dataset failed metadata,28,5
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox","Job finished, output failed",Output collection lookup failed after the job,459,40
+IWC multi-step,Galaxy,incorrect,galaxy,error,Execution environment,"Platform, network or sandbox",Other,Other,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran with parameters that differ from the request,74,8
+IWC multi-step,Galaxy,incorrect,galaxy,warning,,,Warning,Job ran on inputs that differ from the request,26,9
+IWC multi-step,Galaxy,incorrect,galaxy,warning,,,Warning,Peek at a dataset that is not ready or failed,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,warning,,,Warning,Dataset is outside the stated history,0,0
+IWC multi-step,Galaxy,incorrect,galaxy,out of scope,,,Out of scope,Other connector call failed (out of scope),0,0
+IWC multi-step,custom code,correct,shell,error,Execution environment,Software not available,,Program not installed,24,15
+IWC multi-step,custom code,correct,shell,error,Execution environment,Software not available,,Package or module missing,6,4
+IWC multi-step,custom code,correct,shell,error,Execution environment,Software not available,,Package installation failed,7,3
+IWC multi-step,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,3,2
+IWC multi-step,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+IWC multi-step,custom code,correct,shell,error,Execution environment,Data or file handling,,File or path not found,3,3
+IWC multi-step,custom code,correct,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,10,10
+IWC multi-step,custom code,correct,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,1,1
+IWC multi-step,custom code,correct,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,0,0
+IWC multi-step,custom code,correct,shell,error,Execution environment,Software not available,,Program crashed,0,0
+IWC multi-step,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,4,4
+IWC multi-step,custom code,correct,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,10,9
+IWC multi-step,custom code,correct,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,5,4
+IWC multi-step,custom code,correct,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,2,1
+IWC multi-step,custom code,correct,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,5,5
+IWC multi-step,custom code,correct,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,7,4
+IWC multi-step,custom code,correct,shell,error,Execution environment,Agent's own code failed,,No error message captured,5,5
+IWC multi-step,custom code,correct,shell,error,Execution environment,Agent's own code failed,,Other runtime error,2,2
+IWC multi-step,custom code,correct,shell,not an error,,,,Not an error,12,8
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Software not available,,Program not installed,106,54
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Software not available,,Package or module missing,22,15
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Software not available,,Package installation failed,22,18
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Network or remote resource failure,1,1
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Galaxy API request failed,0,0
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Data or file handling,,File or path not found,55,28
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,"Platform, network or sandbox",,Permission or sandbox restriction,11,10
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Time limit reached or command interrupted,67,23
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Compute limit reached,,Out of memory or killed,16,3
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Software not available,,Program crashed,4,3
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Syntax error in the agent's own code,11,11
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Data or file handling,,Data did not match what the code expected,87,47
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Interface or API request rejected,,Wrong use of a library or API,56,23
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Parameters rejected,,Wrong command-line arguments to a program,9,7
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Analysis tool failed,,Bioinformatics tool reported a failure,8,6
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,The agent's own check failed,10,7
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,No error message captured,26,16
+IWC multi-step,custom code,incorrect,shell,error,Execution environment,Agent's own code failed,,Other runtime error,20,14
+IWC multi-step,custom code,incorrect,shell,not an error,,,,Not an error,21,16

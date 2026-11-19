@@ -1,0 +1,161 @@
+benchmark,condition,outcome,category,subcategory,events,runs_with_event,runs_with_log,share_of_runs_pct
+BixBench-Verified-50,Galaxy,correct,Execution environment,Software not available,170,131,537,24.39
+BixBench-Verified-50,Galaxy,correct,Execution environment,Interface or API request rejected,916,304,537,56.61
+BixBench-Verified-50,Galaxy,correct,Execution environment,Parameters rejected,1351,315,537,58.66
+BixBench-Verified-50,Galaxy,correct,Execution environment,Agent's own code failed,272,164,537,30.54
+BixBench-Verified-50,Galaxy,correct,Execution environment,Data or file handling,234,178,537,33.15
+BixBench-Verified-50,Galaxy,correct,Execution environment,Analysis tool failed,180,87,537,16.2
+BixBench-Verified-50,Galaxy,correct,Execution environment,Compute limit reached,12,8,537,1.49
+BixBench-Verified-50,Galaxy,correct,Execution environment,"Platform, network or sandbox",45,27,537,5.03
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Software not available,46,25,63,39.68
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Interface or API request rejected,125,42,63,66.67
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Parameters rejected,120,29,63,46.03
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Agent's own code failed,27,17,63,26.98
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Data or file handling,57,26,63,41.27
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Analysis tool failed,21,6,63,9.52
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,Compute limit reached,2,2,63,3.17
+BixBench-Verified-50,Galaxy,incorrect,Execution environment,"Platform, network or sandbox",9,6,63,9.52
+BixBench-Verified-50,custom code,correct,Execution environment,Software not available,479,301,530,56.79
+BixBench-Verified-50,custom code,correct,Execution environment,Interface or API request rejected,63,47,530,8.87
+BixBench-Verified-50,custom code,correct,Execution environment,Parameters rejected,4,4,530,0.75
+BixBench-Verified-50,custom code,correct,Execution environment,Agent's own code failed,65,52,530,9.81
+BixBench-Verified-50,custom code,correct,Execution environment,Data or file handling,282,189,530,35.66
+BixBench-Verified-50,custom code,correct,Execution environment,Analysis tool failed,10,10,530,1.89
+BixBench-Verified-50,custom code,correct,Execution environment,Compute limit reached,38,31,530,5.85
+BixBench-Verified-50,custom code,correct,Execution environment,"Platform, network or sandbox",120,88,530,16.6
+BixBench-Verified-50,custom code,incorrect,Execution environment,Software not available,97,40,70,57.14
+BixBench-Verified-50,custom code,incorrect,Execution environment,Interface or API request rejected,19,13,70,18.57
+BixBench-Verified-50,custom code,incorrect,Execution environment,Parameters rejected,0,0,70,0.0
+BixBench-Verified-50,custom code,incorrect,Execution environment,Agent's own code failed,9,8,70,11.43
+BixBench-Verified-50,custom code,incorrect,Execution environment,Data or file handling,63,38,70,54.29
+BixBench-Verified-50,custom code,incorrect,Execution environment,Analysis tool failed,0,0,70,0.0
+BixBench-Verified-50,custom code,incorrect,Execution environment,Compute limit reached,8,3,70,4.29
+BixBench-Verified-50,custom code,incorrect,Execution environment,"Platform, network or sandbox",20,14,70,20.0
+CompBioBench,Galaxy,correct,Execution environment,Software not available,304,198,1028,19.26
+CompBioBench,Galaxy,correct,Execution environment,Interface or API request rejected,1204,430,1028,41.83
+CompBioBench,Galaxy,correct,Execution environment,Parameters rejected,2200,553,1028,53.79
+CompBioBench,Galaxy,correct,Execution environment,Agent's own code failed,1684,461,1028,44.84
+CompBioBench,Galaxy,correct,Execution environment,Data or file handling,861,424,1028,41.25
+CompBioBench,Galaxy,correct,Execution environment,Analysis tool failed,585,229,1028,22.28
+CompBioBench,Galaxy,correct,Execution environment,Compute limit reached,197,94,1028,9.14
+CompBioBench,Galaxy,correct,Execution environment,"Platform, network or sandbox",390,183,1028,17.8
+CompBioBench,Galaxy,incorrect,Execution environment,Software not available,108,50,160,31.25
+CompBioBench,Galaxy,incorrect,Execution environment,Interface or API request rejected,325,84,160,52.5
+CompBioBench,Galaxy,incorrect,Execution environment,Parameters rejected,450,86,160,53.75
+CompBioBench,Galaxy,incorrect,Execution environment,Agent's own code failed,405,86,160,53.75
+CompBioBench,Galaxy,incorrect,Execution environment,Data or file handling,255,90,160,56.25
+CompBioBench,Galaxy,incorrect,Execution environment,Analysis tool failed,139,46,160,28.75
+CompBioBench,Galaxy,incorrect,Execution environment,Compute limit reached,58,27,160,16.88
+CompBioBench,Galaxy,incorrect,Execution environment,"Platform, network or sandbox",160,51,160,31.88
+CompBioBench,custom code,correct,Execution environment,Software not available,719,437,1059,41.27
+CompBioBench,custom code,correct,Execution environment,Interface or API request rejected,163,102,1059,9.63
+CompBioBench,custom code,correct,Execution environment,Parameters rejected,66,65,1059,6.14
+CompBioBench,custom code,correct,Execution environment,Agent's own code failed,200,144,1059,13.6
+CompBioBench,custom code,correct,Execution environment,Data or file handling,698,326,1059,30.78
+CompBioBench,custom code,correct,Execution environment,Analysis tool failed,72,55,1059,5.19
+CompBioBench,custom code,correct,Execution environment,Compute limit reached,424,236,1059,22.29
+CompBioBench,custom code,correct,Execution environment,"Platform, network or sandbox",259,146,1059,13.79
+CompBioBench,custom code,incorrect,Execution environment,Software not available,175,71,141,50.35
+CompBioBench,custom code,incorrect,Execution environment,Interface or API request rejected,45,24,141,17.02
+CompBioBench,custom code,incorrect,Execution environment,Parameters rejected,20,17,141,12.06
+CompBioBench,custom code,incorrect,Execution environment,Agent's own code failed,72,43,141,30.5
+CompBioBench,custom code,incorrect,Execution environment,Data or file handling,242,75,141,53.19
+CompBioBench,custom code,incorrect,Execution environment,Analysis tool failed,9,7,141,4.96
+CompBioBench,custom code,incorrect,Execution environment,Compute limit reached,121,55,141,39.01
+CompBioBench,custom code,incorrect,Execution environment,"Platform, network or sandbox",54,35,141,24.82
+IWC,Galaxy,correct,Execution environment,Software not available,90,53,95,55.79
+IWC,Galaxy,correct,Execution environment,Interface or API request rejected,121,47,95,49.47
+IWC,Galaxy,correct,Execution environment,Parameters rejected,207,86,95,90.53
+IWC,Galaxy,correct,Execution environment,Agent's own code failed,17,16,95,16.84
+IWC,Galaxy,correct,Execution environment,Data or file handling,58,32,95,33.68
+IWC,Galaxy,correct,Execution environment,Analysis tool failed,132,59,95,62.11
+IWC,Galaxy,correct,Execution environment,Compute limit reached,8,5,95,5.26
+IWC,Galaxy,correct,Execution environment,"Platform, network or sandbox",31,20,95,21.05
+IWC,Galaxy,incorrect,Execution environment,Software not available,42,17,25,68.0
+IWC,Galaxy,incorrect,Execution environment,Interface or API request rejected,30,11,25,44.0
+IWC,Galaxy,incorrect,Execution environment,Parameters rejected,97,20,25,80.0
+IWC,Galaxy,incorrect,Execution environment,Agent's own code failed,5,4,25,16.0
+IWC,Galaxy,incorrect,Execution environment,Data or file handling,15,12,25,48.0
+IWC,Galaxy,incorrect,Execution environment,Analysis tool failed,40,14,25,56.0
+IWC,Galaxy,incorrect,Execution environment,Compute limit reached,5,3,25,12.0
+IWC,Galaxy,incorrect,Execution environment,"Platform, network or sandbox",13,6,25,24.0
+IWC,custom code,correct,Execution environment,Software not available,113,60,87,68.97
+IWC,custom code,correct,Execution environment,Interface or API request rejected,9,7,87,8.05
+IWC,custom code,correct,Execution environment,Parameters rejected,2,2,87,2.3
+IWC,custom code,correct,Execution environment,Agent's own code failed,59,30,87,34.48
+IWC,custom code,correct,Execution environment,Data or file handling,41,28,87,32.18
+IWC,custom code,correct,Execution environment,Analysis tool failed,8,6,87,6.9
+IWC,custom code,correct,Execution environment,Compute limit reached,66,21,87,24.14
+IWC,custom code,correct,Execution environment,"Platform, network or sandbox",34,31,87,35.63
+IWC,custom code,incorrect,Execution environment,Software not available,69,27,33,81.82
+IWC,custom code,incorrect,Execution environment,Interface or API request rejected,7,5,33,15.15
+IWC,custom code,incorrect,Execution environment,Parameters rejected,2,2,33,6.06
+IWC,custom code,incorrect,Execution environment,Agent's own code failed,30,14,33,42.42
+IWC,custom code,incorrect,Execution environment,Data or file handling,43,20,33,60.61
+IWC,custom code,incorrect,Execution environment,Analysis tool failed,3,3,33,9.09
+IWC,custom code,incorrect,Execution environment,Compute limit reached,35,18,33,54.55
+IWC,custom code,incorrect,Execution environment,"Platform, network or sandbox",10,10,33,30.3
+IWC multi-step,Galaxy,correct,Execution environment,Software not available,2,2,22,9.09
+IWC multi-step,Galaxy,correct,Execution environment,Interface or API request rejected,52,6,22,27.27
+IWC multi-step,Galaxy,correct,Execution environment,Parameters rejected,39,14,22,63.64
+IWC multi-step,Galaxy,correct,Execution environment,Agent's own code failed,0,0,22,0.0
+IWC multi-step,Galaxy,correct,Execution environment,Data or file handling,22,7,22,31.82
+IWC multi-step,Galaxy,correct,Execution environment,Analysis tool failed,162,16,22,72.73
+IWC multi-step,Galaxy,correct,Execution environment,Compute limit reached,0,0,22,0.0
+IWC multi-step,Galaxy,correct,Execution environment,"Platform, network or sandbox",105,16,22,72.73
+IWC multi-step,Galaxy,incorrect,Execution environment,Software not available,46,25,68,36.76
+IWC multi-step,Galaxy,incorrect,Execution environment,Interface or API request rejected,332,57,68,83.82
+IWC multi-step,Galaxy,incorrect,Execution environment,Parameters rejected,334,52,68,76.47
+IWC multi-step,Galaxy,incorrect,Execution environment,Agent's own code failed,2,2,68,2.94
+IWC multi-step,Galaxy,incorrect,Execution environment,Data or file handling,84,29,68,42.65
+IWC multi-step,Galaxy,incorrect,Execution environment,Analysis tool failed,535,63,68,92.65
+IWC multi-step,Galaxy,incorrect,Execution environment,Compute limit reached,7,6,68,8.82
+IWC multi-step,Galaxy,incorrect,Execution environment,"Platform, network or sandbox",476,43,68,63.24
+IWC multi-step,custom code,correct,Execution environment,Software not available,37,17,21,80.95
+IWC multi-step,custom code,correct,Execution environment,Interface or API request rejected,5,4,21,19.05
+IWC multi-step,custom code,correct,Execution environment,Parameters rejected,2,1,21,4.76
+IWC multi-step,custom code,correct,Execution environment,Agent's own code failed,18,12,21,57.14
+IWC multi-step,custom code,correct,Execution environment,Data or file handling,13,11,21,52.38
+IWC multi-step,custom code,correct,Execution environment,Analysis tool failed,5,5,21,23.81
+IWC multi-step,custom code,correct,Execution environment,Compute limit reached,1,1,21,4.76
+IWC multi-step,custom code,correct,Execution environment,"Platform, network or sandbox",13,10,21,47.62
+IWC multi-step,custom code,incorrect,Execution environment,Software not available,154,62,69,89.86
+IWC multi-step,custom code,incorrect,Execution environment,Interface or API request rejected,56,23,69,33.33
+IWC multi-step,custom code,incorrect,Execution environment,Parameters rejected,9,7,69,10.14
+IWC multi-step,custom code,incorrect,Execution environment,Agent's own code failed,67,37,69,53.62
+IWC multi-step,custom code,incorrect,Execution environment,Data or file handling,142,57,69,82.61
+IWC multi-step,custom code,incorrect,Execution environment,Analysis tool failed,8,6,69,8.7
+IWC multi-step,custom code,incorrect,Execution environment,Compute limit reached,83,25,69,36.23
+IWC multi-step,custom code,incorrect,Execution environment,"Platform, network or sandbox",12,11,69,15.94
+All,Galaxy,correct,Execution environment,Software not available,566,384,1682,22.83
+All,Galaxy,correct,Execution environment,Interface or API request rejected,2293,787,1682,46.79
+All,Galaxy,correct,Execution environment,Parameters rejected,3797,968,1682,57.55
+All,Galaxy,correct,Execution environment,Agent's own code failed,1973,641,1682,38.11
+All,Galaxy,correct,Execution environment,Data or file handling,1175,641,1682,38.11
+All,Galaxy,correct,Execution environment,Analysis tool failed,1059,391,1682,23.25
+All,Galaxy,correct,Execution environment,Compute limit reached,217,107,1682,6.36
+All,Galaxy,correct,Execution environment,"Platform, network or sandbox",571,246,1682,14.63
+All,Galaxy,incorrect,Execution environment,Software not available,242,117,316,37.03
+All,Galaxy,incorrect,Execution environment,Interface or API request rejected,812,194,316,61.39
+All,Galaxy,incorrect,Execution environment,Parameters rejected,1001,187,316,59.18
+All,Galaxy,incorrect,Execution environment,Agent's own code failed,439,109,316,34.49
+All,Galaxy,incorrect,Execution environment,Data or file handling,411,157,316,49.68
+All,Galaxy,incorrect,Execution environment,Analysis tool failed,735,129,316,40.82
+All,Galaxy,incorrect,Execution environment,Compute limit reached,72,38,316,12.03
+All,Galaxy,incorrect,Execution environment,"Platform, network or sandbox",658,106,316,33.54
+All,custom code,correct,Execution environment,Software not available,1348,815,1697,48.03
+All,custom code,correct,Execution environment,Interface or API request rejected,240,160,1697,9.43
+All,custom code,correct,Execution environment,Parameters rejected,74,72,1697,4.24
+All,custom code,correct,Execution environment,Agent's own code failed,342,238,1697,14.02
+All,custom code,correct,Execution environment,Data or file handling,1034,554,1697,32.65
+All,custom code,correct,Execution environment,Analysis tool failed,95,76,1697,4.48
+All,custom code,correct,Execution environment,Compute limit reached,529,289,1697,17.03
+All,custom code,correct,Execution environment,"Platform, network or sandbox",426,275,1697,16.21
+All,custom code,incorrect,Execution environment,Software not available,495,200,313,63.9
+All,custom code,incorrect,Execution environment,Interface or API request rejected,127,65,313,20.77
+All,custom code,incorrect,Execution environment,Parameters rejected,31,26,313,8.31
+All,custom code,incorrect,Execution environment,Agent's own code failed,178,102,313,32.59
+All,custom code,incorrect,Execution environment,Data or file handling,490,190,313,60.7
+All,custom code,incorrect,Execution environment,Analysis tool failed,20,16,313,5.11
+All,custom code,incorrect,Execution environment,Compute limit reached,247,101,313,32.27
+All,custom code,incorrect,Execution environment,"Platform, network or sandbox",96,70,313,22.36

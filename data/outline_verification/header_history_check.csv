@@ -1,0 +1,4 @@
+task,model,replicate,history_url,history_items,original_data_rows,independently_counted_removed,retained_header,filtered_physical_lines,filtered_data_rows,line_count_output,submitted_answer,status
+bix-52-q7,gpt-5.6-sol,3,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b52850c4092faf0ea1,7,19698,19159,True,19160,19159,19160,19160,fail
+bix-52-q7,gpt-5.6-luna,1,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b53d37bf5c5e59958e,13,19698,19159,,,,,19159,pass
+bix-52-q7,gpt-5.6-luna,2,https://usegalaxy.org/histories/view?id=bbd44e69cb8906b50b28d066f630b138,7,19698,19159,True,19160,19159,19160,19160,fail

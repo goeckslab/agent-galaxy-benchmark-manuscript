@@ -1,0 +1,5 @@
+condition,outcome,runs,runs_with_log,shell_commands,galaxy_calls,runs_with_error,errors,runs_with_error_without_resolution_check,errors_without_resolution_check,share_with_error_pct,share_without_resolution_check_pct
+Galaxy,correct,1598,1587,48417,53873,1391,10987,1323,8255,87.6496534342,83.3648393195
+Galaxy,incorrect,292,291,17010,22341,273,4123,269,3557,93.8144329897,92.439862543
+custom code,correct,1610,1610,42199,0,1169,3756,1169,3756,72.6086956522,72.6086956522
+custom code,incorrect,280,280,17863,0,248,1485,248,1485,88.5714285714,88.5714285714

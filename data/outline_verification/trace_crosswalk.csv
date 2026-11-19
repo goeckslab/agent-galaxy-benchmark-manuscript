@@ -1,0 +1,15 @@
+audit_label,broad_category,subcategory,runs
+HARNESS,Execution environment,No answer returned,3
+KNOWLEDGE,Knowledge,Wrong biological or statistical concept,5
+PLATFORM,Execution environment,Intermediate result accepted without a check,1
+PLATFORM,Execution environment,Tool version or implementation differs from the reference,2
+RIGOR,Execution environment,Header row counted as data,2
+RIGOR,Execution environment,Other data-handling slip,7
+RIGOR,Execution environment,Tool version or implementation differs from the reference,3
+RIGOR,Knowledge,Added steps the task did not ask for,1
+RIGOR,Knowledge,Question misread (answered a different quantity),1
+RIGOR,Knowledge,Wrong biological or statistical concept,5
+RIGOR,Knowledge,Wrong method for the question,5
+RIGOR,Knowledge,Wrong parameter or threshold,7
+UNREVIEWED,Knowledge,Wrong parameter or threshold,3
+UNREVIEWED,Unclear,No agent mistake identified,4

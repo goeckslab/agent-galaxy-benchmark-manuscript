@@ -1,0 +1,7 @@
+benchmark,condition,groups,weighting,single_pct,two_passed_pct,any_passed_pct,vote_accepted_pct,vote_abstained_pct,passed_0,passed_1,passed_2,passed_3
+BixBench,Galaxy,200,one task/model group one vote,89.5,90,93,82.5,11,14,6,9,171
+BixBench,custom code,200,one task/model group one vote,88.3333333333,90.5,92,80,12,16,3,16,165
+CompBioBench,Galaxy,400,one task/model group one vote,86.5833333333,87.5,92.5,87.5,4.75,30,20,31,319
+CompBioBench,custom code,400,one task/model group one vote,88.25,89.75,96,89.75,2.5,16,25,43,316
+IWC multi-step,Galaxy,261,equal tasks; outputs/model groups averaged within task,67.4845679012,69,86.5277777778,,,34,46,59,122
+IWC multi-step,custom code,261,equal tasks; outputs/model groups averaged within task,58.725308642,58.1111111111,70.9259259259,,,74,35,28,124

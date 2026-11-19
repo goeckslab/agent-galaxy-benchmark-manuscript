@@ -1,0 +1,5 @@
+condition,trial_run,acc_count,acc_mean,all_pass_count,all_pass_mean
+Galaxy,False,82,0.683570460705,82,0.256097560976
+Galaxy,True,8,0.585416666667,8,0.125
+custom code,False,82,0.616700542005,82,0.256097560976
+custom code,True,8,0.285416666667,8,0

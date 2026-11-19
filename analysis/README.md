@@ -27,6 +27,7 @@ The [package README](../figures/benchmark_results_summary/README.md) gives the r
 - `site_data.py` loads `data/site/` as tidy tables, one per benchmark, applying the website's rules (use `status`, drop superseded experiments and held reruns, never treat a missing score as zero) and the paper's model and condition names.
 - `accuracy.py` computes accuracy per benchmark, model and condition, plus all models together, into `data/accuracy_by_model.csv`, and a per-benchmark summary across models into `data/accuracy_summary.csv`; it feeds `figures/sfig_accuracy_by_model`.
 - `failure_analysis/` holds one write-up per task, named `<task-id>.md`, each ending with trace references.
+- `error_taxonomy.py` gives every failed shell command and Galaxy interface call in the cached run event logs an error type, using the ordered rules in `error_rules_shell.py` and `error_rules_galaxy.py`, and counts them by condition, subcategory and run outcome into `data/error_taxonomy/`; `iwc_failed_results.py` assigns each failed IWC multi-step result its primary scorer reason. Both feed `manuscript/error_taxonomy.md`.
 
 Rules: every number in the paper traces to a script here or a row in `data/results_manifest.csv`.
 Verify agent-reported answers against independent ground truth, not the agent's own conclusion.
