@@ -1,10 +1,7 @@
-# Engineering inspectable AI agents for computational research with Galaxy
+# Engineering a Galaxy interface for trustworthy biological computational analyses with AI agents
 
 ## Abstract
-
-- AI agents can accelerate research, but trusting an answer requires seeing how it was produced.
-- Through our interface, agents choose tools and parameters; Galaxy executes and records each job.
-- On three benchmarks (3,780 runs), agents working in Galaxy scored close to agents writing custom code and every Galaxy run had a history link
+AI agents can accelerate data analysis, yet trusting their results requires accurate analyses that researchers can validate. Here we describe an agent interface to the Galaxy workbench through which agents plan analyses while Galaxy executes and records each job. On three biological benchmarks, agents using Galaxy scored close to agents writing custom code. We demonstrate how Galaxy features can be used to increase human-interpretable insights and trust on agents.
 
 ## P1. Agents can speed up computational analyses but are not yet trusted; executing their plans in Galaxy makes each step inspectable
 
