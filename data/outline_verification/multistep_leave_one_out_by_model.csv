@@ -1,0 +1,34 @@
+model,omitted_task,galaxy,custom_code,difference,status
+DeepSeek V4 Pro,none,63.0833333333,54.3333333333,8.75,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-01,65,54.3518518519,10.6481481481,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-02,64.0740740741,51.1111111111,12.962962963,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-03,61.2962962963,52.037037037,9.25925925926,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-04,63.4259259259,53.7037037037,9.72222222222,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-05,63.3024691358,51.1111111111,12.1913580247,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-06,62.2222222222,50.1851851852,12.037037037,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-07,63.1481481481,55.7407407407,7.40740740741,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-08,60.8333333333,55.7407407407,5.09259259259,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-09,60.2160493827,60.3703703704,-0.154320987654,exploratory sensitivity; no exclusion recommended
+DeepSeek V4 Pro,task-10,67.3148148148,58.9814814815,8.33333333333,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,none,49.4814814815,33.8888888889,15.5925925926,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-01,48.4979423868,35.8024691358,12.695473251,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-02,47.1090534979,30.2469135802,16.8621399177,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-03,51.7386831276,27.0061728395,24.7325102881,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-04,51.646090535,33.950617284,17.695473251,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-05,49.1152263374,30.5555555556,18.5596707819,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-06,49.4238683128,35.3395061728,14.0843621399,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-07,47.1090534979,36.2654320988,10.8436213992,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-08,53.1275720165,35.8024691358,17.3251028807,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-09,47.1604938272,37.6543209877,9.50617283951,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Luna,task-10,49.8868312757,36.2654320988,13.621399177,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,none,89.8888888889,87.9537037037,1.93518518519,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-01,88.7654320988,86.6152263374,2.15020576132,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-02,89.6913580247,87.0781893004,2.61316872428,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-03,92.0061728395,86.6152263374,5.39094650206,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-04,89.5061728395,88.8374485597,0.668724279835,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-05,89.0740740741,87.2325102881,1.84156378601,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-06,88.7654320988,87.0781893004,1.68724279835,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-07,90.1543209877,86.6152263374,3.53909465021,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-08,89.6913580247,87.5411522634,2.15020576132,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-09,88.7654320988,94.8456790123,-6.08024691358,exploratory sensitivity; no exclusion recommended
+GPT-5.6 Sol,task-10,92.4691358025,87.0781893004,5.39094650206,exploratory sensitivity; no exclusion recommended

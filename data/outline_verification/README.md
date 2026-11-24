@@ -17,7 +17,7 @@ When the local `iwc-multistep-snapshots` branch exists, its results and pooled i
 |---|---|
 | `performance.csv` | Benchmark-specific endpoints and paired intervals; reconstructed CompBioBench matches are separate from official points |
 | `multistep_runs.csv`, `multistep_by_task.csv` | The multi-step cohort and equal-task summaries |
-| `multistep_leave_one_out.csv`, `trial_run_descriptive.csv` | Explicitly exploratory sensitivity and trial-run descriptions; not recommendations to exclude runs |
+| `multistep_leave_one_out.csv`, `multistep_leave_one_out_by_model.csv`, `trial_run_descriptive.csv` | Explicitly exploratory sensitivity (pooled and per model; `none` reproduces `data/accuracy_by_model.csv`) and trial-run descriptions; not recommendations to exclude runs |
 | `error_denominators.csv`, `error_totals.csv`, `error_subcategories.csv` | Main-cohort counts restricted to the three paper benchmarks, with logged-run denominators |
 | `audit_labels.csv`, `trace_crosswalk.csv`, `history_visibility.csv` | Counts of existing classifications; no independent adjudication of cause labels |
 | `history_lookup_errors.csv` | Missing or unusable history context, including supplied histories the interface could not use |

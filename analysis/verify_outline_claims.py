@@ -127,6 +127,20 @@ def main():
         leave_one_out.append(dict(omitted_task=omitted, galaxy=means[G], custom_code=means[C],
                                  difference=means[G]-means[C], status="exploratory sensitivity; no exclusion recommended"))
     save("multistep_leave_one_out.csv", pd.DataFrame(leave_one_out))
+    by_model = []
+    for model, block in ms.groupby("model"):
+        scores = block.pivot_table(index="task", columns="condition", values="acc") * 100
+        assert len(scores) == 10 and scores.notna().all().all()
+        for omitted in ["none", *scores.index]:
+            means = scores.drop(omitted, errors="ignore").mean()
+            by_model.append(dict(model=model, omitted_task=omitted, galaxy=means[G], custom_code=means[C],
+                                 difference=means[G]-means[C], status="exploratory sensitivity; no exclusion recommended"))
+    by_model = pd.DataFrame(by_model)
+    full = by_model[by_model.omitted_task.eq("none")].set_index("model")
+    reported = read_csv(ROOT / "data/accuracy_by_model.csv").query("benchmark == 'IWC multi-step'")
+    reported = reported.pivot_table(index="model", columns="condition", values="accuracy_pct")
+    assert np.allclose(full[["galaxy", "custom_code"]].to_numpy(), reported.loc[full.index, [G, C]].to_numpy(), atol=.006)
+    save("multistep_leave_one_out_by_model.csv", by_model)
     # The other local branch archives the same release, not a new experiment.
     branch_check = {}
     try:
